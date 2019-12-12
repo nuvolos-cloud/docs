@@ -6,9 +6,7 @@ description: A tour of key concepts
 
 Most of the user work in Nuvolos happens in confined single- or multi-user environments called _spaces_. A space stores the files \(code and data files\), database tables, and applications related to a specific academic activity. 
 
-![The hierarchical layout of Nuvolos](../.gitbook/assets/main-architecture-datahub-2.svg)
-
-
+![Hierarchical layout of Nuvolos](../.gitbook/assets/main-architecture-nuvolos.png)
 
 Spaces are contained in _organizations._ An organization is a collection of spaces and serves essentially as an administrative unit, a cost center and a strong licensing barrier. For example, a summer school might be a separate organization: each class would be set up as a separate space, with common administration that operates on the organization level.
 
