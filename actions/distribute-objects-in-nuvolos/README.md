@@ -48,7 +48,7 @@ Please note that whenever you distribute, in the target a snapshot gets created,
 
  Once done, click **CONTINUE.**
 
-![](../../.gitbook/assets/screen-shot-2019-12-09-at-18.14.22.png)
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.55.56-pm.png)
 
 7. Finally, you can send a message along with the distribution to notify the users in the targets about the change being made. In this particular case, we decided _not_ to notify users by emptying the checkbox.
 
