@@ -16,16 +16,16 @@ Before uploading new files, make sure the right privileges are granted: only _in
 
 ![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.41.26-pm.png)
 
-3- Click on the **UPLOAD** button, and an upload box will appear.
+3- Click on the **UPLOAD FILES** button, and an upload box will appear.
 
 ![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.44.11-pm.png)
 
 ![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.44.15-pm.png)
 
-It is possible to drag-and-drop files to the upload box, or to click _Browse_ in order to select local files to upload.
+It is possible to drag-and-drop files to the upload box, otherwise click _browse_ in order to select files from your machine.
 
 {% hint style="info" %}
-To upload folders, drag the folder from your local machine to the upload box.
+To upload **folders**, drag the folder from your local machine to the upload box.
 {% endhint %}
 
 4- Once files are selected for upload, click on the **UPLOAD FILES** button that appears at the bottom.
