@@ -1,24 +1,40 @@
 # Create a space
 
-\*\*\*\*![](../../.gitbook/assets/info_simple.svg.png)**Before creating a space,** make sure that the right permissions are set. Only organization managers and faculty members are allowed to create new spaces. A faculty member or organization manager needs to be contacted in order for a new space to be set up.  
-
-![](../../.gitbook/assets/info_simple.svg.png)**Space creation is a three-step process:** first you create a space, then you will be asked to create an application, and finally a set of options is displayed to decide on the next step.
+{% hint style="info" %}
+**Only organization managers and faculty members are allowed to create spaces.** 
+{% endhint %}
 
 ## To create a new space
 
- 1- Navigate to the dashboard.
+1- Navigate to the dashboard.
 
-2- Scroll down where you can see Spaces. On the right, you will see two buttons called **+ NEW CLASS,** to create a space to teach a class, and **+ NEW RESEARCH PROJECT** for a research space. Click on one of the two buttons.
+2- From the left sidebar, select Classes, Research Projects, or Datasets depending on the type of class you want to create.
 
-3- Provide a name and a description of the new space in the respective fields. 
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-2.27.50-pm.png)
 
-4- Click "Add Space" and wait a few seconds.
+3- From the top-right, click on NEW CLASS, NEW RESEARCH PROJECT, OR NEW DATASET.
 
-4- Create an application by selecting the application type, version, name, and optionally a description.
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.12.39-pm.png)
 
-5- Click "Add Application" and wait a few seconds.
+4- Provide a name of the space.
 
-6- Select the next step from the options displayed.
+5- Select the space type.
+
+6- Provide a description of the space.
+
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.15.49-pm-2.png)
+
+4- Click on the ADD SPACE button.
+
+5- Once the space has been successfully created, you will be offered the option to create an application. If you want to create an application, then choose the application, the version, give it a name, and then click ADD APPLICATION. Otherwise, you can skip this step via the SKIP THIS STEP button.
+
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.20.16-pm-2.png)
+
+
+
+6- Finally, you will be redirected to a view where you can decide what to do next: add files, launch the application you have just created, or invite users.
+
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2.png)
 
 
 
