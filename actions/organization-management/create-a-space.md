@@ -34,7 +34,7 @@
 
 6- Finally, you will be redirected to a view where you can decide what to do next: add files, launch the application you have just created, or invite users.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2.png)
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2%20%282%29.png)
 
 
 

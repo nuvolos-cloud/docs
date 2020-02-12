@@ -8,11 +8,15 @@ In this tutorial, you will learn how to set up a research project with multiple 
 
 ## Step 1: Create a space for the research project
 
-To start a research project, you have to create a space for it. Before creating a space, you have to select the organization where you want the research project to be hosted. Once you log in to Nuvolos, a dashboard will be displayed from which you can select the organization you want to work in. A default organization is selected automatically at login. Once you have chosen the organization, create a space for your research project following the steps described [here](../../actions/organization-management/create-a-space.md).
+To start a research project, you have to create a space for it. Before creating a space, you have to select the organization where you want to host the research project. A default organization is selected automatically at login but you can select another organization from the toolbar at the top.
+
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2%20%281%29.png)
+
+Once you have chosen the organization, create a space for your research project following the steps described [here](../../actions/organization-management/create-a-space.md).
 
 ## Step 2: Upload files to your instance
 
-To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you should open the current state of the MASTER instance in the space you have just created. So from the list of instance of your newly created space, search and click the MASTER instance. This will take you to the file list where you can upload new files. Alternatively, from the dashboard, you can click on the MASTER button which is displayed next to the space name. Finally, to upload files, follow the steps [here](../../actions/instance-management/upload-new-files.md).
+To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/instance-management/upload-new-files.md).
 
 ## Step 3: Start a new application
 

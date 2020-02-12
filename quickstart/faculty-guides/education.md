@@ -8,7 +8,11 @@ In this tutorial, you will learn how to set up a class with several students and
 
 ## Step 1: Create a space for the class.
 
-To start a class, you have to create a space for it. Before creating a space, you have to select the organization where you want the class to be offered. Once you log in to Nuvolos, a dashboard will be displayed where you can see all the organizations of which you are a member. From the dashboard, you can select the organization you want to work in. Once you have chosen the organization, create a space for your class following the steps described [here](../../actions/organization-management/create-a-space.md).
+To start a class, you have to create a space for it. Before creating a space, you have to select the organization where you want to host the class. A default organization is selected automatically at login but you can select another organization from the toolbar at the top.
+
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2.png)
+
+ Once you have chosen the organization, create a space for your class following the steps described [here](../../actions/organization-management/create-a-space.md).
 
 ## Step 2: Upload files to your instance.
 
