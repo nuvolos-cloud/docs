@@ -16,7 +16,7 @@ To start a class, you have to create a space for it. Before creating a space, yo
 
 ## Step 2: Upload files to your instance.
 
-To teach your class, you will need to have files and data that you want to upload to your work environment. To upload files, you should open the current state of the MASTER instance in the space you have just created. So from the list of instance of your newly created space, search for the MASTER instance, and on the right you will find a button called OPEN CURRENT STATE which will take you to the file list where you can upload new files. Alternatively, you can click on the Master instance and you can use the button called OPEN CURRENT STATE. Finally, to upload files, follow the steps [here](../../actions/instance-management/upload-new-files.md).
+To start working on your class, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/instance-management/upload-new-files.md).
 
 ## Step 3: Start a new application.
 
