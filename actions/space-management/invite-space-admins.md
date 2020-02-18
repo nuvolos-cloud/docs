@@ -1,9 +1,5 @@
 # Invite Space Administrators
 
-{% hint style="info" %}
-At the space level, the only type of permission that can be granted is that of space admin. For details on the types of rights a space admin has, please read [here](../../data-organization/spaces.md).
-{% endhint %}
-
 ## **To invite a space administrator:**
 
 1. Identify the space you want to invite the user to. This can be done from the dashboard either from the recent spaces displayed or from the full list of spaces accessible from the left sidebar.
