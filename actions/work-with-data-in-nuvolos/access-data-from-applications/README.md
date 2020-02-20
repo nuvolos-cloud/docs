@@ -12,7 +12,7 @@ If you want to use Nuvolos-hosted Python \(via JupyterLab or Spyder\), the data 
 
 1. Make sure you have the data available.
 2. **Run** your application.
-3. Inside your app, you will need to use the [python-connector library](https://github.com/datahub-ac/python-connector) developed by Alphacruncher.
+3. Inside your app, you will need to use the [python-connector](https://github.com/nuvolos-cloud/python-connector) library developed by Alphacruncher.
 
 ### Accessing data from R in Nuvolos
 
@@ -20,7 +20,7 @@ If you want to use Nuvolos-hosted R \(via RStudio\), the data access will be sim
 
 1. Make sure you have the data available.
 2. **Run** your application.
-3. Inside RStudio, you will need to use the [r-connector](https://github.com/datahub-ac/r-connector) developed by Alphacruncher.
+3. Inside RStudio, you will need to use the [r-connector](https://github.com/nuvolos-cloud/r-connector) developed by Alphacruncher.
 
 ## Accessing data in non-Nuvolos applications
 
