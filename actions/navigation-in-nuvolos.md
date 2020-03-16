@@ -25,7 +25,7 @@ The breadcrumb is a sequence of selectable lists that allows you to choose the o
 In the above breadcrumb, you can find the following information:
 
 * You are currently in the "NEW ORGANIZATION" organization.
-* You are currently in the "NO NAME" space of inside your organization.
+* You are currently in the "NO NAME" space inside your organization.
 * Inside the space, you are currently working in the "MASTER" Instance.
 * Inside "MASTER", you are working with the "CURRENT STATE", which is the mutable state.
 
@@ -33,7 +33,12 @@ As visible, the breadcrumb can take you either to your Dashboard \(via the home 
 
 * If you change the organization, you will be taken to the dashboard and the you will have to select which space you want to work in.
 
-![](../.gitbook/assets/bc2.PNG)
+![](../.gitbook/assets/screen-shot-2020-03-16-at-2.14.11-pm.png)
+
+* If you change the space, then two scenarios are possible:
+  * If you are administrator of the space, then you will be taken to the "CURRENT STATE"  state of the "MASTER" instance.
+  * If you are not a space administrator and you have an editor role in one of the instances, then you will be taken to the "CURRENT STATE" state of that instance.
+  * If you are not a space administrator or an instance editor, then you will be taken to one of the immutable states of an instance where you are a viewer.
 
 ## The sidebar
 
