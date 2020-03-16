@@ -4,15 +4,15 @@
 
 In Nuvolos, _spaces_ ensure project encapsulation and delineation. Spaces consist of one or multiple instances. Instances offer the opportunity to organize parallel workflows or branches in a space.  There are a number of use cases which make instances useful and necessary:
 
-* **Class setting:** The professor and each student may have their own instance, thus their own branch of roughly the same material.
-* **Research project setting:** Researchers may have their own private instances where they test theories and only the stable findings get populated into the main research body material.
+* **Class setting:** The professor and each student may have their own instance, thus their own branch of roughly the same material. 
+* **Research project setting:** Researchers may have their own private instances where they test theories and only the stable findings get populated into the main research body material. 
 * **Single user setting:** Similar to the research project, any user might want to maintain multiple branches or variations of roughly the same code and data.
 
 ## Features
 
 Instances offer parallelization and branching inside a space.
 
-* **Branching:** A user can create multiple instances of the same workflow. Branching relies heavily on the _distribute_ feature of instances.
+* **Branching:** A user can create multiple instances of the same workflow. Branching relies heavily on the _distribute_ feature of instances. 
 * **Distribute:** A user can distribute contents of a snapshotted state to instances where they are editor. This serves the purpose of branching and content dissemination.
 
 ## Access control

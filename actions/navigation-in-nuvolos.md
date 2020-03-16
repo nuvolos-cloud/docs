@@ -6,12 +6,11 @@ description: How to find your way around Nuvolos
 
 Navigation in Nuvolos is closely linked to the [structure of Nuvolos](../data-organization/). You can understand your position and navigate using the following highlighted parts of the user interface.
 
-![](../.gitbook/assets/dashboard_nav.png)
+![](../.gitbook/assets/screen-shot-2020-03-16-at-1.50.05-pm-2.png)
 
-1. The **Nuvolos** logo,
-2. The **breadcrumb,**
-3. the **navigational sidebar,**
-4. and the **organization selection**.
+1. The **Nuvolos** logo
+2. The **breadcrumbs**
+3. The **navigational sidebar**
 
 ### The Nuvolos logo
 
@@ -19,16 +18,20 @@ The nuvolos logo will always take you to your _Dashboard._
 
 ## The breadcrumb
 
-The breadcrumb is a sequence of hyperlinks to levels above the current level you are staying in. For example, if you are looking at a state overview, the breadcrumb will look like the following:
+The breadcrumb is a sequence of selectable lists that allows you to choose the organization \(level 1\), space \(level 2\), instance \(level 3\), and state \(level 4\). For example, if you are looking at a state overview, the breadcrumb will look like the following:
 
-![](../.gitbook/assets/breadcrumb.PNG)
+![](../.gitbook/assets/screen-shot-2020-03-16-at-1.58.17-pm.png)
 
 In the above breadcrumb, you can find the following information:
 
-* You are currently in the "Demonstration space for documentation" space of Nuvolos.
-* Inside the space, you are currently working in the Master Instance.
+* You are currently in the "NEW ORGANIZATION" organization.
+* You are currently in the "NO NAME" space of inside your organization.
+* Inside the space, you are currently working in the "MASTER" Instance.
+* Inside "MASTER", you are working with the "CURRENT STATE", which is the mutable state.
 
-As visible, the breadcrumb can take you either to your Dashboard or one level up, to the Space overview. Once you have clicked the space level, your breadcrumb will change to the following, enabling you to go to your Dashboard.
+As visible, the breadcrumb can take you either to your Dashboard \(via the home icon\), or you can change the organization, space, instance, or snapshot:
+
+* If you change the organization, you will be taken to the dashboard and the you will have to select which space you want to work in.
 
 ![](../.gitbook/assets/bc2.PNG)
 
