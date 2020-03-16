@@ -52,28 +52,25 @@ From the dashboard, the sidebar will look similar to this:
 
 Visibly, the Dashboard icon is highlighted, making clear that the user is currently viewing the Dashboard of Nuvolos. Clicking on any of the other icons, either a list of spaces will be visible, or the list of Organization Users \(granted that the viewer has access\).
 
-### Compact form
+### State-level sidebar
 
-The compact sidebar is used in state level work, or when the user is doing work in an application.
+The second sidebar is used in state level work, or when the user is doing work in an application.
 
 It looks similar to this:
 
-![](../.gitbook/assets/sidebar_compact.PNG)
+![](../.gitbook/assets/screen-shot-2020-03-16-at-4.06.37-pm.png)
 
 From top to bottom the icons will transport the user to the following views \(also visible by hovering over an icon\):
 
 * Overview
+* Space, instance, and state settings
 * Files
 * Tables
 * Applications
-* Snapshot creation
-* Staging and distribution
+* Snapshot operations \(create snapshot, view snapshots\)
+* Object distribution
 
-Similar to the expanded sidebar, the currently active view is highlighted with a darker background.
-
-## The organization selection
-
-Organizations serve as the highest [structural level](../data-organization/) in Nuvolos. Depending on which organization you are working in, you will be able to access different datasets, different research projects and classes. Consequently, if you cannot find a certain project, always check the organization selection that is available on top.
+Similar to the dashboard sidebar, the currently active view is highlighted with a darker background.
 
 
 
