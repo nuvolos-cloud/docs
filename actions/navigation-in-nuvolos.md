@@ -63,7 +63,7 @@ It looks similar to this:
 From top to bottom the icons will transport the user to the following views \(also visible by hovering over an icon\):
 
 * Overview
-* Space, instance, and state settings
+* Space, instance, and state settings \(available only for space administrators\)
 * Files
 * Tables
 * Applications
