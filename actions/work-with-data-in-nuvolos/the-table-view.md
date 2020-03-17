@@ -8,7 +8,7 @@ The table view can be found in the [compact sidebar](../navigation-in-nuvolos.md
 
 ## Overview
 
-![The table view with important features highlighted](../../.gitbook/assets/table_view.png)
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-10.02.56-am.png)
 
 The functionalities as a list:
 
