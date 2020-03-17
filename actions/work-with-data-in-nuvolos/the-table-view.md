@@ -39,14 +39,17 @@ In order to guide documentation it is also possible to give description to colum
 
 It is possible to run queries directly from the web interface.
 
-1. Design your SQL query in the query editor. Once you are done, click **PREVIEW**.
-2. Review the results. If what you see makes sense, you can proceed to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
+1- Design your SQL query in the query editor. Once you are done, click **PREVIEW**.
 
-![The query preview](../../.gitbook/assets/screen-shot-2019-12-10-at-7.33.13.png)
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.14.04-pm.png)
+
+2- Review the results. If what you see makes sense, you can proceed to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
+
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
 
       3. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have                been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
 
-![The query history view](../../.gitbook/assets/screen-shot-2019-12-10-at-7.34.44.png)
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
 
 ## Connection guide
 
