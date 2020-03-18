@@ -4,7 +4,7 @@ description: A short introduction to working with database tables in the web int
 
 # The table view
 
-The table view can be found in the [compact sidebar](../navigation-in-nuvolos.md) once you are viewing work in a state or snapshot. In this section we review the functionality that you can use in this view.
+The table view can be found in the sidebar once you are viewing work in a state. This sections details the functionality accessible from this view.
 
 ## Overview
 
