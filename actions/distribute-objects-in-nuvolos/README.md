@@ -15,7 +15,7 @@ The following type of objects \(or a combination of these\) can be distributed:
 
 You can distribute a set of items from a single instance using the **stage** feature of Nuvolos.
 
-Let us assume that you want to distribute a file and an application in the following example. In order to do this, the following steps need to be done:
+Assume that you want to distribute a file and an application in the following example. In order to do this, the following steps need to be done:
 
 1. Select the file you want to stage and either click **STAGE** or click **STAGE SELECTED** on the following screen:
 
