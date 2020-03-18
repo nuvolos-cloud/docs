@@ -18,7 +18,7 @@ The nuvolos logo will always take the user to the _Dashboard._
 
 ## The breadcrumb
 
-The breadcrumb is a sequence of selectable lists that allows the user to choose the organization \(level 1\), space \(level 2\), instance \(level 3\), and state \(level 4\). For example, if the user is looking at a state overview, the breadcrumb will look like the following:
+The breadcrumb is a sequence of selectable drop-down lists that allows the user to choose the organization \(level 1\), space \(level 2\), instance \(level 3\), and state \(level 4\). For example, if the user is looking at a state overview, the breadcrumb will look like the following:
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-1.58.17-pm.png)
 
@@ -35,10 +35,10 @@ As visible, the breadcrumb can take the user either to the Dashboard \(via the h
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-2.14.11-pm.png)
 
-* If the user changes the space, then three scenarios are possible:
+* If the user changes the space, then three scenarios are possible depending on the rule the user has in the particular space:
   * If the user is an administrator of the space, then they will be taken to the "CURRENT STATE"  state of the "MASTER" instance of the selected space.
-  * If the users is not a space administrator but has an editor role in one of the instances, then they user will be taken to the "CURRENT STATE" state of that instance.
-  * If the user are not a space administrator or an instance editor, then they will be taken to one of the immutable states of an instance where the user is a viewer.
+  * If the user is not a space administrator but has an editor role in one of the instances, then they  will be taken to the "CURRENT STATE" state of that instance.
+  * If the user is not a space administrator or an instance editor, then they will be taken to one of the immutable states of an instance where the user is a viewer.
 
 ## The sidebar
 
@@ -48,15 +48,15 @@ There are two navigational sidebars in Nuvolos: the dashboard sidebar and the st
 
 From the dashboard, the sidebar will look similar to this:
 
-![](../.gitbook/assets/screen-shot-2020-03-16-at-2.33.29-pm.png)
+![The Dashboard sidebar](../.gitbook/assets/screen-shot-2020-03-16-at-2.33.29-pm.png)
 
-Visibly, the Dashboard icon is highlighted, making clear that the user is currently viewing the Dashboard of Nuvolos. Clicking on any of the other icons, either a list of spaces will be visible, or the list of Organization Users \(granted that the viewer has access\).
+Visibly, the Dashboard icon is highlighted, making clear that the user is currently viewing the Dashboard of Nuvolos. Clicking on any of the other icons, either a list of spaces will be visible, or the list of Organization Users \(granted that the viewer has appropriate role to view the list of the organization users\).
 
 ### State-level sidebar
 
 The second sidebar is used in state level work, or when the user is doing work in an application.
 
-It looks similar to this:
+The layout is the following:
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-4.06.37-pm.png)
 
