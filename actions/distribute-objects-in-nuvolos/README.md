@@ -29,7 +29,7 @@ Assume that you want to distribute a file and an application in the following ex
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.09-pm.png)
 
-     4. The next step selects the target for distribution. It is possible to remain in the current research context,  or distribute into some other space or even organization. In the example, we select a space in the same organization. You can also choose whether to share with all instance or just one - this will decide whether you send the selected objects to one instance or all instances. Once you are done finding the target, click **CONTINUE**.
+     4. The next step selects the target for distribution. It is possible to remain in the current research context or distribute into some other space or even organization. In the example, we select a space in the same organization. You can also choose whether to share with all instance or just one - this will decide whether you send the selected objects to one instance or all instances. Once you are done finding the target, click **CONTINUE**.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.01-pm.png)
 
