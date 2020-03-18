@@ -8,7 +8,7 @@ In the following example, we assume the working instance to be in the **Empty Or
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-9.57.36-am.png)
 
-## Choose what you need and stage
+## Choose and stage the required data
 
 We navigate into the dataset named **Test dataset** and to the Tables view of the **Current state**.
 
