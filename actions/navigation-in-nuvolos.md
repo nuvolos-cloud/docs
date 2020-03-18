@@ -60,7 +60,7 @@ The layout is the following:
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-4.06.37-pm.png)
 
-From top to bottom the icons will transport the user to the following views \(also visible by hovering over an icon\):
+From top to bottom the icons will take the user to the following views \(also visible by hovering over an icon\):
 
 * Overview
 * Space, instance, and state settings \(available only for space administrators\)
