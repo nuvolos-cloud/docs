@@ -24,7 +24,7 @@
   * [Distribute objects in Nuvolos](actions/distribute-objects-in-nuvolos/README.md)
     * [Distribution strategies](actions/distribute-objects-in-nuvolos/distribution-strategies.md)
   * [Work with data in Nuvolos](actions/work-with-data-in-nuvolos/README.md)
-    * [Add data to your working instance](actions/work-with-data-in-nuvolos/add-data-to-your-working-instance.md)
+    * [Add data to the working instance](actions/work-with-data-in-nuvolos/add-data-to-your-working-instance.md)
     * [The table view](actions/work-with-data-in-nuvolos/the-table-view.md)
     * [Access data from applications](actions/work-with-data-in-nuvolos/access-data-from-applications/README.md)
       * [Setting up ODBC drivers](actions/work-with-data-in-nuvolos/access-data-from-applications/setting-up-odbc-drivers.md)

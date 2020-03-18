@@ -1,4 +1,4 @@
-# Add data to your working instance
+# Add data to the working instance
 
 Adding data to your working instance in Nuvolos is a special case of [distribution](../distribute-objects-in-nuvolos/). We suggest reading the distribution guide first. In order to use distribution for the particular use case, follow these steps to get data to your working instance.
 
