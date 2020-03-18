@@ -13,7 +13,7 @@ The following type of objects \(or a combination of these\) can be distributed:
 
 ## Distributing a selected list of items: a worked example
 
-You can distribute a set of items from a single instance using the **stage** feature of Nuvolos.
+You can distribute a set of items from a single instance using the **stage** feature of Nuvolos. The stage is a temporary area for collecting objects to be distributed. Changing context \(i.e. moving from a state to another\) currently clears the stage, so to distribute to a target from multiple sources, a separate distribution needs to be initiated from each source.
 
 Assume that you want to distribute a file and an application in the following example. In order to do this, the following steps need to be done:
 
@@ -25,7 +25,7 @@ Assume that you want to distribute a file and an application in the following ex
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.39.53-pm.png)
 
-     3. Navigate to the stage area to begin distribution using the share icon on the sidebar. Observe your current set of staged objects. If everything checks out, click **CONTINUE**.  In our particular example, we have one file and one application \(as selected previously\) in the stage. Using the red cross button, items can be purged from the stage.
+     3. Navigate to the stage area to begin distribution using the share icon on the sidebar. Observe your current set of staged objects. If everything checks out, click **CONTINUE**.  In our particular example, we have one file and one application \(as selected previously\) in the stage. Using the red cross button, items can be removed from the stage.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.09-pm.png)
 
