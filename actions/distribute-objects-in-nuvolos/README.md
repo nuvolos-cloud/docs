@@ -29,14 +29,14 @@ Assume that you want to distribute a file and an application in the following ex
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.09-pm.png)
 
-     4. The next step selects the target for distribution. It is possible to remain in the current research context or distribute into some other space or even organization. In the example, we select a space in the same organization. You can also choose whether to share with all instance or just one - this will decide whether you send the selected objects to one instance or all instances. Once you are done finding the target, click **CONTINUE**.
+     4. The next step selects the target for distribution. It is possible to remain in the current context or to distribute into some other space or even organization. In the current example, we select a space in the same organization. You can also choose whether to share with all instance or just one. Once you are done finding the target, click **CONTINUE**.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.01-pm.png)
 
 6. The next step selects the distribution strategy - more details can be found [here](distribution-strategies.md). For now, we will select overwrite, which will overwrite objects of the same name in the target. 
 
 {% hint style="success" %}
-Please note that whenever you distribute, in the target a snapshot gets created, so you should not be concerned about data loss.
+Please note that whenever you distribute, a snapshot gets created in the target, so you should not be concerned about data loss.
 {% endhint %}
 
  Once done, click **CONTINUE.**
