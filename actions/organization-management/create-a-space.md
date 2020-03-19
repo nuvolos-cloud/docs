@@ -24,25 +24,17 @@ Only organization managers and faculty members are allowed to create spaces.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-11.41.57-am-2.png)
 
-4- Once the space is created, an optional step asks the user whether they want to create an application in the newly created space. In our case, let's create an RStudio application with R 3.6.0 version and call it "Data Analysis with R".
+4- Once the space is created, an optional step asks the user whether they want to create an application in the newly created space. To skip this step, click on "SKIP THIS STEP". In our case, let's create an RStudio application with R 3.6.0 version and call it "Data Analysis with R".  Then we click on "ADD APPLICATION".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-11.43.43-am-2.png)
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-11.43.43-am-2%20%281%29.png)
 
+{% hint style="info" %}
+Upon success, the newly created application will be started automatically.
+{% endhint %}
 
+5- Finally, you will be redirected to a view where you can decide what to do next: add files, open the application you have just created, or invite users.
 
-4- Click on the ADD SPACE button.
-
-5- Once the space has been successfully created, you will be offered the option to create an application. If you want to create an application, then choose the application, the version, give it a name, and then click ADD APPLICATION. Otherwise, you can skip this step via the SKIP THIS STEP button.
-
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.20.16-pm-2.png)
-
-
-
-6- Finally, you will be redirected to a view where you can decide what to do next: add files, launch the application you have just created, or invite users.
-
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2%20%282%29.png)
-
-
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-11.52.34-am.png)
 
 #### If you are encountering a problem creating a space, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-create-a-space.md).
 
