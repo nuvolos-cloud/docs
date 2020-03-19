@@ -20,7 +20,7 @@ To start working on your class, you will need to have files and data that you wa
 
 ## Step 3: Start a new application.
 
-To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here](../../actions/instance-management/start-an-application.md) for working with your file.
+To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here]() for working with your file.
 
 ## Step 4: Invite students to join the class.
 
@@ -30,7 +30,7 @@ To invite students, you first have to collect their email addresses to which you
 
 ## Step 5: Share updates with the students.
 
-If you want to to share a _new file_ \(e.g. assignment, homework,...\) with one or more students, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snackbar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here](../../actions/instance-management/distribute-a-snapshot.md).
+If you want to to share a _new file_ \(e.g. assignment, homework,...\) with one or more students, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snackbar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here]().
 
 ## Step 6: Check students\` progress.
 

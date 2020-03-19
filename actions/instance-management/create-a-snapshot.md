@@ -1,33 +1,31 @@
 # Create a snapshot
 
-![](../../.gitbook/assets/info_simple.svg.png)**Before creating a new snapshot**, make sure that the right permissions are available. Only instance editors are allowed to create new snapshots in their instance. Please contact a space administrator to get appropriate _editor_ privileges.
+{% hint style="info" %}
+There are two types of snapshots that the user can create:
 
-![](../../.gitbook/assets/info_simple.svg.png)**Upon successful creation of a snapshot**, the browser will be redirected to view the newly created snapshot.
+* **Quick snapshot:** represents a quick option to snapshot the current state of an instance.
+* **Detailed snapshot:**  a snapshot with user-provided description and a summary of what will be the next work phase in the current state.
+{% endhint %}
 
-## **There are two options to create a snapshot:**
+## **To create a quick snapshot:**
 
-## **From the instance view**
+1- Make sure you are viewing the current state of an instance.
 
-1. Navigate to the instance view where snapshots of an instance are listed. This can be done by clicking on level 3 \(Instance\) from the side bar. 
-2. From the side bar on the left, click on **Add New Snapshot.** 
-3. Provide a name of the new snapshot. 
-4. Provide a description of the new snapshot. Notice that there is an automatic suggestion that is the description of the current state. 
-5. Provide a description of the next work phase: this will be used to update the description of the current state. If no work is expected in the near future, tick the "No work is expected in the next stage" box. 
-6. Click on the **Add Snapshot** button. 
+2- From the left sidebar, hover on the camera icon and click on "Quick Snapshot"
 
-## **From the current state view**
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-2.41.46-pm.png)
 
-Navigate to the instance view where snapshots of an instance are listed. This can be done by clicking on level 3 \(Instance\) from the side bar.
+## To create a detailed snapshot
 
-* Click on the **OPEN CURRENT STATE** button. 
-* A button with multiple options is visible in the top toolbar. Select **Create Snapshot** and click on the button. 
-* Provide a description of the new snapshot. Notice that there is an automatic suggestion that is the description of the current state.
+1- Make sure you are viewing the current state of an instance.
 
-* Provide a description of the next work phase: this will be used to update the description of the current state. If no work is expected in the near future, tick the "No work is expected in the next stage" box.
+2- From the left sidebar, hover on the camera icon and click on "Take snapshot and describe"
 
-* Click on the **Add Snapshot** button.
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-2.58.59-pm.png)
 
+3- Provide a name of the snapshot, a description, and a short summary \(if any\) of the next work phase that will describe the Current State.
 
+4- Click ADD SNAPSHOT.
 
 #### If you are encountering a problem creating a snapshot, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-create-a-snapshot.md).
 

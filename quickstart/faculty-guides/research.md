@@ -20,7 +20,7 @@ To start working on your research project, you will need to have files and data 
 
 ## Step 3: Start a new application
 
-To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here](../../actions/instance-management/start-an-application.md) to work with your file.
+To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here]() to work with your file.
 
 ## Step 4: Invite researchers to join the research project
 
@@ -30,7 +30,7 @@ To invite collaborators, you first have to collect their email addresses to whic
 
 ## Step 5: Share updates with your collaborators
 
-If you want to to share a _new file_ \(e.g. code, data,...\) with one or more collaborators, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here](../../actions/instance-management/distribute-a-snapshot.md).
+If you want to to share a _new file_ \(e.g. code, data,...\) with one or more collaborators, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here]().
 
 ## Step 6: Check and reproduce your collaborators\` results
 
