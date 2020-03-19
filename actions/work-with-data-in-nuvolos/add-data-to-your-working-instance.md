@@ -1,6 +1,6 @@
-# Add data to your working instance
+# Add data to a work instance
 
-Adding data to your working instance in Nuvolos is a special case of [distribution](../distribute-objects-in-nuvolos/). We suggest reading the distribution guide first. In order to use distribution for the particular use case, follow these steps to get data to your working instance.
+Adding data to a work instance in Nuvolos is a special case of [distribution](../distribute-objects-in-nuvolos/). We suggest reading the distribution guide first. 
 
 ## Decide the target and the source
 
@@ -8,7 +8,7 @@ In the following example, we assume the working instance to be in the **Empty Or
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-9.57.36-am.png)
 
-## Choose what you need and stage
+## Choose and stage the required data
 
 We navigate into the dataset named **Test dataset** and to the Tables view of the **Current state**.
 

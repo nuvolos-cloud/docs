@@ -1,16 +1,17 @@
 # Invite organization members
 
-![](../../.gitbook/assets/info_simple.svg.png)At the organization level, there are two types of permission that can be granted: organization manager and organization faculty. For details on the types of rights each of these roles has, please read [here](../../data-organization/organizations.md).
-
-![](../../.gitbook/assets/info_simple.svg.png)Before granting access rights to an organization, make sure that the right permissions are set. Only organization managers are allowed to grant access right for an organization.
+{% hint style="info" %}
+* At the organization level, there are two types of permission that can be granted: organization manager and organization faculty. For details on the types of rights each of these roles has, please read [here](../../data-organization/organizations.md).
+{% endhint %}
 
 ## **To invite an organization member:**
 
-1. Find and select the organization you want to invite members to. For instructions on how to find an organization, check the documentation available [here](../find-objects-in-nuvolos/find-an-organization.md). 
-2. From the sidebar on the left, click on **Invite Members.** 
-3. Select the type of invitation you want to send \(managers or faculty\). 
-4. Provide the emails of the users you want to invite to the organization. 
-5. Click on **Invite**.
+1- From the home \(dashboard\) view, click the users icon on the sidebar to navigate to the list of users and then click on "ADD NEW ORGANIZATION MEMBER" from the top right.
 
-![](../../.gitbook/assets/screen-shot-2019-09-26-at-10.34.54-am.png)
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-10.50.09-am.png)
+
+  
+2- Select the type of organization membership you want to invite the user with, and then provide the email\(s\) of the users you want to invite.
+
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-10.54.42-am.png)
 
