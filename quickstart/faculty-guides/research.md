@@ -16,7 +16,7 @@ Once you have chosen the organization, create a space for your research project 
 
 ## Step 2: Upload files to your instance
 
-To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/instance-management/upload-new-files.md).
+To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here]().
 
 ## Step 3: Start a new application
 
