@@ -1,8 +1,8 @@
 # Find an organization
 
-![](../../.gitbook/assets/info_simple.svg.png)As a Nuvolos user, you will be able to see only the organizations which you are a member of.
+![](../../.gitbook/assets/info_simple.svg.png)Nuvolos users are only able to see organizations for which they have accepted a valid invitation to.
 
-## To find an organization:
+## Finding an organization
 
 #### 1. Navigate to the home dashboard.
 
