@@ -1,19 +1,23 @@
 # Delete an instance
 
-![](../../.gitbook/assets/info_simple.svg.png)Before deleting an instance, make sure that the right permissions are set. Only the editor of an instance is allowed to delete it, otherwise an instance editor needs to be contacted in order for an instance to be deleted.
+{% hint style="info" %}
+* Only space administrators are allowed to delete an instance.
+* The Master and Distributed instances cannot be deleted.
+{% endhint %}
 
-![](../../.gitbook/assets/info_simple.svg.png)Contingent on successful instance deletion, the web browser will be redirected to the view where the instances in the current space are displayed.
+## **To delete an instance:**
 
-![](../../.gitbook/assets/info_simple.svg.png)The instances called _master_ and _distributed_ cannot be deleted. The only way to delete them is by deleting the space they are part of.  
+1.  From the toolbar breadcrumbs, select the instance you want to delete. For example, let's say we want to delete the instance called "New Instance" in the space "Demo Space"
 
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-2.02.27-pm.png)
 
-**To delete an instance:**
+2- From the left sidebar, hover on the settings icon and click "Delete instance"
 
-1.  Open the instance which you want to delete. This can be done by clicking on level 2 \(Space\) from the side bar and selecting the instance. 
-2. From the sidebar on the left, click on **Delete Instance.** 
-3. Click on the **Delete Instance** button and confirm.
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-2.03.04-pm.png)
 
+3- Click "I understand" and then "DELETE INSTANCE"
 
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-2.03.21-pm.png)
 
 #### If you are encountering a problem deleting a space, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-an-instance.md).
 
