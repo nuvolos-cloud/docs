@@ -7,7 +7,7 @@ An organization manager can revoke or deactivate any organization member.
 * **Deactivate** blocks user login, so it's a user-global operation.
 {% endhint %}
 
-## To revoke or deactivate an organization:
+## To revoke or deactivate an organization member:
 
 1. Go to the home\(dashboard\) view and, using the left sidebar, click on the users icon.
 2. Identify the user\(s\) you want to revoke/deactivate.
