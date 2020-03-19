@@ -1,6 +1,6 @@
 # Find an organization
 
-![](../../.gitbook/assets/info_simple.svg.png)As a DataHub user, you will be able to see only the organizations of which you are a member.
+![](../../.gitbook/assets/info_simple.svg.png)As a Nuvolos user, you will be able to see only the organizations which you are a member of.
 
 ## To find an organization:
 
