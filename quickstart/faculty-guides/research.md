@@ -26,7 +26,7 @@ To work with your files, you will need to create and start an application. Say f
 
 To add researchers to your project, you need to send an invitation to each researcher to join the space you have created in Nuvolos. As a space admin, you will be assigned a MASTER instance which you will use to interact with your collaborators. Collaborators instead will be invited to join Nuvolos, and a separate instance will be created for each collaborator.   
   
-To invite collaborators, you first have to collect their email addresses to which you want to send the invitation. Once you have collected the emails, then you have to decide between creating an empty instance for each collaborator, meaning that they will not have files or other objects in their work environment when they join Nuvolos, or you can share files and objects with the instances to be created for each collaborator. To invite collaborators using one of these two options, follow the steps detailed [here](../../actions/space-management/create-an-instance/).
+To invite collaborators, you first have to collect their email addresses to which you want to send the invitation. Once you have collected the emails, then you have to decide between creating an empty instance for each collaborator, meaning that they will not have files or other objects in their work environment when they join Nuvolos, or you can share files and objects with the instances to be created for each collaborator. To invite collaborators using one of these two options, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
 
 ## Step 5: Share updates with your collaborators
 

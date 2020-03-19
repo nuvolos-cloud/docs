@@ -43,13 +43,13 @@ description: >-
 
 * If your choice was CURRENT STATE, then at the top of the page you will see the following banner and you have to click on INVITE AND SHARE STATE.
 
-Starting from the CURRENT STATE, this will take you through a two-step operation where you first create a snapshot, and then you create one or more instances. First you need to provide a name and description of the snapshot, as well as a description of the next work phase. The next work phase description will be used to update the description of the current state. If no work is expected in the near future, tick the "No work is expected in the next stage" button. Once you create a snapshot, then you will be asked to choose the instance creation method and provide the necessary information\(see [here](../space-management/create-an-instance/) for details\).
+Starting from the CURRENT STATE, this will take you through a two-step operation where you first create a snapshot, and then you create one or more instances. First you need to provide a name and description of the snapshot, as well as a description of the next work phase. The next work phase description will be used to update the description of the current state. If no work is expected in the near future, tick the "No work is expected in the next stage" button. Once you create a snapshot, then you will be asked to choose the instance creation method and provide the necessary information\(see [here](../space-management/create-an-instance.md) for details\).
 
 * If instead your choice was an immutable snapshot, then at the top of the page you will see the following banner and you have to click on CREATE INSTANCE.
 
 ![](../../.gitbook/assets/current_state.png)
 
-In this case, all you need to do is to choose the instance creation method and provide the necessary information \(see [here](../space-management/create-an-instance/) for details\).
+In this case, all you need to do is to choose the instance creation method and provide the necessary information \(see [here](../space-management/create-an-instance.md) for details\).
 
 #### Notes on distribution to all instances
 
