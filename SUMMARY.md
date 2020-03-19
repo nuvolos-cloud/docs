@@ -44,6 +44,8 @@
     * [Create an instance](actions/space-management/create-an-instance.md)
     * [Invite instance users](actions/space-management/invite-instance-users.md)
     * [Invite Space Administrators](actions/space-management/invite-space-admins.md)
+    * [Revoke/deactivate space administrators](actions/space-management/revoke-deactivate-space-administrators.md)
+    * [Revoke/deactivate instance users](actions/space-management/revoke-deactivate-instance-users.md)
     * [Delete an instance](actions/space-management/delete-an-instance.md)
   * [Instance management](actions/instance-management/README.md)
     * [Create a snapshot](actions/instance-management/create-a-snapshot.md)
