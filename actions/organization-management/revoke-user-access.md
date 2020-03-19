@@ -3,8 +3,8 @@
 {% hint style="info" %}
 An organization manager can revoke or deactivate any organization member.
 
-* Revoke user
-* Deactivate
+* **Revoke** will simply revoke the organization role from the user. User account and instances/snapshots are not deleted, only the affected users won't see them anymore.
+* **Deactivate** blocks user login, so it's a user-global operation.
 {% endhint %}
 
 ## To revoke or deactivate an organization:
