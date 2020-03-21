@@ -1,7 +1,5 @@
 # Revoke/deactivate instance users
 
-
-
 {% hint style="info" %}
 A space administrator can revoke or deactivate instance.
 
