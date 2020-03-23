@@ -1,22 +1,15 @@
 # Find an organization
 
-![](../../.gitbook/assets/info_simple.svg.png)Nuvolos users are only able to see organizations for which they have accepted a valid invitation to.
+{% hint style="info" %}
+Nuvolos users are only able to see organizations for which they have accepted a valid invitation to.
+{% endhint %}
 
-## Finding an organization
+## To Find an organization:
 
-#### 1. Navigate to the home dashboard.
+1. Click on the first list item from the toolbar breadcrumbs.
+2. From the list, you can find for the organization you are looking for either by scrolling the list or by using the search field.
 
-If you are already in the home dashboard, then go to step 2. If you are not currently viewing the dashboard, then you use the hamburger button \(three-lines icon in the top-left corner\) of the DataHub toolbar to toggle the navigation menu.
+For example, assume we want to find an organization called "New Organization". If we type "organization" in the search field, then we can find all organizations which contain the word "organization" and locate "New Organization"
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.05.33-pm-2.png)
-
- From the navigation menu, click the Dashboard tab.
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.07.32-pm-2.png)
-
-**2. Using the Dashboard, you can view and select an organizations under Organizations.**
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.10.48-pm-2.png)
-
-
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-9.28.35-am.png)
 
