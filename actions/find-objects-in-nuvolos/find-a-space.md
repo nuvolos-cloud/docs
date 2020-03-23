@@ -1,20 +1,16 @@
 # Find a space
 
-![](../../.gitbook/assets/info_simple.svg.png)As a DataHub user, you will be able to see only the spaces of which you are an administrator or a viewer.
+{% hint style="info" %}
+Nuvolos users are only able to see spaces of which you are an administrator or a member.
+{% endhint %}
 
-## To find a space:
+## To Find an organization:
 
-#### 1. Find the organization where the space is located.
+1. Make sure you have selected the organization where the space is located.
+2. Click on the second list item from the toolbar breadcrumbs.
+3. From the list, you can find the space you are looking for either by scrolling the list or by using the search field. The list of space is divided into classes, research projects, and datasets.
 
-Select from the Dashboard the organization that contains the space and click on the organization name. For information on how to find an organization, check the instructions available [here](find-an-organization.md).
+For example, assume we want to find a space called "Demonstration Class" in an organization called "New Organization". From the breadcrumbs, we first select the "New Organization" organization, then we search for the word "Demonstration", and finally select the space called "Demonstration Class"
 
-#### 2. Search for your space.
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.22.16-pm-2.png)
-
-
-
-**If you are encountering a problem finding a space, refer to the troubleshooting guide** [**here**](../../troubleshooting/authorization-issues/cannot-see-a-space.md)**.**
-
-\*\*\*\*
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-9.39.45-am.png)
 
