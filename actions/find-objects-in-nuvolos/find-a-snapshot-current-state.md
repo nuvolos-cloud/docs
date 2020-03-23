@@ -1,30 +1,50 @@
 # Find a Snapshot/Current State
 
-## To find a snapshot/Current State of an instance:
+## To find a state \(snapshot or the current state\):
 
-#### 1. Find the instance you want to work in.
+1. From the toolbar breadcrumbs, select the organization, the space, and the instance where the state is located.
+2. From the breadcrumbs, click on the fourth item list to open the list of states.
+3. If you are looking for current state, then it will be displayed under "Mutable States", while if you want to find a snapshot, then it will be under "Immutable Snapshots".
 
-If you have already found the instance, go to step 2. Otherwise, check the instructions [here](find-an-instance.md) on how to find an instance
+## Example 1: Find current state
 
-#### 2. To navigate to the current state, there are two options:
+Assume we want to find the "Current State" of the instance "New Instance" in the space "Demonstration Class" which is in the "New Organization" organization.
 
-**2.1**  If you are still in the space view where the instances are visualized, then you can click on **OPEN CURRENT STATE** to navigate to the current state of the selected instance.
+1. From the breadcrumbs, we first select the "New Organization" organization. 
+2. Then we select the "Demonstration Class" space.
+3. Select the "New Instance" instance.
+4. Open states list.
+5. Select "Current State"
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-4.28.21-pm-2.png)
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-10.06.09-am.png)
 
-**2.2.** If you have already selected and clicked on the instance you want to work in, then you will also see an OPEN CURRENT STATE button which you can click to navigate to the current state.
+## Example 2: Find a snapshot
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-4.32.51-pm-2.png)
+Assume we want to find an immutable snapshot called "New Snapshot" created in the instance "New Instance" which is found in the space "Demonstration Class" in the "New Organization" organization.
 
-**3. To navigate to a snapshot:**
+**Option 1: via the breadcrumbs.**
 
- ****  1. Identify the instance you want to work in.
+1. From the breadcrumbs, we first select the "New Organization" organization. 
+2. Then we select the "Demonstration Class" space.
+3. Select the "New Instance" instance.
+4. Open states list.
+5. Search for "New".
+6. Select "New Snapshot".
 
-   2. Click on VIEW SNAPSHOTS
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-10.12.30-am.png)
 
-   3. From Immutable Snapshots, select the snapshot you want to view.
+**Option 2: via the timeline view.**
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-4.39.33-pm-2.png)
+1. From the breadcrumbs, we first select the "New Organization" organization. 
+2. Then we select the "Demonstration Class" space.
+3. Select the "New Instance" instance.
+4. Open states list.
+5. Click on the blue timeline icon.
+6. From the list, search for "New Snapshot"
+
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-10.18.03-am.png)
 
 
+
+![](../../.gitbook/assets/screen-shot-2020-03-23-at-10.20.08-am.png)
 
