@@ -14,8 +14,8 @@ Nuvolos users will be able to see only the instances of which they are an editor
 
 Assume we want to find an instance called "New Instance" in the space "Demonstration Class" which is in the "New Organization" organization. 
 
-1. From the breadcrumbs, we first select the "New Organization" organization. 
-2. Then we select the "Demonstration Class" space.
+1. From the breadcrumbs, select the "New Organization" organization. 
+2. Select the "Demonstration Class" space.
 3. Open the instance list.
 4. Search for "new".
 5. Select "New Instance"

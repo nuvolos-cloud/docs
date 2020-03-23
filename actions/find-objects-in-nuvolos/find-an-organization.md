@@ -11,7 +11,13 @@ Nuvolos users are only able to see organizations for which they have accepted a 
 
 ## Example
 
-Assume we want to find an organization called "New Organization". If we type "organization" in the search field, then we can find all organizations which contain the word "organization" and locate "New Organization"
+Assume we want to find an organization called "New Organization". 
+
+1. Open the first item list from the breadcrumbs.
+2. Search for "organization".
+3. Select "New Organization". 
 
 ![](../../.gitbook/assets/screen-shot-2020-03-23-at-9.28.35-am.png)
+
+
 
