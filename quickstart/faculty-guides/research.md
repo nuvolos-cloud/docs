@@ -28,7 +28,7 @@ To add researchers to your project, you need to send an invitation to each resea
   
 To invite collaborators, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
 
-## Step 5: Share updates with your collaborators
+## Step 4: Share updates with your collaborators
 
 If you want to to share a _new file_ \(e.g. code, data,...\) with one or more collaborators, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. 
 
@@ -38,9 +38,9 @@ After that, from the left sidebar click on the share icon to share the new files
 
 ![](../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.53-am.png)
 
-For more detail on the steps needed to distribute files, check [here](../../actions/distribute-objects-in-nuvolos/).
+Then follow the steps detailed [here](../../actions/distribute-objects-in-nuvolos/).
 
-## Step 6: Check and reproduce your collaborators\` results
+## Step 5: Check and reproduce your collaborators\` results
 
 You can ask your collaborators to make snapshots of their work to see and give feedback on their results. The snapshot will become immutable and unaffected by later work of the collaborators. This will give researchers the advantage of tractability and reproducibility of their results. Steps for creating a snapshot are detailed [here](../../actions/instance-management/create-a-snapshot.md).
 

@@ -7,9 +7,7 @@ The following type of objects \(or a combination of these\) can be distributed:
 * Files, sets of files, or entire directories,
 * tables or sets of tables,
 * applications or sets of applications,
-* or entire snapshots.
-
-
+* or entire snapshots
 
 ## Distributing a selected list of items: a worked example
 

@@ -2,13 +2,25 @@
 
 ## **To get started with a class, here are the steps to follow:**
 
-## 1. **Accept invitation.**
+## 1. Use the link provided by your professor to ask for an invitation.
 
-Access to a class is by invitation only. The class instructor invites prospective participants by email. To accept, click on the **Review** **Invitation** button.
+Your professor \(or the teaching assistant\) should provide you with a link that you can use to ask for an invitation to join a class. Once you have the link, paste it into the browser and you will be asked to provide your institutional email address.
 
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-3.49.10-pm-2.png)
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-12.40.17-pm.png)
 
-### ![](../../.gitbook/assets/info_simple.svg.png)**In case you haven't received an invitation email, please check the troubleshooting documentation available** [**here**](../../troubleshooting/login-issues/i-havent-received-an-invitation-email.md)**.**
+Once done, click "REQUEST SIGN UP E-MAIL" and you should see a message like this:
+
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-12.40.42-pm.png)
+
+## 2. **Accept invitation.**
+
+Check your email address for an email with a tiltle like "Someone has sent you an invitation" and open it. You should see something like:
+
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-12.23.01-pm-2.png)
+
+{% hint style="info" %}
+In case you haven't received an invitation email, please check the troubleshooting documentation available [here](../../troubleshooting/login-issues/i-havent-received-an-invitation-email.md).
+{% endhint %}
 
 Several options are currently available to accept the invitation. If you are a member of a Swiss academic institution \(e.g. University of Lugano\), choose the option “**I have a Swiss University account**” and sign in with your institution credentials. Contingent on successful authentication, the invitation is confirmed, and sign-in to class happens automatically.  
 

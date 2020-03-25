@@ -22,19 +22,27 @@ When creating a space, you will be offered the option to create an application f
 
 To start working on your class, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/work-with-files-in-nuvolos/upload-files-and-folders.md).
 
-## Step 4: Invite students to join the class.
+## Step 3: Invite students to join the class.
 
-To add students to your class, you need to send an invitation to each student to join the space you have created in Nuvolos. As a space admin, you will be assigned the MASTER instance which you will use to interact with your students. Students instead will be invited to join Nuvolos, and a separate instance can be created for each student.   
+To add students to your class, you need to send an invitation to each student to join the space you have created in Nuvolos. As a space admin, you will be assigned the MASTER instance which you will use to interact with your students. Students instead will be invited to join Nuvolos, and a separate instance can be created for each student.  
   
-To invite students, you first have to collect their email addresses to which you want to send the invitation. Once you have collected the emails, then you have to decide between creating an empty instance for each student, meaning that they will not have files in their work environment when they join Nuvolos, or you can share files with the instances to be created for each student. To invite students using one of these two options, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
+To invite students, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
 
-## Step 5: Share updates with the students.
+## Step 4: Share updates with your collaborators
 
-If you want to to share a _new file_ \(e.g. assignment, homework,...\) with one or more students, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snackbar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here]().
+If you want to to share a _new file_ \(e.g. code, data,...\) with one or more students, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. 
 
-## Step 6: Check students\` progress.
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.02-am.png)
 
-You can ask your students to make snapshots of their work to meet certain deadlines \(e.g for an assignment\). The snapshot will become immutable and unaffected by later work of the students.
+After that, from the left sidebar click on the share icon to share the new files with other instances. 
 
-As the instructor, it is then possible to open the students\` instances and check the saved work states \(and whether they were saved on-time\) and provide feedback to the students.
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.53-am.png)
+
+Then follow the steps detailed [here](../../actions/distribute-objects-in-nuvolos/).
+
+## Step 5: Check students\` progress.
+
+You can ask your students to make snapshots of their work to meet certain deadlines \(e.g for an assignment\). The snapshot will become immutable and unaffected by later work of the students. Steps for creating a snapshot are detailed [here](../../actions/instance-management/create-a-snapshot.md).
+
+As the instructor, it is then possible to open the students\` instances and check the saved work states \(and whether they were saved on-time\) and provide feedback to the students. Steps for finding an instance are detailed [here](../../actions/find-objects-in-nuvolos/find-an-instance.md).
 
