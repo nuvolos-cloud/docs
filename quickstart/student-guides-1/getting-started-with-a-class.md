@@ -18,6 +18,8 @@ Check your email address for an email with a tiltle like "Someone has sent you a
 
 ![](../../.gitbook/assets/screen-shot-2020-03-25-at-12.23.01-pm-2.png)
 
+Click on the Review Invitation button.
+
 {% hint style="info" %}
 In case you haven't received an invitation email, please check the troubleshooting documentation available [here](../../troubleshooting/login-issues/i-havent-received-an-invitation-email.md).
 {% endhint %}
