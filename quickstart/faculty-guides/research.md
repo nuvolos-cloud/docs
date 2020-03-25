@@ -14,27 +14,37 @@ To start a research project, you have to create a space for it. Before creating 
 
 Once you have chosen the organization, create a space for your research project following the steps described [here](../../actions/organization-management/create-a-space.md).
 
+{% hint style="success" %}
+When creating a space, you will be offered the option to create an application for the research project.
+{% endhint %}
+
 ## Step 2: Upload files to your instance
 
-To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here]().
+To start working on your research project, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/work-with-files-in-nuvolos/upload-files-and-folders.md).
 
-## Step 3: Start a new application
+## Step 3: Invite researchers to join the research project
 
-To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here]() to work with your file.
-
-## Step 4: Invite researchers to join the research project
-
-To add researchers to your project, you need to send an invitation to each researcher to join the space you have created in Nuvolos. As a space admin, you will be assigned a MASTER instance which you will use to interact with your collaborators. Collaborators instead will be invited to join Nuvolos, and a separate instance will be created for each collaborator.   
+To add researchers to your project, you need to send an invitation to each researcher to join the space you have created in Nuvolos. As a space admin, you will be assigned a MASTER instance which you will use to exchange contents with your collaborators. Collaborators instead will be invited to join Nuvolos and a separate instance will be created for each.  
   
-To invite collaborators, you first have to collect their email addresses to which you want to send the invitation. Once you have collected the emails, then you have to decide between creating an empty instance for each collaborator, meaning that they will not have files or other objects in their work environment when they join Nuvolos, or you can share files and objects with the instances to be created for each collaborator. To invite collaborators using one of these two options, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
+To invite collaborators, follow the steps detailed [here](../../actions/space-management/create-an-instance.md).
 
 ## Step 5: Share updates with your collaborators
 
-If you want to to share a _new file_ \(e.g. code, data,...\) with one or more collaborators, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. After that, from the left sidebar click on DISTRIBUTE OBJECTS to share the new files with other instances. For more detail on the steps needed to distribute files, check [here]().
+If you want to to share a _new file_ \(e.g. code, data,...\) with one or more collaborators, then you need to first upload the file\(s\) to your current state \(step 2\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. 
+
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.02-am.png)
+
+After that, from the left sidebar click on the share icon to share the new files with other instances. 
+
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.53-am.png)
+
+For more detail on the steps needed to distribute files, check [here](../../actions/distribute-objects-in-nuvolos/).
 
 ## Step 6: Check and reproduce your collaborators\` results
 
-You can ask your collaborators to make snapshots of their work to see and give feedback on their results. The snapshot will become immutable and unaffected by later work of the collaborators. This will give researchers the advantage of tractability and reproducibility of their results. To reproduce the research results obtained at a specific point in time, the researcher can [restore](../../actions/instance-management/restore-a-snapshot.md) the snapshotted state and run the analysis again.
+You can ask your collaborators to make snapshots of their work to see and give feedback on their results. The snapshot will become immutable and unaffected by later work of the collaborators. This will give researchers the advantage of tractability and reproducibility of their results. Steps for creating a snapshot are detailed [here](../../actions/instance-management/create-a-snapshot.md).
+
+To reproduce the research results obtained at a specific point in time, the researcher can [restore](../../actions/instance-management/restore-a-snapshot.md) the snapshotted state and run the analysis again.
 
 
 

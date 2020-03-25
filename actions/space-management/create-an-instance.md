@@ -14,13 +14,18 @@ If you have already performed object distributions to all instance in a space, t
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
 
-2- From the overview screen, click on COURSE PARTICIPANTS
+2- From the overview screen, click on "Course Participants" \(or "Project Participants" if you are in a research project\).
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.14.04-pm.png)
 
 3- Choose the type of instance you want to create.
 
 * **Separate instance for each user**: With this option, a link will be shown that can be copied and made available to all users who should join the space. Upon opening this link, each student will be asked to provide their institutional email to which an invitation will be sent. By opening the invitation email, the student will be able to sign up for Nuvolos and join the class. This option would be preferred when a professor wants to invite multiple students to join a class.
+
+{% hint style="warning" %}
+For research projects, the option **Separate instance for each user** does not support the invitation via link and requires instead a list of user emails and does not support the invitation via link.
+{% endhint %}
+
 * **Joint instance for multiple users**: this option requires a list of emails and only one single instance will be created and shared by all users whose emails were provided. This option requires a name and description for the new instance. Joint instances are designed to facilitate group work: group assignments, or small group research activities are best carried out in joint instances.
 * **Single instance \(not available for this instance creation mode\)**: with this option, a single instance will be created for the current space administrator. An instance name and description needs to be provided to complete the operation.
 
