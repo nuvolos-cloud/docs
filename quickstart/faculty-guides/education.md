@@ -8,19 +8,19 @@ In this tutorial, you will learn how to set up a class with several students and
 
 ## Step 1: Create a space for the class.
 
-To start a class, you have to create a space for it. Before creating a space, you have to select the organization where you want to host the class. A default organization is selected automatically at login but you can select another organization from the toolbar at the top.
+To start a class, you have to create a space for it. First, you first have to select the organization where you want to host the class. A default organization is selected automatically at login but you can select another organization from the toolbar breadcrumbs.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2.png)
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-9.45.56-am.png)
 
- Once you have chosen the organization, create a space for your class following the steps described [here](../../actions/organization-management/create-a-space.md).
+Once you have chosen the organization, create a space for your class following the steps described [here](../../actions/organization-management/create-a-space.md).
+
+{% hint style="success" %}
+When creating a space, you will be offered the option to create an application for the research project.
+{% endhint %}
 
 ## Step 2: Upload files to your instance.
 
-To start working on your class, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here]().
-
-## Step 3: Start a new application.
-
-To work with your files, you will need to create and start an application. Say for example that you want to read a CSV file in Python. To do so, you first have to upload the CSV file to your current state following step 2. After that, you will need to create an application. Steps for creating an application are explained in detail [here](../../actions/instance-management/create-an-application.md). Once you have created an application, make sure that you are still working in the current state, and then follow the steps illustrated [here]() for working with your file.
+To start working on your class, you will need to have files and data that you want to upload to your work environment. To upload files, you need to open a space and navigate to the files view. For more details, follow the steps [here](../../actions/work-with-files-in-nuvolos/upload-files-and-folders.md).
 
 ## Step 4: Invite students to join the class.
 
