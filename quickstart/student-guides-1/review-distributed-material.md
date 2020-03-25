@@ -2,7 +2,7 @@
 
 As a student, you are likely to receive material that has been distributed from your teacher. Once the teacher shares new material with you, you will receive a notification email where you can review what was shared. Below is a screenshot of how the review email looks like:
 
-![](../../.gitbook/assets/screen-shot-2020-03-25-at-12.26.05-pm%20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2020-03-25-at-2.00.02-pm.png)
 
 From the email, click on on the blue button \(which contains as a text the full location of your instance \(here sketched in red\)**\)** to see your list of files. For example, suppose your teacher shares a new file called **new\_data.csv** with you, then the new file will be displayed in the list of workspace files \(see the screenshot below\).
 
