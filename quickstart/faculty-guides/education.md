@@ -20,7 +20,7 @@ When creating a space, you will be offered the option to create an application f
 
 ## Step 2: Invite teaching assistants to the class
 
-If class has one or more teaching assistants, then it is possible to invite these as space administrators of the class. To invite a space administrator, follow the steps detailed [here](../../actions/space-management/invite-space-admins.md).
+If a class has one or more teaching assistants, then it is possible to invite these as space administrators of the class. To invite a space administrator, follow the steps detailed [here](../../actions/space-management/invite-space-admins.md).
 
 ## Step 3: Upload files to your instance.
 
