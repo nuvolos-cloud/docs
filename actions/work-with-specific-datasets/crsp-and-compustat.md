@@ -72,22 +72,86 @@ In the example. the following tables were distributed to the work instance's cur
 
 Compustat:
 
-1. COMPANY
-2. FUNDA \(Fundamentals Annual\)
-3. SECURITY
+1. FUNDA \(Fundamentals Annual\)
 
 CSRP:
 
-1. MSF 
-2. NAME\_HISTORY
-3. SECURITY\_HEADER\_INFO
+1. MSF \(Monthly price information\)
 
 CCM \(The merge database\):
 
 1. CCMXPF\_LINKTABLE
-2. COMP\_CRSP\_CUSIP\_LINK
-3. LINK\_HISTORY
-4. LINK\_USED
+
+**The first subquery - fundamentals from Compustat:**
+
+We select a couple of fundamentals from FUNDA along with the important identifiers GVKEY and DATADATE. It is important to note that the result of a naive query might contain some duplicate GVKEY-DATADATE combinations which need to be deduplicated.
+
+A simple query that does basic deduplication is the following:
+
+```sql
+SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
+(SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
+FROM FUNDA T
+WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
+WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL)
+```
+
+An alternative would be to use R to run a simple query and have R run the deduplication. This is syntactically simpler, but at this point, the database engine cannot be used to combine large tables, so the R application needs to handle the computational and memory burden:
+
+```r
+# Load the pipe operator for more readable code
+library(magrittr)
+
+# Standard practice to access data in Nuvolos from R inside the Nuvolos app
+# The nuvolos library is pre-installed on Nuvolos R applications.
+conn <- nuvolos::get_connection()
+result_data <- dbGetQuery(conn,"SELECT GVKEY, DATADATE, ACCO, AJEX, CURCD FROM FUNDA WHERE FYEAR >= 2000 AND FYEAR <= 2010")
+
+# Simple deduplicate using dplyr::distinct
+result_data_dedup <- result_data %>% dplyr::distinct(GVKEY, DATADATE, .keep_all = TRUE)
+
+```
+
+**The second subquery - using the linking table:**
+
+The following is a simplified possible query of the linking logic. The first table named `INP` is just the result of the previously presented query. This is joined together based on `GVKEY` with the linking table. Some care is needed, due to the fact that a link between a `GVKEY` and `PERMNO` can be transient - hence the linking happens only for timestamps that fall in the linking period. More complicated logics can be implemented using overlap intervals. For the appropriate choice of `LINKTYPE`, consult the dataset documentation, the present version is a standard choice.
+
+```sql
+SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
+    (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
+        (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
+        FROM FUNDA T
+        WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
+    WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
+INNER JOIN CCMXPF_LINKTABLE LT
+ON LT.GVKEY = INP.GVKEY AND 
+    (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
+    (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
+WHERE LT.LINKTYPE IN ('LU', 'LC')
+```
+
+Based on flavour and use-case, additional deduplication might be necessary as there might be multiple `PERMNO` matches for a `GVKEY`. This is easiest to be done using the previously presented syntax in R, however this involves the drawback of not being able to run later join operations using the database engine.
+
+#### Putting it together with CRSP
+
+The last step of the merging process is to take a CRSP table with PERMNO identifiers and join it using the result of the previous query.
+
+```sql
+SELECT FUNDLINK.*, MSF.SPREAD FROM
+        (SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
+        (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
+            (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
+            FROM FUNDA T
+            WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
+        WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
+    INNER JOIN CCMXPF_LINKTABLE LT
+    ON LT.GVKEY = INP.GVKEY AND 
+        (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
+        (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
+    WHERE LT.LINKTYPE IN ('LU', 'LC') ) FUNDLINK
+INNER JOIN MSF
+ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)
+```
 
 
 
