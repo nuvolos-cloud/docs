@@ -134,10 +134,10 @@ Based on flavour and use-case, additional deduplication might be necessary as th
 
 #### Putting it together with CRSP
 
-The last step of the merging process is to take a CRSP table with PERMNO identifiers and join it using the result of the previous query.
+The last step of the merging process is to take a CRSP table with PERMNO identifiers and join it using the result of the previous query. The `MSF` table contains monthly pricing information and the bid/ask average `PRC` is queried in this toy example.
 
 ```sql
-SELECT FUNDLINK.*, MSF.SPREAD FROM
+SELECT FUNDLINK.*, MSF.PRC FROM
         (SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
         (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
             (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
@@ -154,8 +154,6 @@ ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AN
 ```
 
 To minimize the memory footprint of an application, it is thus suggested to run the above query in R in the following manner:
-
-
 
 ```r
 # Load the pipe operator for more readable code
