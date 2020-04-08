@@ -1,4 +1,4 @@
-# Find your database and schema path
+# Find the database and schema path
 
 {% hint style="info" %}
 This is only required if you are not using an Alphacruncher-supported Nuvolos connector package.

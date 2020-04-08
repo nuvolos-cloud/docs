@@ -1,18 +1,18 @@
-# Obtain tokens for your data
+# Obtain tokens for data access
 
 {% hint style="info" %}
-You only need to check tokens for your data if your are using non-Nuvolos applications.
+Tokens are only necessary for working remotely with data in Nuvolos. Nuvolos applications are automatically set up to connect to data stored in Nuvolos.
 {% endhint %}
 
-The credentials to access your data are not your regular Nuvolos credentials. To obtain the required credentials to access data, you need to navigate to the [table view](../the-table-view.md), and click the **CONNECTION GUIDE** button:
+The credentials to access data are not regular Nuvolos credentials. To obtain the required credentials to access data, please navigate to the [table view](../the-table-view.md), and click the **CONNECTION GUIDE** button:
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
 
-The connection guide contains important information if you want to connect to Nuvolos from non-Nuvolos applications:
+The connection guide contains important information to connect to Nuvolos from non-Nuvolos applications:
 
-1. Username is the username with which you can connect to Snowflake.
-2. Password is the password - which is not your Nuvolos credential.
-3. Finally, a command is provided to simplify your work that contains the database and schema in Snowflake that will hold your data.
+1. Username is the username with which it is possible to connect to the database back-end of Nuvolos.
+2. Password is the password - which is **not** the usual Nuvolos credential - it is a string generated for only connecting to the database.
+3. Finally, a convenience command is provided that contains the necessary connection information in order to access the database back-end of Nuvolos.
 
 
 

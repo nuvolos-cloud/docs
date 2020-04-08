@@ -58,5 +58,44 @@ Merging CRSP and COMPUSTAT using **LINK\_HISTORY**, the following steps are requ
 
   _At all times ensure that the dates from CRSP and COMPUSTAT fall within the LINKDT and LINKENDDT range._
 
+### A worked example using the RStudio app
+
+In the following, it will be assumed that the tables have been distributed to the current state of the instance of the example. To distribute data, follow the instructions detailed [here](../work-with-data-in-nuvolos/add-data-to-your-working-instance.md).
+
+#### Designing the query
+
+The suggested workflow is to use the query editor on the UI first to design the query. This step is not compulsory, however it is considered best practice. The steps to perform query design can be found [here](../work-with-data-in-nuvolos/the-table-view.md).
+
+#### The query
+
+In the example. the following tables were distributed to the work instance's current state:
+
+Compustat:
+
+1. COMPANY
+2. FUNDA \(Fundamentals Annual\)
+3. SECURITY
+
+CSRP:
+
+1. MSF 
+2. NAME\_HISTORY
+3. SECURITY\_HEADER\_INFO
+
+CCM \(The merge database\):
+
+1. CCMXPF\_LINKTABLE
+2. COMP\_CRSP\_CUSIP\_LINK
+3. LINK\_HISTORY
+4. LINK\_USED
+
+
+
+
+
+
+
+
+
 
 
