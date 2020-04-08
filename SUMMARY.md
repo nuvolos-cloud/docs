@@ -58,6 +58,8 @@
   * [Working with applications](actions/working-with-applications/README.md)
     * [Install a Python package](actions/working-with-applications/install-a-python-package.md)
   * [Know my role](actions/know-my-role.md)
+  * [Work with specific datasets](actions/work-with-specific-datasets/README.md)
+    * [CRSP and Compustat](actions/work-with-specific-datasets/crsp-and-compustat.md)
 * [Troubleshooting](troubleshooting/README.md)
   * [Login issues](troubleshooting/login-issues/README.md)
     * [I can't log in to Nuvolos](troubleshooting/login-issues/cannot-log-in-to-datahub.md)
