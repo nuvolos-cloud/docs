@@ -153,7 +153,34 @@ INNER JOIN MSF
 ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)
 ```
 
+To minimize the memory footprint of an application, it is thus suggested to run the above query in R in the following manner:
 
+
+
+```r
+# Load the pipe operator for more readable code
+library(magrittr)
+
+# Standard practice to access data in Nuvolos from R inside the Nuvolos app
+# The nuvolos library is pre-installed on Nuvolos R applications.
+conn <- nuvolos::get_connection()
+result_data <- dbGetQuery(conn,"SELECT FUNDLINK.*, MSF.PRC FROM 
+        (SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
+        (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
+            (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
+            FROM FUNDA T
+            WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
+        WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
+    INNER JOIN CCMXPF_LINKTABLE LT
+    ON LT.GVKEY = INP.GVKEY AND 
+        (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
+        (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
+    WHERE LT.LINKTYPE IN ('LU', 'LC') ) FUNDLINK
+INNER JOIN MSF
+ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)")
+
+### Additional operations on the result set
+```
 
 
 
