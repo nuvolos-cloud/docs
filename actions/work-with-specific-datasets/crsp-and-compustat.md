@@ -60,6 +60,10 @@ Merging CRSP and COMPUSTAT using **LINK\_HISTORY**, the following steps are requ
 
 ### A worked example using the RStudio app
 
+{% hint style="info" %}
+**The code examples below are meant for providing a starting point, but may need to be adjusted depending on the research question. All researchers should review and verify that the code they use is in line with their research questions.**
+{% endhint %}
+
 In the following, it will be assumed that the tables have been distributed to the current state of the instance of the example. To distribute data, follow the instructions detailed [here](../work-with-data-in-nuvolos/add-data-to-your-working-instance.md).
 
 #### Designing the query
@@ -175,14 +179,51 @@ result_data <- dbGetQuery(conn,"SELECT FUNDLINK.*, MSF.PRC FROM
         (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
     WHERE LT.LINKTYPE IN ('LU', 'LC') ) FUNDLINK
 INNER JOIN MSF
-ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)")
+ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE);")
 
 ### Additional operations on the result set
 ```
 
+### An alternative solution
 
+Compared to the previous route, it is possible to directly link CRSP and COMPUSTAT vendor tables without using any derived entities such as `MSF` or `FUNDA`.
 
+The below query provides an example of doing this, it is assumed that `TIME_SERIES_DAILY_PRIMARY,` `LINK_HISTORY` and `CO_AFND1` tables are available in the working instance's current state. 
 
+```sql
+SELECT TS.CALDT AS DATE, TS.KYPERMNO AS PERMNO, FN.GVKEY, ABS(TS.PRC) AS PRC, FN.EPSFX AS EPS
+FROM
+LINK_HISTORY AS L
+INNER JOIN TIME_SERIES_DAILY_PRIMARY AS TS
+ON L.LPERMNO = TS.KYPERMNO
+LEFT JOIN CO_AFND1 AS FN
+ON FN.GVKEY = L.CCMID AND
+FN.DATAFMT='STD' AND FN.CONSOL='C' AND FN.POPSRC='D' AND
+FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::VARCHAR, '99999999'),'YYYYMMDD') AND
+FN.DATADATE = TS.CALDT
+WHERE L.LPERMNO = 57913
+ORDER BY DATE;
+```
+
+In order to run this query and assign it do a data.frame object in R, the following snippet can be used.
+
+```sql
+# Standard practice to access data in Nuvolos from R inside the Nuvolos app
+# The nuvolos library is pre-installed on Nuvolos R applications.
+conn <- nuvolos::get_connection()
+result_data <- dbGetQuery(conn,"SELECT TS.CALDT AS DATE, TS.KYPERMNO AS PERMNO, FN.GVKEY, ABS(TS.PRC) AS PRC, FN.EPSFX AS EPS
+    FROM
+    LINK_HISTORY AS L
+    INNER JOIN TIME_SERIES_DAILY_PRIMARY AS TS
+    ON L.LPERMNO = TS.KYPERMNO
+    LEFT JOIN CO_AFND1 AS FN
+    ON FN.GVKEY = L.CCMID AND
+    FN.DATAFMT='STD' AND FN.CONSOL='C' AND FN.POPSRC='D' AND
+    FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::VARCHAR, '99999999'),'YYYYMMDD') AND
+    FN.DATADATE = TS.CALDT
+    WHERE L.LPERMNO = 57913
+    ORDER BY DATE;")
+```
 
 
 
