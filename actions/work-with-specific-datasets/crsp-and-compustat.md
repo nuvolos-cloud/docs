@@ -6,15 +6,17 @@ In order to get access to a dataset, the organization managers can provide infor
 
 ## Accessing data in Nuvolos
 
-In order to access data in Nuvolos, please refer to the specific documentation pages [here](../work-with-data-in-nuvolos/).
+If CRSP and Compustat datasets are available to your organization, please see the relevant documentation pages [here](../work-with-data-in-nuvolos/) on accessing data in Nuvolos applications.
 
 ## About Compustat and CRSP
 
-Combining data from the Compustat and CRSP databases is a standard operation as CRSP contains security price information, while Compustat features information on fundamentals. The detailed documentation for each dataset can be found in the respective dataset spaces if the organization has access.
+ **CRSP Stock and Indexes dataset**: The CRSP US Stock Databases contain daily and monthly market and corporate action data for over 32,000 active and inactive securities with primary listings on the NYSE, NYSE American, NASDAQ, NYSE Arca and Bats exchanges and include CRSP broad market indexes. CRSP databases are characterized by their comprehensive corporate action information and highly accurate total return calculations.  
+  
+**COMPUSTAT North America**: Compustat North America \(Standard & Poor’s \(McGraw-Hill\)\) is a database of U.S. and Canadian fundamental and market information on more than 24,000 active and inactive publicly held companies. It provides more than 300 annual and 100 quarterly Income Statement, Balance Sheet, Statement of Cash Flows and supplemental data items. If applicable there is a quarterly update.
 
 ## Linking Compustat and CRSP
 
-To join CRSP with COMPUSTAT, the link table approach is often used. A link table associates unique identifiers of two different sources.
+Both datasets assign non-volatile unique identifiers to securities and companies. CRSP tracks the "lifecycle" of a security, through corporate events such as mergers, acquisitions and rebrandings. To match these identifiers, the link table approach is often used. A link table associates unique identifiers of two different sources.
 
 **CRSP** identifiers:
 
@@ -31,30 +33,30 @@ To join CRSP with COMPUSTAT, the link table approach is often used. A link table
 CRSP/COMPUSTAT link generation approaches:
 
 1. Using the CUSIP identifier, present by default in both datasets.
-2. Using the link table provided by the CRSP-COMPUSTAT merged database.
+2. Using an identifier linking table provided by the CRSP-COMPUSTAT Merged Database.
 
 ### Merging by CUSIP
 
 Merging CRSP and COMPUSTAT using CUSIP, the following steps are required:
 
-* From the CRSP database, get stock identifiers from table NAME\_HISTORY. This table contains information on identifiers such as PERMNO and CUSIP, as well as other codes. The start date \(column NAMEDT\) and end date \(column NAMEENDDT\) define the period for which a particular stock identifier was valid. If NAMEENDDT is not available, this means that the stock data in NAME\_HISTORY is still accurate until the most recent date in the dataset.
-* From COMPUSTAT, select a table that contains the CUSIP identifiers to merge it with the table NAME\_HISTORY in CRSP. Merging based on the CUSIP identifier requires dates from COMPUSTAT and CRSP to fall within the temporal interval defined by NAMEDT and NAMEENDDT.
+* From the CRSP database, get stock identifiers from table `NAME_HISTORY`. This table contains information on identifiers such as `PERMNO` and `CUSIP`, as well as other codes. The start date \(column `NAMEDT`\) and end date \(column `NAMEENDDT`\) define the period for which a particular stock identifier was valid. If `NAMEENDDT` is not available, this means that the stock data in `NAME_HISTORY` is still accurate until the most recent date in the dataset.
+* From COMPUSTAT, select a table that contains the `CUSIP` identifiers to merge it with the table `NAME_HISTORY` in CRSP. Merging based on the `CUSIP` identifier requires dates from COMPUSTAT and CRSP to fall within the temporal interval defined by `NAMEDT` and `NAMEENDDT`.
 
 ### Merging by CRSP/COMPUSTAT Merged Database <a id="merging-by-crspcompustat-merged-database"></a>
 
-The vendor database CRSP-COMPUSTAT Merged provides a link table \(**LINK\_HISTORY**\) that can be used to merge CRSP with COMPUSTAT with the following information:
+The vendor database CRSP-COMPUSTAT Merged provides a link table \(`LINK_HISTORY`\) that can be used to merge CRSP with COMPUSTAT with the following information:
 
-* **CCMID**: Compustat's permanent identifier, either GVKEY for companies or GVKEYX for indexes.
-* **LPERMNO**: CRSP PERMNO link during link period.
-* **LPERMCO**: CRSP PERMCO link during link period.
+* **CCMID**: Compustat's permanent identifier, either `GVKEY` for companies or `GVKEYX` for indexes.
+* **LPERMNO**: CRSP `PERMNO` link during link period.
+* **LPERMCO**: CRSP `PERMCO` link during link period.
 * **LINKTYPE**: A code to describe the type of link between CRSP and COMPUSTAT.
 * **LINKDT**: first effective date of the link.
-* **LINKENDDT**: last effective date of the link. If LINKENDDT is null, this means that the link is still effective.
+* **LINKENDDT**: last effective date of the link. If `LINKENDDT` is null, this means that the link is still effective.
 
 Merging CRSP and COMPUSTAT using **LINK\_HISTORY**, the following steps are required:
 
-* Choose between CRSP or COMPUSTAT as the first dataset to merge with CRSP-COMPUSTAT. If merging CRSP with CRSP-COMPUSTAT, then the join is done based on PERMNO. If merging COMPUSTAT with CRSP-COMPUSTAT, then the join is done based on GVKEY. When merging the first dataset with CRSP-COMPUSTAT, both identifiers of CRSP \(PERMNO\) and COMPUSTAT \(GVKEY\) will be present in the output table.
-* Merge the resulting table from the previous step with the second dataset. If the first dataset was CRSP, then merge it with COMPUSTAT on GVKEY. Otherwise, merge it with CRSP on PERMNO.
+* Choose between CRSP or COMPUSTAT as the first dataset to merge with CRSP-COMPUSTAT. If merging CRSP with CRSP-COMPUSTAT, then the join is done based on `PERMNO`. If merging COMPUSTAT with CRSP-COMPUSTAT, then the join is done based on `GVKEY`. When merging the first dataset with CRSP-COMPUSTAT, both identifiers of CRSP \(`PERMNO`\) and COMPUSTAT \(`GVKEY`\) will be present in the output table.
+* Merge the resulting table from the previous step with the second dataset. If the first dataset was CRSP, then merge it with COMPUSTAT on `GVKEY`. Otherwise, merge it with CRSP on `PERMNO`.
 
   _At all times ensure that the dates from CRSP and COMPUSTAT fall within the LINKDT and LINKENDDT range._
 
@@ -76,19 +78,19 @@ In the example. the following tables were distributed to the work instance's cur
 
 Compustat:
 
-1. FUNDA \(Fundamentals Annual\)
+1. `FUNDA` \(Fundamentals Annual\)
 
 CSRP:
 
-1. MSF \(Monthly price information\)
+1. `MSF` \(Monthly price information\)
 
 CCM \(The merge database\):
 
-1. CCMXPF\_LINKTABLE
+1. `CCMXPF_LINKTABLE`
 
 **The first subquery - fundamentals from Compustat:**
 
-We select a couple of fundamentals from FUNDA along with the important identifiers GVKEY and DATADATE. It is important to note that the result of a naive query might contain some duplicate GVKEY-DATADATE combinations which need to be deduplicated.
+We select a couple of fundamentals from `FUNDA` along with the important identifiers `GVKEY` and `DATADATE`. It is important to note that the result of a naive query might contain some duplicate `GVKEY`-`DATADATE` combinations which need to be deduplicated.
 
 A simple query that does basic deduplication is the following:
 
