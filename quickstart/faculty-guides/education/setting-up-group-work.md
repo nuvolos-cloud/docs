@@ -15,7 +15,10 @@ We suggest creating a new space due to the fact that distributing two threads of
 New instances should be created for each group one-by-one, using the "Joint instance for multiple users" option. This will result in a setup where each group member will be an editor of the instance that was created for the group. This has the following consequences:
 
 * Each group member will be able to modify files in a common workspace, and the current state of the instance becomes more transparent. 
-* A potential danger: _multiple users might be editing the same file_. The exact outcome of this operation is application-dependent, but this is a situation that needs to be avoided by the group. It is suggested that work is broken down into appropriately small blocks if possible and scheduled if multiple users editing a single file is not avoidable.
+
+{% hint style="warning" %}
+_Warning:_ _multiple users might be editing the same file_. The exact outcome of this operation is application-dependent, but this is a situation that needs to be avoided by the group. It is suggested that work is broken down into appropriately small blocks if possible and scheduled if multiple users editing a single file is not avoidable.
+{% endhint %}
 
 The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their groupwork instance.
 
