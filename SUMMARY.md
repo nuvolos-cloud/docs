@@ -27,7 +27,7 @@
   * [Work with data in Nuvolos](actions/work-with-data-in-nuvolos/README.md)
     * [Add data to a work instance](actions/work-with-data-in-nuvolos/add-data-to-your-working-instance.md)
     * [The table view](actions/work-with-data-in-nuvolos/the-table-view.md)
-    * [Access data from applications](actions/work-with-data-in-nuvolos/access-data-from-applications/README.md)
+    * [Access table data from applications](actions/work-with-data-in-nuvolos/access-data-from-applications/README.md)
       * [Setting up ODBC drivers](actions/work-with-data-in-nuvolos/access-data-from-applications/setting-up-odbc-drivers.md)
       * [Obtain tokens for data access](actions/work-with-data-in-nuvolos/access-data-from-applications/obtain-tokens-for-your-data.md)
       * [Find the database and schema path](actions/work-with-data-in-nuvolos/access-data-from-applications/find-your-database-and-schema-path.md)
