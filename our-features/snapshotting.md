@@ -4,7 +4,9 @@ description: >-
   workflow
 ---
 
-# Snapshotting
+# Key feature: snapshots
+
+This page describes snapshots conceptually. 
 
 ## What is snapshotting?
 
@@ -20,7 +22,7 @@ Nuvolos ensures that the copy created of your work cannot be modified after the 
 
 ### Persistence
 
-Nuvolos ensures that the copy created by snapshotting will be available either until a project gets explicitly deleted or until the subscription exists.
+Nuvolos ensures that the copy created by snapshotting will be available either until a project gets explicitly deleted or as long as the subscription exists.
 
 ### Restorability
 
@@ -44,7 +46,7 @@ You can set up a class by first building and testing your material. Once you are
 
 ### Onboarding a new member to a research project
 
-Once the new research project member becomes at Nuvolos, you can distribute the current state of your project to them and they can start their work, without the need to spend valuable time worrying about setting up their infrastructure just the right way.
+Once the new research project members are invited to Nuvolos, you can distribute the current state of your project to them and they can start their work, without the need to spend valuable time worrying about setting up their infrastructure just the right way.
 
 ### Create an audit trail for assignments
 

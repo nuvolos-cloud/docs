@@ -8,7 +8,7 @@ Spaces live within an organization. In order to create a space you need to be pa
 
 * **You followed the wrong steps for creating a space**
 
-Make sure you follow the correct steps required for creating a space. For more details, check [here](../../actions/organization-management/create-a-space.md).
+Make sure you follow the correct steps required for creating a space. For more details, check [here](../../settings-and-administration/organization-management/create-a-space.md).
 
 * **You do not have the permission to create a space**
 

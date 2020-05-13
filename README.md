@@ -1,12 +1,20 @@
+---
+description: Get started with Nuvolos
+---
+
 # Introduction
+
+
 
 Nuvolos is a unified cloud framework for research and education that allows you to store, version, and work with files, tables, code and applications in one place via a user-friendly, browser-based interface.
 
-Nuvolos offers a scalable, operating-system independent solution, with no maintenance required. This allows for a more efficient and organized framework for sharing data, code, and application configuration with colleagues and students. In this way, students and researcher can get right into the challenges that really matter, without any setup overhead.
+To get started, we suggest reading the following articles first:
 
-Users of Nuvolos can upload and work with their data files as well as work with terabytes of subscription data inside database tables. Users can organize and document their research projects and courses via Spaces, and gather everything they need for a given project into a single location.
-
-With Nuvolos, users will be able to version everything their project depends on in order to ensure there are no loose ends for reproducibility. Users can create point-in-time snapshots of their complete environment: data \(files and tables\), code and applications, to ensure that results they produce today will be reproducible in the future. Researchers who want to build on existing research can obtain a copy of the files needed to produce and extend the research results.
+* [**Structure of Nuvolos**](our-features/data-organization/) gives an overview of the whole system which will put into context all other help material.
+* [**Navigate in Nuvolos**](getting-started/navigation-in-nuvolos.md) describes important parts of the UI that will help you find your way around the web interface.
+* [**Setting up a research project** ](research/research.md)gives you a quick guide on how to initialize a research project from scratch.
+* \*\*\*\*[**Setting up a class**](education/education.md) gives you a quick guide on how to initialize a class project from scratch.
+* [**Working with data in Nuvolos**]() gives you an overview of how to use, import, export data in, to and from Nuvolos.
 
 
 

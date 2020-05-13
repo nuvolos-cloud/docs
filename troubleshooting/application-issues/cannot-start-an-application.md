@@ -16,7 +16,7 @@ To start an application, you must be in the **CURRENT STATE** of an instance of 
 
 * **There is no application to start.**
 
-Make sure that you have created the application before starting it. If you haven't created the application yet, then [create](../../actions/instance-management/create-an-application.md) one first and then start it.
+Make sure that you have created the application before starting it. If you haven't created the application yet, then [create](../../settings-and-administration/instance-management/create-an-application.md) one first and then start it.
 
 * **The application you want to start does not exist anymore because it was deleted.**
 

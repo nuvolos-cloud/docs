@@ -8,11 +8,11 @@ To distribute a snapshot from one instance to another, you need to be the editor
 
 * **You are looking in the wrong place.**
 
-To distribute a snapshot, you must open one of the _archived snapshot_, and from the left sidebar click on distribute snapshot. If you are viewing the current state of your instance, then you can first create a snapshot of your current state, and then distribute the snapshot to other instances. Check the steps [here](../../actions/instance-management/distribute-a-snapshot.md) for distributing a snapshot.
+To distribute a snapshot, you must open one of the _archived snapshot_, and from the left sidebar click on distribute snapshot. If you are viewing the current state of your instance, then you can first create a snapshot of your current state, and then distribute the snapshot to other instances. Check the steps [here]() for distributing a snapshot.
 
 * **You are distributing a snapshot to a deleted instance.**
 
-An instance might disappear because the instance editor deleted it. If you are the instance editor, then you can [recover](../../actions/space-management/delete-an-instance.md) the deleted instance within 24 hours of the deletion time. If you are not the instance editor, then you can contact the editor and ask if the instance or could be restored.
+An instance might disappear because the instance editor deleted it. If you are the instance editor, then you can [recover](../../settings-and-administration/space-management/delete-an-instance.md) the deleted instance within 24 hours of the deletion time. If you are not the instance editor, then you can contact the editor and ask if the instance or could be restored.
 
 * **You have lost connection to the internet.**
 

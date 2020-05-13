@@ -8,7 +8,7 @@ In order to create an instance, the user must have a space admin role. If you do
 
 * **You followed the wrong steps for creating an instance**
 
-Make sure you follow the correct steps required for creating an instance. For more details, check [here](../../actions/space-management/create-an-instance.md).
+Make sure you follow the correct steps required for creating an instance. For more details, check [here](../../settings-and-administration/space-management/create-an-instance.md).
 
 * **You have lost connection to the internet.**
 

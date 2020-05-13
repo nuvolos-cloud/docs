@@ -8,7 +8,7 @@ In order to create a snapshot in an instance, the user must be the instance edit
 
 * **You followed the wrong steps for creating a snapshot**
 
-Make sure you follow the correct steps required for creating an instance. For more details, check [here](../../actions/instance-management/create-a-snapshot.md).
+Make sure you follow the correct steps required for creating an instance. For more details, check [here](../../settings-and-administration/instance-management/create-a-snapshot.md).
 
 * **You are in Distributed instance.**
 

@@ -8,7 +8,7 @@ To upload a file to an instance, you need to be an editor of that instance. Inst
 
 * **You followed the wrong steps for uploading file**
 
-Make sure you follow the correct steps required for uploading files. For more details, check [here](../../actions/instance-management/upload-new-files.md).
+Make sure you follow the correct steps required for uploading files. For more details, check [here]().
 
 * **Give it some time.**
 

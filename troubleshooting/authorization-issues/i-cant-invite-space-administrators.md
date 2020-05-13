@@ -4,7 +4,7 @@
 
 * **You don't have the right permission to invite space administrators.**
 
-To invite new space administrators, you need to be a space administrator of the space. Check the documentation [here](../../actions/know-my-role.md) to know where to find your space role. If you don't have a space administrator role, you either ask a space administrator to grant you an administrator role, or ask an administrator to send the administrator invitations on your behalf.
+To invite new space administrators, you need to be a space administrator of the space. Check the documentation [here](../../settings-and-administration/know-my-role.md) to know where to find your space role. If you don't have a space administrator role, you either ask a space administrator to grant you an administrator role, or ask an administrator to send the administrator invitations on your behalf.
 
 * **One or more of the provided emails is invalid.**
 
@@ -12,7 +12,7 @@ If you provide a user email that is invalid, e.g. **myemail@.uni.edu.com**, then
 
 * **You are inviting users to a deleted space.**
 
-A space might disappear because it was deleted. If you are the space administrator, then you can [recover](../../actions/organization-management/delete-a-space.md) the deleted space within 24 hours of the deletion time. If you are not the space admin, then you can contact a space admin and ask if the space could be restored.
+A space might disappear because it was deleted. If you are the space administrator, then you can [recover](../../settings-and-administration/organization-management/delete-a-space.md) the deleted space within 24 hours of the deletion time. If you are not the space admin, then you can contact a space admin and ask if the space could be restored.
 
 * **You have lost connection to the internet.**
 

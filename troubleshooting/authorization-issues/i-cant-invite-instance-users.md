@@ -16,7 +16,7 @@ If you provide a user email that is invalid, e.g. **myemail@.uni.edu.com**, then
 
 * **You are inviting users to a deleted instance.**
 
-An instance might disappear because it was deleted. If you are the instance editor or space admin, then you can [recover](../../actions/space-management/delete-an-instance.md) the deleted instance within 24 hours of the deletion time. If you are not the instance editor, then you can contact the editor or the space admin and ask if the instance could be restored.
+An instance might disappear because it was deleted. If you are the instance editor or space admin, then you can [recover](../../settings-and-administration/space-management/delete-an-instance.md) the deleted instance within 24 hours of the deletion time. If you are not the instance editor, then you can contact the editor or the space admin and ask if the instance could be restored.
 
 * **You have lost connection to the internet.**
 

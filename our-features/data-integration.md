@@ -2,7 +2,7 @@
 description: Integrate your data with your research project or your class
 ---
 
-# Data integration
+# Key feature: data integration
 
 ## What is data integration?
 
