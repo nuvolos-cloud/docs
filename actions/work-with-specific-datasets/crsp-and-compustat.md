@@ -37,10 +37,43 @@ CRSP/COMPUSTAT link generation approaches:
 
 ### Merging by CUSIP
 
-Merging CRSP and COMPUSTAT using CUSIP, the following steps are required:
+Without access to the CRSP / Compustat Merged Database, the recommended way of joining security time series data with fundamental data from Compustat is to match records using the CUSIP security identifier, available in both datasets. CUSIP is a nine-character alphanumeric identifier for publicly traded securities, and is administered CUSIP Service Bureau in 1968. Unlike security tickers, CUSIP is not a reusable security identifier. CRSP and Compustat use slightly different approach to keep CUSIP records: CRSP drops the 9th checksum digit in CUSIP and keeps historical CUSIPs in the `NAME_HISTORY` table, while Compustat uses the full 9-digit CUSIP and keeps only the most current CUSIP for each security.
 
-* From the CRSP database, get stock identifiers from table `NAME_HISTORY`. This table contains information on identifiers such as `PERMNO` and `CUSIP`, as well as other codes. The start date \(column `NAMEDT`\) and end date \(column `NAMEENDDT`\) define the period for which a particular stock identifier was valid. If `NAMEENDDT` is not available, this means that the stock data in `NAME_HISTORY` is still accurate until the most recent date in the dataset.
-* From COMPUSTAT, select a table that contains the `CUSIP` identifiers to merge it with the table `NAME_HISTORY` in CRSP. Merging based on the `CUSIP` identifier requires dates from COMPUSTAT and CRSP to fall within the temporal interval defined by `NAMEDT` and `NAMEENDDT`.
+A join query matching the CRSP daily stock prices with Compustat annual gross profits would look like:
+
+```sql
+SELECT
+    SHI.KYPERMNO,
+    SHI.CUSIP,
+    TSDP.CALDT,
+    ABS(TSDP.PRC) AS PRC,
+    FN1.GVKEY,
+    FN1.GP
+FROM
+    SECURITY_HEADER_INFORMATION SHI
+INNER JOIN
+    TIME_SERIES_DAILY_PRIMARY TSDP
+ON
+    SHI.KYPERMNO=TSDP.KYPERMNO
+-- NOT ALL CRSP RECORDS CAN BE MATCHED TO COMPUSTAT ON CUSIP
+LEFT JOIN
+    SECURITY SY
+ON
+    SY.CUSIP=SHI.CUSIP9
+LEFT JOIN
+    CO_AFND1 FN1
+ON
+    SY.GVKEY=FN1.GVKEY
+AND YEAR(FN1.DATADATE)=YEAR(TSDP.CALDT)
+WHERE
+    FN1.INDFMT='INDL'
+AND FN1.DATAFMT='STD'
+AND FN1.POPSRC='D'
+AND FN1.CONSOL='C'
+ORDER BY
+    SHI.KYPERMNO,
+    TSDP.CALDT;
+```
 
 ### Merging by CRSP/COMPUSTAT Merged Database <a id="merging-by-crspcompustat-merged-database"></a>
 
@@ -95,11 +128,32 @@ We select a couple of fundamentals from `FUNDA` along with the important identif
 A simple query that does basic deduplication is the following:
 
 ```sql
-SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
-(SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
-FROM FUNDA T
-WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
-WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL)
+SELECT
+    DF.GVKEY,
+    DF.DATADATE,
+    DF.ACCO,
+    DF.AJEX,
+    DF.CURCD,
+    DF.RANK_IN_KEY
+FROM
+    (
+        SELECT DISTINCT
+            GVKEY,
+            DATADATE,
+            ACCO,
+            AJEX,
+            CURCD,
+            ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY
+        FROM
+            FUNDA T
+        WHERE
+            FYEAR >= 2000
+        AND FYEAR <= 2010) DF
+WHERE
+    DF.RANK_IN_KEY = 1
+OR  (
+        DF.RANK_IN_KEY > 1
+    AND DF.AJEX IS NOT NULL)
 ```
 
 An alternative would be to use R to run a simple query and have R run the deduplication. This is syntactically simpler, but at this point, the database engine cannot be used to combine large tables, so the R application needs to handle the computational and memory burden:
@@ -111,7 +165,17 @@ library(magrittr)
 # Standard practice to access data in Nuvolos from R inside the Nuvolos app
 # The nuvolos library is pre-installed on Nuvolos R applications.
 conn <- nuvolos::get_connection()
-result_data <- dbGetQuery(conn,"SELECT GVKEY, DATADATE, ACCO, AJEX, CURCD FROM FUNDA WHERE FYEAR >= 2000 AND FYEAR <= 2010")
+result_data <- dbGetQuery(conn,"SELECT
+    GVKEY,
+    DATADATE,
+    ACCO,
+    AJEX,
+    CURCD
+FROM
+    FUNDA
+WHERE
+    FYEAR >= 2000
+AND FYEAR <= 2010")
 
 # Simple deduplicate using dplyr::distinct
 result_data_dedup <- result_data %>% dplyr::distinct(GVKEY, DATADATE, .keep_all = TRUE)
@@ -123,17 +187,54 @@ result_data_dedup <- result_data %>% dplyr::distinct(GVKEY, DATADATE, .keep_all 
 The following is a simplified possible query of the linking logic. The first table named `INP` is just the result of the previously presented query. This is joined together based on `GVKEY` with the linking table. Some care is needed, due to the fact that a link between a `GVKEY` and `PERMNO` can be transient - hence the linking happens only for timestamps that fall in the linking period. More complicated logics can be implemented using overlap intervals. For the appropriate choice of `LINKTYPE`, consult the dataset documentation, the present version is a standard choice.
 
 ```sql
-SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
-    (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
-        (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
-        FROM FUNDA T
-        WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
-    WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
-INNER JOIN CCMXPF_LINKTABLE LT
-ON LT.GVKEY = INP.GVKEY AND 
-    (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
-    (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
-WHERE LT.LINKTYPE IN ('LU', 'LC')
+SELECT
+    INP.*,
+    LT.LPERMNO,
+    LT.LINKPRIM,
+    LT.LINKDT,
+    LT.LINKENDDT
+FROM
+    (
+        SELECT
+            DF.GVKEY,
+            DF.DATADATE,
+            DF.ACCO,
+            DF.AJEX,
+            DF.CURCD,
+            DF.RANK_IN_KEY
+        FROM
+            (
+                SELECT DISTINCT
+                    GVKEY,
+                    DATADATE,
+                    ACCO,
+                    AJEX,
+                    CURCD,
+                    ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS
+                    RANK_IN_KEY
+                FROM
+                    FUNDA T
+                WHERE
+                    FYEAR >= 2000
+                AND FYEAR <= 2010) DF
+        WHERE
+            DF.RANK_IN_KEY = 1
+        OR  (
+                DF.RANK_IN_KEY > 1
+            AND DF.AJEX IS NOT NULL) ) INP
+INNER JOIN
+    CCMXPF_LINKTABLE LT
+ON
+    LT.GVKEY = INP.GVKEY
+AND (
+        INP.DATADATE >= LT.LINKDT
+    OR  LT.LINKDT IS NULL)
+AND (
+        INP.DATADATE <= LT.LINKENDDT
+    OR  LT.LINKDT IS NULL)
+WHERE
+    LT.LINKTYPE IN ('LU',
+                    'LC')
 ```
 
 Based on flavour and use-case, additional deduplication might be necessary as there might be multiple `PERMNO` matches for a `GVKEY`. This is easiest to be done using the previously presented syntax in R, however this involves the drawback of not being able to run later join operations using the database engine.
@@ -143,20 +244,65 @@ Based on flavour and use-case, additional deduplication might be necessary as th
 The last step of the merging process is to take a CRSP table with PERMNO identifiers and join it using the result of the previous query. The `MSF` table contains monthly pricing information and the bid/ask average `PRC` is queried in this toy example.
 
 ```sql
-SELECT FUNDLINK.*, MSF.PRC FROM
-        (SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
-        (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
-            (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
-            FROM FUNDA T
-            WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
-        WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
-    INNER JOIN CCMXPF_LINKTABLE LT
-    ON LT.GVKEY = INP.GVKEY AND 
-        (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
-        (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
-    WHERE LT.LINKTYPE IN ('LU', 'LC') ) FUNDLINK
-INNER JOIN MSF
-ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)
+SELECT
+    FUNDLINK.*,
+    MSF.PRC
+FROM
+    (
+        SELECT
+            INP.*,
+            LT.LPERMNO,
+            LT.LINKPRIM,
+            LT.LINKDT,
+            LT.LINKENDDT
+        FROM
+            (
+                SELECT
+                    DF.GVKEY,
+                    DF.DATADATE,
+                    DF.ACCO,
+                    DF.AJEX,
+                    DF.CURCD,
+                    DF.RANK_IN_KEY
+                FROM
+                    (
+                        SELECT DISTINCT
+                            GVKEY,
+                            DATADATE,
+                            ACCO,
+                            AJEX,
+                            CURCD,
+                            ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS
+                            RANK_IN_KEY
+                        FROM
+                            FUNDA T
+                        WHERE
+                            FYEAR >= 2000
+                        AND FYEAR <= 2010) DF
+                WHERE
+                    DF.RANK_IN_KEY = 1
+                OR  (
+                        DF.RANK_IN_KEY > 1
+                    AND DF.AJEX IS NOT NULL) ) INP
+        INNER JOIN
+            CCMXPF_LINKTABLE LT
+        ON
+            LT.GVKEY = INP.GVKEY
+        AND (
+                INP.DATADATE >= LT.LINKDT
+            OR  LT.LINKDT IS NULL)
+        AND (
+                INP.DATADATE <= LT.LINKENDDT
+            OR  LT.LINKDT IS NULL)
+        WHERE
+            LT.LINKTYPE IN ('LU',
+                            'LC') ) FUNDLINK
+INNER JOIN
+    MSF
+ON
+    MSF.PERMNO = FUNDLINK.LPERMNO
+AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE)
+AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE)
 ```
 
 To minimize the memory footprint of an application, it is thus suggested to run the above query in R in the following manner:
@@ -168,20 +314,65 @@ library(magrittr)
 # Standard practice to access data in Nuvolos from R inside the Nuvolos app
 # The nuvolos library is pre-installed on Nuvolos R applications.
 conn <- nuvolos::get_connection()
-result_data <- dbGetQuery(conn,"SELECT FUNDLINK.*, MSF.PRC FROM 
-        (SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
-        (SELECT DF.GVKEY, DF.DATADATE, DF.ACCO, DF.AJEX, DF.CURCD, DF.RANK_IN_KEY FROM 
-            (SELECT DISTINCT GVKEY, DATADATE, ACCO, AJEX, CURCD, ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS RANK_IN_KEY 
-            FROM FUNDA T
-            WHERE FYEAR >= 2000 AND FYEAR <= 2010) DF
-        WHERE DF.RANK_IN_KEY = 1 OR (DF.RANK_IN_KEY > 1 AND DF.AJEX IS NOT NULL) ) INP
-    INNER JOIN CCMXPF_LINKTABLE LT
-    ON LT.GVKEY = INP.GVKEY AND 
-        (INP.DATADATE >= LT.LINKDT OR LT.LINKDT IS NULL) AND 
-        (INP.DATADATE <= LT.LINKENDDT OR LT.LINKDT IS NULL)
-    WHERE LT.LINKTYPE IN ('LU', 'LC') ) FUNDLINK
-INNER JOIN MSF
-ON MSF.PERMNO = FUNDLINK.LPERMNO AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE) AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE);")
+result_data <- dbGetQuery(conn,"SELECT
+    FUNDLINK.*,
+    MSF.PRC
+FROM
+    (
+        SELECT
+            INP.*,
+            LT.LPERMNO,
+            LT.LINKPRIM,
+            LT.LINKDT,
+            LT.LINKENDDT
+        FROM
+            (
+                SELECT
+                    DF.GVKEY,
+                    DF.DATADATE,
+                    DF.ACCO,
+                    DF.AJEX,
+                    DF.CURCD,
+                    DF.RANK_IN_KEY
+                FROM
+                    (
+                        SELECT DISTINCT
+                            GVKEY,
+                            DATADATE,
+                            ACCO,
+                            AJEX,
+                            CURCD,
+                            ROW_NUMBER() OVER (PARTITION BY GVKEY, DATADATE ORDER BY DATADATE) AS
+                            RANK_IN_KEY
+                        FROM
+                            FUNDA T
+                        WHERE
+                            FYEAR >= 2000
+                        AND FYEAR <= 2010) DF
+                WHERE
+                    DF.RANK_IN_KEY = 1
+                OR  (
+                        DF.RANK_IN_KEY > 1
+                    AND DF.AJEX IS NOT NULL) ) INP
+        INNER JOIN
+            CCMXPF_LINKTABLE LT
+        ON
+            LT.GVKEY = INP.GVKEY
+        AND (
+                INP.DATADATE >= LT.LINKDT
+            OR  LT.LINKDT IS NULL)
+        AND (
+                INP.DATADATE <= LT.LINKENDDT
+            OR  LT.LINKDT IS NULL)
+        WHERE
+            LT.LINKTYPE IN ('LU',
+                            'LC') ) FUNDLINK
+INNER JOIN
+    MSF
+ON
+    MSF.PERMNO = FUNDLINK.LPERMNO
+AND YEAR(MSF.DATE) = YEAR(FUNDLINK.DATADATE)
+AND MONTH(MSF.DATE) = MONTH(FUNDLINK.DATADATE);")
 
 ### Additional operations on the result set
 ```
@@ -193,18 +384,31 @@ Compared to the previous route, it is possible to directly link CRSP and COMPUST
 The below query provides an example of doing this, it is assumed that `TIME_SERIES_DAILY_PRIMARY,` `LINK_HISTORY` and `CO_AFND1` tables are available in the working instance's current state. 
 
 ```sql
-SELECT TS.CALDT AS DATE, TS.KYPERMNO AS PERMNO, FN.GVKEY, ABS(TS.PRC) AS PRC, FN.EPSFX AS EPS
+SELECT
+    TS.CALDT    AS DATE,
+    TS.KYPERMNO AS PERMNO,
+    FN.GVKEY,
+    ABS(TS.PRC) AS PRC,
+    FN.EPSFX    AS EPS
 FROM
-LINK_HISTORY AS L
-INNER JOIN TIME_SERIES_DAILY_PRIMARY AS TS
-ON L.LPERMNO = TS.KYPERMNO
-LEFT JOIN CO_AFND1 AS FN
-ON FN.GVKEY = L.CCMID AND
-FN.DATAFMT='STD' AND FN.CONSOL='C' AND FN.POPSRC='D' AND
-FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::VARCHAR, '99999999'),'YYYYMMDD') AND
-FN.DATADATE = TS.CALDT
-WHERE L.LPERMNO = 57913
-ORDER BY DATE;
+    LINK_HISTORY AS L
+INNER JOIN
+    TIME_SERIES_DAILY_PRIMARY AS TS
+ON
+    L.LPERMNO = TS.KYPERMNO
+LEFT JOIN
+    CO_AFND1 AS FN
+ON
+    FN.GVKEY = L.CCMID
+AND FN.DATAFMT='STD'
+AND FN.CONSOL='C'
+AND FN.POPSRC='D'
+AND FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::
+    VARCHAR, '99999999'), 'YYYYMMDD')
+AND FN.DATADATE = TS.CALDT
+ORDER BY
+    PERMNO,
+    DATE;
 ```
 
 In order to run this query and assign it do a data.frame object in R, the following snippet can be used.
@@ -213,18 +417,31 @@ In order to run this query and assign it do a data.frame object in R, the follow
 # Standard practice to access data in Nuvolos from R inside the Nuvolos app
 # The nuvolos library is pre-installed on Nuvolos R applications.
 conn <- nuvolos::get_connection()
-result_data <- dbGetQuery(conn,"SELECT TS.CALDT AS DATE, TS.KYPERMNO AS PERMNO, FN.GVKEY, ABS(TS.PRC) AS PRC, FN.EPSFX AS EPS
-    FROM
+result_data <- dbGetQuery(conn,"SELECT
+    TS.CALDT    AS DATE,
+    TS.KYPERMNO AS PERMNO,
+    FN.GVKEY,
+    ABS(TS.PRC) AS PRC,
+    FN.EPSFX    AS EPS
+FROM
     LINK_HISTORY AS L
-    INNER JOIN TIME_SERIES_DAILY_PRIMARY AS TS
-    ON L.LPERMNO = TS.KYPERMNO
-    LEFT JOIN CO_AFND1 AS FN
-    ON FN.GVKEY = L.CCMID AND
-    FN.DATAFMT='STD' AND FN.CONSOL='C' AND FN.POPSRC='D' AND
-    FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::VARCHAR, '99999999'),'YYYYMMDD') AND
-    FN.DATADATE = TS.CALDT
-    WHERE L.LPERMNO = 57913
-    ORDER BY DATE;")
+INNER JOIN
+    TIME_SERIES_DAILY_PRIMARY AS TS
+ON
+    L.LPERMNO = TS.KYPERMNO
+LEFT JOIN
+    CO_AFND1 AS FN
+ON
+    FN.GVKEY = L.CCMID
+AND FN.DATAFMT='STD'
+AND FN.CONSOL='C'
+AND FN.POPSRC='D'
+AND FN.DATADATE BETWEEN TO_DATE(L.LINKDT::VARCHAR, 'YYYYMMDD') AND TO_DATE(NULLIF(L.LINKENDDT::
+    VARCHAR, '99999999'), 'YYYYMMDD')
+AND FN.DATADATE = TS.CALDT
+ORDER BY
+    PERMNO,
+    DATE;")
 ```
 
 
