@@ -4,7 +4,7 @@ description: >-
   workflow
 ---
 
-# Key feature: snapshots
+# Snapshots
 
 This page describes snapshots conceptually. 
 

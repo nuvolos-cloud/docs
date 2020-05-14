@@ -2,7 +2,7 @@
 description: 'Share your research, results, code and data with other Nuvolos users'
 ---
 
-# Key feature: distribution
+# Distribution
 
 This page describes distribution conceptually.
 

@@ -2,9 +2,9 @@
 
 * [Introduction](README.md)
 * [Overview and key features](our-features/README.md)
-  * [Key feature: snapshots](our-features/snapshotting.md)
-  * [Key feature: distribution](our-features/distribution.md)
-  * [Key feature: data integration](our-features/data-integration.md)
+  * [Snapshots](our-features/snapshotting.md)
+  * [Distribution](our-features/distribution.md)
+  * [Data integration](our-features/data-integration.md)
   * [Structure](our-features/data-organization/README.md)
     * [Organizations](our-features/data-organization/organizations.md)
     * [Spaces](our-features/data-organization/spaces.md)
