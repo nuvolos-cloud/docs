@@ -1,6 +1,10 @@
 # Adding data to a work instance
 
-Adding data to a work instance in Nuvolos is a special case of [distribution](../getting-started/distribute-objects-in-nuvolos/). We suggest reading the distribution guide first. 
+If you wish to work with data in vendor data set spaces \(like _CRSP US Stock and Indexes_\), you need to **distribute** the required tables to your working instance.
+
+It is advised to source the tables from the latest available vendor data set snapshot.
+
+This way, you can collect tables from multiple data sets into your working instance.
 
 ## Decide the target and the source
 

@@ -2,9 +2,9 @@
 description: A short introduction to working with database tables in the web interface
 ---
 
-# The table view
+# The Tables view
 
-The table view can be found in the sidebar once you are viewing work in a state. This sections details the functionality accessible from this view.
+The Tables view can be found in the sidebar once you are viewing work in a state.  You can view the data tables available in the active instance and run SELECT queries on the tables. This sections details the functionality accessible from this view.
 
 ## Overview
 
@@ -37,7 +37,7 @@ In order to guide documentation it is also possible to give description to colum
 
 ## Running queries
 
-It is possible to run queries directly from the web interface.
+It is possible to run queries directly from the web interface. Currently, only SELECT queries are allowed. For the complete syntax of such construct, please refer to the [database system documentation](https://docs.snowflake.com/en/sql-reference/constructs.html).
 
 1- Design your SQL query in the query editor. Once you are done, click **PREVIEW**.
 
