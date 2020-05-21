@@ -14,7 +14,7 @@
   * [Student guides](quickstart/student-guides-1/README.md)
     * [Review distributed material](quickstart/student-guides-1/review-distributed-material.md)
     * [Getting started with a class](quickstart/student-guides-1/getting-started-with-a-class.md)
-  * [High-Performance Computing](quickstart/high-performance-computing.md)
+  * [HPC Computing on Demand](quickstart/high-performance-computing.md)
 * [Structure of Nuvolos](data-organization/README.md)
   * [Organizations](data-organization/organizations.md)
   * [Spaces](data-organization/spaces.md)
