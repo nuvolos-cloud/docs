@@ -4,9 +4,9 @@
 Only space administrators are allowed to create new instances in their space.
 {% endhint %}
 
-## **There are two options to create an instance:**
+### **Nuvolos offers two options for creating an instance**
 
-### **1- Create a separate instance for each user via an invitation \(available for education spaces only\).**
+## **1- Create a separate instance for each user via an invitation \(available for education spaces only\).**
 
 1. Open a class. In the following example, we open the class called _Demo Space_.
 
@@ -32,9 +32,11 @@ Only space administrators are allowed to create new instances in their space.
 If you haven't distributed any material to all students, you can still continue with this option and later distribute material to the invited members.
 {% endhint %}
 
-### **2- Create single instance.**
+  5. Finally, click the **ADD INSTANCE** button.
 
-1. Open a class or research project. In the following example, we open the class called Demo Space and invite students to this space.
+## 2- Create a single instance.
+
+Open a class or research project. In the following example, we open the class called Demo Space and invite students to this space.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
 

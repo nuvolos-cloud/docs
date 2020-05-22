@@ -1,28 +1,34 @@
 # Invite instance users
 
 {% hint style="info" %}
-* At the instance level, there are two types of permission that can be granted: instance editor and instance viewer. For details on the types of rights each of these roles has, please read [here](../../data-organization/instances.md).
-* Before granting access rights to an instance, make sure that the right permissions are set. Only space administrators are allowed to grant access right for an instance.
+* Only space administrators are allowed to grant access right for an instance.
 {% endhint %}
 
 ## **To invite a new instance user:**
 
-1- From the toolbar breadcrumbs, select the space and instance you want to invite users to. For example, let's say that we are working in a the space "Demo Space" and we want to invite an instance editor to the Master instance of this space.
+1- Open a space \(using the breadcrumbs in the toolbar\).
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.35.02-pm.png)
+2- From the overview screen, click on "Course Users" \(if education space\), "Project Users" \(research space\), or "Dataset Users". Assume we are in a class called Demo Space and we want to invite a user as an editor of the Master instance.
 
+![](../../.gitbook/assets/screen-shot-2020-05-22-at-1.35.55-pm%20%281%29.png)
 
+2- Using the tabs, navigate to INSTANCES.
 
-2- From the left sidebar, hover on the settings icon and click on "Instance users". After that, from the top right click on "ADD INSTANCE USER"
+3- Locate the instance you want to invite to and click on the 'Invite users' tile associated with it \(in our case it's the Master instance\).
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.36.27-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-05-22-at-1.24.26-pm%20%281%29.png)
 
-3- Select the type of invitation you want to send \(in our case Editor\).  
+3- Select Option1: User Invitation.
 
+4- Click on the "Invite to an existing shared instance" radio button \(if you are in a research project or a dataset then this is the only available option\).
 
-4- Provide the emails of the users you want to invite to the instance and finally click on INVITE.
+5- Select the role you want to assign to the new users. Two options are available: instance editor and instance viewer.
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.40.12-pm.png)
+6- Provide a list of emails of the users to invite.
+
+![](../../.gitbook/assets/screen-shot-2020-05-22-at-2.28.01-pm.png)
+
+7- Finally, click on the INVITE button.
 
 #### If you are encountering a problem inviting instance users, refer to the troubleshooting guide here. 
 
