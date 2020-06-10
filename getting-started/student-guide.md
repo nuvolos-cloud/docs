@@ -1,25 +1,39 @@
+---
+description: Getting started with participating in a class
+---
+
 # Student guide
 
-## Getting Super Powers
+## Accept your invitation
 
-Becoming a super hero is a fairly straight forward process:
+You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
 
-```
-$ give me super-powers
-```
+&lt;&lt; INSERT IMAGE HERE &gt;&gt;
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+## Sign in
 
-Once you're strong enough, save the world:
+You can sign in via two routes:
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+1. If you are a member of a Swiss University, choose the SWITCH option.
+2. Otherwise, use the regular sign-in option
+
+## Access your class material
+
+
+
+## Download or upload material
+
+
+
+## Start an application
+
+
+
+## Snapshot your work
+
+
+
+
 
 
 

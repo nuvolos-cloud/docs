@@ -1,3 +1,7 @@
+---
+description: Getting started with teaching a class
+---
+
 # Instructor guide
 
 ## Setting up a class

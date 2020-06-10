@@ -12,10 +12,10 @@ If you are interested in getting started, select your use case below and find th
 {% tab title="Instructor" %}
 As a first step, read our guide for getting started:
 
-* [Getting started](getting-started/instructor-guide.md)
-* Working with files
-* Working with apps
-* Distributing teaching material
+* [**Getting started**](getting-started/instructor-guide.md)\*\*\*\*
+* [Working with files](getting-started/work-with-files/)
+* [Working with apps](getting-started/work-with-applications.md)
+* [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)
 * Inviting students
 {% endtab %}
 
