@@ -4,7 +4,7 @@ description: Getting started with doing research
 
 # Get started
 
-## Setting up a research project
+## Set up a research project
 
 
 
