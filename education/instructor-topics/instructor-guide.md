@@ -6,7 +6,7 @@ description: Getting started with teaching a class
 
 ## Add a new class
 
-Classes are the spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organisation users \(manager or faculty\) may create courses.
+Classes are the spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organization users \(manager or faculty\) may create courses.
 
 1. Navigate to _Classes_
 2. Select + NEW CLASS 
