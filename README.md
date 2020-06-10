@@ -1,18 +1,18 @@
 ---
-description: Table of contents and getting started
+description: >-
+  This section describes how Nuvolos works and how to get started. Select your
+  use case below and find the appropriate guide.
 ---
 
-# Introduction
+# Get Started
 
-Welcome to the documentation of **Nuvolos**, the Knowledge Creation Cloud. 
 
-If you are interested in getting started, select your use case below and find the appropriate guide.
 
 {% tabs %}
 {% tab title="Instructor" %}
-As a first step, read our guide for getting started:
+A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
 
-* [**Getting started**](education/instructor-guide.md)\*\*\*\*
+* [Set up your course](education/instructor-topics/instructor-guide.md)
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)
@@ -22,7 +22,7 @@ As a first step, read our guide for getting started:
 {% tab title="Student" %}
 As a first step, read our guide for getting started:
 
-* [**Getting started**](education/student-guide.md)\*\*\*\*
+* [Enroll in a course](education/student-topics/student-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * Taking a snapshot of your work
@@ -51,7 +51,7 @@ To better understand the inner workings of Nuvolos, after consulting the getting
   * [States and snapshots](our-features/data-organization/snapshots.md)
   * [Applications](our-features/data-organization/applications.md)
   * Files and data
-* [**User role system**](settings-and-administration/know-my-role.md)\*\*\*\*
+* [**User role system**]()\*\*\*\*
 * [Key features](our-features/):
   * [Snapshotting](our-features/snapshotting.md)
   * [Distribution](our-features/distribution.md)

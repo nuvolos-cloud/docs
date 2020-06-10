@@ -2,11 +2,11 @@
 
 * [Get Started](README.md)
 * [Education](education/README.md)
-  * [Instructor guide](education/instructor-guide.md)
-  * [Student guide](education/student-guide.md)
   * [Instructor](education/instructor-topics/README.md)
+    * [Get started](education/instructor-topics/instructor-guide.md)
     * [Setting up group work](education/instructor-topics/setting-up-group-work.md)
   * [Student](education/student-topics/README.md)
+    * [Get started](education/student-topics/student-guide.md)
     * [Working in groups](education/student-topics/working-in-groups.md)
 * [Research](research/README.md)
   * [Researcher guide](research/researcher-guide.md)

@@ -2,7 +2,7 @@
 description: Getting started with teaching a class
 ---
 
-# Instructor guide
+# Get started
 
 ## Adding a new class
 
@@ -16,19 +16,19 @@ Classes are the spaces in Nuvolos where instructors add learning materials \(dat
 6. Enter desired application name
 7. Select + ADD APPLICATION
 
-![Creating a class](../.gitbook/assets/class_create_1_final%20%282%29.gif)
+![Creating a class](../../.gitbook/assets/class_create_1_final%20%282%29.gif)
 
 ## Adding teaching material
 
 Course material are items like code, documents or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
-![Uploading files](../.gitbook/assets/upload_file_final.gif)
+![Uploading files](../../.gitbook/assets/upload_file_final.gif)
 
 ## Distributing to prospective students
 
 You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
 
-![The distribution process](../.gitbook/assets/distribute_final.gif)
+![The distribution process](../../.gitbook/assets/distribute_final.gif)
 
 The key steps of the process:
 
@@ -58,13 +58,13 @@ Invite with a Sharing Link:
 2. Select + INVITE
 3. Copy Sharing Link.
 
-![Generating an invitation link](../.gitbook/assets/invitation_link_final.gif)
+![Generating an invitation link](../../.gitbook/assets/invitation_link_final.gif)
 
 ## Invite teaching assistants
 
 Teaching assistants are able to see everything that is going on in the class, they have the _space admin_ role. The user who created the class automatically becomes a _space admin_ as well. To invite teaching assistants with this elevated role, follow the instructions below.
 
-![Inviting a teaching assistant](../.gitbook/assets/space_admin_invite_final.gif)
+![Inviting a teaching assistant](../../.gitbook/assets/space_admin_invite_final.gif)
 
 
 
