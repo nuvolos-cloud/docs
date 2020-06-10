@@ -13,10 +13,10 @@ description: >-
 A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
 
 * [**Set up your course**](education/instructor-topics/instructor-guide.md)\*\*\*\*
-* [Working with files](getting-started/work-with-files/)
-* [Working with apps](getting-started/work-with-applications.md)
-* [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)
-* Inviting students
+* [Work with files](getting-started/work-with-files/)
+* [Work with applications](getting-started/work-with-applications.md)
+* [Distribute material](getting-started/distribute-objects-in-nuvolos/)
+* Invite students
 {% endtab %}
 
 {% tab title="Student" %}
