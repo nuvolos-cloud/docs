@@ -12,7 +12,7 @@ If you are interested in getting started, select your use case below and find th
 {% tab title="Instructor" %}
 As a first step, read our guide for getting started:
 
-* [**Getting started**](getting-started/instructor-guide.md)\*\*\*\*
+* [**Getting started**](education/instructor-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)
@@ -22,20 +22,20 @@ As a first step, read our guide for getting started:
 {% tab title="Student" %}
 As a first step, read our guide for getting started:
 
-* Getting started
-* Working with files
-* Working with apps
+* [**Getting started**](education/student-guide.md)\*\*\*\*
+* [Working with files](getting-started/work-with-files/)
+* [Working with apps](getting-started/work-with-applications.md)
 * Taking a snapshot of your work
 {% endtab %}
 
 {% tab title="Researcher" %}
 As a first step, read our guide for getting started:
 
-* Getting started
-* Working with files
-* Working with apps
-* Working with data tables
-* Working in High Performance Computing \(HPC\)
+* [**Getting started**](research/researcher-guide.md)\*\*\*\*
+* [Working with files](getting-started/work-with-files/)
+* [Working with apps](getting-started/work-with-applications.md)
+* [Working with data tables](getting-started/work-with-data.md)
+* [Working in High Performance Computing \(HPC\)](research/high-performance-computing.md)
 * Inviting collaborators
 * Taking snapshots
 * Sharing results
@@ -44,18 +44,18 @@ As a first step, read our guide for getting started:
 
 To better understand the inner workings of Nuvolos, after consulting the getting started guides, we strongly suggest reading up on the following topics:
 
-* The structure of Nuvolos
-  * Organizations
-  * Spaces
-  * Instances
-  * States and snapshots
-  * Applications
+* [**The structure of Nuvolos**](our-features/data-organization/)\*\*\*\*
+  * [Organizations](our-features/data-organization/organizations.md)
+  * [Spaces](our-features/data-organization/spaces.md)
+  * [Instances](our-features/data-organization/instances.md)
+  * [States and snapshots](our-features/data-organization/snapshots.md)
+  * [Applications](our-features/data-organization/applications.md)
   * Files and data
-* User role system
-* Key features:
-  * Snapshotting
-  * Distribution
-  * Data integration
+* [**User role system**](settings-and-administration/know-my-role.md)\*\*\*\*
+* [Key features](our-features/):
+  * [Snapshotting](our-features/snapshotting.md)
+  * [Distribution](our-features/distribution.md)
+  * [Data integration](our-features/data-integration.md)
 
 
 
