@@ -12,7 +12,7 @@ description: >-
 {% tab title="Instructor" %}
 A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
 
-* [Set up your course](education/instructor-topics/instructor-guide.md)
+* [**Set up your course**](education/instructor-topics/instructor-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)
@@ -22,7 +22,7 @@ A class in Nuvolos is a space to organise all course-related teaching material \
 {% tab title="Student" %}
 As a first step, read our guide for getting started:
 
-* [Enroll in a course](education/student-topics/student-guide.md)\*\*\*\*
+* \*\*\*\*[**Enroll in a course**](education/student-topics/student-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * Taking a snapshot of your work
