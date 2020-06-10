@@ -213,7 +213,7 @@ To execute a MATLAB script or function on the Parallel Server, we’ll have to d
 
 The Job Monitor displays the jobs in the queue. Open the Job Monitor from the MATLAB desktop on the Home tab in the Environment section, by selecting **Parallel** &gt; **Monitor Jobs**.
 
-![](../../.gitbook/assets/matlab_monitor_jobs.png)
+![](../.gitbook/assets/matlab_monitor_jobs.png)
 
 The job monitor lists all the jobs that exist for the cluster specified in the selected profile. You can choose any one of your profiles \(those available in your current session Cluster Profile Manager\), and whether to display jobs from all users or only your own jobs.
 

@@ -2,7 +2,7 @@
 description: Getting started with doing research
 ---
 
-# Researcher guide
+# Get started
 
 ## Setting up a research project
 
