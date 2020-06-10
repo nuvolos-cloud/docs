@@ -1,18 +1,18 @@
 ---
-description: >-
-  This section describes how Nuvolos works and how to get started. Select your
-  use case below and find the appropriate guide.
+description: Table of contents and getting started
 ---
 
-# Get Started
+# Introduction
 
+Welcome to the documentation of **Nuvolos**, the Knowledge Creation Cloud. 
 
+If you are interested in getting started, select your use case below and find the appropriate guide.
 
 {% tabs %}
 {% tab title="Instructor" %}
-A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
+As a first step, read our guide for getting started:
 
-* [Set up your course](education/instructor-guide.md)
+* [**Getting started**](education/instructor-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)

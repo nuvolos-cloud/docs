@@ -4,19 +4,23 @@ description: Getting started with teaching a class
 
 # Instructor guide
 
-## Setting up a class
+## Adding a new class
 
-Assuming that you have acquired access and have the rights to create a class, you can set up a class via the steps as follows:
+Classes are the spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organisation users \(manager or faculty\) may create courses.
+
+1. Navigate to _Classes_
+2. Select + NEW CLASS 
+3. Enter desired course name and description
+4. Select + ADD SPACE
+5. Select application
+6. Enter desired application name
+7. Select + ADD APPLICATION
 
 ![Creating a class](../.gitbook/assets/class_create_1_final%20%282%29.gif)
 
-## 
-
-As visible in the animation, you can choose to add an application to the class immediately upon setup, or delay this step to a later time.
-
 ## Adding teaching material
 
-By teaching material, we generally understand code and documents that are stored as files on your machine. The following animation shows you how to navigate to the files of the master instance and upload course material.
+Course material are items like code, documents or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
 ![Uploading files](../.gitbook/assets/upload_file_final.gif)
 
@@ -33,22 +37,26 @@ The key steps of the process:
    * Applications are automatically added to the distribution, you have the option to remove them.
 2. **Select the target**
    * By default you will distribute to all students - every existing instance and future instance.
-3. **Select the strategy**
+3. **Select distribution strategy**
    * By default overwrite is suggested, consult the detailed distribution documentation for other options and their use cases.
-4. **Specify a message along with distribution**
+4. **Specify a notification message**
    * Your current students will receive the message you specified to their e-mail address.
 
 ## Invite students
 
 There are multiple strategies to inviting students. The options are:
 
-* Invite them via a shareable link \(requires the least work from the instructors' side\)
-* Invite them directly by specifying their e-mail \(good for small classes\)
-* Invite them in groups \(only doable via e-mail\)
+* By sharing an Invite Link \(requires the least work from the instructors' side\)
+* By e-mail \(good for small classes\)
+* By Group invitation \(via e-mail\)
 
-Students invited in this manner will only able to see their own workspace, not the master instance or other students' instances.
+Invited students will be able to see only their workspace, not the master instance or other students' instances.
 
-Obtaining a shareable link that you can post on your learning management system can be done as follows:
+Invite with a Sharing Link:
+
+1. Navigate to _Course Users_
+2. Select + INVITE
+3. Copy Sharing Link.
 
 ![Generating an invitation link](../.gitbook/assets/invitation_link_final.gif)
 
