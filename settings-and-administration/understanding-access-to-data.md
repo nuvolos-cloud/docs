@@ -1,2 +1,2 @@
-# Understanding access to data
+# Data access
 
