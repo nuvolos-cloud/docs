@@ -2,7 +2,7 @@
 description: The in-depth guide to the role system
 ---
 
-# Role system
+# Roles
 
 Nuvolos has a role system that is directly mapped to the structure of Nuvolos. On each structural level, a variety of roles exist with different actions available for different use cases.
 
