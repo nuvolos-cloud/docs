@@ -12,7 +12,7 @@ If you are interested in getting started, select your use case below and find th
 {% tab title="Instructor" %}
 As a first step, read our guide for getting started:
 
-* [**Getting started**](getting-started/instructor-guide.md)\*\*\*\*
+* [Getting started](getting-started/instructor-guide.md)
 * Working with files
 * Working with apps
 * Distributing teaching material
