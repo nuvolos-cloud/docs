@@ -22,7 +22,11 @@ An organization member is any user who has been invited in any capacity into any
 
 ### Faculty
 
-An organization faculty member is a user who has the ability to control resources in the organization. Faculty members can create research projects and classes.
+An organization faculty member is a user who has the ability to control resources in the organization. Faculty members can create research projects and classes and invite space admins to these
+
+### Manager
+
+O
 
 
 

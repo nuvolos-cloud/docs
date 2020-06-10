@@ -1,2 +1,2 @@
-# Student topics
+# Student
 
