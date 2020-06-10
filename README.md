@@ -1,12 +1,10 @@
 ---
-description: Table of contents and getting started
+description: >-
+  This section describes how Nuvolos works and how to get started. Select your
+  use case below and find the appropriate guide.
 ---
 
-# Introduction
-
-Welcome to the documentation of **Nuvolos**, the Knowledge Creation Cloud. 
-
-If you are interested in getting started, select your use case below and find the appropriate guide.
+# Get Started
 
 {% tabs %}
 {% tab title="Instructor" %}
