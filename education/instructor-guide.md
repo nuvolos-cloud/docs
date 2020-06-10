@@ -44,7 +44,7 @@ The key steps of the process:
 
 ## Invite students
 
-There are multiple strategies to inviting students. The options are:
+Ways to invite students to join the course :
 
 * By sharing an Invite Link \(requires the least work from the instructors' side\)
 * By e-mail \(good for small classes\)
