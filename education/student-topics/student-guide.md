@@ -8,7 +8,7 @@ description: Getting started with participating in a class
 
 You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
 
-&lt;&lt; INSERT IMAGE HERE &gt;&gt;
+
 
 ## Sign in
 
