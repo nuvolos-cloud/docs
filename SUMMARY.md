@@ -45,7 +45,6 @@
   * [Work with applications](getting-started/work-with-applications.md)
 * [Administration](settings-and-administration/README.md)
   * [Roles](settings-and-administration/role-system.md)
-  * [Data access](settings-and-administration/understanding-access-to-data.md)
   * [Organization management](settings-and-administration/organization-management/README.md)
     * [Invite organization members](settings-and-administration/organization-management/invite-organization-members.md)
     * [Revoke or deactivate users](settings-and-administration/organization-management/revoke-user-access.md)
