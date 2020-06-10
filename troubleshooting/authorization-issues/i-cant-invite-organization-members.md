@@ -4,7 +4,7 @@
 
 * **You don't have the right permission to invite organization members.**
 
-To invite new organization members, you need to be a manager of the organization. Check the documentation [here]() to know where to find your organization role. If you don't have an organization manager role, you either ask an org manager to grant you a manager role, or ask the manager to send the organization member invitation on your behalf.
+To invite new organization members, you need to be a manager of the organization. Check the documentation [here](../../settings-and-administration/know-my-role.md) to know where to find your organization role. If you don't have an organization manager role, you either ask an org manager to grant you a manager role, or ask the manager to send the organization member invitation on your behalf.
 
 * **One or more of the provided emails is invalid.**
 

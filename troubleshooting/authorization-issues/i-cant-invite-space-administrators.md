@@ -4,7 +4,7 @@
 
 * **You don't have the right permission to invite space administrators.**
 
-To invite new space administrators, you need to be a space administrator of the space. Check the documentation [here]() to know where to find your space role. If you don't have a space administrator role, you either ask a space administrator to grant you an administrator role, or ask an administrator to send the administrator invitations on your behalf.
+To invite new space administrators, you need to be a space administrator of the space. Check the documentation [here](../../settings-and-administration/know-my-role.md) to know where to find your space role. If you don't have a space administrator role, you either ask a space administrator to grant you an administrator role, or ask an administrator to send the administrator invitations on your behalf.
 
 * **One or more of the provided emails is invalid.**
 

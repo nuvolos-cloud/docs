@@ -22,7 +22,7 @@ A class in Nuvolos is a space to organise all course-related teaching material \
 {% tab title="Student" %}
 As a first step, read our guide for getting started:
 
-* [**Getting started**](education/student-guide.md)\*\*\*\*
+* [Enroll in a course](education/student-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * Taking a snapshot of your work
