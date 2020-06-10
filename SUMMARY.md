@@ -63,7 +63,7 @@
     * [Revoke/deactivate space administrators](settings-and-administration/space-management/revoke-deactivate-space-administrators.md)
     * [Revoke/deactivate instance users](settings-and-administration/space-management/revoke-deactivate-instance-users.md)
     * [Delete an instance](settings-and-administration/space-management/delete-an-instance.md)
-* [Troubleshooting](troubleshooting/README.md)
+* [FAQ](troubleshooting/README.md)
   * [Login issues](troubleshooting/login-issues/README.md)
     * [I can't log in to Nuvolos](troubleshooting/login-issues/cannot-log-in-to-datahub.md)
     * [I forgot my password](troubleshooting/login-issues/forgot-my-password.md)
