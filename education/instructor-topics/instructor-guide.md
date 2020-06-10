@@ -4,7 +4,7 @@ description: Getting started with teaching a class
 
 # Get started
 
-## Adding a new class
+## Add a new class
 
 Classes are the spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organisation users \(manager or faculty\) may create courses.
 
@@ -18,13 +18,13 @@ Classes are the spaces in Nuvolos where instructors add learning materials \(dat
 
 ![Creating a class](../../.gitbook/assets/class_create_1_final%20%282%29.gif)
 
-## Adding teaching material
+## Add teaching material
 
 Course material are items like code, documents or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
 ![Uploading files](../../.gitbook/assets/upload_file_final.gif)
 
-## Distributing to prospective students
+## Distribute to prospective students
 
 You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
 
