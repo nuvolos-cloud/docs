@@ -16,7 +16,7 @@ As visible in the animation, you can choose to add an application to the class i
 
 ## Adding teaching material
 
-By teaching material, we generally understand code and documents that are stored as files on your machine. The following animation shows you how to navigate to the files of the master instance and upload some material.
+By teaching material, we generally understand code and documents that are stored as files on your machine. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
 ![Uploading files](../.gitbook/assets/upload_file_final.gif)
 
@@ -54,7 +54,7 @@ Obtaining a shareable link that you can post on your learning management system 
 
 ## Invite teaching assistants
 
-Teaching assistants are able to see everything that is going on in the class, they have the _space admin_ role. Whoever created the class automatically becomes a _space admin_ as well. To invite teaching assistants with this elevated role, follow the instructions below.
+Teaching assistants are able to see everything that is going on in the class, they have the _space admin_ role. The user who created the class automatically becomes a _space admin_ as well. To invite teaching assistants with this elevated role, follow the instructions below.
 
 ![Inviting a teaching assistant](../.gitbook/assets/space_admin_invite_final.gif)
 
