@@ -2,5 +2,5 @@
 description: The list of our key features
 ---
 
-# Features
+# Overview and key features
 

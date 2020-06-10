@@ -6,11 +6,13 @@ description: >-
 
 # Get Started
 
+
+
 {% tabs %}
 {% tab title="Instructor" %}
-As a first step, read our guide for getting started:
+A class in Nuvolos is a space where an instructor will add all course-related teaching material \(data, code, applications\):
 
-* [**Getting started**](education/instructor-guide.md)\*\*\*\*
+* [Set up your course](education/instructor-guide.md)
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications.md)
 * [Distributing teaching material](getting-started/distribute-objects-in-nuvolos/)

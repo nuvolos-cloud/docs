@@ -2,7 +2,7 @@
 description: Nuvolos is a data platform
 ---
 
-# Manage Data
+# Data
 
 Working with data in Nuvolos comprises of a number of components:
 

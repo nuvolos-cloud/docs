@@ -1,2 +1,2 @@
-# Administration
+# Settings and administration
 
