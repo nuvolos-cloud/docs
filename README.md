@@ -4,7 +4,7 @@ description: Table of contents and getting started
 
 # Introduction
 
-Welcome to the documentation of **Nuvolos**, the Knowledge creation cloud. 
+Welcome to the documentation of **Nuvolos**, the Knowledge Creation Cloud. 
 
 If you are interested in getting started, select your use case below and find the appropriate guide.
 
