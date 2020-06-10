@@ -1,20 +1,63 @@
 ---
-description: Get started with Nuvolos
+description: Table of contents and getting started
 ---
 
 # Introduction
 
+Welcome to the documentation of **Nuvolos**, the Knowledge creation cloud. 
+
+If you are interested in getting started, select your use case below and find the appropriate guide.
+
+{% tabs %}
+{% tab title="Instructor" %}
+As a first step, read our guide for getting started:
+
+* Getting started
+* Working with files
+* Working with apps
+* Distributing teaching material
+* Inviting students
+{% endtab %}
+
+{% tab title="Student" %}
+As a first step, read our guide for getting started:
+
+* Getting started
+* Working with files
+* Working with apps
+* Taking a snapshot of your work
+{% endtab %}
+
+{% tab title="Researcher" %}
+As a first step, read our guide for getting started:
+
+* Getting started
+* Working with files
+* Working with apps
+* Working with data tables
+* Working in High Performance Computing \(HPC\)
+* Inviting collaborators
+* Taking snapshots
+* Sharing results
+{% endtab %}
+{% endtabs %}
+
+To better understand the inner workings of Nuvolos, after consulting the getting started guides, we strongly suggest reading up on the following topics:
+
+* The structure of Nuvolos
+  * Organizations
+  * Spaces
+  * Instances
+  * States and snapshots
+  * Applications
+  * Files and data
+* User role system
+* Key features:
+  * Snapshotting
+  * Distribution
+  * Data integration
 
 
-Nuvolos is a unified cloud framework for research and education that allows you to store, version, and work with files, tables, code and applications in one place via a user-friendly, browser-based interface.
-
-To get started, we suggest reading the following articles first:
-
-* [**Structure of Nuvolos**](our-features/data-organization/) gives an overview of the whole system which will put into context all other help material.
-* [**Navigate in Nuvolos**](getting-started/navigation-in-nuvolos.md) describes important parts of the UI that will help you find your way around the web interface.
-* [**Setting up a research project** ](research/research.md)gives you a quick guide on how to initialize a research project from scratch.
-* \*\*\*\*[**Setting up a class**](education/education.md) gives you a quick guide on how to initialize a class project from scratch.
-* [**Working with data in Nuvolos**]() gives you an overview of how to use, import, export data in, to and from Nuvolos.
 
 
 
