@@ -14,7 +14,7 @@ You can only work with Nuvolos if you have received a valid invitation. The belo
 
 You can sign in via two routes:
 
-1. If you are a member of a Swiss University, choose the SWITCH option.
+1. Users affiliated with a Swiss higher education institution, select the SWITCH option.
 2. Otherwise, use the regular sign-in option
 
 ## Access your class material
