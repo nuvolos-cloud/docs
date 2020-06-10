@@ -6,7 +6,7 @@
     * [Get started](education/instructor-topics/instructor-guide.md)
     * [Setting up group work](education/instructor-topics/setting-up-group-work.md)
   * [Student](education/student-topics/README.md)
-    * [Get started](education/student-topics/student-guide.md)
+    * [Enroll and get started](education/student-topics/student-guide.md)
     * [Working in groups](education/student-topics/working-in-groups.md)
 * [Research](research/README.md)
   * [Get started](research/researcher-guide.md)
