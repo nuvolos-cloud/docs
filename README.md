@@ -51,7 +51,7 @@ To better understand the inner workings of Nuvolos, after consulting the getting
   * [States and snapshots](our-features/data-organization/snapshots.md)
   * [Applications](our-features/data-organization/applications.md)
   * Files and data
-* [**User role system**]()\*\*\*\*
+* \*\*\*\*[**User role system**](settings-and-administration/role-system.md)\*\*\*\*
 * [Key features](our-features/):
   * [Snapshotting](our-features/snapshotting.md)
   * [Distribution](our-features/distribution.md)
