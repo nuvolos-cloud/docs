@@ -6,19 +6,16 @@
 
 To distribute a snapshot from one instance to another, you need to be the editor of _both_ instances. An instance editor will not be able to distribute a snapshot to an instance where she is a viewer.
 
-* **You are looking in the wrong place.**
+* **You are following the wrong steps.**
 
-To distribute a snapshot, you must open one of the _archived snapshot_, and from the left sidebar click on distribute snapshot. If you are viewing the current state of your instance, then you can first create a snapshot of your current state, and then distribute the snapshot to other instances. Check the steps [here]() for distributing a snapshot.
+To distribute a snapshot, follow the steps detailed [here](../../actions/distribute-objects-in-nuvolos/).
 
-* **You are distributing a snapshot to a deleted instance.**
-
-An instance might disappear because the instance editor deleted it. If you are the instance editor, then you can [recover](../../actions/space-management/delete-an-instance.md) the deleted instance within 24 hours of the deletion time. If you are not the instance editor, then you can contact the editor and ask if the instance or could be restored.
-
+* **One or more of the target instances have been deleted.**  Make sure that the instance\(s\) you are distributing to do exist. 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the distribute snapshot request might not reach the server and therefore the snapshot might not be distributed. Make sure you restore your connection,  refresh the page and try to distribute the snapshot again.
+If you lose your internet connection, the snapshot distribution request might not reach the server and therefore the snapshot might not be distributed. Make sure you restore your connection,  refresh the page and try to distribute the snapshot again.
 
-* **There has been a server-side error and the application stop data was not properly served by Nuvolos.**
+* **There has been a server-side error and the snapshot distribution data was not properly served by Nuvolos.**
 
 In some cases, it might happen that a server-side error occurs such that the distribute request is not processed properly, making it impossible to distribute the snapshot. Wait for a few minutes, refresh the page and then try to distribute the snapshot again.  
 
