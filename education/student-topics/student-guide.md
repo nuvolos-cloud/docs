@@ -4,9 +4,9 @@ description: Getting started with participating in a class
 
 # Enroll and get started
 
-## Generate invitation \[invitation links only\]
+## Generate invitation 
 
-If your instructor shared a sign-up link with you, you will have to generate an invitation for yourself. 
+_If your instructor shared a sign-up link with you, you will have to generate an invitation for yourself._ 
 
 1. Click or paste the link into your browser.
 2. Give your e-mail address, we strongly suggest using your university e-mail address.
