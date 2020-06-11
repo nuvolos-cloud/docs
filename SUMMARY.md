@@ -39,6 +39,7 @@
     * [Find a space](actions/find-objects-in-nuvolos/find-a-space.md)
     * [Find an instance](actions/find-objects-in-nuvolos/find-an-instance.md)
     * [Find a Snapshot/Current State](actions/find-objects-in-nuvolos/find-a-snapshot-current-state.md)
+    * [Find an application](actions/find-objects-in-nuvolos/find-an-application.md)
   * [Organization management](actions/organization-management/README.md)
     * [Invite organization members](actions/organization-management/invite-organization-members.md)
     * [Revoke or deactivate users](actions/organization-management/revoke-user-access.md)
