@@ -1,6 +1,6 @@
 # I can't distribute a snapshot
 
-#### If, after logging into the DataHub, you're having trouble distributing a snapshot to other instances, here are some issues you can examine:
+#### If, after logging in to Nuvolos, you're having trouble distributing a snapshot to other instances, here are some issues you can examine:
 
 * **You don't have the right permission to distribute a snapshot.**
 
@@ -18,7 +18,7 @@ An instance might disappear because the instance editor deleted it. If you are t
 
 If you lose your internet connection, the distribute snapshot request might not reach the server and therefore the snapshot might not be distributed. Make sure you restore your connection,  refresh the page and try to distribute the snapshot again.
 
-* **There has been a server-side error and the application stop data was not properly served by DataHub.**
+* **There has been a server-side error and the application stop data was not properly served by Nuvolos.**
 
 In some cases, it might happen that a server-side error occurs such that the distribute request is not processed properly, making it impossible to distribute the snapshot. Wait for a few minutes, refresh the page and then try to distribute the snapshot again.  
 

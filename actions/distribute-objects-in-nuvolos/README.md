@@ -31,7 +31,7 @@ Assume that you want to distribute a file and an application in the following ex
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.01-pm.png)
 
-6. The next step selects the distribution strategy - more details can be found [here](distribution-strategies.md). For now, we will select overwrite, which will overwrite objects of the same name in the target. 
+5. The next step selects the distribution strategy - more details can be found [here](distribution-strategies.md). For now, we will select overwrite, which will overwrite objects of the same name in the target. 
 
 {% hint style="success" %}
 Please note that whenever you distribute, a snapshot gets created in the target, so you should not be concerned about data loss.
@@ -41,9 +41,33 @@ Please note that whenever you distribute, a snapshot gets created in the target,
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.31.53-pm.png)
 
-7. Finally, you can send a message along with the distribution to notify the users in the targets about the change being made. In this particular case, we decided _not_ to notify users by emptying the checkbox.
+6. Finally, you can send a message along with the distribution to notify the users in the targets about the change being made. In this particular case, we decided _not_ to notify users by emptying the checkbox.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.24.26-pm.png)
 
 Once you are done, click **SHARE OBJECTS** and you are done.
+
+## Distribute an entire snapshot
+
+To distribute all the contents of a snapshot:
+
+1. Open the snapshot.
+2. Navigate to the stage area using the sidebar.
+3. Click Start
+4. Select Option 1: Distribute all objects in "SNAPSHOT NAME HERE"
+5. Same as step 4 above.
+6. Same as step 5 above.
+7. Same as step 6 above.
+
+**Example**
+
+Assume we are in a the Demo Space and we have a snapshot called "Quick snapshot 11/6/2020 - 10:56:59" that we want to distribute. First, from the toolbar we select the snapshot and then from the sidebar we havigate to the stage area.
+
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-10.59.54-am.png)
+
+Click on Start and select Option 1
+
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-11.03.52-am.png)
+
+Continue as described above.
 

@@ -14,7 +14,7 @@ Stopping an application might require some time. Please give it some time to sto
 
 To stop an application, you must be either in the **CURRENT STATE** of an instance of which you are an editor
 
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%282%29.png)
 
   
  or in the dashboard where you can open and stop your running applications:
