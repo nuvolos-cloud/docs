@@ -47,7 +47,7 @@
   * [Roles](settings-and-administration/role-system.md)
   * [Organization management](settings-and-administration/organization-management/README.md)
     * [Invite organization members](settings-and-administration/organization-management/invite-organization-members.md)
-    * [Revoke or deactivate users](settings-and-administration/organization-management/revoke-user-access.md)
+    * [Revoke users](settings-and-administration/organization-management/revoke-user-access.md)
     * [Create a space](settings-and-administration/organization-management/create-a-space.md)
     * [Delete a space](settings-and-administration/organization-management/delete-a-space.md)
   * [Instance management](settings-and-administration/instance-management/README.md)

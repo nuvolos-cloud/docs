@@ -10,11 +10,11 @@ In order to fully understand the role system, the [structure of Nuvolos](../our-
 
 ## Organization level roles
 
-As described in detail, organizations are cost and accounting centersOn the organization level, the following four roles exist:
+As described in detail, organizations are cost and accounting centers. On the organization level, the following four roles exist:
 
 ### No role
 
-If a user has no role in an organization, they cannot view any content contained in the organization.
+If a user has no role in an organization, they cannot view any content contained in the organization. If a user has a role, it can be[ revoked](organization-management/revoke-user-access.md) by an organization manager.
 
 ### Member
 

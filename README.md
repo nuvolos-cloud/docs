@@ -16,7 +16,7 @@ A class in Nuvolos is a space to organise all course-related teaching material \
 * [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications.md)
 * [Distribute material](getting-started/distribute-objects-in-nuvolos/)
-* [Invite students](education/instructor-topics/instructor-guide.md#invite-students)
+* Invite students
 {% endtab %}
 
 {% tab title="Student" %}
@@ -51,7 +51,7 @@ To better understand the inner workings of Nuvolos, after consulting the getting
   * [States and snapshots](our-features/data-organization/snapshots.md)
   * [Applications](our-features/data-organization/applications.md)
   * Files and data
-* \*\*\*\*[**User role system**](settings-and-administration/role-system.md)\*\*\*\*
+* [**User role system**]()\*\*\*\*
 * [Key features](our-features/):
   * [Snapshotting](our-features/snapshotting.md)
   * [Distribution](our-features/distribution.md)
