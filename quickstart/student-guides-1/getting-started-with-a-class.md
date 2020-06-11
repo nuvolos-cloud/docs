@@ -40,17 +40,11 @@ The Nuvolos Dashboard home page provides useful at-a-glance information about th
 
 Teaching material, e.g. example code or assignments, can be distributed by the instructor of the class. Such content becomes available in your working directory \(the default working directory is /files\). For example, you are working with an RStudio application with content available inside a folder called **week\_01**. In the bottom right pane of the RStudio application choose the **FILES** tab to see the available material \(similar to the screenshot below\). Clicking on the R file, you will be able to see and work with it in the R console.
 
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-4.50.17-pm-2.png)
-
 ## 4. Switch to another application?
 
 Use the hamburger button \(three-lines icon in the top-left corner\) of the Nuvolos toolbar to toggle the navigation menu.
 
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-4.32.59-pm-2.png)
-
 Switch to another of your current running applications or navigate to the dashboard.
-
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-4.37.30-pm-2.png)
 
 
 
