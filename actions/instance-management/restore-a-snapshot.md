@@ -17,7 +17,5 @@
 
 ## 
 
-![This chart illustrates what happens when a snapshot is restored. Take an instance with one snapshot \(Snapshot 1\). When the user restores Snapshot 1, the content of the current state\(files, tables, and applications\) gets replaced by the content of Snapshot 1.](../../.gitbook/assets/instance-restoration-4.svg)
-
 
 

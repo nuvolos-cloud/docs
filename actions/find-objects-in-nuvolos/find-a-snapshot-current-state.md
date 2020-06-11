@@ -10,8 +10,6 @@ If you have already found the instance, go to step 2. Otherwise, check the instr
 
 **2.1**  If you are still in the space view where the instances are visualized, then you can click on **OPEN CURRENT STATE** to navigate to the current state of the selected instance.
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-4.28.21-pm-2.png)
-
 **2.2.** If you have already selected and clicked on the instance you want to work in, then you will also see an OPEN CURRENT STATE button which you can click to navigate to the current state.
 
 ![](../../.gitbook/assets/screen-shot-2019-09-25-at-4.32.51-pm-2.png)

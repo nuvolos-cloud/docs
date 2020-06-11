@@ -12,8 +12,6 @@ If you are already in the home dashboard, then go to step 2. If you are not curr
 
  From the navigation menu, click the Dashboard tab.
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.07.32-pm-2.png)
-
 **2. Using the Dashboard, you can view and select an organizations under Organizations.**
 
 ![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.10.48-pm-2.png)

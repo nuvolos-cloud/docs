@@ -18,8 +18,6 @@ When you select a space, you will be able to view and select any of the listed i
 
  
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.51.41-pm-2.png)
-
 
 
 

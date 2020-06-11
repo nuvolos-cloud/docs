@@ -64,7 +64,5 @@ Distribution to all instances bears special significance in the educational work
 
 ## 
 
-![This chart illustrates the process of snapshot distribution. A professor is the editor of the Master instance and they have one snapshot \(Snapshot 1\) taken at some point in time. Assume that the professor decides to distribute their snapshot to student 1. Once this snapshot has been distributed, the current state of student 1 will now contain the files, tables, and applications created by the student \(in white\) as well as the files and tables shared by the professor \(in yellow\). A copy of the snapshot distributed by the professor gets automatically stored in the Distributed instance.](../../.gitbook/assets/copy-of-datahub-architecture-main-architecture-2.svg)
-
 
 
