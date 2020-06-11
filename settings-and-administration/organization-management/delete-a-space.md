@@ -1,7 +1,9 @@
 # Delete a space
 
-{% hint style="info" %}
-Only space administrators and organization members
+{% hint style="danger" %}
+Only space administrators have the ability to delete a space. Deleting a space will remove all content in it, including all instances and data contained in all instances.   
+  
+**This operation might impact a large number of users.**
 {% endhint %}
 
 ## **To delete a space:**
