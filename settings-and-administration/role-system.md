@@ -43,9 +43,17 @@ An organization manager is a user who has the ability to view resources in the o
 
 ## Space level roles
 
+Spaces have a single special elevated role, that of a space admin. Every other user accessing a space has access to the space via having an editor or viewer role in one or more instances of the space.
 
+### Space admin
 
+Space admins have administrative power restricted to the scope of a single space.
 
+* Space admins can view and edit every instance in the space:
+  * They can upload/download files, run applications and query/modify tables.
+  * They can create/delete snapshots. 
+* Space admins have the right to invite users to instances as editors or viewers. 
+* Space admins have the right to create instances in a space.
 
 ## Instance level roles
 
