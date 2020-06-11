@@ -47,6 +47,8 @@ You can sign in via two routes:
 1. Navigate to your files view.
 2. There are both upload and download buttons and you can also create a folder for example for your homework.
 
+![Creating a folder and uploading a file](../../.gitbook/assets/create_folder_upload_ed.gif)
+
 
 
 ## Start an application
