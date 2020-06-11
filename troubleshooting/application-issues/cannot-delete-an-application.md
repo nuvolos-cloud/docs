@@ -1,6 +1,6 @@
 # I can't delete an application
 
-#### If, after logging into the DataHub, you're having trouble deleting an application, here are some issues you can examine:
+#### If, after logging in to the Nuvolos, you're having trouble deleting an application, here are some issues you can examine:
 
 * **You don't have the right permission to delete an application.**
 
@@ -26,7 +26,7 @@ It can be that the application you want to delete has been already deleted. If y
 
 If you lose your internet connection, the data retrieval request might fail and the browser doesn't send the deletion request to server. Make sure you restore your connection,  refresh the page and try to delete the application again.
 
-* **There has been a server-side error and the application deletion request was not properly processed by DataHub.**
+* **There has been a server-side error and the application deletion request was not properly processed by Nuvolos.**
 
 In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to start the application. Wait for a few minutes, refresh the page and then try to start the application.  
 
