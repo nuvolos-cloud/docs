@@ -49,11 +49,20 @@ You can sign in via two routes:
 
 ![Creating a folder and uploading a file](../../.gitbook/assets/create_folder_upload_ed.gif)
 
-
+![Downloading a file](../../.gitbook/assets/download_file_ed.gif)
 
 ## Start an application
 
-You can start your application right from the dashboard if it is a recently used one, or you can navigate to your instance and start your application from the Application view.
+1. Applications can be started from the dashboard directly.
+2. Applications can also be accessed from the application menu of your instance overview.
+
+{% hint style="info" %}
+Application startup will take approximately 30 to 60 seconds. For certain applications, the first startup might take longer depending on the amount of setting and package files that needs to be copied. 
+{% endhint %}
+
+![Starting an app from your dashboard](../../.gitbook/assets/app_start_dashboard_ed.gif)
+
+
 
 ## Snapshot your work
 
