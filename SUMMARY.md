@@ -3,7 +3,7 @@
 * [Get Started](README.md)
 * [Education](education/README.md)
   * [Instructor](education/instructor-topics/README.md)
-    * [Get started](education/instructor-topics/instructor-guide.md)
+    * [Get started with a class](education/instructor-topics/instructor-guide.md)
     * [Set up group work](education/instructor-topics/set-up-group-work.md)
   * [Student](education/student-topics/README.md)
     * [Enroll and get started](education/student-topics/student-guide.md)

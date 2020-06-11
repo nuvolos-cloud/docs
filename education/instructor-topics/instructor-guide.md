@@ -2,7 +2,7 @@
 description: Getting started with teaching a class
 ---
 
-# Get started
+# Get started with a class
 
 {% hint style="success" %}
 In most cases, it is possible to set up a class from scratch in less than 5 minutes.
