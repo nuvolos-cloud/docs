@@ -18,7 +18,7 @@ _If your instructor shared a sign-up link with you, you will have to generate an
 
 You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
 
-
+![Accept invitation workflow](../../.gitbook/assets/accept_invite_1_ed.gif)
 
 ## Sign in
 
