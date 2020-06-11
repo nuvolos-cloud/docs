@@ -18,15 +18,28 @@ If a user has no role in an organization, they cannot view any content contained
 
 ### Member
 
-An organization member is any user who has been invited in any capacity into any space.
+An organization member is any user who has been invited in any capacity into any space in the organization.
+
+* Members are able to view **Public** spaces in the organization. 
+* Members are able to view any content in the organization they are specifically invited to. 
+* The membership role signifies that a connection has at least at one point in time existed between the user and the organization.
 
 ### Faculty
 
-An organization faculty member is a user who has the ability to control resources in the organization. Faculty members can create research projects and classes and invite space admins to these
+An organization faculty member is a user who has the ability to control resources in the organization. 
+
+* Faculty members can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space. 
+* Faculty members can view **Public** and **Faculty only** spaces as well as any content they are invited to. 
+* The faculty role is powerful in the sense that it has the ability to propagate licenced content to other users.
 
 ### Manager
 
-O
+An organization manager is a user who has the ability to view resources in the organization as well as control membership.
+
+* Organization managers can create spaces and invite users to the spaces they have craeted. Any user who creates a space automatically becomes _space admin_ of that space. 
+* Organization managers can view all content in the organization however they can modify content where they received explicit invitation to do so. 
+* Organization managers can invite additional Faculty to the organization. 
+* Organization managers can revoke access to the organization resources. 
 
 
 
