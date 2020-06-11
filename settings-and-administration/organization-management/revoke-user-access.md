@@ -14,6 +14,8 @@ An organization manager can revoke any organization member.
 2. Identify the user\(s\) you want to revoke.
 3. To revoke, click the black cross button.
 
+![Revoke a faculty member](../../.gitbook/assets/revoke_access_ed.gif)
+
 
 
 
