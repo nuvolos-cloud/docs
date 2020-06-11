@@ -1,8 +1,8 @@
 # I forgot my password
 
-In case you forget your DataHub password, then you can reset your password by clicking on "**Don't remember your password?**" and provide your email which you use to log in to DataHub. A reset link will be sent to your email.
+In case you forget your Nuvolos password, then you can reset your password by clicking on "**Forgot** **your password?**" and provide your email which you use to log in to Nuvolos. A reset link will be sent to your email.
 
-![](../../.gitbook/assets/forgot_password.png)
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-8.46.44-am%20%281%29.png)
 
-If you forget the email address that was used to create your DataHub account, then contact the support team at **support@alphacruncher.com**
+If you forget the email address that was used to create your Nuvolos account, then contact the support team at **support@alphacruncher.com**
 
