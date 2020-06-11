@@ -32,7 +32,7 @@ Course material are items like code, documents or data files that are used to su
 
 You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
 
-![The distribution process](../../.gitbook/assets/distribute_final.gif)
+![](../../.gitbook/assets/distribute_ed.gif)
 
 The key steps of the process:
 
