@@ -38,7 +38,7 @@ You can sign in via two routes:
 
 Clicking the tile of your class on the dashboard will immediately take you to your own instance in your class. By switching to the files view in the current state of your instance, you will be able to see all the teaching material that has been distributed to you so far.
 
-
+![Using the dashboard to quickly navigate to your class](../../.gitbook/assets/find_class_material_ed.gif)
 
 ## Download or upload material
 
