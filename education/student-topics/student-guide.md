@@ -18,6 +18,13 @@ _If your instructor shared a sign-up link with you, you will have to generate an
 
 You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
 
+1. Open your e-mail account and navigate to the invitation mail.
+2. Click the **Review Invitation** button in the invitation mail.
+3. Inspect the roles included in the invitation.
+4. If you have never signed up, sign up.
+5. Click the accept invitation button.
+6. If this is the first time you are signing up, the process might take about a minute to complete.
+
 ![](../../.gitbook/assets/accept_invite_1_ed.gif)
 
 ## Sign in
