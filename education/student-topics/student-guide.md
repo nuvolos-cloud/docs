@@ -33,7 +33,7 @@ You can start your application right from the dashboard if it is a recently used
 
 ## Snapshot your work
 
-
+You can take a snapshot by clicking the Photo camera button once you are in the context of your instance.
 
 
 
