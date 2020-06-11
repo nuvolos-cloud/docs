@@ -4,6 +4,16 @@ description: Getting started with participating in a class
 
 # Enroll and get started
 
+## Generate invitation \[invitation links only\]
+
+If your instructor shared a sign-up link with you, you will have to generate an invitation for yourself. 
+
+1. Click or paste the link into your browser.
+2. Give your e-mail address, we strongly suggest using your university e-mail address.
+3. You should find the invitation in your mail box. Check your spam filter if the e-mail does not arrive.
+
+
+
 ## Accept your invitation
 
 You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
