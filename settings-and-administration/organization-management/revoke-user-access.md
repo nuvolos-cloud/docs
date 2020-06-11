@@ -1,4 +1,4 @@
-# Revoke or deactivate users
+# Revoke users
 
 {% hint style="info" %}
 An organization manager can revoke any organization member.
