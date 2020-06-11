@@ -62,7 +62,7 @@ Application startup will take approximately 30 to 60 seconds. For certain applic
 
 ![Starting an app from your dashboard](../../.gitbook/assets/app_start_dashboard_ed.gif)
 
-
+![Starting an app from your instance overview](../../.gitbook/assets/app_start_instance_ed.gif)
 
 ## Snapshot your work
 
