@@ -20,7 +20,7 @@ New instances should be created for each group one-by-one, using the "Joint inst
 _Warning:_ _multiple users might be editing the same file_. The exact outcome of this operation is application-dependent, but this is a situation that needs to be avoided by the group. It is suggested that work is broken down into appropriately small blocks if possible and scheduled if multiple users editing a single file is not avoidable.
 {% endhint %}
 
-The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their groupwork instance.
+The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their group work instance.
 
    3. [**Upload files**](../../getting-started/work-with-files/upload-files-and-folders.md) **to the** [**master instance**](../../our-features/data-organization/) **of the group work space**.
 
@@ -30,7 +30,7 @@ After the exact structure of the group work space is set up, files can be upload
 
 The distribution can be carried out just as usual. As highlighted previously, since in this setup the individual and group work spaces are kept separately, if a new group needs to be set up, it can be initialized easily via the distributed instance.
 
-As the class proceeds, the distribute feature can be used cumulatively to move forward the groupwork instances as well. Please note that it is also possible to "bridge" information between regular and groupwork instance, via cross-distributing between spaces.
+As the class proceeds, the distribute feature can be used cumulatively to move forward the group work instances as well. Please note that it is also possible to "bridge" information between regular and groupwork instance, via cross-distributing between spaces.
 
 
 
