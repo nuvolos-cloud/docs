@@ -26,6 +26,8 @@ Classes are the spaces in Nuvolos where instructors add learning materials \(dat
 
 Course material are items like code, documents or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
+![Uploading two files](../../.gitbook/assets/upload_files_ed.gif)
+
 ## Distribute to prospective students
 
 You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
