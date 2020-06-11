@@ -22,7 +22,7 @@ Starting an application might require several seconds, please wait for some time
 
 To start an application, you must be in the CURRENT STATE ****of an instance of which you are an editor. 
 
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%283%29.png)
 
 For more information on how to find an application, check the documentation [here](../../actions/find-objects-in-nuvolos/find-an-application.md).
 

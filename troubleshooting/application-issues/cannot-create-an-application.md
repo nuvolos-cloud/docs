@@ -18,7 +18,7 @@ A special instance called 'Distributed' exists in each space. This instance cont
 
 An application can be created only from within the current state of your instance. Make sure that you navigate to CURRENT STATE in order to be able to create an application.
 
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am.png)
+![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%282%29.png)
 
 * **You have lost connection to the internet.**
 
