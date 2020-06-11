@@ -41,8 +41,6 @@ An organization manager is a user who has the ability to view resources in the o
 * Organization managers can invite additional Faculty to the organization. 
 * Organization managers can revoke access to the organization resources. 
 
-
-
 ## Space level roles
 
 
@@ -51,24 +49,16 @@ An organization manager is a user who has the ability to view resources in the o
 
 ## Instance level roles
 
-Becoming a super hero is a fairly straight forward process:
+### Editor
 
-```
-$ give me super-powers
-```
+* Instance editors **can modify** the contents of the **current state** of an instance: they can upload/download files and run applications. 
+* Instance editors **can** also **create snapshots** of the current state of the instance.
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+### Viewer
 
-Once you're strong enough, save the world:
+* Instance viewers can view contents of snapshots in the instance, including writing queries against data.
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+
 
 
 
