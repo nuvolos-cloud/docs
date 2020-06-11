@@ -4,7 +4,7 @@
 
 * **The application you are looking for is not among the ones visualized by default.**
 
-By default, the list of applications will show only ten apps. If you cannot find an application, then it might be because it is now shown in the first 10 items. Simply increase the number of rows per page using the option at the bottom of the table, or navigate to the next page by using the right arrow at the bottom.
+The list of applications will show only ten apps by default. If you cannot find an application, then it might be because it is now shown in the first 10 items. Simply increase the number of rows per page using the option at the bottom of the table, or navigate to the next page by using the right arrow at the bottom.
 
 ![](../../.gitbook/assets/screen-shot-2020-06-11-at-8.58.57-am.png)
 
