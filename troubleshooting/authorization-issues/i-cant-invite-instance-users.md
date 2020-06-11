@@ -17,7 +17,7 @@ Make sure that the user email you provide when inviting is the correct one.
 * **You are inviting users to a deleted instance.** 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the user invitation request might not reach the server and ,therefore,  the invitation might not be sent to the server. Make sure you restore your connection,  refresh the page and try to invite the users again.
+If you lose your internet connection, the user invitation request might not reach the server and, therefore,  the invitation might not be sent to the server. Make sure you restore your connection,  refresh the page and try to invite the users again.
 
 * **There has been a server-side error and the invitation request was not properly served by Nuvolos.**
 
