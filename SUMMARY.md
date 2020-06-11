@@ -97,7 +97,7 @@
     * [I can't see distributed content in my instance](troubleshooting/authorization-issues/cannot-see-distributed-content-in-my-instance.md)
     * [I can't upload a file](troubleshooting/authorization-issues/cannot-upload-a-file.md)
     * [I can't delete a file](troubleshooting/authorization-issues/i-cant-delete-a-file.md)
-    * [I can't remove a user](troubleshooting/authorization-issues/i-cant-remove-a-user.md)
+    * [I can't revoke a user](troubleshooting/authorization-issues/i-cant-remove-a-user.md)
   * [Accidental content change](troubleshooting/accidental-content-change/README.md)
     * [Restored a snapshot by mistake](troubleshooting/accidental-content-change/restored-a-snapshot-by-mistake.md)
     * [Distributed a snapshot by mistake](troubleshooting/accidental-content-change/distributed-a-snapshot-by-mistake.md)
