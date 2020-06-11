@@ -66,7 +66,8 @@ Application startup will take approximately 30 to 60 seconds. For certain applic
 
 ## Snapshot your work
 
-You can take a snapshot by clicking the Photo camera button once you are in the context of your instance.
+1. You can take a snapshot by clicking the Photo camera button once you are in the context of your instance.
+2. Fill out the details. If you don't want to spend energy, you can just create a **quick snapshot**.
 
 ![Creating a snapshot of your work](../../.gitbook/assets/snapshot_student_ed.gif)
 
