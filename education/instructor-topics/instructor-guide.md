@@ -62,7 +62,7 @@ Invite with a Sharing Link:
 2. Select + INVITE
 3. Copy Sharing Link.
 
-![Generating an invitation link](../../.gitbook/assets/invitation_link_final.gif)
+![Finding and copying the invitation link](../../.gitbook/assets/invitation_link_out_ed.gif)
 
 ## Invite teaching assistants
 
