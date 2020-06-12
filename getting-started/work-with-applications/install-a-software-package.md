@@ -35,9 +35,7 @@ When distributing and snapshotting an application, the contents of the conda env
 
 ## The /dhlib folder
 
-
-
-## R/RStudio
+The `/dhlib` folder is the persistent package storage folder on Nuvolos. If a conda environment exists, it is also stored under `/dhlib`, as well as R packages. Only work in conda environments that are based under `/dhlib`!
 
 
 
