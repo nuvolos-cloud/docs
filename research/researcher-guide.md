@@ -72,6 +72,8 @@ Once the distribution has completed, we can verify that the distributed items ar
 
 You can invite collaborators if you are a [space admin](../settings-and-administration/role-system.md#space-admin) in a research project. By default the creator of the project automatically becomes space admin, every other user has to be invited specifically with that role.
 
+To make an informed decision about the type of roles you want in your project, consult [our detailed guide](../settings-and-administration/role-system.md).
+
 ### Invite co-authors with space admin rights
 
 {% hint style="info" %}
@@ -81,11 +83,33 @@ If you invite a co-author to your project as a space admin, restricted to the pr
 To invite a co-author, do the following steps:
 
 1. Navigate to your space.
-2. U
+2. Either click on the "Project users" tile or select the gear button on the top of the left sidebar and select "Project Users" there.
+3. Click on "Invite" in the top right corner of the pane.
+4. Pick "Administrator Invitation".
+5. Type the e-mail address, or comma separated list of e-mail addresses.
+
+The invitations will be sent by e-mail to the recipients who need to accept the invitation to gain the role.
+
+![Inviting a co-author as space admin](../.gitbook/assets/space_admin_research_invite_ed.gif)
+
+ 
 
 ### Invite co-authors with editor rights
 
+{% hint style="info" %}
+If you invite a co-author to your project as an instance editor to an instance, they will only be able to see and edit the contents of that particular instance. They will not be able to create more instances, invite users or do any modifications outside the scope of the particular instance they have the right to edit.
+{% endhint %}
 
+To invite a co-author as an instance editor, do the following steps:
+
+1. Navigate to your space.
+2. Either click on the "Project users" tile or select the gear button on the top of the left sidebar and select "Project Users" there.
+3. Click on "Invite" in the top right corner of the pane.
+4. Pick "User Invitation".
+5. Pick the instance and the role you want to invite the user with.
+6. Type the e-mail address, or comma separated list of e-mail addresses.
+
+![Inviting an instance editor to the &quot;Alternate&quot; instance](../.gitbook/assets/instance_editor_research_invite_ed.gif)
 
 ## Work with applications
 
@@ -93,7 +117,7 @@ To invite a co-author, do the following steps:
 
 ## Work with data
 
-
+[Consult our detailed guide](../getting-started/work-with-data.md) to start working with data.
 
 
 
