@@ -57,7 +57,6 @@
     * [Create an application](settings-and-administration/instance-management/create-an-application.md)
     * [Restore a snapshot](settings-and-administration/instance-management/restore-a-snapshot.md)
     * [Delete a snapshot](settings-and-administration/instance-management/delete-a-snapshot.md)
-    * [Untitled](settings-and-administration/instance-management/untitled.md)
   * [Space management](settings-and-administration/space-management/README.md)
     * [Create an instance](settings-and-administration/space-management/create-an-instance.md)
     * [Invite instance users](settings-and-administration/space-management/invite-instance-users.md)
