@@ -7,7 +7,6 @@
     * [Set up group work](education/instructor-topics/set-up-group-work.md)
   * [Student](education/student-topics/README.md)
     * [Enroll and get started](education/student-topics/student-guide.md)
-    * [Working in groups](education/student-topics/working-in-groups.md)
 * [Research](research/README.md)
   * [Get started](research/researcher-guide.md)
   * [High-performance computing](research/high-performance-computing.md)
