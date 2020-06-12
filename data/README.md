@@ -19,7 +19,17 @@ Datasets are special kinds of spaces, with the main goal of containing only tabu
 
 ![Viewing the list of available datasets](../.gitbook/assets/dataset_navigate_ed.gif)
 
-It is important to understand in the above that datasets consist of immutable snapshots.
+{% hint style="warning" %}
+Datasets consist of immutable [snapshots](../our-features/snapshotting.md). Datasets are to be used as sources of distribution, not to directly work in.
+{% endhint %}
+
+## Distribute data you need
+
+Suppose that your project is called 'Demo research project' and you need two tables from the 'Correlation Risk Proxy' dataset.
+
+Using the distribute feature, you can set your research project up with the required data:
+
+
 
 
 
