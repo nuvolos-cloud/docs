@@ -8,6 +8,8 @@ As an example:
 
 ## Create a folder
 
+After navigating to the files view of the instance you are working in:
+
 
 
 ## Upload files
