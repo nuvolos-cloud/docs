@@ -50,7 +50,7 @@ It is possible to view the difference of two text files in two different snapsho
 
 Hovering over the dot pops up the diff menu:
 
-
+![The diff feature and snapshotting provide a powerful tool](../.gitbook/assets/diff_feature_ed.gif)
 
 ## The readme feature
 
