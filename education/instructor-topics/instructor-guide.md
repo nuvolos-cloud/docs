@@ -10,11 +10,11 @@ In most cases, it is possible to set up a class from scratch in less than 5 minu
 
 ## Add a new class
 
-Classes are the spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organization users \(manager or faculty\) may create courses.
+Classes are spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organization managers and faculty members may create classes.
 
 1. Navigate to _Classes_
 2. Select + NEW CLASS 
-3. Enter desired course name and description
+3. Enter desired class name and description
 4. Select + ADD SPACE
 5. Select application
 6. Enter desired application name
