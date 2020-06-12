@@ -37,5 +37,28 @@ When distributing and snapshotting an application, the contents of the conda env
 
 The `/dhlib` folder is the persistent package storage folder on Nuvolos. If a conda environment exists, it is also stored under `/dhlib`, as well as R packages. Only work in conda environments that are based under `/dhlib`!
 
+## Tips and tricks
 
+### Single purpose applications
+
+{% hint style="info" %}
+We strongly suggest creating single-purpose applications. 
+{% endhint %}
+
+This practice has the following benefits:
+
+1. Conda or R package environments remain monolithic and fairly lightweight.
+2. Distribution and snapshotting takes less storage and resources and conclude faster.
+
+### Create a new application instead of upgrading
+
+{% hint style="info" %}
+If you are contemplating doing a major version update on your application, we suggest creating a new app in the same instance and starting there from scratch.
+{% endhint %}
+
+This practice has the following benefits:
+
+1. Conda environments can break after major updates.
+2. The reproducibility of your work may suffer - however it is trivial to maintain two monolithic and separate application structures in parallel, even in the same instance!
+3. Distribution is based on filesystem-differences and after-upgrade distributions may become less stable due to the massive number of changes occurring on the filesystem.
 
