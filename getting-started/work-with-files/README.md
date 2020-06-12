@@ -20,7 +20,9 @@ You can upload files and folders with the upload button.
 
 ## Download files
 
+You can download a file by selecting it and finding the download button:
 
+![Downloading a file](../../.gitbook/assets/download_file_ed%20%281%29.gif)
 
 ## Delete files
 
@@ -32,7 +34,7 @@ You can delete one or more files by selecting them and then finding the delete b
 
 You can rename a file by selecting it and finding the rename button:
 
-![](../../.gitbook/assets/rename_file_ed.gif)
+![Renaming a file](../../.gitbook/assets/rename_file_ed.gif)
 
 ## The diff feature
 
