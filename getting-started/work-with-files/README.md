@@ -42,7 +42,9 @@ You can rename a file by selecting it and finding the rename button:
 
 ## The readme feature
 
+If you create a file named README.md in a folder, the user interface of Nuvolos will try to interpret and render it as a markdown file. As an example:
 
+![](../../.gitbook/assets/readme.png)
 
 ## 
 
