@@ -34,7 +34,7 @@ As a first step, read our guide for getting started:
 * [**Getting started**](research/researcher-guide.md)\*\*\*\*
 * [Working with files](getting-started/work-with-files/)
 * [Working with apps](getting-started/work-with-applications/)
-* [Working with data tables](getting-started/work-with-data.md)
+* [Working with data tables](data/work-with-data.md)
 * [Working in High Performance Computing \(HPC\)](research/high-performance-computing.md)
 * Inviting collaborators
 * Taking snapshots
