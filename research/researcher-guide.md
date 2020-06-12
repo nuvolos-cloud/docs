@@ -20,6 +20,8 @@ Research projects are spaces in Nuvolos where researchers can store and work on 
 
 ## Add material to the project
 
+You can add files and source code to your project via the file download/upload feature of Nuvolos.
+
 
 
 ## Create alternate approaches

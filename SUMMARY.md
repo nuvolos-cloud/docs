@@ -44,6 +44,7 @@
   * [Work with data](getting-started/work-with-data.md)
   * [Work with applications](getting-started/work-with-applications/README.md)
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
+    * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
 * [Administration](settings-and-administration/README.md)
   * [Roles](settings-and-administration/role-system.md)
   * [Organization management](settings-and-administration/organization-management/README.md)
