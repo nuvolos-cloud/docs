@@ -57,9 +57,16 @@ To distribute some material:
 
 In the following example, we distribute two files and an application to the previously created empty instance.
 
-![](../.gitbook/assets/research_distribute_ed.gif)
+![Distributing material to an empty instance](../.gitbook/assets/research_distribute_ed.gif)
 
+{% hint style="info" %}
+Distribution is an asynchronous task - once you initate it, it will run in the background. You will receive an e-mail with the outcome of a distribution.  
+If the distribution fails for some reason, do not hesitate to contact us at [support@nuvolos.cloud](mailto:support@nuvolos.cloud).
+{% endhint %}
 
+Once the distribution has completed, we can verify that the distributed items are still there.
+
+![Switching to the alternate instance with the new content in](../.gitbook/assets/verify_distribute_ed.gif)
 
 ## Invite collaborators
 
