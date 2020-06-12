@@ -48,6 +48,17 @@ To create an instance:
 
 #### Distribute material to modify
 
+To distribute some material:
+
+1. First navigate to the files, applications you want to distribute.
+2. Click on the stage button for the objects you want to distribute.
+3. Click on the distribute menu on the sidebar or on the overview.
+4. Follow the steps of distribution, for more details, refer to [our detailed guide](../getting-started/distribute-objects-in-nuvolos/).
+
+In the following example, we distribute two files and an application to the previously created empty instance.
+
+![](../.gitbook/assets/research_distribute_ed.gif)
+
 
 
 ## Invite collaborators
