@@ -24,7 +24,9 @@ When a student \(say, _demo\_student\_1@nuvolos.cloud_\) clicks on the link and 
 
 The student will not receive any other role, consequently they won't be able to view classmates' instances or the master instance. They will be able to view their own instance and going forward, any public space that the organization has.
 
-## 
+## Instructor: Is Moodle supported?
+
+Currently no. We are working on some level of Moodle integration and we expect a first proof-of-concept by the beginning of the 2020/2021 academic year.
 
 
 
