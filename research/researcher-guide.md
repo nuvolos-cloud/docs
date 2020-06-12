@@ -60,7 +60,7 @@ In the following example, we distribute two files and an application to the prev
 ![Distributing material to an empty instance](../.gitbook/assets/research_distribute_ed.gif)
 
 {% hint style="info" %}
-Distribution is an asynchronous task - once you initate it, it will run in the background. You will receive an e-mail with the outcome of a distribution.  
+Distribution is an asynchronous task - once you initiate it, it will run in the background. You will receive an e-mail with the outcome of a distribution.  
 If the distribution fails for some reason, do not hesitate to contact us at [support@nuvolos.cloud](mailto:support@nuvolos.cloud).
 {% endhint %}
 
@@ -69,6 +69,21 @@ Once the distribution has completed, we can verify that the distributed items ar
 ![Switching to the alternate instance with the new content in](../.gitbook/assets/verify_distribute_ed.gif)
 
 ## Invite collaborators
+
+You can invite collaborators if you are a [space admin](../settings-and-administration/role-system.md#space-admin) in a research project. By default the creator of the project automatically becomes space admin, every other user has to be invited specifically with that role.
+
+### Invite co-authors with space admin rights
+
+{% hint style="info" %}
+If you invite a co-author to your project as a space admin, restricted to the project, they will receive every possible right, including the ability to invite additional co-authors, create alternate instances and deleting the project itself.
+{% endhint %}
+
+To invite a co-author, do the following steps:
+
+1. Navigate to your space.
+2. U
+
+### Invite co-authors with editor rights
 
 
 
