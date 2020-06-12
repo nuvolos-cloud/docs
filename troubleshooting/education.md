@@ -24,6 +24,8 @@ When a student \(say, _demo\_student\_1@nuvolos.cloud_\) clicks on the link and 
 
 The student will not receive any other role, consequently they won't be able to view classmates' instances or the master instance. They will be able to view their own instance and going forward, any public space that the organization has.
 
+## 
+
 
 
 ##  
