@@ -30,9 +30,9 @@ Nuvolos supports two ways to sign in:
 1. Users affiliated with a Swiss higher education institution, select the SWITCH option.
 2. Otherwise, use default sign-in option.
 
-## Access your class material
+## Access course resources
 
-1. Click the tile of your class on the dashboard.
+1. Click the tile of your course on the dashboard.
    * Mind the fact that your context has changed in the breadcrumbs to your personal instance.
 2. Click the file view on the overview of your personal instance.
 
