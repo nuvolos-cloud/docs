@@ -44,7 +44,7 @@ As a first step, read the guide for getting started:
 
 To better understand the inner workings of Nuvolos, after consulting the getting started guides, we strongly suggest reading up on the following topics:
 
-* [**The structure of Nuvolos**](our-features/data-organization/)\*\*\*\*
+* \*\*\*\*[**Platform architecture**](our-features/data-organization/)\*\*\*\*
   * [Organizations](our-features/data-organization/organizations.md)
   * [Spaces](our-features/data-organization/spaces.md)
   * [Instances](our-features/data-organization/instances.md)
