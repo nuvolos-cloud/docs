@@ -2,7 +2,7 @@
 description: Getting started with participating in a class
 ---
 
-# Enroll and get started
+# Enroll in a course
 
 ## Generate invitation 
 
