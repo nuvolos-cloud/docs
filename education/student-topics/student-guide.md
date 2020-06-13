@@ -25,10 +25,10 @@ In Nuvolos course participation is by invitation only. To accept an invitation p
 
 ## Sign in
 
-You can sign in via two routes:
+Nuvolos supports two ways to sign in:
 
 1. Users affiliated with a Swiss higher education institution, select the SWITCH option.
-2. Otherwise, use the regular sign-in option.
+2. Otherwise, use default sign-in option.
 
 ## Access your class material
 
