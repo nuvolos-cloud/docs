@@ -6,7 +6,7 @@
     * [Get started with a class](education/instructor-topics/instructor-guide.md)
     * [Set up group work](education/instructor-topics/set-up-group-work.md)
   * [Student](education/student-topics/README.md)
-    * [Enroll and get started](education/student-topics/student-guide.md)
+    * [Enroll in a course](education/student-topics/student-guide.md)
 * [Research](research/README.md)
   * [Get started](research/researcher-guide.md)
   * [High-performance computing](research/high-performance-computing.md)
