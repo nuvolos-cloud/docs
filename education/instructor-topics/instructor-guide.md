@@ -52,7 +52,7 @@ Ways to invite students to join the course :
 
 * By sharing an Invite Link \(requires the least work from the instructors' side\)
 * By e-mail \(good for small classes\)
-* By Group invitation \(via e-mail\)
+* By inviting a group \(via e-mail\)
 
 Invited students will be able to see only their workspace, not the master instance or other students' instances.
 

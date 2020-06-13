@@ -1,18 +1,15 @@
 ---
-description: Getting started with participating in a class
+description: Getting started with participating in a course
 ---
 
 # Enroll in a course
 
-## Generate invitation 
+## Generate invitation
 
-_If your instructor shared a sign-up link with you, you will have to generate an invitation for yourself._ 
+If you received an invitation link directly from your instructor, you will have to either click on it or navigate to it in your browser. The invite link should look something like this: https://nuvolos.cloud/enroll/class/4963cd4b1355488f35f874c6f9f4116e0e
 
-1. Click or paste the link into your browser.
-2. Give your e-mail address, we strongly suggest using your university e-mail address.
-3. You should find the invitation in your mail box. Check your spam filter if the e-mail does not arrive.
-
-
+1. Provide your educational institution e-mail address.
+2. Check the invitation in your email inbox.
 
 ## Accept your invitation
 
