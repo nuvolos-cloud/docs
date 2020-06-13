@@ -9,18 +9,18 @@ description: Getting started with participating in a course
 If you received an invitation link directly from your instructor, you will have to either click on it or navigate to it in your browser. The invite link should look something like this: https://nuvolos.cloud/enroll/class/4963cd4b1355488f35f874c6f9f4116e0e
 
 1. Provide your educational institution e-mail address.
-2. Check the invitation in your email inbox.
+2. Check invitation message in your email inbox.
 
 ## Accept your invitation
 
-You can only work with Nuvolos if you have received a valid invitation. The below steps show you how to accept an invitation to your own instance in a particular class in Nuvolos.
+In Nuvolos course participation is by invitation only. To accept an invitation proceed as follows.
 
-1. Open your e-mail account and navigate to the invitation mail.
-2. Click the **Review Invitation** button in the invitation mail.
+1. Open invitation email.
+2. Click **Review Invitation** in the invitation email.
 3. Inspect the roles included in the invitation.
 4. If you have never signed up, sign up.
-5. Click the accept invitation button.
-6. If this is the first time you are signing up, the process might take about a minute to complete.
+5. Click accept invitation.
+6. For first time users the signing up process might take up to a minute to conclude.
 
 ![](../../.gitbook/assets/accept_invite_1_ed.gif)
 
