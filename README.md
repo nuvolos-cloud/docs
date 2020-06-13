@@ -31,14 +31,14 @@ As a first step, read our guide for getting started:
 {% tab title="Researcher" %}
 As a first step, read our guide for getting started:
 
-* [**Getting started**](research/researcher-guide.md)\*\*\*\*
-* [Working with files](getting-started/work-with-files.md)
-* [Working with apps](getting-started/work-with-applications/)
-* [Working with data tables](data/work-with-data.md)
-* [Working in High Performance Computing \(HPC\)](research/high-performance-computing.md)
-* Inviting collaborators
-* Taking snapshots
-* Sharing results
+* [**Get started**](research/researcher-guide.md)\*\*\*\*
+* [Work with files](getting-started/work-with-files.md)
+* [Work with applications](getting-started/work-with-applications/)
+* [Work with data tables](data/work-with-data.md)
+* [High Performance Computing \(HPC\)](research/high-performance-computing.md)
+* Invite collaborators
+* Take snapshots
+* Share results
 {% endtab %}
 {% endtabs %}
 
