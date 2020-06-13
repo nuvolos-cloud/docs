@@ -20,7 +20,7 @@ A class in Nuvolos is a space to organise all course-related teaching material \
 {% endtab %}
 
 {% tab title="Student" %}
-As a first step, read our guide for getting started:
+As a first step, read the guide on how to enroll in a course:
 
 * \*\*\*\*[**Enroll in a course**](education/student-topics/student-guide.md)\*\*\*\*
 * [Work with files](getting-started/work-with-files.md)
@@ -29,7 +29,7 @@ As a first step, read our guide for getting started:
 {% endtab %}
 
 {% tab title="Researcher" %}
-As a first step, read our guide for getting started:
+As a first step, read the guide for getting started:
 
 * [**Get started**](research/researcher-guide.md)\*\*\*\*
 * [Work with files](getting-started/work-with-files.md)
