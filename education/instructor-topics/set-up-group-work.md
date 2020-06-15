@@ -24,6 +24,8 @@ _Warning:_ _multiple users might be editing the same file_. The exact outcome of
 
 The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their group work instance.
 
+
+
 ## Upload files to the master instance of the group work space
 
 After the exact structure of the group work space is set up, files can be uploaded to the master instance. This step can happen before adding all the group instances, depending on the timeline of the class.
