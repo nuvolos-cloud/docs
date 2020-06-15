@@ -1,8 +1,8 @@
 ---
-description: Getting started with teaching a class
+description: Getting started with teaching a course
 ---
 
-# Get started with a class
+# Get started with a course
 
 {% hint style="success" %}
 In most cases, it is possible to set up a class from scratch in less than 5 minutes.
@@ -52,7 +52,7 @@ Ways to invite students to join the course :
 
 * By sharing an Invite Link \(requires the least work from the instructors' side\)
 * By e-mail \(good for small classes\)
-* By Group invitation \(via e-mail\)
+* By inviting a group \(via e-mail\)
 
 Invited students will be able to see only their workspace, not the master instance or other students' instances.
 
