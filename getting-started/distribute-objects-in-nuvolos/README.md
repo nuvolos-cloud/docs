@@ -51,13 +51,7 @@ To distribute all the contents of a snapshot:
 
 **Example**
 
-Assume we are in a the Demo Space and we have a snapshot called "Quick snapshot 11/6/2020 - 10:56:59" that we want to distribute. First, from the toolbar we select the snapshot and then from the sidebar we havigate to the stage area.
+Assume we are in a the Demo Space and we have a snapshot called "First Snapshot" that we want to distribute. First, from the toolbar we select the snapshot and then from the sidebar we havigate to the stage area.
 
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-10.59.54-am.png)
-
-Click on Start and select Option 1
-
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-11.03.52-am.png)
-
-Continue as described above.
+![](../../.gitbook/assets/distribute_snapshot_ed.gif)
 
