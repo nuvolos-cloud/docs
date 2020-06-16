@@ -12,7 +12,7 @@ Nuvolos users might have a limit on the maximum number of snapshots that they ca
 
 * **You followed the wrong steps for creating a snapshot**
 
-Make sure you follow the correct steps required for creating a snapshot. For more details, check [here](../../settings-and-administration/instance-management/create-a-snapshot.md).
+Make sure you follow the correct steps required for creating a snapshot. For more details, check [here](../../getting-started/working-with-snapshots/create-a-snapshot.md).
 
 * **You are in Distributed instance.**
 

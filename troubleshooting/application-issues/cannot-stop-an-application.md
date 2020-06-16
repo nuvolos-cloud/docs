@@ -23,7 +23,7 @@ To stop an application, you must be either in the **CURRENT STATE** of an instan
 
 * **There is no running application to stop.**
 
-Make sure that you have [created](../../settings-and-administration/instance-management/create-an-application.md) and started the application before stopping it.
+Make sure that you have [created](../../getting-started/work-with-applications/create-an-application.md) and started the application before stopping it.
 
 * **The application you want to start does not exist anymore because it was deleted.** 
 * **You have lost connection to the internet.**

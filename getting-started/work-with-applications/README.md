@@ -3,7 +3,7 @@
 In Nuvolos, each application is a separate entity with a separate set of resources and environmental settings. Some important considerations:
 
 1. You can have multiple applications of the same type \(e.g. RStudio\) in the same instance with different sets of packages or package versions.
-2. When you [take a snapshot](../../settings-and-administration/instance-management/create-a-snapshot.md), applications are snapshot along with all the packages, environmental files and so on.
+2. When you [take a snapshot](../working-with-snapshots/create-a-snapshot.md), applications are snapshot along with all the packages, environmental files and so on.
 3. Applications can be distributed \(see above\).
 
 ## Table of contents
@@ -14,7 +14,7 @@ In Nuvolos, each application is a separate entity with a separate set of resourc
 
 ## Create a new application
 
-In the workflow guide, we previously created an RStudio application upon creating the space itself. We will add a JupyterLab application to the Master instance of the research project.
+In the [workflow guide](../../research/), we previously created an RStudio application upon creating the space itself. We will add a JupyterLab application to the Master instance of the research project.
 
 1. Navigate to the Master instance overview \(from the dashboard or by changing context in the [breadcrumbs](../navigation-in-nuvolos.md#the-breadcrumb)\)
 2. Click on the Applications tile or sidebar menu item.

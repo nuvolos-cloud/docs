@@ -116,7 +116,7 @@ To invite a co-author as an instance editor, do the following steps:
 In Nuvolos, each application is a separate entity with a separate set of resources and environmental settings. Some important considerations:
 
 1. You can have multiple applications of the same type \(e.g. RStudio\) in the same instance with different sets of packages or package versions.
-2. When you [take a snapshot](../settings-and-administration/instance-management/create-a-snapshot.md), applications are snapshot along with all the packages, environmental files and so on.
+2. When you [take a snapshot](../getting-started/working-with-snapshots/create-a-snapshot.md), applications are snapshot along with all the packages, environmental files and so on.
 3. Applications can be distributed \(see above\).
 
 ### Create a new application

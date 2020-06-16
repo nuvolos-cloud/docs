@@ -8,7 +8,7 @@ In order to create an application in an instance, the user must be the instance 
 
 * **You followed the wrong steps for creating an application**
 
-Make sure you follow the correct steps required for creating an application. For more details, check [here](../../settings-and-administration/instance-management/create-an-application.md).
+Make sure you follow the correct steps required for creating an application. For more details, check [here](../../getting-started/work-with-applications/create-an-application.md).
 
 * **You are in Distributed instance.**
 
