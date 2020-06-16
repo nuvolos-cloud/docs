@@ -1,5 +1,7 @@
 # Work with files
 
+## Choose your context
+
 In all of the following operations, we assume that you know how to pick the appropriate context for your work \(that is, finding the current state of an instance in which you are implicitly or explicitly an editor\).
 
 {% hint style="info" %}
