@@ -25,7 +25,7 @@ Suppose that your project is called 'Demo research project' and you need two tab
 
 Using the distribute feature, you can set your research project up with the required data:
 
-
+![Distributing tables to a personal space](../.gitbook/assets/distribute_tables_ed.gif)
 
 ## Work with data in your workspace
 
