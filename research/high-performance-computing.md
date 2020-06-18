@@ -241,19 +241,19 @@ Using the Job Monitor you can manage the listed jobs for your cluster. Right-cli
 
 A simple communicating job example is available in the following folder: `<MATLAB_root_folder>/toolbox/local/alphacruncher/examples/communicatingJob_simple` 
 
-In the MATLAB terminal, execute `edit prime_job_comm.m` to open the job description file in the Editor.
+In the MATLAB terminal, execute `edit prime_job_comm_n.m` to open the job description file in the Editor.
 
 This simple job computes the number of primes from 2 until 1000. The computation is structured in 3 files:
 
-* **prime\_job\_comm.m**
+* **prime\_job\_comm\_n.m**
 
   This file contains the settings for the job. You need to execute this script to start the cluster job. Note that we define one job with only one task in this case.
 
-* **prime\_start\_comm.m**
+* **prime\_start\_comm\_n.m**
 
   This file contains the ‘main’ function \(a.k.a. entry point\) that the job executes. Generally you load/initialize variables in this function, and you aggregate results here.
 
-* **prime\_comm.m**
+* **prime\_comm\_n.m**
 
   This file contains the actual implementation of the prime counting function. Look for the use of parfor in the file to see how the computation is parallelized.
 
@@ -263,7 +263,7 @@ This simple job computes the number of primes from 2 until 1000. The computation
 
 A simple independent example is available in the following folder: `<MATLAB_root_folder>/toolbox/local/alphacruncher/examples/independentJob_simple` 
 
-In the MATLAB terminal, execute `edit prime_job_ind.m` to open the job description file in the Editor.
+In the MATLAB terminal, execute `edit prime_job_ind_n.m` to open the job description file in the Editor.
 
 This simple job computes the number of primes for 3 different cases
 
@@ -273,15 +273,15 @@ This simple job computes the number of primes for 3 different cases
 
 The computation is structured in 3 files:
 
-* **prime\_job\_ind.m**
+* **prime\_job\_ind\_n.m**
 
   This file contains the settings for the job. You need to execute this script to start the cluster job. Note that we define one job, but 3 tasks in this case. Each task calls the same main function, but with different parameters.
 
-* **prime\_start\_ind.m**
+* **prime\_start\_ind\_n.m**
 
   This file contains the ‘main’ function \(a.k.a. entry point\) that the job executes. Generally you load/initalize variables in this function, and you aggregate results here. For independent jobs, your entry file should have input parameters. 
 
-* **prime\_ind.m**
+* **prime\_ind\_n.m**
 
   This file contains the actual implementation of the prime counting function. Note the absence of parfor in this implementation: this function is purely sequential.
 
