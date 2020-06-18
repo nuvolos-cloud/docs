@@ -66,7 +66,7 @@ Merging CRSP and COMPUSTAT using **LINK\_HISTORY**, the following steps are requ
 **The code examples below are meant for providing a starting point, but may need to be adjusted depending on the research question. All researchers should review and verify that the code they use is in line with their research questions.**
 {% endhint %}
 
-In the following, it will be assumed that the tables have been distributed to the current state of the instance of the example. To distribute data, follow the instructions detailed [here](../add-data-to-your-working-instance.md).
+In the following, it will be assumed that the tables have been distributed to the current state of the instance of the example. To distribute data, follow the instructions detailed [here]().
 
 #### Designing the query
 

@@ -23,7 +23,6 @@
 * [Manage Data](data/README.md)
   * [Work with data](data/work-with-data.md)
   * [The Tables view](data/the-table-view.md)
-  * [Adding data to a work instance](data/add-data-to-your-working-instance.md)
   * [Accessing table data from applications](data/access-data-from-applications/README.md)
     * [Setting up ODBC drivers](data/access-data-from-applications/setting-up-odbc-drivers.md)
     * [Obtain tokens for data access](data/access-data-from-applications/obtain-tokens-for-your-data.md)

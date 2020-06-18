@@ -27,6 +27,18 @@ Using the distribute feature, you can set your research project up with the requ
 
 
 
+## Work with data in your workspace
+
+Once the distribution has completed, you will receive an e-mail to your account you registered with. If the distribution was successful, the data should be available in the instance you distributed to.
+
+You will now be able to work with data in your workspace, without having to worry about backing up your data and causing inadvertent changes.
+
+Please follow our detailed guides:
+
+* The [tables view](the-table-view.md) helps you explore and write basic queries against tables.
+* Once the structure of data is clear, we suggest [working from applications](access-data-from-applications/) with data.
+* Some[ worked examples](work-with-specific-datasets/crsp-and-compustat.md) demonstrate the power of Nuvolos.
+
 
 
 
