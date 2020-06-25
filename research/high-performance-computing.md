@@ -381,15 +381,12 @@ You can cancel jobs in R via the `nuvolos.tools::scancel` R function.
  You can synchronize packages with the HPC cluster via the `nuvolos.tools::package_sync_hpc` R function.
 
 {% hint style="warning" %}
-* Any package synchronization happens as an asynchronous task and might take a substantial amount of time. 
-* The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
+The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
 {% endhint %}
 
 #### Interactive jobs
 
-
-
-\`\`
+An interactive session and an HPC job are in general two orthogonal contexts for running code. For shorter expected runtime jobs, it is possible to not return control to R via using the `nuvolos.tools::run_job_interactive` R function.
 
 .
 
