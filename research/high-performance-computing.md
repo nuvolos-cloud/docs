@@ -15,19 +15,39 @@ SCC compute resources are grouped into different sets called partitions \(or que
 
 ## Access
 
+The HPC cluster can be accessed by connecting in some manner to the login node.
+
+{% hint style="success" %}
+You can access the login node at:
+
+**`hpc.nuvolos.cloud`**
+{% endhint %}
+
 ### Secure Shell \(ssh\)
 
 Secure shell is the usual way to gain shell access to Linux based systems, such as the HPC clusters. There are many choices of clients available depending on the system you are using to connect. SCC supports only public key authentication. An SSH key is an access credential in the [SSH protocol](https://www.ssh.com/ssh/protocol/). Its function is similar to that of user names and passwords.
-
-Login node: hpc.nuvolos.cloud
 
 ```bash
 ssh <your_username>@hpc.nuvolos.cloud
 ```
 
-### **Nuvolos.tools**
+### **r-nuvolos-tools**
 
-\*\*\*\*
+If you are working with R, Nuvolos offers a convenience package to connect to the login node while working inside your regular R environment. The detailed description of the package can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
+
+On a high level, the package lets you directly send R script files for HPC computation and offers a simple, lightweight interface.
+
+### bash toolkit on Nuvolos
+
+If you are working inside Nuvolos applications \(such as JupyterLab or Spyder\), and HPC integration is activated for your work area, you have acces to some convenience tools for the command line.
+
+In particular, connecting to the cluster can be done by the following command:
+
+```text
+connect_cluster
+```
+
+More details can be found below.
 
 ## Managing jobs
 
