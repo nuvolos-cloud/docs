@@ -51,9 +51,11 @@ More details can be found below.
 
 ## Managing jobs
 
-SCC uses [SLURM](https://slurm.schedmd.com/) as workload and resource manager. Convenient SLURM commands:
+SCC uses [SLURM](https://slurm.schedmd.com/) as workload and resource manager. In SLURM every job is issued a jobid, which is used to identify and manage jobs.
 
-List your active jobs
+### List your active jobs
+
+Listing the active queue in SLURM can be done by issuing the [`squeue`](https://slurm.schedmd.com/squeue.html)command.
 
 ```bash
 squeue
@@ -67,29 +69,33 @@ squeue -o "%.18i %.9P %.70j %.8u %.2t %.10M %.6D %R"
 
 Further details available [here](https://slurm.schedmd.com/squeue.html) about how to set up a custom format string.
 
-View details for your jobs
+### View details for your jobs
+
+Job details can be queried by using the [`scontrol show job`](https://slurm.schedmd.com/scontrol.html)command. The scontrol command gives you a large amount of details, and will also show you the location of the log file, which can be useful for debugging errors.
 
 ```text
 scontrol show job <jobid>
 ```
 
-This will show you the location of the log file, which can be useful for debugging errors.
+### Cancel your job
 
-Cancel your job
+If you need to cancel a job, obtain its identifier \(via squeue or scontrol\) and then issue [`scancel`](https://slurm.schedmd.com/scancel.html). You can only cancel your own jobs.
 
 ```text
 scancel <jobid>
 ```
 
-You can only cancel your own jobs.
+### View your jobs history
 
-View your jobs history
+The [`sacct`](https://slurm.schedmd.com/sacct.html) command is SLURM's accounting and history command. There are many possible parametrizations.
+
+#### Job history after given date
+
+You can display some basic stats for all your jobs you have submitted on or after YYYY-MM-DD by issuing the following command. You can read more [here](https://slurm.schedmd.com/sacct.html) about how to customize the format string.
 
 ```text
 sacct -S <YYYY-MM-DD> --format=User%20,JobID,Jobname%30,partition,state,start,end,elapsed,nnodes,ncpus,nodelist
 ```
-
-This will display some basic stats for all your jobs you have submitted on or after YYYY-MM-DD. You can read more [here](https://slurm.schedmd.com/sacct.html) about how to customize the format string.
 
 ## Matlab
 
