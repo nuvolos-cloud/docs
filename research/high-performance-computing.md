@@ -418,31 +418,35 @@ An interactive session and an HPC job are in general two orthogonal contexts for
 
 Currently support for python environments is provided via the [bash toolkit](high-performance-computing.md#bash-toolkit-on-nuvolos). You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
 
-Accessing the cluster environment is suggested to be done via:
+### Access
 
 #### connect\_cluster\_env
 
-The command `connect_cluster_env` connects to the cluster and activates the conda environment mapped to your environment on the cluster. You are then able to browse the conda environment of the HPC cluster.
+The command `connect_cluster_env` connects to the cluster and activates the conda environment mapped to your environment on the cluster. You are then able to browse the conda environment of the HPC cluster. For controlling the environment, please refer to the [relevant section](high-performance-computing.md#python-and-other-conda-based-applications).
 
 #### connect\_cluster
 
 The command `connect_cluster` connects to the cluster and without activating a mapped conda environment.
 
+### Job management
+
+The toolkit provides a thin convenience layer over SLURM commands. For description of what the job managaement commands do, please refer to [this section](high-performance-computing.md#managing-jobs).
+
 #### sbatch
 
-The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+The command `sbatch` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
 #### squeue
 
-The command `squeue` connects to the cluster and without activating a mapped conda environment.
+The command `squeue` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
 #### scancel
 
-The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+The command `scancel` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
 #### sacct
 
-The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+The command `sacct` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
 
 
