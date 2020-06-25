@@ -117,10 +117,6 @@ The command `create_cluster_env` generates a conda environment on the HPC cluste
 
 The command `update_cluster_env` exports the current application conda environment state and attempts to reflect it on the cluster by updating and adding appropriate packages. In case you update packages or package versions migrate during new dependency resolution when installing a new package to your conda environment, the command is necessary.
 
-#### connect\_cluster\_env
-
-The command `connect_cluster_env` connects to the cluster and activates the conda environment mapped to your environment on the cluster.
-
 ### R
 
 R packages on Nuvolos are stored in a standard library structure. In order to reflect the R environment on the cluster the function `nuvolos.tools::package_sync_hpc` needs to be called.
@@ -420,11 +416,35 @@ An interactive session and an HPC job are in general two orthogonal contexts for
 
 ## Python
 
-Currently support for python environments is provided via the bash toolkit. You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
+Currently support for python environments is provided via the [bash toolkit](high-performance-computing.md#bash-toolkit-on-nuvolos). You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
 
-### Access
+Accessing the cluster environment is suggested to be done via:
 
-### Job control
+#### connect\_cluster\_env
+
+The command `connect_cluster_env` connects to the cluster and activates the conda environment mapped to your environment on the cluster. You are then able to browse the conda environment of the HPC cluster.
+
+#### connect\_cluster
+
+The command `connect_cluster` connects to the cluster and without activating a mapped conda environment.
+
+#### sbatch
+
+The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+
+#### squeue
+
+The command `squeue` connects to the cluster and without activating a mapped conda environment.
+
+#### scancel
+
+The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+
+#### sacct
+
+The command `sbatch` connects to the cluster and without activating a mapped conda environment.
+
+
 
 
 
