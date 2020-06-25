@@ -123,7 +123,7 @@ global conn_str "DRIVER=SnowflakeDSIIDriver;SERVER=alphacruncher.eu-central-1.sn
 You can then access data similar to if you were using Nuvolos:
 
 ```text
-odbc load, exec("SELECT * FROM table LIMIT 10") connectionstring($conn_str)
+odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
 ```
 
 ### Connecting with SAS
