@@ -432,15 +432,21 @@ The command `connect_cluster` connects to the cluster and without activating a m
 
 The toolkit provides a thin convenience layer over SLURM commands. For description of what the job managaement commands do, please refer to [this section](high-performance-computing.md#managing-jobs).
 
-#### sbatch
+```text
+sbatch
+```
 
 The command `sbatch` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
-#### squeue
+```text
+squeue
+```
 
 The command `squeue` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
-#### scancel
+```text
+scancel
+```
 
 The command `scancel` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
