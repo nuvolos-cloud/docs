@@ -444,7 +444,9 @@ The command `squeue` connects to the cluster and without activating a mapped con
 
 The command `scancel` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
-#### sacct
+```text
+sacct
+```
 
 The command `sacct` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
