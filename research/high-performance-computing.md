@@ -79,7 +79,7 @@ scontrol show job <jobid>
 
 ### Cancel your job
 
-If you need to cancel a job, obtain its identifier \(via squeue or scontrol\) and then issue [`scancel`](https://slurm.schedmd.com/scancel.html). You can only cancel your own jobs.
+If you need to cancel a job, obtain its identifier \(via `squeue` or `scontrol`\) and then issue [`scancel`](https://slurm.schedmd.com/scancel.html). You can only cancel your own jobs.
 
 ```text
 scancel <jobid>
@@ -356,6 +356,34 @@ The package offers convenience features for R users who are running RStudio appl
 #### Connecting 
 
 As pointed out, the HPC login node is located at `hpc.nuvolos.cloud`. For basic use cases, the package offers you the ability of not having to move to the terminal of RStudio to interact with the cloud. 
+
+If you want to connect directly to the login node, please follow instructions [here](high-performance-computing.md#managing-jobs).
+
+#### Submit jobs
+
+The package implements a wrapper for the `sbatch` command via the `nuvolos.tools::sbatch` R function.
+
+Some suggestions for its usage:
+
+* On Nuvolos a synchronization happens between your workspace and the HPC workspace. In order for this to go through, you need to put scripts to be sent to submission under the path `~/files/`
+* The function creates a job and returns control to R once the job submission is done. In order to gather results, a separate ingestion step has to be performed.
+
+#### Checking status
+
+You can issue the squeue command in R via the `nuvolos.tools::squeue` R function.
+
+#### Canceling jobs
+
+You can cancel jobs in R via the `nuvolos.tools::scancel` R function.
+
+#### Synchronize libraries
+
+ You can synchronize packages with the HPC cluster via the `nuvolos.tools::package_sync_hpc` R function.
+
+{% hint style="warning" %}
+* Any package synchronization happens as an asynchronious task and might take a substantial amount of time. 
+* The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver tou our users in Q1 2021.
+{% endhint %}
 
 
 
