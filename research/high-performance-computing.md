@@ -311,7 +311,7 @@ The computation is structured in 3 files:
 
   This file contains the actual implementation of the prime counting function. Note the absence of parfor in this implementation: this function is purely sequential.
 
-## FAQ
+### FAQ
 
 * **How many MATLAB workers can I allocate for my job?**
 
@@ -336,4 +336,16 @@ The computation is structured in 3 files:
 * **How can I save variables inside a parfor loop?**
 
   MATLAB does not allow the use of the built-in save function inside parfor loops. To get around this problem, we’ve created an auxiliary ‘parsave’ function for your convenience that will work within parfor loops. `parsave` saves variable\(s\) to .mat files from within parfor loops.
+
+## R
+
+There are three options to choose from when you plan to run HPC jobs in R.
+
+1. From Nuvolos: use the r-nuvolos-tools package 
+2. From Nuvolos: use shell commands 
+3. Outside Nuvolos: use shell commands
+
+In this section, only the r-nuvolos-tools package is discussed in detail as general job management tools are covered in a separate section.
+
+
 
