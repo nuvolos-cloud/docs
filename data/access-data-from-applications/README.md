@@ -117,7 +117,7 @@ global user `<username>'
 global dbpwd `<snowflake_access_token>'
 global dbpath_db "`<database_name>'"
 global dbpath_schema "`<schema_name>"
-global conn_str "DRIVER=SnowflakeDSIIDriver;SERVER=alphacruncher.eu-central-1.snowflakecomputing.com;DATABASE=$dbpath_db;SCHEMA=$dbpath_schema;UID=$user;PWD=$dbpwd;WAREHOUSE=Nuvolos"
+global conn_str "DRIVER=SnowflakeDSIIDriver;SERVER=alphacruncher.eu-central-1.snowflakecomputing.com;DATABASE=$dbpath_db;SCHEMA=$dbpath_schema;UID=$user;PWD=$dbpwd"
 ```
 
 You can then access data similar to if you were using Nuvolos:
