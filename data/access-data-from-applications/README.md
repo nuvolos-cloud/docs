@@ -44,7 +44,7 @@ result_data <- dbGetQuery(conn,"SELECT * FROM table LIMIT 10")
 If you want to use Nuvolos-hosted Stata, the data access is greatly simplified. Nuvolos has its own `sysprofile.do` that automatically sets you up with access parameters. Stata communicates with the database using `odbc` , so you will need to issue the following command to load the query:
 
 ```text
-odbc load, exec("SELECT * FROM table LIMIT 10") connectionstring($conn_str)
+odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
 ```
 
 ## Accessing data tables from external, non-Nuvolos applications
