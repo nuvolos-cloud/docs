@@ -6,56 +6,34 @@ The Scientific Cloud Cluster \(SCC\) is an elastic computing platform, providing
 
 ### Compute resources
 
-SCC compute resources are grouped into different sets called partitions \(or queues\). Each partition contains non overlapping nodes with different capacities and optimal use cases:
+SCC compute resources are grouped into different sets called partitions \(a.k.a. queues\). Each partition contains non overlapping nodes with different capacities and optimal use cases:
 
 * The nodes in the `defq` partition feature **10 physical cores \(20 virtual cores\) and 38 GB RAM**. This queue is used exclusively for running MATLAB. Please send your MATLAB jobs here even if you use SLURM-orchestrated parallelization.
-* The nodes in the `sharedq` partition feature **4 physical cores \(8 virtual cores\) and 16 GB RAM**. This partition is used for submitting generic jobs in R, Python or any other supported software. 
+* The nodes in the `sharedq` partition feature **4 physical cores \(8 virtual cores\) and 16 GB RAM**. This partition is used for submitting generic jobs in R, Python, Stata, Julia or any other supported software. 
 * The `intq` partition consists of a single node. This node has **8 physical cores \(16 virtual cores\) and 250 GB RAM**, and it is also equipped with **3 Tesla GPUs**. This is the default queue for the interactive cloud applications in Nuvolos.
 * The `eduq` partition consists of two nodes with  **5 physical cores \(10 virtual cores\) and 16 GB RAM**. This queue is accessible only for educational purposes in the context of academic courses. 
 
 ## Access
 
-The HPC cluster can be accessed by connecting in some manner to the login node.
-
-{% hint style="success" %}
-You can access the login node at:
-
-**`hpc.nuvolos.cloud`**
-{% endhint %}
-
 ### Secure Shell \(ssh\)
 
 Secure shell is the usual way to gain shell access to Linux based systems, such as the HPC clusters. There are many choices of clients available depending on the system you are using to connect. SCC supports only public key authentication. An SSH key is an access credential in the [SSH protocol](https://www.ssh.com/ssh/protocol/). Its function is similar to that of user names and passwords.
+
+Login node: hpc.nuvolos.cloud
 
 ```bash
 ssh <your_username>@hpc.nuvolos.cloud
 ```
 
-### **r-nuvolos-tools**
+### **Nuvolos.tools**
 
-If you are working with R, Nuvolos offers a convenience package to connect to the login node while working inside your regular R environment. The detailed description of the package can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
-
-On a high level, the package lets you directly send R script files for HPC computation and offers a simple, lightweight interface.
-
-### bash toolkit on Nuvolos
-
-If you are working inside Nuvolos applications \(such as JupyterLab or Spyder\), and HPC integration is activated for your work area, you have acces to some convenience tools for the command line.
-
-In particular, connecting to the cluster can be done by the following command:
-
-```text
-connect_cluster
-```
-
-More details can be found below.
+\*\*\*\*
 
 ## Managing jobs
 
-SCC uses [SLURM](https://slurm.schedmd.com/) as workload and resource manager. In SLURM every job is issued a jobid, which is used to identify and manage jobs.
+SCC uses [SLURM](https://slurm.schedmd.com/) as workload and resource manager. Convenient SLURM commands:
 
-### List your active jobs
-
-Listing the active queue in SLURM can be done by issuing the [`squeue`](https://slurm.schedmd.com/squeue.html)command.
+List your active jobs
 
 ```bash
 squeue
@@ -69,33 +47,29 @@ squeue -o "%.18i %.9P %.70j %.8u %.2t %.10M %.6D %R"
 
 Further details available [here](https://slurm.schedmd.com/squeue.html) about how to set up a custom format string.
 
-### View details for your jobs
-
-Job details can be queried by using the [`scontrol show job`](https://slurm.schedmd.com/scontrol.html)command. The scontrol command gives you a large amount of details, and will also show you the location of the log file, which can be useful for debugging errors.
+View details for your jobs
 
 ```text
 scontrol show job <jobid>
 ```
 
-### Cancel your job
+This will show you the location of the log file, which can be useful for debugging errors.
 
-If you need to cancel a job, obtain its identifier \(via `squeue` or `scontrol`\) and then issue [`scancel`](https://slurm.schedmd.com/scancel.html). You can only cancel your own jobs.
+Cancel your job
 
 ```text
 scancel <jobid>
 ```
 
-### View your jobs history
+You can only cancel your own jobs.
 
-The [`sacct`](https://slurm.schedmd.com/sacct.html) command is SLURM's accounting and history command. There are many possible parametrizations.
-
-#### Job history after given date
-
-You can display some basic stats for all your jobs you have submitted on or after YYYY-MM-DD by issuing the following command. You can read more [here](https://slurm.schedmd.com/sacct.html) about how to customize the format string.
+View your jobs history
 
 ```text
 sacct -S <YYYY-MM-DD> --format=User%20,JobID,Jobname%30,partition,state,start,end,elapsed,nnodes,ncpus,nodelist
 ```
+
+This will display some basic stats for all your jobs you have submitted on or after YYYY-MM-DD. You can read more [here](https://slurm.schedmd.com/sacct.html) about how to customize the format string.
 
 ## Matlab
 
@@ -311,7 +285,7 @@ The computation is structured in 3 files:
 
   This file contains the actual implementation of the prime counting function. Note the absence of parfor in this implementation: this function is purely sequential.
 
-### FAQ
+## FAQ
 
 * **How many MATLAB workers can I allocate for my job?**
 
@@ -336,59 +310,4 @@ The computation is structured in 3 files:
 * **How can I save variables inside a parfor loop?**
 
   MATLAB does not allow the use of the built-in save function inside parfor loops. To get around this problem, we’ve created an auxiliary ‘parsave’ function for your convenience that will work within parfor loops. `parsave` saves variable\(s\) to .mat files from within parfor loops.
-
-## R
-
-There are three options to choose from when you plan to run HPC jobs in R.
-
-1. From Nuvolos: use the r-nuvolos-tools package 
-2. From Nuvolos: use shell commands 
-3. Outside Nuvolos: use shell commands
-
-In this section, only the r-nuvolos-tools package is discussed in detail as general job management tools are covered[ ](high-performance-computing.md#managing-jobs)[in a separate section](high-performance-computing.md#managing-jobs).
-
-### **r-nuvolos-tools**
-
-The developers of Nuvolos maintain the r-nuvolos-tools package on github as an open repository. For the latest documentation, always refer to the package source and documentation that can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
-
-The package offers convenience features for R users who are running RStudio applications from Nuvolos and want to use the HPC capabilities.
-
-#### Connecting 
-
-As pointed out, the HPC login node is located at `hpc.nuvolos.cloud`. For basic use cases, the package offers you the ability of not having to move to the terminal of RStudio to interact with the cloud. 
-
-If you want to connect directly to the login node, please follow instructions [here](high-performance-computing.md#managing-jobs).
-
-#### Submit jobs
-
-The package implements a wrapper for the `sbatch` command via the `nuvolos.tools::sbatch` R function.
-
-Some suggestions for its usage:
-
-* On Nuvolos a synchronization happens between your workspace and the HPC workspace. In order for this to go through, you need to put scripts to be sent to submission under the path `~/files/`
-* The function creates a job and returns control to R once the job submission is done. In order to gather results, a separate ingestion step has to be performed.
-
-#### Checking status
-
-You can issue the squeue command in R via the `nuvolos.tools::squeue` R function.
-
-#### Canceling jobs
-
-You can cancel jobs in R via the `nuvolos.tools::scancel` R function.
-
-#### Synchronize libraries
-
- You can synchronize packages with the HPC cluster via the `nuvolos.tools::package_sync_hpc` R function.
-
-{% hint style="warning" %}
-The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
-{% endhint %}
-
-#### Interactive jobs
-
-An interactive session and an HPC job are in general two orthogonal contexts for running code. For shorter expected runtime jobs, it is possible to not return control to R via using the `nuvolos.tools::run_job_interactive` R function.
-
-.
-
-
 
