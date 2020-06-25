@@ -345,7 +345,23 @@ There are three options to choose from when you plan to run HPC jobs in R.
 2. From Nuvolos: use shell commands 
 3. Outside Nuvolos: use shell commands
 
-In this section, only the r-nuvolos-tools package is discussed in detail as general job management tools are covered in a separate section.
+In this section, only the r-nuvolos-tools package is discussed in detail as general job management tools are covered[ ](high-performance-computing.md#managing-jobs)[in a separate section](high-performance-computing.md#managing-jobs).
+
+### **r-nuvolos-tools**
+
+The developers of Nuvolos maintain the r-nuvolos-tools package on github as an open repository. For the latest documentation, always refer to the package source and documentation that can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
+
+The package offers convenience features for R users who are running RStudio applications from Nuvolos and want to use the HPC capabilities.
+
+#### Connecting 
+
+As pointed out, the HPC login node is located at `hpc.nuvolos.cloud`. For basic use cases, the package offers you the ability of not having to move to the terminal of RStudio to interact with the cloud. 
+
+
+
+\`\`
+
+.
 
 
 
