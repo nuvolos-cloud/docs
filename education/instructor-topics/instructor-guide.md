@@ -70,5 +70,24 @@ Teaching assistants are able to see everything that is going on in the class, th
 
 ![Inviting a teaching assistant](../../.gitbook/assets/space_admin_invite_ed.gif)
 
+## Best practice: Structuring your class
 
+As described in the structure document, a space \(in particular, a class\) consists of multiple instances. As a space administrator of your class, you have complete control over how many instances your space might have and which students may access what instance.
+
+### Suggested layout
+
+In the suggested standard layout:
+
+* All instructors \(professors and teaching assistants alike\) control the teaching material in the **master** instance. In terms of roles:
+  * The professor and designated teaching assistants have space admin role in the space and edit material in the master instance.
+* Every student is invited to their own instance, each student having the following roles:
+  * Editor role on their own personal instance.
+  * Viewer role on the distributed instance \(this is given by definition\).
+* [Group work](set-up-group-work.md) is kept in a separate space, any specialized instances are not kept together with the standard layout.
+
+{% hint style="success" %}
+The benefit of this layout is that distribution target can be "All Students" without compromising integrity. 
+
+In general, we suggest to keep your spaces simple if you have the ability to create multiple.
+{% endhint %}
 
