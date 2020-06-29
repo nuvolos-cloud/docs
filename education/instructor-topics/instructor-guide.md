@@ -91,3 +91,19 @@ The benefit of this layout is that distribution target can be "All Students" wit
 In general, we suggest to keep your spaces simple if you have the ability to create multiple.
 {% endhint %}
 
+### **Alternate layout**
+
+There are many alternate layouts possible as lined out previously. A particular example that has come up in a few cases:
+
+* Some or all instructors work in separate instances.
+  * The professor and designated teaching assistants have space admin role but agree to do course material development work in separate instances.
+* Every student is invited to their own instance, each student having the following roles:
+  * Editor role on their own personal instance.
+  * Viewer role on the distributed instance \(this is given by definition\).
+
+{% hint style="warning" %}
+The benefit of this layout is that the master instance never has file editing collisions.
+
+Distributions are complicated in this setup due to the fact that instructors may override each other's work during distribution. There is additional coordination required such that inadvertent overrides do not confuse instructors working in parallel.
+{% endhint %}
+
