@@ -13,9 +13,41 @@ SCC compute resources are grouped into different sets called partitions \(or que
 * The `intq` partition consists of a single node. This node has **8 physical cores \(16 virtual cores\) and 250 GB RAM**, and it is also equipped with **3 Tesla GPUs**. This is the default queue for the interactive cloud applications in Nuvolos.
 * The `eduq` partition consists of two nodes with  **5 physical cores \(10 virtual cores\) and 16 GB RAM**. This queue is accessible only for educational purposes in the context of academic courses. 
 
-## Access
+### Interacting with the HPC cluster
 
-The HPC cluster can be accessed by connecting in some manner to the login node.
+In general, you have 3 different methods to interact with the cluster:
+
+#### 1. Connecting directly to the login node of the cluster with a terminal
+
+This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to add your public key to the ~/.ssh/authorized\_keys file.
+
+#### 2. Using the bash toolkit inside a Nuvolos application
+
+We provide auxiliary bash functions for managing your jobs conveniently from your Nuvolos application's terminal. There is no one-time initial setup here and you don't even need to leave your Nuvolos application to work with it. Currently we don't support installing it on your own machine.
+
+#### 3. Using language-specific toolkits
+
+Programming languages which have an interactive command window like MATLAB, R, etc. can benefit from language-specific tooling. Such helpers makes it possible to manage your jobs using the programming language's native language elements. Please consult the section for your specific language for available tooling.
+
+### Environment synchronization
+
+In many cases, a key question is how you synchronize your code and software packages between the HPC cluster and the development environment in which you created your application. Syncing the code is the lesser problem, as it only involves transferring files. However, mirroring the same runtime environment between two physically different machines can be difficult.
+
+Applications developed by a single company like MATLAB usually ship all the building blocks you use in one large bundle - in other words, it's the **company's** job to make sure the MATLAB on a linux machine is able to run the same code as a MATLAB installation on a Windows machine.
+
+In contrast, in community-driven projects like Python or R environments are built by you, package by package. Mirroring an existing environment between machines can be difficult, as the **creator of each package** is responsible for making sure that the package works on different platforms, different OSes and supports different dependent packages. 
+
+#### Understanding environments in Nuvolos
+
+In Nuvolos, every [application](../our-features/data-organization/applications.md) is mapped to a single environment. In particular, this means a separate package volume for every application, e.g. an R application in an instance is mapped to a different environment on the cluster as a Python application in the same instance. Synchronizing an environment is synonimous to mapping the package volume of a particular application and representing it on the HPC cluster. Consequently, environment synchronization is always understood in the context of running a Nuvolos application.
+
+Please consult the section for your specific application to see how environment synchronization is supported.
+
+## Working with SCC from the login node
+
+The engine of a HPC cluster is the **scheduler**, which manages job lifecycle \(submission, allocation, termination, etc\). The SCC uses [SLURM](https://slurm.schedmd.com/documentation.html) which is a command-line application. Some IDEs provide a GUI for SLURM, but the most effective way is to interact with it using the command line. This section contains information on how to manage your jobs from the command line of the SCC login node. The benefit of these commands is that they apply to any programming language you might use on the cluster. Nevertheless, we aim to provide language-specific tooling for common job management tasks for the most popular HPC languages. Please check out the section for your programming language for available tools.
+
+The command line for the HPC cluster can be accessed by connecting in some manner to the login node:
 
 {% hint style="success" %}
 You can access the login node at:
@@ -23,21 +55,15 @@ You can access the login node at:
 **`hpc.nuvolos.cloud`**
 {% endhint %}
 
-### Secure Shell \(ssh\)
+### Connecting from you own computer
 
-Secure shell is the usual way to gain shell access to Linux based systems, such as the HPC clusters. There are many choices of clients available depending on the system you are using to connect. SCC supports only public key authentication. An SSH key is an access credential in the [SSH protocol](https://www.ssh.com/ssh/protocol/). Its function is similar to that of user names and passwords.
+Secure shell is the usual way to gain shell access to Linux based systems, such as the HPC clusters. There are many choices of clients available depending on the system you are using to connect. SCC supports only SSH key authentication. An SSH key is an access credential in the [SSH protocol](https://www.ssh.com/ssh/protocol/). Its function is similar to that of user names and passwords.
 
 ```bash
 ssh <your_username>@hpc.nuvolos.cloud
 ```
 
-### **r-nuvolos-tools**
-
-If you are working with R, Nuvolos offers a convenience package to connect to the login node while working inside your regular R environment. The detailed description of the package can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
-
-On a high level, the package lets you directly send R script files for HPC computation and offers a simple, lightweight interface.
-
-### bash toolkit on Nuvolos
+### Connecting from a Nuvolos application
 
 If you are working inside Nuvolos applications \(such as JupyterLab or Spyder\), and HPC integration is activated for your work area, you have acces to some convenience tools for the command line.
 
@@ -47,13 +73,11 @@ In particular, connecting to the cluster can be done by the following command:
 connect_cluster
 ```
 
-More details can be found below.
+### Managing jobs
 
-## Managing jobs
+SLURM provides various commands for managing all aspects of your jobs. One important SLURM concept is the jobid, which is assigned to each job automatically at submission by SLURM and is used to identify and manage the job.
 
-SCC uses [SLURM](https://slurm.schedmd.com/) as workload and resource manager. In SLURM every job is issued a jobid, which is used to identify and manage jobs.
-
-### List your active jobs
+#### List your active jobs
 
 Listing the active queue in SLURM can be done by issuing the [`squeue`](https://slurm.schedmd.com/squeue.html)command.
 
@@ -69,7 +93,7 @@ squeue -o "%.18i %.9P %.70j %.8u %.2t %.10M %.6D %R"
 
 Further details available [here](https://slurm.schedmd.com/squeue.html) about how to set up a custom format string.
 
-### View details for your jobs
+#### View details for your jobs
 
 Job details can be queried by using the [`scontrol show job`](https://slurm.schedmd.com/scontrol.html)command. The scontrol command gives you a large amount of details, and will also show you the location of the log file, which can be useful for debugging errors.
 
@@ -77,7 +101,7 @@ Job details can be queried by using the [`scontrol show job`](https://slurm.sche
 scontrol show job <jobid>
 ```
 
-### Cancel your job
+#### Cancel your job
 
 If you need to cancel a job, obtain its identifier \(via `squeue` or `scontrol`\) and then issue [`scancel`](https://slurm.schedmd.com/scancel.html). You can only cancel your own jobs.
 
@@ -85,7 +109,7 @@ If you need to cancel a job, obtain its identifier \(via `squeue` or `scontrol`\
 scancel <jobid>
 ```
 
-### View your jobs history
+#### View your jobs history
 
 The [`sacct`](https://slurm.schedmd.com/sacct.html) command is SLURM's accounting and history command. There are many possible parametrizations.
 
@@ -97,33 +121,66 @@ You can display some basic stats for all your jobs you have submitted on or afte
 sacct -S <YYYY-MM-DD> --format=User%20,JobID,Jobname%30,partition,state,start,end,elapsed,nnodes,ncpus,nodelist
 ```
 
-## Environment synchronization
+### Submitting jobs
 
-In almost all cases, a key question is how you synchronize your code and software packages between the HPC cluster and the development environment in which you created your application. This section details what can be done for synchronization with Nuvolos applications.
+You can submit jobs directly from the login node - however, you'd first need to copy the source code over to the cluster with tools like scp. When using the bash toolkit on Nuvolos, files are automatically synchronized between Nuvolos and the cluster, so we'll only cover job submission in the bash toolkit section.
 
-### Understanding environments
+## Working with the bash toolkit on Nuvolos
 
-In Nuvolos, every [application](../our-features/data-organization/applications.md) is mapped to a single environment. In particular, this means a separate package volume for every application. Synchronizing an environment is synonimous to mapping the package volume of a particular application and representing it on the HPC cluster. Consequently, environment synchronization is always understood in the context of running a Nuvolos application.
+### Managing jobs
 
-### Python and other conda-based applications
+The toolkit provides a thin convenience layer over the SLURM commands detailed in the previous [Managing jobs](high-performance-computing.md#managing-jobs) section, and some extra command\(s\). The accepted input arguments are the same in both cases.
 
-Support for synchronization is provided via the bash toolkit on Nuvolos. If HPC access is activated in your space, in any terminal with access to a conda environment you can issue the following commands in your terminal shell.
+### Submitting jobs
 
-#### create\_cluster\_env
+Use the [sbatch](https://slurm.schedmd.com/sbatch.html) command to submit a job script. One thing to keep in mind is how paths should be handled. The absolute path of a file in a Nuvolos app is different from the path of the copy of the file synced to the login node. This can be addressed by referencing files relative to the home folder, e.g. to submit a job script, use
 
-The command `create_cluster_env` generates a conda environment on the HPC cluster if it does not exist yet for the particular application you are using.
+```text
+sbatch '~/files/my_script.sbatch'
+```
 
-#### update\_cluster\_env
+Note that the use of single quotes over double quotes is intentional - the tilde should be resolved on the cluster machine, not the Nuvolos machine \(which would happen if we used double quotes\).
 
-The command `update_cluster_env` exports the current application conda environment state and attempts to reflect it on the cluster by updating and adding appropriate packages. In case you update packages or package versions migrate during new dependency resolution when installing a new package to your conda environment, the command is necessary.
+A simple example job script:
 
-### R
+```text
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=intq
+#SBATCH --chdir=files
+#SBATCH --mail-type=TIME_LIMIT_80
+#SBATCH --mail-user=<your@email.address>
 
-R packages on Nuvolos are stored in a standard library structure. In order to reflect the R environment on the cluster the function `nuvolos.tools::package_sync_hpc` needs to be called.
+echo "This will be run on the cluster!"
+```
 
-{% hint style="warning" %}
-The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case that might cause very infrequent issues, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
-{% endhint %}
+#### Input and output files
+
+Any files put under `~/files` will be synced bidirectionally with the HPC environment automatically, so you just need to place them somewhere under this folder. Make sure you reference them in your code relative to your executable. In the sbatch file, if you first `cd <subfolder_path>` to the subfolder where your executable is, the job on the cluster will reach the same files as running on Nuvolos or your own machine would, provided you also set the working directory to the same subfolder there. Example:
+
+```text
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=intq
+#SBATCH --chdir=files
+#SBATCH --mail-type=TIME_LIMIT_80
+#SBATCH --mail-user=<your@email.address>
+
+# Change directory
+cd a/b
+# Now the main executable
+python myscript.py > log.txt
+```
+
+In the above example, myscript.py is inside the ~/files/a/b folder in Nuvolos, so it's automatically synced to the cluster. What is more, log.txt is created **relative to your myscript.py**, which is assumed to be in the ~/files/a/b folder in Nuvolos. If you use relative paths in your scripts, everything will work the same was on Nuvolos and the HPC cluster as it worked on your own machine.
+
+## Language-specific toolkits
+
+In the sections below, we document the available language-specific toolkits for HPC connectivity on Nuvolos.
 
 ## Matlab
 
@@ -263,34 +320,6 @@ To execute a MATLAB script or function on the Parallel Server, we’ll have to d
 
   In this job type, you typically have one job, but many tasks \(array job\). The tasks are executed independently, in arbitrary order. You cannot use the parfor construct with these jobs. They are mostly used in the ‘single program, multiple data’ context: when you want to run a MATLAB function with different sets of input parameters. If you have a fixed number of cases you want to cover, this job type can be a better choice, as the overhead is less compared to communicating jobs, as the resource allocation is done by you instead of MATLAB \(through specifying each task upfront\).
 
-#### **Monitor Jobs**
-
-The Job Monitor displays the jobs in the queue. Open the Job Monitor from the MATLAB desktop on the Home tab in the Environment section, by selecting **Parallel** &gt; **Monitor Jobs**.
-
-![](../.gitbook/assets/matlab_monitor_jobs.png)
-
-The job monitor lists all the jobs that exist for the cluster specified in the selected profile. You can choose any one of your profiles \(those available in your current session Cluster Profile Manager\), and whether to display jobs from all users or only your own jobs.
-
-#### Typical Use Cases <a id="bu6vtxu"></a>
-
-The Job Monitor lets you accomplish many different goals pertaining to job tracking and queue management. Using the Job Monitor, you can:
-
-* Discover and monitor all jobs submitted by a particular user
-* Determine the status of a job
-* Determine the cause of errors in a job
-* Delete old jobs you no longer need
-* Create a job object in MATLAB for access to a particular job in the queue
-
-#### Manage Jobs Using the Job Monitor <a id="bs6wi5c-1"></a>
-
-Using the Job Monitor you can manage the listed jobs for your cluster. Right-click on any job in the list, and select any of the following options from the context menu. The available options depend on the type of job.
-
-* **Cancel** — Stops a running job and changes its state to `'finished'`. If the job is pending or queued, the state changes to `'finished'` without ever running. This is the same as the command-line [`cancel`](https://www.mathworks.com/help/parallel-computing/parallel.task.cancel.html) function for the job.
-* **Delete** — Deletes the job data and removes the job from the queue. This is the same as the command-line [`delete`](https://www.mathworks.com/help/parallel-computing/parallel.job.delete.html) function for the job. Also closes and deletes an interactive pool job.
-* **Show Details** — This displays detailed information about the job in the Command Window.
-* **Show Errors** — This displays all the tasks that generated an error in that job, with their error properties.
-* **Fetch Outputs** — This collects all the task output arguments from the job into the client workspace.
-
 #### **Running a simple communicating job**
 
 A simple communicating job example is available in the following folder: `<MATLAB_root_folder>/toolbox/local/alphacruncher/examples/communicatingJob_simple` 
@@ -365,15 +394,51 @@ The computation is structured in 3 files:
 
   MATLAB does not allow the use of the built-in save function inside parfor loops. To get around this problem, we’ve created an auxiliary ‘parsave’ function for your convenience that will work within parfor loops. `parsave` saves variable\(s\) to .mat files from within parfor loops.
 
+### Access
+
+MATLAB is integrated with the cluster in a way that you don't need to connect to the login node to submit a job. Everything is handled by MATLAB under the hood.
+
+### Managing jobs
+
+The Job Monitor displays the jobs in the queue. Open the Job Monitor from the MATLAB desktop on the Home tab in the Environment section, by selecting **Parallel** &gt; **Monitor Jobs**.
+
+![](../.gitbook/assets/matlab_monitor_jobs.png)
+
+The job monitor lists all the jobs that exist for the cluster specified in the selected profile. You can choose any one of your profiles \(those available in your current session Cluster Profile Manager\), and whether to display jobs from all users or only your own jobs.
+
+#### Typical Use Cases <a id="bu6vtxu"></a>
+
+The Job Monitor lets you accomplish many different goals pertaining to job tracking and queue management. Using the Job Monitor, you can:
+
+* Discover and monitor all jobs submitted by a particular user
+* Determine the status of a job
+* Determine the cause of errors in a job
+* Delete old jobs you no longer need
+* Create a job object in MATLAB for access to a particular job in the queue
+
+#### Manage Jobs Using the Job Monitor <a id="bs6wi5c-1"></a>
+
+Using the Job Monitor you can manage the listed jobs for your cluster. Right-click on any job in the list, and select any of the following options from the context menu. The available options depend on the type of job.
+
+* **Cancel** — Stops a running job and changes its state to `'finished'`. If the job is pending or queued, the state changes to `'finished'` without ever running. This is the same as the command-line [`cancel`](https://www.mathworks.com/help/parallel-computing/parallel.task.cancel.html) function for the job.
+* **Delete** — Deletes the job data and removes the job from the queue. This is the same as the command-line [`delete`](https://www.mathworks.com/help/parallel-computing/parallel.job.delete.html) function for the job. Also closes and deletes an interactive pool job.
+* **Show Details** — This displays detailed information about the job in the Command Window.
+* **Show Errors** — This displays all the tasks that generated an error in that job, with their error properties.
+* **Fetch Outputs** — This collects all the task output arguments from the job into the client workspace.
+
+### Environment synchronization
+
+With MATLAB, generally you don't have custom packages provided by 3rd party vendors. If you do, please place then next to your MATLAB source code files and add them to the MATLAB path.
+
 ## R
 
 There are three options to choose from when you plan to run HPC jobs in R.
 
 1. From Nuvolos: use the r-nuvolos-tools package 
-2. From Nuvolos: use shell commands 
-3. Outside Nuvolos: use shell commands
+2. Use the [bash toolkit on Nuvolos](high-performance-computing.md#working-with-the-bash-toolkit-on-nuvolos)
+3. Use SLURM commands [directly on the login node](high-performance-computing.md#working-with-scc-from-the-login-node)
 
-In this section, only the r-nuvolos-tools package is discussed in detail as general job management tools are covered[ ](high-performance-computing.md#managing-jobs)[in a separate section](high-performance-computing.md#managing-jobs).
+In this section, only the r-nuvolos-tools package is discussed in detail.
 
 ### **r-nuvolos-tools**
 
@@ -381,11 +446,13 @@ The developers of Nuvolos maintain the r-nuvolos-tools package on github as an o
 
 The package offers convenience features for R users who are running RStudio applications from Nuvolos and want to use the HPC capabilities.
 
-#### Connecting 
+### Access 
 
 As pointed out, the HPC login node is located at `hpc.nuvolos.cloud`. For basic use cases, the package offers you the ability of not having to move to the terminal of RStudio to interact with the cloud. 
 
-If you want to connect directly to the login node, please follow instructions [here](high-performance-computing.md#managing-jobs).
+If you want to connect directly to the login node, please follow instructions [here](high-performance-computing.md#working-with-scc-from-the-login-node).
+
+### Managing jobs
 
 #### Submit jobs
 
@@ -414,9 +481,17 @@ For more details on environments and synchronization refer to [this section](hig
 
 An interactive session and an HPC job are in general two orthogonal contexts for running code. For shorter expected runtime jobs, it is possible to not return control to R via using the `nuvolos.tools::run_job_interactive` R function. A batch job can thus be embedded into an interactive session, for example in order to generate plots directly in the same code as the calculation is called from.
 
+### Environment synchronization
+
+R packages on Nuvolos are stored in a standard library structure. In order to reflect the R environment on the cluster the function `nuvolos.tools::package_sync_hpc` needs to be called.
+
+{% hint style="warning" %}
+The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case that might cause very infrequent issues, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
+{% endhint %}
+
 ## Python
 
-Currently support for python environments is provided via the [bash toolkit](high-performance-computing.md#bash-toolkit-on-nuvolos). You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
+Currently support for python environments is provided via the [bash toolkit.](high-performance-computing.md#working-with-the-bash-toolkit-on-nuvolos) You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
 
 ### Access
 
@@ -428,33 +503,23 @@ The command `connect_cluster_env` connects to the cluster and activates the cond
 
 The command `connect_cluster` connects to the cluster and without activating a mapped conda environment.
 
-### Job management
+### Managing jobs
 
-The toolkit provides a thin convenience layer over SLURM commands. For description of what the job managaement commands do, please refer to [this section](high-performance-computing.md#managing-jobs).
+Please refer to the [Managing jobs](high-performance-computing.md#managing-jobs-1) section of the bash toolkit.
 
-```text
-sbatch
-```
+### Environment synchronization
 
-The command `sbatch` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
+Support for synchronization is provided via the bash toolkit on Nuvolos. If HPC access is activated in your space, in any terminal with access to a conda environment you can issue the following commands in your terminal shell.
 
-```text
-squeue
-```
+#### create\_cluster\_env
 
-The command `squeue` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
+The command `create_cluster_env` generates a conda environment on the HPC cluster if it does not exist yet for the particular application you are using.
 
-```text
-scancel
-```
+#### update\_cluster\_env
 
-The command `scancel` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
+The command `update_cluster_env` exports the current application conda environment state and attempts to reflect it on the cluster by updating and adding appropriate packages. In case you update packages or package versions migrate during new dependency resolution when installing a new package to your conda environment, the command is necessary.
 
-```text
-sacct
-```
 
-The command `sacct` connects to the cluster and without activating a mapped conda environment. You are free to pass any arguments to the command. On completion, you return to the Nuvolos application terminal.
 
 
 
