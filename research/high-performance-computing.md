@@ -19,7 +19,7 @@ In general, you have 3 different methods to interact with the cluster:
 
 #### 1. Connecting directly to the login node of the cluster with a terminal
 
-This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to add your public key to the ~/.ssh/authorized\_keys file.
+This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to perform the initial setup \(adding your public key to the ~/.ssh/authorized\_keys file on the login node\).
 
 #### 2. Using the bash toolkit inside a Nuvolos application
 
@@ -458,6 +458,8 @@ If you want to connect directly to the login node, please open a terminal in RSt
 
 ### Managing jobs
 
+The r-nuvolos-tools package provides wrappers for the most common SLURM commands, so that you can  manage your jobs directly from the R console window, using native R commands.
+
 #### Submit jobs
 
 The package implements a wrapper for the `sbatch` command via the `nuvolos.tools::sbatch` R function.
@@ -499,13 +501,25 @@ Currently support for python environments is provided via the [bash toolkit.](hi
 
 ### Access
 
-#### connect\_cluster\_env
+#### Connect to conda environment on the login node
 
-The command `connect_cluster_env` connects to the cluster and activates the conda environment mapped to your environment on the cluster. You are then able to browse the conda environment of the HPC cluster. For controlling the environment, please refer to the [relevant section](high-performance-computing.md#python-and-other-conda-based-applications).
+The command
 
-#### connect\_cluster
+```text
+connect_cluster_env
+```
 
-The command `connect_cluster` connects to the cluster and without activating a mapped conda environment.
+connects to the cluster and activates the conda environment mapped to your environment on the cluster. You are then able to browse the conda environment of the HPC cluster, which might be needed for troubleshooting or debugging. For controlling the environment, please refer to the [relevant section](high-performance-computing.md#environment-synchronization-3).
+
+#### Connect to the login node
+
+The command 
+
+```text
+connect_cluster
+```
+
+connects to the cluster and without activating a mapped conda environment.
 
 ### Managing jobs
 
@@ -515,13 +529,25 @@ Please refer to the [Managing jobs](high-performance-computing.md#managing-jobs-
 
 Support for synchronization is provided via the bash toolkit on Nuvolos. If HPC access is activated in your space, in any terminal with access to a conda environment you can issue the following commands in your terminal shell.
 
-#### create\_cluster\_env
+#### Create mapped cluster environment
 
-The command `create_cluster_env` generates a conda environment on the HPC cluster if it does not exist yet for the particular application you are using.
+The command
 
-#### update\_cluster\_env
+```text
+create_cluster_env
+```
 
-The command `update_cluster_env` exports the current application conda environment state and attempts to reflect it on the cluster by updating and adding appropriate packages. In case you update packages or package versions migrate during new dependency resolution when installing a new package to your conda environment, the command is necessary.
+generates a conda environment on the HPC cluster if it does not exist yet for the particular application you are using.
+
+#### Update mapped cluster environment
+
+The command 
+
+```text
+update_cluster_env
+```
+
+exports the current application conda environment state and attempts to reflect it on the cluster by updating and adding appropriate packages. In case you update packages or package versions migrate during new dependency resolution when installing a new package to your conda environment, the command is necessary.
 
 
 
