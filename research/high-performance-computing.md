@@ -19,7 +19,7 @@ In general, you have 3 different methods to interact with the cluster:
 
 #### 1. Connecting directly to the login node of the cluster with a terminal
 
-This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to add your public key to the ~/.ssh/authorized\_keys file.
+This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to perform the initial setup \(adding your public key to the ~/.ssh/authorized\_keys file on the login node\).
 
 #### 2. Using the bash toolkit inside a Nuvolos application
 
@@ -65,9 +65,9 @@ ssh <your_username>@hpc.nuvolos.cloud
 
 ### Connecting from a Nuvolos application
 
-If you are working inside Nuvolos applications \(such as JupyterLab or Spyder\), and HPC integration is activated for your work area, you have acces to some convenience tools for the command line.
+If you are working inside Nuvolos applications \(such as JupyterLab or Spyder\), and HPC integration is activated for your work area, you have access to some convenience tools for the command line.
 
-In particular, connecting to the cluster can be done by the following command:
+In particular, you can connect to the cluster using a terminal with the following command:
 
 ```text
 connect_cluster
@@ -176,7 +176,7 @@ cd a/b
 python myscript.py > log.txt
 ```
 
-In the above example, myscript.py is inside the ~/files/a/b folder in Nuvolos, so it's automatically synced to the cluster. What is more, log.txt is created **relative to your myscript.py**, which is assumed to be in the ~/files/a/b folder in Nuvolos. If you use relative paths in your scripts, everything will work the same was on Nuvolos and the HPC cluster as it worked on your own machine.
+In the above example, myscript.py is inside the ~/files/a/b folder in Nuvolos, so it's automatically synced to the cluster. What is more, since the working directory is changed to ~/files/a/b folder on the worker node executing the code, log.txt is created **in the same folder as myscript.py**. Typically when working with the code on Nuvolos or your own machine, you'd also start the script while the working directory is the folder of the main executable. If you adhere to this convention and you use relative paths in your scripts \(for reading/writing files, etc.\), everything will work the same way on Nuvolos and the HPC cluster as it worked on your own machine.
 
 ## Language-specific toolkits
 
@@ -396,7 +396,11 @@ The computation is structured in 3 files:
 
 ### Access
 
-MATLAB is integrated with the cluster in a way that you don't need to connect to the login node to submit a job. Everything is handled by MATLAB under the hood.
+MATLAB is one of the few applications the provides a GUI for monitoring jobs, and job submission is done using native MATLAB scripts, so there is no need to use the login node or the bash toolkit. Nevertheless, you can get a terminal window in a Nuvolos MATLAB app by executing the following command from the MATLAB command window:
+
+```text
+!xterm
+```
 
 ### Managing jobs
 
@@ -450,7 +454,7 @@ The package offers convenience features for R users who are running RStudio appl
 
 As pointed out, the HPC login node is located at `hpc.nuvolos.cloud`. For basic use cases, the package offers you the ability of not having to move to the terminal of RStudio to interact with the cloud. 
 
-If you want to connect directly to the login node, please follow instructions [here](high-performance-computing.md#working-with-scc-from-the-login-node).
+If you want to connect directly to the login node, please open a terminal in RStudio and follow the instructions [here](high-performance-computing.md#working-with-scc-from-the-login-node).
 
 ### Managing jobs
 

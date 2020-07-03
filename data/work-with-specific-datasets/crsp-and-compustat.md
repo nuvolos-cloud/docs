@@ -6,7 +6,7 @@ In order to get access to a dataset, the organization managers can provide infor
 
 ## Accessing data in Nuvolos
 
-If CRSP and Compustat datasets are available to your organization, please see the relevant documentation pages [here]() on accessing data in Nuvolos applications.
+If CRSP and Compustat datasets are available to your organization, please see the relevant documentation pages [here](../access-data-from-applications/) on accessing data in Nuvolos applications.
 
 ## About Compustat and CRSP
 
