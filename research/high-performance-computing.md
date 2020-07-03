@@ -19,7 +19,7 @@ In general, you have 3 different methods to interact with the cluster:
 
 #### 1. Connecting directly to the login node of the cluster with a terminal
 
-This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to perform the initial setup \(adding your public key to the ~/.ssh/authorized\_keys file on the login node\).
+This is the low-level interface of the cluster. Pure terminal based, so can be intimidating at first. However, it works the same from your local computer and a Nuvolos application. If you wish to use this on your own machine, a one-time initial setup is required to [configure SSH Public key authentication](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/). Since password-based login is not permitted on the login node, you'll need to use method 2. to add your public key to the ~/.ssh/authorized\_keys file.
 
 #### 2. Using the bash toolkit inside a Nuvolos application
 

@@ -39,14 +39,6 @@ con <- nuvolos::get_connection()
 result_data <- dbGetQuery(conn,"SELECT * FROM table LIMIT 10")
 ```
 
-### Accessing data tables from Stata in Nuvolos
-
-If you want to use Nuvolos-hosted Stata, the data access is greatly simplified. Nuvolos has its own `sysprofile.do` that automatically sets you up with access parameters. Stata communicates with the database using `odbc` , so you will need to issue the following command to load the query:
-
-```text
-odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
-```
-
 ## Accessing data tables from external, non-Nuvolos applications
 
 ### Connecting with R
@@ -93,37 +85,6 @@ import pandas as pd
 engine = get_engine(username="username", password = "password", 
                     dbname = "dbname", schemaname="schemaname")
 df = pd.read_sql("SELECT * FROM table", con=engine)
-```
-
-### Connecting with Stata
-
-Accessing data from out-of-Nuvolos Stata applications consists of the following steps:
-
-1. Install[ the Snowflake ODBC driver](setting-up-odbc-drivers.md).
-2. [Obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos tables interface.
-3. Establish connection.
-
-{% hint style="info" %}
-To simplify work, we suggest that you save your connection parameters to global macros and finally create a connection string as a global macro. On Nuvolos, this is part of the sysprofile.do file of the application. 
-
-You should only add these macros to your profile.do or sysprofile.do if you are going to work only in one single instance and state/snapshot.
-{% endhint %}
-
-To set up your access parameters, issue the following commands. These have to be issued only once. The values for `username` and `snowflake_access_token` can be obtained [following these instructions](obtain-tokens-for-your-data.md), and for `database_name` and `schema_name`, [follow instructions here](find-your-database-and-schema-path.md).
-
-```text
-set odbcmgr unixodbc
-global user `<username>'
-global dbpwd `<snowflake_access_token>'
-global dbpath_db "`<database_name>'"
-global dbpath_schema "`<schema_name>"
-global conn_str "DRIVER=SnowflakeDSIIDriver;SERVER=alphacruncher.eu-central-1.snowflakecomputing.com;DATABASE=$dbpath_db;SCHEMA=$dbpath_schema;UID=$user;PWD=$dbpwd"
-```
-
-You can then access data similar to if you were using Nuvolos:
-
-```text
-odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
 ```
 
 ### Connecting with SAS
