@@ -182,7 +182,7 @@ In the above example, myscript.py is inside the ~/files/a/b folder in Nuvolos, s
 
 In the sections below, we document the available language-specific toolkits for HPC connectivity on Nuvolos.
 
-## Matlab
+## MATLAB
 
 There are 2 ways to leverage MATLAB’s parallelization features using SCC:
 
