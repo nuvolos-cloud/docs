@@ -24,6 +24,13 @@ You can upload files and folders with the upload button.
 
 ![Uploading an entire folder with contents using drag and drop](../.gitbook/assets/upload_folder_ed.gif)
 
+In case you cannot upload a file due to it being extremely large, you can do the following:
+
+1. [Create a JupyterLab application](work-with-applications/create-an-application.md). 
+2. Use the upload feature in JupyterLab:
+
+![Uploading large files](../.gitbook/assets/upload_jupyter_ed.gif)
+
 ## Download files
 
 You can download a file by selecting it and finding the download button:
