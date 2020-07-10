@@ -36,7 +36,27 @@ Usage example:
 
 ```r
 con <- nuvolos::get_connection()
-result_data <- dbGetQuery(conn,"SELECT * FROM table LIMIT 10")
+result_data <- dbGetQuery(con,"SELECT * FROM table LIMIT 10")
+```
+
+### Stopping queries from R in Nuvolos
+
+You can check how many running queries you have with the command below. You'll need to substitute your Nuvolos username into the &lt;USERNAME&gt; placeholder. You can find out your Nuvolos username in the Profile page on the Nuvolos Web interface.
+
+```text
+result_data <- dbGetQuery(con,"SELECT USER_NAME, QUERY_ID, SESSION_ID, QUERY_TEXT, START_TIME FROM table(information_schema.QUERY_HISTORY_BY_USER(USER_NAME=>'<USERNAME>')) WHERE EXECUTION_STATUS = 'RUNNING'")
+```
+
+Once you know the query id, you can cancel a specific query with
+
+```text
+result_data <- dbGetQuery(con,"SELECT SYSTEM$CANCEL_QUERY('<QUERY_ID>')")
+```
+
+Alternatively, you can cancel all your currently running queries with the command
+
+```text
+result_data <- dbGetQuery(con,"ALTER USER <USERNAME> ABORT ALL QUERIES")
 ```
 
 ### Accessing data tables from Stata in Nuvolos
