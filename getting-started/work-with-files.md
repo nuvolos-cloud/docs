@@ -43,6 +43,12 @@ You can delete one or more files by selecting them and then finding the delete b
 
 ![Deleting a folder](../.gitbook/assets/delete_folder_ed.gif)
 
+## Move files
+
+You can move files around in the directory structure using the following flow:
+
+![](../.gitbook/assets/move_file_ed.gif)
+
 ## Rename files
 
 You can rename a file by selecting it and finding the rename button:
