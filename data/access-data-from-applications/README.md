@@ -24,6 +24,14 @@ engine = get_engine()
 df = pd.read_sql("SELECT * FROM table", con=engine)
 ```
 
+#### Stopping queries from Python
+
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
+
+```sql
+df = pd.read_sql("<SQL_COMMAND>", con=engine)
+```
+
 ### Accessing data tables from R in Nuvolos
 
 If you want to use Nuvolos-hosted R \(via RStudio\), the data access will be simple:
@@ -39,24 +47,12 @@ con <- nuvolos::get_connection()
 result_data <- dbGetQuery(con,"SELECT * FROM table LIMIT 10")
 ```
 
-### Stopping queries from R in Nuvolos
+#### Stopping queries from R
 
-You can check how many running queries you have with the command below. You'll need to substitute your Nuvolos username into the &lt;USERNAME&gt; placeholder. You can find out your Nuvolos username in the Profile page on the Nuvolos Web interface.
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
 
-```text
-result_data <- dbGetQuery(con,"SELECT USER_NAME, QUERY_ID, SESSION_ID, QUERY_TEXT, START_TIME FROM table(information_schema.QUERY_HISTORY_BY_USER(USER_NAME=>'<USERNAME>')) WHERE EXECUTION_STATUS = 'RUNNING'")
-```
-
-Once you know the query id, you can cancel a specific query with
-
-```text
-result_data <- dbGetQuery(con,"SELECT SYSTEM$CANCEL_QUERY('<QUERY_ID>')")
-```
-
-Alternatively, you can cancel all your currently running queries with the command
-
-```text
-result_data <- dbGetQuery(con,"ALTER USER <USERNAME> ABORT ALL QUERIES")
+```sql
+result_data <- dbGetQuery(con,"<SQL_COMMAND>")
 ```
 
 ### Accessing data tables from Stata in Nuvolos
@@ -65,6 +61,14 @@ If you want to use Nuvolos-hosted Stata, the data access is greatly simplified. 
 
 ```text
 odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
+```
+
+#### Stopping queries from Stata
+
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
+
+```sql
+odbc load, exec(`"<SQL_COMMAND>"') connectionstring($conn_str)
 ```
 
 ## Accessing data tables from external, non-Nuvolos applications
@@ -92,6 +96,14 @@ con <- get_connection(username = "my_user", password = "my_password",
 result_data <- dbGetQuery(conn,"SELECT * FROM table LIMIT 10")
 ```
 
+#### Stopping queries from R
+
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
+
+```sql
+result_data <- dbGetQuery(con,"<SQL_COMMAND>")
+```
+
 ### Connecting with Python
 
 First, install the `nuvolos` package developed by Alphacruncher:
@@ -113,6 +125,14 @@ import pandas as pd
 engine = get_engine(username="username", password = "password", 
                     dbname = "dbname", schemaname="schemaname")
 df = pd.read_sql("SELECT * FROM table", con=engine)
+```
+
+#### Stopping queries from Python
+
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
+
+```sql
+df = pd.read_sql("<SQL_COMMAND>", con=engine)
 ```
 
 ### Connecting with Stata
@@ -144,6 +164,14 @@ You can then access data similar to if you were using Nuvolos:
 
 ```text
 odbc load, exec(`"SELECT * FROM "table" LIMIT 10"') connectionstring($conn_str)
+```
+
+#### Stopping queries from Stata
+
+Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
+
+```sql
+odbc load, exec(`"<SQL_COMMAND>"') connectionstring($conn_str)
 ```
 
 ### Connecting with SAS
@@ -199,6 +227,34 @@ To analyze the above SAS statement, notice the following:
 1. We are using the SAS SQL Procedure Pass-Through Facility twice.
 2. The first statement makes sure that SAS connects to the correct database and schema. We strongly suggest using this statement first whenever you are using the Pass-Through Facility.
 3. The second statement creates a table called `test` based on the code that is in the file `source/to/file.sql.`
+
+## Cancelling queries
+
+Running queries can be listed and \(selectively\) cancelled using SQL statements.
+
+### List running queries
+
+You can check how many running queries you have with the command below. You'll need to substitute your Nuvolos username into the &lt;USERNAME&gt; placeholder. You can find out your Nuvolos username in the Profile page on the Nuvolos Web interface.
+
+```sql
+SELECT USER_NAME, QUERY_ID, SESSION_ID, QUERY_TEXT, START_TIME FROM TABLE(INFORMATION_SCHEMA.QUERY_HISTORY_BY_USER(USER_NAME=>'<USERNAME>')) WHERE EXECUTION_STATUS = 'RUNNING'
+```
+
+### Cancel a particular query
+
+Once you know the query id, you can cancel a specific query with
+
+```sql
+SELECT SYSTEM$CANCEL_QUERY('<QUERY_ID>')
+```
+
+### Cancel all running queries
+
+Alternatively, you can cancel all your currently running queries with the command
+
+```sql
+ALTER USER <USERNAME> ABORT ALL QUERIES
+```
 
 
 
