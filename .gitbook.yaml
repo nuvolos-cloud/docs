@@ -6,3 +6,4 @@ root: ./
     
 redirects:  
     quickstart/faculty-guides/education: ./README.md
+    quickstart/getting-started-with-nuvolos: ./README.md
