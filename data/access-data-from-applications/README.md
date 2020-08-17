@@ -4,7 +4,7 @@ Nuvolos is set up so you can access your data tables stored in Nuvolos from eith
 
 ## Accessing data from applications running in Nuvolos
 
-Currently three applications are supported in Nuvolos: Spyder, JupyterLab and RStudio.
+Currently, three applications are supported in Nuvolos: Spyder, JupyterLab and RStudio.
 
 ### Accessing data tables from Python in Nuvolos
 
@@ -17,11 +17,11 @@ If you want to use Nuvolos-hosted Python \(via JupyterLab or Spyder\), the data 
 Usage example:
 
 ```python
-from nuvolos import get_engine
+from nuvolos import get_connection
 import pandas as pd
 
-engine = get_engine()
-df = pd.read_sql("SELECT * FROM table", con=engine)
+con = get_connection()
+df = pd.read_sql("SELECT * FROM table", con=con)
 ```
 
 #### Stopping queries from Python
@@ -29,7 +29,7 @@ df = pd.read_sql("SELECT * FROM table", con=engine)
 Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
 
 ```sql
-df = pd.read_sql("<SQL_COMMAND>", con=engine)
+df = pd.read_sql("<SQL_COMMAND>", con=con)
 ```
 
 ### Accessing data tables from R in Nuvolos
@@ -91,9 +91,9 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 Finally, pass the username, password, database name and schema name to the `get_connection()` function:
 
 ```r
-con <- get_connection(username = "my_user", password = "my_password", 
+con <- nuvolos::get_connection(username = "my_user", password = "my_password", 
                       dbname = "my_database", schemaname= "my_schema")
-result_data <- dbGetQuery(conn,"SELECT * FROM table LIMIT 10")
+result_data <- dbGetQuery(con,"SELECT * FROM table LIMIT 10")
 ```
 
 #### Stopping queries from R
@@ -119,12 +119,12 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the get\_engine\(\) function:
 
 ```python
-from nuvolos import get_engine
+from nuvolos import get_connection
 import pandas as pd
 
-engine = get_engine(username="username", password = "password", 
+con = get_connection(username="username", password = "password", 
                     dbname = "dbname", schemaname="schemaname")
-df = pd.read_sql("SELECT * FROM table", con=engine)
+df = pd.read_sql("SELECT * FROM table", con=con)
 ```
 
 #### Stopping queries from Python
@@ -132,7 +132,7 @@ df = pd.read_sql("SELECT * FROM table", con=engine)
 Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
 
 ```sql
-df = pd.read_sql("<SQL_COMMAND>", con=engine)
+df = pd.read_sql("<SQL_COMMAND>", con=con)
 ```
 
 ### Connecting with Stata
