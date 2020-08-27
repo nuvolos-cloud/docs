@@ -495,6 +495,42 @@ R packages on Nuvolos are stored in a standard library structure. In order to re
 The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case that might cause very infrequent issues, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
 {% endhint %}
 
+### Multi-node jobs
+
+If you are running jobs requiring multiple nodes \(i.e. large CPU count\), you need to use MPI based parallelism, as the default clusters used by R can make use only of a single node. 
+
+To use MPI, it’s easiest to use the `snow` library to create an MPI cluster that can then be used by the `parallel` package to use all the usual parallel commands \(see `?parallel::parApply`\). If you use the `foreach` package, you can use the `doSNOW` package to register the resulting cluster as a `foreach` backend.
+
+An example script is below:
+
+```text
+### Set up cluster
+library(parallel, lib.loc = .Library.site)
+library(Rmpi, lib.loc = .Library.site)
+library(snow, lib.loc = .Library.site)
+
+# the universe size will be specified by SLURM scheduler through the respective config file
+np <- mpi.universe.size()
+
+# master will take an additional task
+cl <- makeMPIcluster(np-1)
+
+.Last <- function(){
+    mpi.close.Rslaves()
+    mpi.exit()
+}
+
+### your R-code here .....
+# example: parLapply(cl,1:10, function(x) {x})
+
+
+### END OF R SCRIPT - close cluster
+mpi.close.Rslaves()
+mpi.exit()
+```
+
+When submitting the file using nuvolos.tools, make sure to specify the use\_mpi=TRUE option when calling nuvolos.tools::sbatch.
+
 ## Python
 
 Currently support for python environments is provided via the [bash toolkit.](high-performance-computing.md#working-with-the-bash-toolkit-on-nuvolos) You will need to use either Spyder's or JupyterLab's terminal to access this toolkit.
