@@ -8,3 +8,4 @@ redirects:
     quickstart/faculty-guides/education: ./README.md
     quickstart/getting-started-with-nuvolos: ./README.md
     actions/work-with-specific-datasets/crsp-and-compustat: ./data/work-with-specific-datasets/crsp-and-compustat.md
+    actions/work-with-data-in-nuvolos: ./data/work-with-data.md
