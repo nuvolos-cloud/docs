@@ -49,6 +49,12 @@ You can move files around in the directory structure using the following flow:
 
 ![](../.gitbook/assets/move_file_ed.gif)
 
+## Copy files
+
+You can copy a file to a different folder using the following steps:
+
+![Select the file to copy and move to the desired location](../.gitbook/assets/copy_file_ed.gif)
+
 ## Rename files
 
 You can rename a file by selecting it and finding the rename button:
