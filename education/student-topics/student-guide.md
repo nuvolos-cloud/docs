@@ -11,7 +11,7 @@ If you received an invitation link directly from your instructor, you will have 
 This link will take you to a sign-up page prompting you to provide your educational institution e-mail address. Upon successfully providing the email check the invitation message in your email inbox.
 
 {% hint style="warning" %}
-If you are affiliated with a swiss higher education institution, you should always use your university e-mail address. You will be able to authenticate with Nuvolos via SWITCH using your university credentials.
+When accepting the invitation, we encourage you to proceed with the recommended option. For students affiliated with a swiss higher education institution this is SWITCH.
 {% endhint %}
 
 ## Accept your invitation
