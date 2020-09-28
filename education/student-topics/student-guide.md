@@ -26,9 +26,9 @@ In Nuvolos course participation is by invitation only. To accept an invitation p
 6. For first time users the signing up process might take up to a minute to conclude.
 
 {% hint style="danger" %}
-When you accept an invitation, make sure that you use the SWITCH option if you are affiliated with a swiss higher education institution.
+When accepting the invitation, we encourage you to proceed with the recommended option. For students affiliated with a swiss higher education institution this is SWITCH.
 
-If you choose to sign up with e-mail and password authentication, you will not be able to use the SWITCH option any more.
+If you choose to sign up with e-mail and password authentication, the SWITCH option will not be available for you any more.
 {% endhint %}
 
 ![](../../.gitbook/assets/accept_invite_1_ed.gif)
