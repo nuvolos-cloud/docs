@@ -6,9 +6,13 @@ description: Getting started with participating in a course
 
 ## Generate invitation
 
-If you received an invitation link directly from your instructor, you will have to either click on it or navigate to it in your browser. The invite link should look something like this: https://nuvolos.cloud/enroll/class/4963cd4b1355488f35f874c6f9f4116e0e
+If you received an invitation link directly from your instructor, you will have to either click on it or navigate to it in your browser. The invite link should look something like this: `https://nuvolos.cloud/enroll/class/4963cd4b1355488f35f874c6f9f4116e0e`
 
-This will take you to a sign-up page prompting you to provide your educational institution e-mail address. Upon successfully providing the email check the invitation message in your email inbox.
+This link will take you to a sign-up page prompting you to provide your educational institution e-mail address. Upon successfully providing the email check the invitation message in your email inbox.
+
+{% hint style="warning" %}
+If you are affiliated with a swiss higher education institution, you should always use your university e-mail address. You will be able to authenticate with Nuvolos via SWITCH using your university credentials.
+{% endhint %}
 
 ## Accept your invitation
 
@@ -21,6 +25,12 @@ In Nuvolos course participation is by invitation only. To accept an invitation p
 5. Click accept invitation.
 6. For first time users the signing up process might take up to a minute to conclude.
 
+{% hint style="danger" %}
+When you accept an invitation, make sure that you use the SWITCH option if you are affiliated with a swiss higher education institution.
+
+If you choose to sign up with e-mail and password authentication, you will not be able to use the SWITCH option any more.
+{% endhint %}
+
 ![](../../.gitbook/assets/accept_invite_1_ed.gif)
 
 ## Sign in
@@ -29,6 +39,10 @@ Nuvolos supports two ways to sign in:
 
 1. Users affiliated with a Swiss higher education institution, select the SWITCH option.
 2. Otherwise, use default sign-in option.
+
+{% hint style="danger" %}
+If you chose to sign up with e-mail and password authentication, you need to sign in with e-mail and password, and if you chose to sign up via SWITCH, you need to sign in via SWITCH.
+{% endhint %}
 
 ## Access course resources
 
