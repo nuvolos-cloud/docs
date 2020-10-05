@@ -32,6 +32,7 @@
 * [User Guides](getting-started/README.md)
   * [Navigate in Nuvolos](getting-started/navigation-in-nuvolos.md)
   * [Distribute objects](getting-started/distribute-objects-in-nuvolos/README.md)
+    * [Distributed instance](getting-started/distribute-objects-in-nuvolos/distributed-instance.md)
     * [Distribution strategies](getting-started/distribute-objects-in-nuvolos/distribution-strategies.md)
   * [Working with snapshots](getting-started/working-with-snapshots/README.md)
     * [Create a snapshot](getting-started/working-with-snapshots/create-a-snapshot.md)
