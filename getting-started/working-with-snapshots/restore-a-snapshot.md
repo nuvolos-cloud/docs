@@ -6,15 +6,15 @@ Restoring a snapshot means replacing the content of the current state with the c
 
 ## **Restore a snapshot**
 
-1- Open your space.
+1. Open your space.
 
-2- Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
+2. Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.17.21-pm.png)
 
-3- Identify the snapshot you want to restore.
+3. Identify the snapshot you want to restore.
 
-4- If you want to restore the snapshot to the current state of the currently selected instance, then click on the restore icon next to the snapshot name. Otherwise, if you want to restore the snapshot to the current state of another instance \(of which you should be an editor\) then click on the two persons icon.
+4. If you want to restore the snapshot to the current state of the currently selected instance, then click on the restore icon next to the snapshot name. Otherwise, if you want to restore the snapshot to the current state of another instance \(of which you should be an editor\) then click on the two persons icon.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.21.54-pm.png)
 
