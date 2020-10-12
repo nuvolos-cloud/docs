@@ -33,7 +33,3 @@ Nuvolos encourages collecting all necessary data in your own work environment fo
 
 If you want to jump-start a new colleague or student in your research project, since everything is collected in your work environment, it is very easy to get someone started by simply setting up an environment for them and distributing the relevant material.
 
-### - Restoring from a snapshot
-
-It is possible to partially restore from a snapshot by distributing selected files back to your workflow.
-
