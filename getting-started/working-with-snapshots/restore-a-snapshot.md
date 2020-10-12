@@ -24,7 +24,7 @@ Restoring a snapshot means replacing the content of the current state with the c
 Regardless of the target instance selected, an automatic snapshot of the current state of the target instance will be created before restoring the snapshot. This allows the user to revert the restoration operation.
 {% endhint %}
 
-### Partially restore a snapshot
+## Partially restore a snapshot
 
 It is possible to partially restore a snapshot via the [distribution feature](../distribute-objects-in-nuvolos/) of Nuvolos.
 
