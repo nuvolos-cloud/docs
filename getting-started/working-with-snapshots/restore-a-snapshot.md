@@ -18,7 +18,7 @@ Restoring a snapshot means replacing the content of the current state with the c
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.21.54-pm.png)
 
-5- If you chose to restore to the current state of the selected instance, then you will need to confirm the operation. Otherwise, if you chose to restore to another instance, then you will be asked to select the target instance.
+5. If you chose to restore to the current state of the selected instance, then you will need to confirm the operation. Otherwise, if you chose to restore to another instance, then you will be asked to select the target instance.
 
 {% hint style="success" %}
 Regardless of the target instance selected, an automatic snapshot of the current state of the target instance will be created before restoring the snapshot. This allows the user to revert the restoration operation.
