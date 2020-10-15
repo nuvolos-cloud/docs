@@ -50,13 +50,15 @@ Stopping applications once they are not used any more is a good practice: you st
 1. From the dashboard, or
 2. from the instance overview.
 
-#### Deleting via the dashboard
+### Deleting via the dashboard
 
 On the dashboard, the three most recently used applications are always listed. Hovering over the "power button" lets you either enter the instance the app is located in, open the app directly or stop it if the app is running:
 
 ![Accessing options of the application from the dashboard](../../.gitbook/assets/screenshot-2020-10-15-180230.png)
 
-#### Deleting via the appication view of an instance
+### 
+
+### Deleting via the appication view of an instance
 
 If you are visiting an instance, it is possible to view the list of applications on the Applications view \(see previous sections\). Here, it is also possible to a running app by opening the actions menu:
 
