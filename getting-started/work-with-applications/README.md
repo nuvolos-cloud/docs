@@ -58,7 +58,7 @@ On the dashboard, the three most recently used applications are always listed. H
 
 ### 
 
-### Deleting via the appication view of an instance
+### Deleting via the application view of an instance
 
 If you are visiting an instance, it is possible to view the list of applications on the Applications view \(see previous sections\). Here, it is also possible to a running app by opening the actions menu:
 
