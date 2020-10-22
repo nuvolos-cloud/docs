@@ -2,7 +2,27 @@
 
 ## Overview
 
-The Scientific Cloud Cluster \(SCC\) is an elastic computing platform, providing the compute resources to run computation-intensive tasks or long-running computations in the Nuvolos cloud. The basic package subscription does not cover access to SCC, and users have to apply for access before being able to use it. 
+The Scientific Cloud Cluster \(SCC\) is an elastic computing platform, providing the compute resources to run high-performance computing \(HPC\) tasks or long-running computations in the Nuvolos cloud. The basic package subscription does not cover access to SCC, and users have to apply for access before being able to use it. In Nuvolos,  access to SCC is provided via "HPC integration" on the space level: if this integration is enabled, jobs can be easily be submitted and monitored from Nuvolos applications, and computation results are collected back to the Nuvolos space.
+
+### Manage HPC integration
+
+HPC integration needs to be turned on for each space in Nuvolos individually. Once enabled, the HPC integration adds the bash toolkit and file synchronisation to all apps in the space.  
+  
+To check the status of HPC integration, navigate to the Settings menu:
+
+![](../.gitbook/assets/screenshot-2020-10-22-at-9.29.25.png)
+
+In the settings menu, select the HPC integration item:
+
+![](../.gitbook/assets/screenshot-2020-10-22-at-9.34.16.png)
+
+If you don't see your organisation in the organisation selector, it means HPC integration is not covered in the organisation's subscription.
+
+In an organisation where HPC integration is covered, each space can be in either activated or deactivated state. In spaces where you are space administrator, you can turn HPC integration on or off. In spaces where you don't have the required space administrator role, the action for changing the integration status is disabled.
+
+{% hint style="info" %}
+After activating HPC integration in a space, applications in the space need to be restarted once for changes to come into effect. 
+{% endhint %}
 
 ### Compute resources
 
