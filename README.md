@@ -13,7 +13,7 @@ description: >-
 A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
 
 * [**Set up your course**](education/instructor-topics/instructor-guide.md)\*\*\*\*
-* [Work with files](getting-started/work-with-files.md)
+* [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
 * [Distribute material](getting-started/distribute-objects-in-nuvolos/)
 * [Invite students](education/instructor-topics/instructor-guide.md#invite-students)
@@ -23,7 +23,7 @@ A class in Nuvolos is a space to organise all course-related teaching material \
 As a first step, read the guide on how to enroll in a course:
 
 * \*\*\*\*[**Enroll in a course**](education/student-topics/student-guide.md)\*\*\*\*
-* [Work with files](getting-started/work-with-files.md)
+* [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
 * Take snapshots of your work
 {% endtab %}
@@ -32,7 +32,7 @@ As a first step, read the guide on how to enroll in a course:
 As a first step, read the guide for getting started:
 
 * [**Get started**](research/researcher-guide.md)\*\*\*\*
-* [Work with files](getting-started/work-with-files.md)
+* [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
 * [Work with data tables](data/work-with-data.md)
 * [High Performance Computing \(HPC\)](research/high-performance-computing.md)

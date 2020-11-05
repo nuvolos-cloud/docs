@@ -7,7 +7,7 @@ Nuvolos differentiates two types of data:
 1. Tabular data stored in some database management system
 2. Data stored in regular files
 
-This page describes working with _tabular data. ****_For working with files, consult [our guide](../getting-started/work-with-files.md).
+This page describes working with _tabular data. ****_For working with files, consult [our guide](../getting-started/work-with-files/).
 
 ## Datasets
 
