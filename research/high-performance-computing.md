@@ -34,7 +34,7 @@ SCC compute resources are grouped into different sets called partitions \(or que
 * The `eduq` partition consists of two nodes with  **5 physical cores \(10 virtual cores\) and 16 GB RAM**. This queue is accessible only for educational purposes in the context of academic courses. 
 
 {% hint style="danger" %}
-It is important to consider which queue you use as it will have impact on the credit burn rate you generate with your jobs:
+It is important to consider which queue you use as it will have impact on the credit consumption rate you generate with your jobs:
 
 * `defq` is MATLAB purpose only and any jobs on `defq` count as MATLAB usage.
 * `sharedq` is non-MATLAB purpose only and any jobs on `sharedq` count as regular HPC usage.
