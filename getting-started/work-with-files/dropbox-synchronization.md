@@ -17,3 +17,17 @@ Whilst for the most case **instantaneous bidirectional synchronization** will ha
 * Files created outside **your** application \(e.g. uploaded on the web interface, created by a co-author, distributed from another instance\) will only be synchronized every hour.
 * The synchronization only runs if your application is running.
 
+{% hint style="warning" %}
+**Restoring Nuvolos snapshots requires special care** if Dropbox integration is enabled, as otherwise the restored files will be overwritten from the copies from Dropbox.
+
+If Dropbox integration is enabled, the following steps need to be taken when restoring a snapshot:
+
+1. Restore the snapshot in Nuvolos - this will also automatically stop applications.
+2. In Dropbox delete the instance folder \(located at: Apps &gt; nuvolos.cloud &gt;  \[Your Org\] &gt; \[Your space\] &gt; **\[ Your Instance \]** \) 
+3. In Nuvolos navigate to the Files view and select "Personal" instead of "Workspace". Then check the "Show hidden files" option
+4. In Nuvolos Files view delete the ".local &gt; share &gt; maestral" folder 
+5. Start your application, now the instance folder will be recreated and the restored files should be synchronized back to Dropbox.
+{% endhint %}
+
+
+
