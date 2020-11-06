@@ -6,7 +6,7 @@ description: >-
 
 # Dropbox synchronization \(preview\)
 
-Nuvolos supports synchronizing files with your Dropbox account. In order to enable synchronization, go to the Account &gt;  Settings &gt; Dropbox menu and click the **Link your Dropbox Account** button. 
+Nuvolos supports synchronizing files with your Dropbox account. In order to enable synchronization, go to the [Account &gt;  Settings &gt; Dropbox](https://nuvolos.cloud/user/dropbox) menu and click the **Enable** button. 
 
 Nuvolos will have its own special folder inside Dropbox, to avoid requesting access to your complete Dropbox account. According to the convention of Dropbox, files synced with Nuvolos will be stored under the **Apps &gt; nuvolos.cloud** folder in your Dropbox account. The Organization &gt; Space &gt; Instance hierarchy will be reflected inside the **Apps &gt; nuvolos.cloud** folder.
 
