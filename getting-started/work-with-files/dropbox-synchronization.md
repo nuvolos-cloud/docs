@@ -16,5 +16,4 @@ Whilst for the most case **live bidirectional synchronization** will happen betw
 
 * Files created outside **your** application \(e.g. uploaded on the web interface, created by a co-author, distributed from another instance\) will only be synchronized every hour.
 * The synchronization only runs if your application is running.
-* In a given instance only one application can run \(you can run multiple applications in different instances\).
 
