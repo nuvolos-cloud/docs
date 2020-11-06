@@ -44,7 +44,7 @@
     * [Find an instance](getting-started/find-objects-in-nuvolos/find-an-instance.md)
     * [Find a Snapshot/Current State](getting-started/find-objects-in-nuvolos/find-a-snapshot-current-state.md)
   * [Work with files](getting-started/work-with-files/README.md)
-    * [Dropbox synchronization](getting-started/work-with-files/dropbox-synchronization.md)
+    * [Dropbox synchronization \(preview\)](getting-started/work-with-files/dropbox-synchronization.md)
   * [Work with applications](getting-started/work-with-applications/README.md)
     * [Create an application](getting-started/work-with-applications/create-an-application.md)
     * [Find an application](getting-started/work-with-applications/find-an-application.md)

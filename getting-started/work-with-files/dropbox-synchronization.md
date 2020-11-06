@@ -1,4 +1,10 @@
-# Dropbox synchronization
+---
+description: >-
+  This feature is still in preview and might be subject to changes in the
+  future.
+---
+
+# Dropbox synchronization \(preview\)
 
 Nuvolos supports synchronizing files with your Dropbox account. In order to enable synchronization, go to the Account &gt;  Settings &gt; Dropbox menu and click the **Link your Dropbox Account** button. 
 
