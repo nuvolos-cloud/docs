@@ -36,7 +36,7 @@ SCC compute resources are grouped into different sets called partitions \(or que
 {% hint style="danger" %}
 It is important to consider which queue you use as it will have impact on the credit burn rate you generate with your jobs:
 
-* `defq` is MATLAB purpose only and any jobs on `defq` count against MATLAB usage.
+* `defq` is MATLAB purpose only and any jobs on `defq` count as MATLAB usage.
 * `sharedq` is non-MATLAB purpose only and any jobs on `sharedq` count as regular HPC usage.
 {% endhint %}
 
