@@ -116,7 +116,7 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
 
-Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the get\_engine\(\) function:
+Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the `get_connection()` function:
 
 ```python
 from nuvolos import get_connection
