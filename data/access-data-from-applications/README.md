@@ -124,7 +124,7 @@ import pandas as pd
 
 con = get_connection(username="username", password = "password", 
                     dbname = "dbname", schemaname="schemaname")
-df = pd.read_sql("SELECT * FROM table", con=con)
+df = pd.read_sql("SELECT * FROM \"table\"", con=con)
 ```
 
 #### Stopping queries from Python
