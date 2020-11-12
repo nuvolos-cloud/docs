@@ -4,7 +4,7 @@ Group projects are supported in Nuvolos. In order to set up a seamless experienc
 
 ## Create a new space
 
-This space will only contain group work-related instances. The "normal", single-user instances should be contained in a separate space with the standard teaching material.
+This space will only contain group work related instances. The "normal", single user instances should be contained in a separate space with the standard teaching material.
 
 {% hint style="info" %}
 We suggest creating a new space due to the fact that distributing two threads of workflows on top of each other means that individual and group work might get unnecessarily tangled.
@@ -26,15 +26,15 @@ The students will receive an invitation to this particular instance to their e-m
 
 ![](../../.gitbook/assets/group_invite_ed.gif)
 
-## Upload files to the master instance of the group workspace
+## Upload files to the master instance of the group work space
 
-After the exact structure of the group workspace is set up, files can be uploaded to the master instance. This step can happen before adding all the group instances, depending on the timeline of the course.
+After the exact structure of the group work space is set up, files can be uploaded to the master instance. This step can happen before adding all the group instances, depending on the timeline of the class.
 
 ## Distribute files to the group instances
 
 The distribution can be carried out just as usual. As highlighted previously, since in this setup the individual and group work spaces are kept separately, if a new group needs to be set up, it can be initialized easily via the distributed instance.
 
-As the course proceeds, the distribute feature can be used cumulatively to move forward the group work instances as well. Please note that it is also possible to "bridge" information between regular and group work instance, via cross-distributing between spaces.
+As the class proceeds, the distribute feature can be used cumulatively to move forward the group work instances as well. Please note that it is also possible to "bridge" information between regular and group work instance, via cross-distributing between spaces.
 
 
 
