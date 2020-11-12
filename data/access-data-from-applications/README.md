@@ -12,7 +12,7 @@ If you want to use Nuvolos-hosted Python \(via JupyterLab or Spyder\), the data 
 
 1. Make sure you have the data available.
 2. **Run** your application.
-3. Inside your app, you will need to use the `nuvolos` [Python library](https://github.com/nuvolos-cloud/python-connector) developed by Alphacruncher, which is pre-installed in the Jupyter application
+3. Inside your app, you will need to use the `nuvolos` [Python library](https://github.com/nuvolos-cloud/python-connector) developed by Alphacruncher, which is pre-installed in the Jupyter application.
 
 Usage example:
 
