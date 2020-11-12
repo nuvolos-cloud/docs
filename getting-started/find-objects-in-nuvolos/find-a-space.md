@@ -8,7 +8,7 @@ Nuvolos users are only able to see spaces of which you are an administrator or a
 
 1. Select the organization where the space is located.
 2. Click on the second list item from the toolbar breadcrumbs.
-3. From the list, you can find the space you are looking for either by scrolling the list or by using the search field. The list of space is divided into courses, research projects, and datasets.
+3. From the list, you can find the space you are looking for either by scrolling the list or by using the search field. The list of space is divided into classes, research projects, and datasets.
 
 ## Example
 

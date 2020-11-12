@@ -21,7 +21,7 @@ Assume that you want to distribute a file and an application in the following ex
 
      3. Navigate to the stage area to begin distribution using the share icon on the sidebar. Observe your current set of staged objects. If everything checks out, click **CONTINUE**.  In our particular example, we have one file and one application \(as selected previously\) in the stage. Using the red cross button, items can be removed from the stage.
 
-     4. The next step selects the target for distribution. It is possible to remain in the current context or to distribute into some other space or even organization. In the current example, we select a space in the same organization. You can also choose whether to share with all instances or just one. Once you are done finding the target, click **CONTINUE**.
+     4. The next step selects the target for distribution. It is possible to remain in the current context or to distribute into some other space or even organization. In the current example, we select a space in the same organization. You can also choose whether to share with all instance or just one. Once you are done finding the target, click **CONTINUE**.
 
       5. The next step selects the distribution strategy - more details can be found [here](distribution-strategies.md). For now, we will select overwrite, which will overwrite objects of the same name in the target. 
 
@@ -51,7 +51,7 @@ To distribute all the contents of a snapshot:
 
 **Example**
 
-Assume we are in the Demo Space and we have a snapshot called "First Snapshot" that we want to distribute. First, from the toolbar, we select the snapshot, and then from the sidebar, we navigate to the stage area.
+Assume we are in a the Demo Space and we have a snapshot called "First Snapshot" that we want to distribute. First, from the toolbar we select the snapshot and then from the sidebar we havigate to the stage area.
 
 ![](../../.gitbook/assets/distribute_snapshot_ed.gif)
 

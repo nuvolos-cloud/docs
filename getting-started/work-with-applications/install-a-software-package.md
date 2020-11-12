@@ -39,7 +39,7 @@ The `/dhlib` folder is the persistent package storage folder on Nuvolos. If a co
 
 ## Tips and tricks
 
-### Single-purpose applications
+### Single purpose applications
 
 {% hint style="info" %}
 We strongly suggest creating single-purpose applications. 

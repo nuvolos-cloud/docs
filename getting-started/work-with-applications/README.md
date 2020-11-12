@@ -3,7 +3,7 @@
 In Nuvolos, each application is a separate entity with a separate set of resources and environmental settings. Some important considerations:
 
 1. You can have multiple applications of the same type \(e.g. RStudio\) in the same instance with different sets of packages or package versions.
-2. When you [take a snapshot](../working-with-snapshots/create-a-snapshot.md), applications are snapshotted along with all the packages and environmental files.
+2. When you [take a snapshot](../working-with-snapshots/create-a-snapshot.md), applications are snapshot along with all the packages, environmental files and so on.
 3. Applications can be distributed \(see above\).
 
 ## Table of contents
@@ -43,7 +43,7 @@ We present a hybrid of the two approaches by showing how to find the recent appl
 
 ## Stop an application
 
-Stopping applications once they are not used anymore is a good practice: you stop using resources allocated to your organization.
+Stopping applications once they are not used any more is a good practice: you stop using resources allocated to your organization.
 
  There are two ways to stop your application.
 

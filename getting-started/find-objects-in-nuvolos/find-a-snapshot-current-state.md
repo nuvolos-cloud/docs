@@ -4,7 +4,7 @@
 
 1. From the toolbar breadcrumbs, select the organization, the space, and the instance where the state is located.
 2. Using the breadcrumbs, click on the fourth item list to open the list of states.
-3. If you are looking for the current state, then it will be displayed under "Mutable States", while if you want to find a snapshot, then it will be under "Immutable Snapshots".
+3. If you are looking for current state, then it will be displayed under "Mutable States", while if you want to find a snapshot, then it will be under "Immutable Snapshots".
 
 ## Example 1: Find current state
 
