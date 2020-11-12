@@ -10,11 +10,11 @@ This page describes snapshots conceptually.
 
 ## What is snapshotting?
 
-Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable, and shareable_ copy of the current state of your workflow. Snapshotting is a key component to speeding up the dissemination of scientific results.
+Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable and shareable_ copy of the current state of your workflow. Snapshotting is a key component to speeding up dissemination of scientific results.
 
 ### Completeness
 
-Nuvolos ensures that the copy of the current state is complete. This means that your files, database tables, application data, and application setting and dependencies all get saved as a unit.
+Nuvolos ensures that the copy of the current state is complete. This means that your files, database tables, application data and application setting and dependencies all get saved as a unit.
 
 ### Immutability
 
@@ -34,15 +34,15 @@ Nuvolos makes it possible to share a snapshot with a colleague or a student.
 
 ## Why is snapshotting useful?
 
-To demonstrate the usefulness of the feature, consider the following use cases:
+To demonstrate usefulness of the feature, consider the following use cases:
 
 ### Reproducible Research
 
 One of Nuvolos' goals is to help the scientific community advance towards an era of completely reproducible research. By creating a snapshot of your work, you can be sure that your code will produce the exact same results, no matter who runs it.
 
-### Setting up a course
+### Setting up a class
 
-You can set up a course by first building and testing your material. Once you are done, you can create a snapshot and then distribute this snapshot to all students taking the course with you. The students will receive the entire computing environment just as you have set it up, so they can get to work immediately.
+You can set up a class by first building and testing your material. Once you are done, you can create a snapshot and then distribute this snapshot to all students taking the class with you. The students will receive the entire computing environment just as you have set it up, so they can get to work immediately.
 
 ### Onboarding a new member to a research project
 

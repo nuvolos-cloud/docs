@@ -11,7 +11,7 @@ This page describes working with _tabular data. ****_For working with files, con
 
 ## Datasets
 
-Datasets are special kinds of spaces, with the main goal of containing only tabular data and documentation related to that tabular data and potentially other descriptor files. For obtaining a full list of the datasets available to you in your current organization, navigate to your dashboard and pick the datasets menu.
+Datasets are special kinds of spaces, with the main goal of containing only tabular data and documentation related to that tabular data and potentially other descriptor files. For obtaining a full list of the datasets available to you in your current organization, navigate to your dashboard, and pick the datasets menu.
 
 ![Viewing the list of available datasets](../.gitbook/assets/dataset_navigate_ed.gif)
 
