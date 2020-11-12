@@ -50,7 +50,7 @@ If you chose to sign up with e-mail and password authentication, you need to sig
    * Mind the fact that your context has changed in the breadcrumbs to your personal instance.
 2. Click the file view on the overview of your personal instance.
 
-![Using the dashboard to quickly navigate to your course](../../.gitbook/assets/find_class_material_ed.gif)
+![Using the dashboard to quickly navigate to your class](../../.gitbook/assets/find_class_material_ed.gif)
 
 ## Download or upload material
 
