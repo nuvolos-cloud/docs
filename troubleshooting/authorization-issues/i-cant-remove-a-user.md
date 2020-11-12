@@ -2,9 +2,9 @@
 
 #### If you're having problems revoking a user from an organization, space, or instance, here are some issues you might want to examine:
 
-* **You do not have the permission to revoke a user.**
+* **You do not have permission to revoke a user.**
 
-To remove a user from an organization, you must be have an organization manager role. To remove a user from a space or instance, you must be an administrator of that space.
+To remove a user from an organization, you must have an organization manager role. To remove a user from a space or instance, you must be an administrator of that space.
 
 * **You are following the wrong steps.**
 
@@ -12,7 +12,7 @@ To revoke an organization-level role, follow the steps [here](../../settings-and
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, your request to revoke a user might not be received by the server. Make sure you restore your connection, refresh the page and try to revoke the user again.
+If you lose your internet connection, your request to revoke a user might not be received by the server. Make sure you restore your connection, refresh the page, and try to revoke the user again.
 
 * **There has been a server-side error and the user revoke request was not properly processed by Nuvolos.**
 

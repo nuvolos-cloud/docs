@@ -23,11 +23,11 @@ To delete an application, you must be in the CURRENT STATE of an instance of whi
 * **The application you want to delete does not exist anymore because it has already been deleted.** 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, then the deletion request might fail to reach the server. Make sure you restore your connection,  refresh the page and try to delete the application again.
+If you lose your internet connection, then the deletion request might fail to reach the server. Make sure you restore your connection,  refresh the page, and try to delete the application again.
 
 * **There has been a server-side error and the application deletion request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to delete the application. Wait for a few minutes, refresh the page and then try to delete the application again.  
+In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to delete the application. Wait for a few minutes, refresh the page, and then try to delete the application again.  
 
 
 ### None of these solutions worked - how to proceed?

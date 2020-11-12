@@ -10,7 +10,7 @@ The list of applications will show only ten apps by default. If you cannot find 
 
 * **You are looking in the wrong place.**
 
-[Here](../../getting-started/work-with-applications/find-an-application.md) you can find information on how to find an application in Nuvolos.
+[Here]() you can find information on how to find an application in Nuvolos.
 
 * **You don't have the right permission to view the application**
 

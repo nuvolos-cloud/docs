@@ -12,7 +12,7 @@ The Master and Distributed instances are primary instances that must exist for e
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, your request to delete an instance might not be received by the server. Make sure you restore your connection, refresh the page and try to delete the instance again.
+If you lose your internet connection, your request to delete an instance might not be received by the server. Make sure you restore your connection, refresh the page, and try to delete the instance again.
 
 * **There has been a server-side error and the instance deletion request was not properly processed by Nuvolos.**
 

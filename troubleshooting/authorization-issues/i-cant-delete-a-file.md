@@ -16,7 +16,7 @@ To delete files, you must be in the **CURRENT STATE** of an instance of which yo
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the file deletion operation might fail. Make sure you restore your connection,  refresh the page and try to delete the files again.
+If you lose your internet connection, the file deletion operation might fail. Make sure you restore your connection,  refresh the page, and try to delete the files again.
 
 * **There has been a server-side error and the file deletion request was not properly processed by Nuvolos.**
 

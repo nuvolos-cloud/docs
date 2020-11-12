@@ -2,17 +2,17 @@
 
 #### If you're having problems deleting a space, here are some issues you might want to examine:
 
-* **You are not member of the organization where you want to delete a space.**
+* **You are not a member of the organization where you want to delete a space.**
 
 Spaces live within an organization. In order to delete a space you need to be part of the organization.
 
-* **You do not have the permission to delete a space.**
+* **You do not have permission to delete a space.**
 
 In order to delete a space, the user must have an org manager, org faculty, or space administrator roles. If you don't have the required role, you can contact an org manager, faculty member, or the space administrator and discuss with them a role upgrade or the deletion of the space.
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, your request to delete a space might not be received by the server. Make sure you restore your connection, refresh the page and try to delete the space again.
+If you lose your internet connection, your request to delete a space might not be received by the server. Make sure you restore your connection, refresh the page, and try to delete the space again.
 
 * **There has been a server-side error and the space deletion request was not properly processed by Nuvolos.**
 

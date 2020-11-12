@@ -30,16 +30,16 @@ An organization faculty member is a user who has the ability to control resource
 
 * Faculty members can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space. 
 * Faculty members can view **Public** and **Faculty only** spaces as well as any content they are invited to. 
-* The faculty role is powerful in the sense that it has the ability to propagate licensed content to other users.
+* The faculty role is powerful in the sense that it has the ability to propagate licenced content to other users.
 
 ### Manager
 
 An organization manager is a user who has the ability to view resources in the organization as well as control membership.
 
-* Organization managers can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space. 
+* Organization managers can create spaces and invite users to the spaces they have craeted. Any user who creates a space automatically becomes _space admin_ of that space. 
 * Organization managers can view all content in the organization however they can modify content where they received explicit invitation to do so. 
 * Organization managers can invite additional Faculty to the organization. 
-* Organization managers can revoke access to the organization's resources. 
+* Organization managers can revoke access to the organization resources. 
 
 ## Space level roles
 
@@ -64,7 +64,7 @@ Space admins have administrative power restricted to the scope of a single space
 
 ### Viewer
 
-* Instance viewers can view the contents of snapshots in the instance, including writing queries against data.
+* Instance viewers can view contents of snapshots in the instance, including writing queries against data.
 
 
 

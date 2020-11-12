@@ -1,7 +1,7 @@
 # Revoke/deactivate instance users
 
 {% hint style="info" %}
-A space administrator can revoke or deactivate an instance.
+A space administrator can revoke or deactivate instance.
 
 * **Revoke** will simply revoke the instance role from the user. User account and instances/snapshots are not deleted, only the affected users won't see them anymore.
 * **Deactivate** blocks user login, so it's a user-global operation.

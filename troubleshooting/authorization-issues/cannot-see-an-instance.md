@@ -6,9 +6,9 @@
 
 [Here](../../getting-started/find-objects-in-nuvolos/find-an-instance.md) you can find information on how to find an instance in Nuvolos.
 
-* **You are not member of the space which contains the instance.**
+* **You are not a member of the space which contains the instance.**
 
-Instances live within a space. In order to see an instance you need to at least have a viewer role that allows you to view the instance. If you don't have the right permission, consider contacting the space admin to grant you a viewer/editor role for the instance.
+Instances live within a space. In order to see an instance, you need to at least have a viewer role that allows you to view the instance. If you don't have the right permission, consider contacting the space admin to grant you a viewer/editor role for the instance.
 
 * **The instance does not exist anymore because it was deleted.**
 
@@ -20,7 +20,7 @@ If you lose your internet connection, the data retrieval request might fail and 
 
 * **There has been a server-side error and the list of instances was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that instance data is not served properly. Wait for a few minutes, refresh the page and check again.  
+In some cases, it might happen that a server-side error occurs such that instance data is not served properly. Wait for a few minutes, refresh the page, and check again.  
 
 
 ### None of these solutions worked - how to proceed?

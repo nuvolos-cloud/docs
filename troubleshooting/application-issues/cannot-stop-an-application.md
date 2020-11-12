@@ -4,7 +4,7 @@
 
 * **You don't have the right permission to stop the application**
 
-To stop a running application in an instance, you need to be the editor of that instance. Instance viewers cannot start or stop applications. If you don't have the right permission to stop an application, contact the instance editor and discuss with her stopping the application.
+To stop a running application in an instance, you need to be the editor of that instance. Instance viewers cannot start or stop applications. If you don't have the right permission to stop an application, contact and discuss the issue with an instance editor.
 
 * **Give it some time.**
 
@@ -28,11 +28,11 @@ Make sure that you have [created](../../getting-started/work-with-applications/c
 * **The application you want to start does not exist anymore because it was deleted.** 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the application stop request might not reach the server and the application will not be stopped. Make sure you restore your connection,  refresh the page and try to stop the application again.
+If you lose your internet connection, the application stop request might not reach the server and the application will not be stopped. Make sure you restore your connection,  refresh the page, and try to stop the application again.
 
 * **There has been a server-side error and the application stop data was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to stop the application. Wait for a few minutes, refresh the page and then try to stop the application.  
+In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to stop the application. Wait for a few minutes, refresh the page, and then try to stop the application.  
 
 
 ### None of these solutions worked - how to proceed?

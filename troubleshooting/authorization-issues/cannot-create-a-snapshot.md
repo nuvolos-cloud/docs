@@ -8,7 +8,7 @@ In order to create a snapshot in an instance, the user must be an instance edito
 
 * **You have reached the maximum number of snapshots allowed.**
 
-Nuvolos users might have a limit on the maximum number of snapshots that they can create. If you reach the limit, then you can either delete old and unnecessary snapshots, or contact the space administrator to negotiate higher limit.
+Nuvolos users might have a limit on the maximum number of snapshots that they can create. If you reach the limit, then you can either delete old and unnecessary snapshots or contact the space administrator to negotiate a higher limit.
 
 * **You followed the wrong steps for creating a snapshot**
 
@@ -26,7 +26,7 @@ A snapshot can be created only from within the current state of your instance. M
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, your request to create a snapshot might not be received by the server. Make sure you restore your connection, refresh the page and try to create the snapshot again.
+If you lose your internet connection, your request to create a snapshot might not be received by the server. Make sure you restore your connection, refresh the page, and try to create the snapshot again.
 
 * **There has been a server-side error and the snapshot creation request was not properly processed by Nuvolos.**
 

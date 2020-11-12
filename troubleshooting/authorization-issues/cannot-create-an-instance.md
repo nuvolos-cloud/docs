@@ -2,7 +2,7 @@
 
 #### If you're having problems creating a new instance, here are some issues you might want to examine:
 
-* **You do not have the permission to create an instance.**
+* **You do not have permission to create an instance.**
 
 In order to create an instance, the user must have a space admin role. If you don't have the required role to create an instance, you can contact your space admin and ask her to create one. 
 
@@ -12,7 +12,7 @@ Make sure you follow the correct steps required for creating an instance. For mo
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, your request to create an instance might not be received by the server. Make sure you restore your connection, refresh the page and try to create the instance again.
+If you lose your internet connection, your request to create an instance might not be received by the server. Make sure you restore your connection, refresh the page, and try to create the instance again.
 
 * **There has been a server-side error and the space creation request was not properly processed by Nuvolos.**
 

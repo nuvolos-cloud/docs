@@ -8,15 +8,15 @@
 
 * **The space you are looking for is not among the spaces visualized by default.**
 
-If you are viewing the full list of spaces, then by default the list of spaces will show the first 100 spaces. If you cannot find a space then it might be because it is now shown among these 100. Simply increase the number of rows per page using the option at the bottom of the table, or navigate to the next page by using the right arrow at the bottom..
+If you are viewing the full list of spaces, then by default the list of spaces will show the first 100 spaces. If you cannot find a space then it might be because it is now shown among these 100. Simply increase the number of rows per page using the option at the bottom of the table, or navigate to the next page by using the right arrow at the bottom.
 
 ![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.43.52-am.png)
 
 
 
-* **You are not member of the organization hosting the space.**
+* **You are not a member of the organization hosting the space.**
 
-Spaces are contained in an organization. In order to view a space you need to be part of the organization and have a role that allows you to view the space. To view a space, you need to be one of the following: organization manager, a faculty member, an affiliated member with the organization, or an external member who has been invited to join a space. If you are not a member of the organization, you can ask the space administrator to send you an invitation to join.
+Spaces are contained in an organization. In order to view a space you need to be part of the organization and have a role that allows you to view the space. To view a space, you need to be one of the following: an organization manager, a faculty member, an affiliated member with the organization, or an external member who has been invited to join a space. If you are not a member of the organization, you can ask the space administrator to send you an invitation to join.
 
 * **The space does not exist anymore because it was deleted.** 
 * **You have lost connection to the internet.**
@@ -25,7 +25,7 @@ If you lose your internet connection, the data retrieval request might fail and 
 
 * **There has been a server-side error and the list of spaces was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that space data is not served properly. Wait for a few minutes, refresh the page and then try again.  
+In some cases, it might happen that a server-side error occurs such that space data is not served properly. Wait for a few minutes, refresh the page, and then try again.  
 
 
 ### None of these solutions worked - how to proceed?

@@ -24,7 +24,7 @@ To start an application, you must be in the CURRENT STATE ****of an instance of 
 
 ![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%284%29.png)
 
-For more information on how to find an application, check the documentation [here]().
+For more information on how to find an application, check the documentation [here](../../getting-started/work-with-applications/find-an-application.md).
 
 * **There is no application to start.**
 

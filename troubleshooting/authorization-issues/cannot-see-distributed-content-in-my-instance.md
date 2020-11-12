@@ -4,11 +4,11 @@
 
 * **You don't have the right permission.**
 
-When some contents is shared with another instance, then the new contents will be merged with the contents of the current state of the target instance. In order to view the current state of an instance, you need to be the editor of the instance. If you don't have the right permission to see the current state of an instance, then you can ask the instance editor who shared the original data to share the same data with one of the instances of which you are an editor.
+When some contents are shared with another instance, then the new contents will be merged with the contents of the current state of the target instance. In order to view the current state of an instance, you need to be the editor of the instance. If you don't have the right permission to see the current state of an instance, then you can ask the instance editor who shared the original data to share the same data with one of the instances of which you are an editor.
 
 * **Refresh your page.**
 
-In order to see the new contents, you might need to refresh the page so that the browser receives the new updated data that will include the new contents.
+In order to see the new content, you might need to refresh the page so that the browser receives the newly updated data that will include the new content.
 
 * **Give it some time.**
 
@@ -24,11 +24,11 @@ If, after having received shared contents from another member, you restore one o
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the browser might not receive the new updated data from the server and, therefore, you won't see the new contents. Make sure you restore your connection,  refresh the page and check again.
+If you lose your internet connection, the browser might not receive the newly updated data from the server and, therefore, you won't see the new content. Make sure you restore your connection,  refresh the page, and check again.
 
 * **There has been a server-side error and the data sharing process did not succeed.**
 
-In some cases, it might happen that a server-side error occurs such that the data sharing is not processed successfully by the server. Wait for a few minutes, refresh the page and check again. If you still don't see the content, contact the person who shared the data with you and ask her if the data was shared successfully.  
+In some cases, it might happen that a server-side error occurs such that the data sharing is not processed successfully by the server. Wait for a few minutes, refresh the page, and check again. If you still don't see the content, contact the person who shared the data with you and ask her if the data was shared successfully.  
 
 
 ### None of these solutions worked - how to proceed?

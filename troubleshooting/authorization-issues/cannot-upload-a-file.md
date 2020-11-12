@@ -6,13 +6,13 @@
 
 To upload a file to an instance, you need to be an editor of that instance. Instance viewers cannot add files. If you don't have the right permission to add a file, contact the instance editor and discuss with them the file upload.
 
-* **You followed the wrong steps for uploading file**
+* **You followed the wrong steps for uploading the file.**
 
 Make sure you follow the correct steps required for uploading files. For more details, check [here]().
 
 * **Give it some time.**
 
-Adding new files might take several seconds, in particular if the file has a large size. Please wait for some time until the operation is completed.
+Adding new files might take several seconds, in particular, if the file has a large size. Please wait for some time until the operation is completed.
 
 * **You are looking in the wrong place.**
 
@@ -20,11 +20,11 @@ To upload new files, you must be in the **CURRENT STATE** of an instance of whic
 
 * **You have lost connection to the internet.**
 
-If you lose your internet connection, the file upload operation might fail. Make sure you restore your connection,  refresh the page and try to upload the file again.
+If you lose your internet connection, the file upload operation might fail. Make sure you restore your connection,  refresh the page and, try to upload the file again.
 
 * **There has been a server-side error and the file upload request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and then try to upload the files again.  
+In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and, then try to upload the files again.  
 
 
 ### None of these solutions worked - how to proceed?
