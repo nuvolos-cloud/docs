@@ -10,7 +10,7 @@ description: >-
 
 {% tabs %}
 {% tab title="Instructor" %}
-A class in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
+A course in Nuvolos is a space to organise all course-related teaching material \(data, code, applications\):
 
 * [**Set up your course**](education/instructor-topics/instructor-guide.md)\*\*\*\*
 * [Work with files](getting-started/work-with-files/)

@@ -4,7 +4,7 @@ description: A short introduction to working with database tables in the web int
 
 # The Tables view
 
-The Tables view can be found in the sidebar once you are viewing work in a state.  You can view the data tables available in the active instance and run SELECT queries on the tables. This sections details the functionality accessible from this view.
+The Tables view can be found in the sidebar once you are viewing work in a state.  You can view the data tables available in the active instance and run SELECT queries on the tables. This section details the functionality accessible from this view.
 
 ## Overview
 
@@ -25,19 +25,19 @@ The functionalities as a list:
 
 The tables list is the list of tables in the currently selected snapshot or current state. 
 
-It is possible to stage, delete, rename and describe tables - hovering over a line will reveal the possible actions.
+It is possible to stage, delete, rename, and describe tables - hovering over a line will reveal the possible actions.
 
 ## Columns list and table preview
 
-In order to see the columns list, click the table name and select **Explore columns.** Similarly, select **Preview table** to look at the first ten rows of the table.
+In order to see the columns list, click the table name, and select **Explore columns.** Similarly, select **Preview table** to look at the first ten rows of the table.
 
 ![](../.gitbook/assets/screen-shot-2019-12-10-at-7.28.29.png)
 
-In order to guide documentation it is also possible to give description to columns in the **Explore columns** view.
+In order to guide documentation, it is also possible to give a description to columns in the **Explore columns** view.
 
 ## Running queries
 
-It is possible to run queries directly from the web interface. Currently, only SELECT queries are allowed. For the complete syntax of such construct, please refer to the [database system documentation](https://docs.snowflake.com/en/sql-reference/constructs.html).
+It is possible to run queries directly from the web interface. Currently, only SELECT queries are allowed. For the complete syntax of such a construct, please refer to the [database system documentation](https://docs.snowflake.com/en/sql-reference/constructs.html).
 
 1- Design your SQL query in the query editor. Once you are done, click **PREVIEW**.
 
@@ -47,13 +47,13 @@ It is possible to run queries directly from the web interface. Currently, only S
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
 
-      3. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have                been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
+      3. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
 
 ## Connection guide
 
-Clicking the connection guide gives you information on access credentials to the database behind you particular workspace. You can find more about connecting via applications in this guide.
+Clicking the connection guide gives you information on access credentials to the database behind your particular workspace. You can find more about connecting via applications in this guide.
 
 
 

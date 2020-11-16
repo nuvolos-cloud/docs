@@ -1,6 +1,6 @@
 # I forgot my e-mail address for sign-in
 
-#### If you don't remember any more the e-mail address that you used to create your Nuvolos account, then consider one of the following solutions:
+#### If you don't remember anymore the e-mail address that you used to create your Nuvolos account, then consider one of the following solutions:
 
 * If you can log in to Nuvolos with your username \(rather than the e-mail address\), then once logged in, click on the account icon on the top right of the toolbar -&gt; select "Settings" and you should be able to find your email. 
 * Try the email address of your current organization as this is very likely to be the one used when your Nuvolos account was created. 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-A core feature of Nuvolos is that projects are encapsulated and self-contained in terms of both data and software. This feature is realized by the concept and hierarchical level called _space._ A space lives within the context of an organization, and different spaces can be created for managing activities such as a class, a summer school, a research project, or a dataset. Spaces contain at least one, but in certain use cases may contain a number of instances, which represent separate work contexts that allow for access control and sharing of data between the members of a space \(e.g. teachers and students\). A space, therefore, can be seen as a logical unit to organize:
+A core feature of Nuvolos is that projects are encapsulated and self-contained in terms of both data and software. This feature is realized by the concept and hierarchical level called _space._ A space lives within the context of an organization, and different spaces can be created for managing activities such as a course, a summer school, a research project, or a dataset. Spaces contain at least one, but in certain use cases may contain a number of instances, which represent separate work contexts that allow for access control and sharing of data between the members of a space \(e.g. teachers and students\). A space, therefore, can be seen as a logical unit to organize:
 
 * **Tabular data**
   * Raw tabular data \(tables\)
@@ -17,7 +17,7 @@ A core feature of Nuvolos is that projects are encapsulated and self-contained i
 * **Branched:** Instances provide the possibility of maintaining multiple mutations of the same core concept. 
 * **Versioned:** The current state of any instance can be snapshotted to create an immutable, restorable state, enabling full protection and reproducibility of a project. 
 * **Shareable**: users can share their work inside a space. 
-* **Teaching-ready:** It is natural to set up a class as a space, where students and professors have their own sandboxes, and teaching material \(including code and data\) can be distributed relying on the previous features.
+* **Teaching-ready:** It is natural to set up a course as a space, where students and professors have their own sandboxes, and teaching material \(including code and data\) can be distributed relying on the previous features.
 
 ## Access control
 
@@ -30,7 +30,7 @@ Access of space contents \(database tables, files, etc.\) is controlled on the i
 * **Public space**: A space which contains a publicly available resources available to the entire organization, including external members. A natural example is a publicly available dataset uploaded to Nuvolos, e.g. data from FRED. Any user in the organization automatically becomes a viewer of the master instance of public spaces, and organization managers become viewers in all of its instances. 
 * **Affiliate-only space**: A space which contains a resource that is only accessible by affiliated members of the organization. A typical example is vendor-provided dataset with campus-wide license. Faculty members and affiliated members automatically become viewers of its master instance. Organization managers also become viewers in all of its instances. 
 * **Faculty-only space**: A space which contains a resource that is only accessible for faculty members of the organization. Faculty members automatically become viewers of its master instance. Organization managers also become viewers in all of its instances. A typical example: vendor-provided dataset with a faculty-wide license. 
-* **Private space**: A space which contains a resource that is only accessible for a members of the organization on a case-by-case basis. Only organization managers become viewers in all of its instances, everyone else has to be invited by the space administrator. A typical example: any research group project or class is designated to be a private space.
+* **Private space**: A space which contains a resource that is only accessible for a members of the organization on a case-by-case basis. Only organization managers become viewers in all of its instances, everyone else has to be invited by the space administrator. A typical example: any research group project or course is designated to be a private space.
 
 **Visual representation**
 

@@ -1,7 +1,7 @@
 # Find an organization
 
 {% hint style="info" %}
-Nuvolos users are only able to see organizations for which they have accepted a valid invitation to.
+Nuvolos users are only able to see organizations for which they have accepted a valid invitation.
 {% endhint %}
 
 ## To Find an organization:

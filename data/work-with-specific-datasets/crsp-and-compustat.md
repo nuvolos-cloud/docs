@@ -2,7 +2,7 @@
 
 ## Getting access
 
-In order to get access to a dataset, the organization managers can provide information whether the dataset is currently made available in Nuvolos.
+In order to get access to a dataset, the organization managers can provide information on whether the dataset is currently made available in Nuvolos.
 
 ## Accessing data in Nuvolos
 
@@ -21,7 +21,7 @@ Both datasets assign non-volatile unique identifiers to securities and companies
 **CRSP** identifiers:
 
 * **PERMNO** and **PERMCO**. These are unique and permanent identifiers, they are never reassigned and do not change during the life history of a stock.
-* **CUSIP**: a nine-digit numeric \(e.g., 037833100 for Apple\) or nine-character alphanumeric \(e.g., 38259P508 for Google\) code that identifies a North American financial security. CRSP keeps 8-digits and 9-digits versions of CUSIP. In the 8-digits version, the last digit is removed. A stock's CUSIP can change over time, but is never reassigned.
+* **CUSIP**: a nine-digit numeric \(e.g., 037833100 for Apple\) or nine-character alphanumeric \(e.g., 38259P508 for Google\) code that identifies a North American financial security. CRSP keeps 8-digits and 9-digits versions of CUSIP. In the 8-digits version, the last digit is removed. A stock's CUSIP can change over time but is never reassigned.
 * **Ticker**: unique identifier assigned to a stock traded on a particular exchange. Tickers can be reassigned.
 
 **COMPUSTAT** identifiers:
@@ -40,7 +40,7 @@ CRSP/COMPUSTAT link generation approaches:
 Merging CRSP and COMPUSTAT using CUSIP, the following steps are required:
 
 * From the CRSP database, get stock identifiers from table `NAME_HISTORY`. This table contains information on identifiers such as `PERMNO` and `CUSIP`, as well as other codes. The start date \(column `NAMEDT`\) and end date \(column `NAMEENDDT`\) define the period for which a particular stock identifier was valid. If `NAMEENDDT` is not available, this means that the stock data in `NAME_HISTORY` is still accurate until the most recent date in the dataset.
-* From COMPUSTAT, select a table that contains the `CUSIP` identifiers to merge it with the table `NAME_HISTORY` in CRSP. Merging based on the `CUSIP` identifier requires dates from COMPUSTAT and CRSP to fall within the temporal interval defined by `NAMEDT` and `NAMEENDDT`.
+* From COMPUSTAT, select a table that contains the `CUSIP` identifiers to merge it with the table `NAME_HISTORY` in CRSP. Merging based on the `CUSIP` identifier requires dates from COMPUSTAT and CRSP to fall within the time interval defined by `NAMEDT` and `NAMEENDDT`.
 
 ### Merging by CRSP/COMPUSTAT Merged Database <a id="merging-by-crspcompustat-merged-database"></a>
 
@@ -70,7 +70,7 @@ In the following, it will be assumed that the tables have been distributed to th
 
 #### Designing the query
 
-The suggested workflow is to use the query editor on the UI first to design the query. This step is not compulsory, however it is considered best practice. The steps to perform query design can be found [here](../the-table-view.md).
+The suggested workflow is to use the query editor on the UI first to design the query. This step is not compulsory, however, it is considered best practice. The steps to perform query design can be found [here](../the-table-view.md).
 
 #### The query
 
@@ -136,7 +136,7 @@ ON LT.GVKEY = INP.GVKEY AND
 WHERE LT.LINKTYPE IN ('LU', 'LC')
 ```
 
-Based on flavour and use-case, additional deduplication might be necessary as there might be multiple `PERMNO` matches for a `GVKEY`. This is easiest to be done using the previously presented syntax in R, however this involves the drawback of not being able to run later join operations using the database engine.
+Based on flavour and use-case, additional deduplication might be necessary as there might be multiple `PERMNO` matches for a `GVKEY`. This is easiest to be done using the previously presented syntax in R, however, this involves the drawback of not being able to run later join operations using the database engine.
 
 #### Putting it together with CRSP
 

@@ -4,52 +4,38 @@
 Only space administrators are allowed to create new instances in their space.
 {% endhint %}
 
-## **There are two options to create an instance:**
+### **1- Create an instance that contains the cumulative distribution history**
 
-### **Create instance that contains the cumulative distribution history**
+If you have already performed object distributions to all instances in a space, then one or more snapshots of what has been distributed will be stored in the Distributed instance \(see [here](../../getting-started/distribute-objects-in-nuvolos/) for details\). To invite a new user to a space and upload the latest distributed snapshot to the current state of the user, then the following steps are required:
 
-If you have already performed object distributions to all instance in a space, then one or more snapshots of what has been distributed will be stored in the Distributed instance \(see  [here](../../getting-started/distribute-objects-in-nuvolos/) for details\). To invite a new user to a space and upload the latest distributed snapshot to the current state of the new user, then the following steps are required:
-
-1. Open a class or research project. In the following example, we open the class called Demo Space and invite students to this space.
+1. Open a course or research project. In the following example, we open the course called "Demo Space".
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
 
-    2. From the overview screen, we click on "Course Participants" \(or "Project Participants" if the context is that of a research project\).
+    2. From the overview screen, we click on "Course Users" \(or "Project Users" if the context is that of a research project\).
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.14.04-pm.png)
+    3. Navigate to the "INVITE" tab and select "Option 1 - User Invitation"
 
-   3. Choose the type of instance you want to create.
+![](../../.gitbook/assets/screen-shot-2020-11-16-at-4.05.38-pm.png)
 
-* **Separate instance for each user**: With this option, a link will be shown that can be copied and made available to all users who should join the space. Upon opening this link, each student will be asked to provide their institutional email to which an invitation will be sent. By opening the invitation email, the student will be able to sign up for Nuvolos and join the class. This option would be preferred when a professor wants to invite multiple students to join a class.
+   4. Choose the type of instance you want to create.
+
+* **A Separate instance for each user via a link invitation**: With the link invitation method, a link will be shown that can be copied and made available to all users who should join the space. Upon opening this link, each student will be asked to provide their institutional email to which an invitation will be sent. By opening the invitation email, the student will be able to sign up for Nuvolos and join the course. This option would be preferred when a professor wants to invite multiple students to join a course.
+
+![](../../.gitbook/assets/screen-shot-2020-11-16-at-4.11.45-pm%20%282%29.png)
 
 {% hint style="warning" %}
 For research projects, the option **Separate instance for each user** does not support the invitation via link and requires instead a list of user emails and does not support the invitation via link.
 {% endhint %}
 
-* **Joint instance for multiple users**: this option requires a list of emails and only one single instance will be created and shared by all users whose emails were provided. This option requires a name and description for the new instance. Joint instances are designed to facilitate group work: group assignments, or small group research activities are best carried out in joint instances.
-* **Single instance \(not available for this instance creation mode\)**: with this option, a single instance will be created for the current space administrator. An instance name and description needs to be provided to complete the operation.
-
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.14.18-pm.png)
+* **A Separate instance for each user via direct email invitation**: With the email invitation method, you will need to provide the email of the users that will be invited. To invite using direct email invitations, select the "Invite via email" option, provide the list of user emails, and click on "INVITE"
+* \*\*\*\*
 
 {% hint style="success" %}
-If you haven't distributed any material to all students, you can still continue with this option and later distribute material to the invited members.
+If you haven't distributed any material to all students, you can still continue with this option and later distribute the material to the invited members.
 {% endhint %}
 
-### **Create empty instance**
 
-Nuvolos allows you to create instances and invite users regardless of whether you want to include content to the new instances or not.
-
-1. Open a class or research project. In the following example, we open the class called Demo Space and invite students to this space.
-
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
-
-   2. From the left sidebar, hover on the settings icon and click "Add Instance":
-
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.26.21-pm.png)
-
-   3. Content can be added via **Including a snapshot,** otherwise the instance will be created as a completely empty one.
-
-   4. Choose the type of instance you want to create. Same as the previous option but with the only difference is that the "separate instance for each user" option requires a list of emails rather than providing a link.
 
 #### If you are encountering a problem creating an instance, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-create-an-instance.md).
 

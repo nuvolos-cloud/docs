@@ -12,7 +12,7 @@ Nuvolos will have its own special folder inside Dropbox, to avoid requesting acc
 
 Once your account is linked, whenever a Nuvolos application is started \(if you already have the application running, then stop it and restart it\) the synchronization to Dropbox will begin as well.
 
-Whilst for the most cases **instantaneous bidirectional synchronization** will happen between Nuvolos and Dropbox, currently the following limitations apply to Dropbox synchronization:
+Whilst for most cases **instantaneous bidirectional synchronization** will happen between Nuvolos and Dropbox, currently the following limitations apply to Dropbox synchronization:
 
 * Files created outside **your** application \(e.g. uploaded on the web interface, created by a co-author, distributed from another instance\) will only be synchronized every hour.
 * The synchronization only runs if your application is running.

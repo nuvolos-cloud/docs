@@ -141,7 +141,7 @@ Accessing data from out-of-Nuvolos Stata applications consists of the following 
 
 1. Install[ the Snowflake ODBC driver](setting-up-odbc-drivers.md).
 2. [Obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos tables interface.
-3. Establish connection.
+3. Establish a connection.
 
 {% hint style="info" %}
 To simplify work, we suggest that you save your connection parameters to global macros and finally create a connection string as a global macro. On Nuvolos, this is part of the sysprofile.do file of the application. 
@@ -180,7 +180,7 @@ Accessing data from out-of-Nuvolos SAS applications consists of the following st
 
 1. Install[ the Snowflake ODBC driver](setting-up-odbc-drivers.md).
 2. [Obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos tables interface.
-3. Establish connection.
+3. Establish a connection.
 
 In SAS we suggest creating a library of the contents of your instance. To do this, we suggest posing the following statement to SAS:
 
@@ -228,9 +228,9 @@ To analyze the above SAS statement, notice the following:
 2. The first statement makes sure that SAS connects to the correct database and schema. We strongly suggest using this statement first whenever you are using the Pass-Through Facility.
 3. The second statement creates a table called `test` based on the code that is in the file `source/to/file.sql.`
 
-## Cancelling queries
+## Canceling queries
 
-Running queries can be listed and \(selectively\) cancelled using SQL statements.
+Running queries can be listed and \(selectively\) canceled using SQL statements.
 
 ### List running queries
 
