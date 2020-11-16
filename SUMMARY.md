@@ -58,7 +58,7 @@
     * [Create a space](settings-and-administration/organization-management/create-a-space.md)
     * [Delete a space](settings-and-administration/organization-management/delete-a-space.md)
   * [Space management](settings-and-administration/space-management/README.md)
-    * [Create an instance](settings-and-administration/space-management/create-an-instance.md)
+    * [Invite students](settings-and-administration/space-management/create-an-instance.md)
     * [Invite instance users](settings-and-administration/space-management/invite-instance-users.md)
     * [Invite Space Administrators](settings-and-administration/space-management/invite-space-admins.md)
     * [Revoke/deactivate space administrators](settings-and-administration/space-management/revoke-deactivate-space-administrators.md)
