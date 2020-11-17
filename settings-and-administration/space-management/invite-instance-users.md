@@ -7,22 +7,25 @@
 
 ## **To invite a new instance user:**
 
-1- From the toolbar breadcrumbs, select the space and instance you want to invite users to. For example, let's say that we are working in a the space "Demo Space" and we want to invite an instance editor to the Master instance of this space.
+    1. Open a space \(course or research project\). In the following example, we open the course called "Demo Space".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.35.02-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
 
+    2. From the overview screen, click on "Course Users".
 
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-10.40.13-am.png)
 
-2- From the left sidebar, hover on the settings icon and click on "Instance users". After that, from the top right click on "ADD INSTANCE USER"
+    3. Navigate to the "INSTANCES" tab, identify the instance you want to invite to, and click on "Invite users". In the example below, we invite users to the instance called "First group instance".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.36.27-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-1.02.54-pm.png)
 
-3- Select the type of invitation you want to send \(in our case Editor\).  
+    4. Make sure you select "OPTION 1 - USER INVITATION" and "Invite to an existing shared instance".
 
+    5. Select whether you want to invite instance editors or viewers.
 
-4- Provide the emails of the users you want to invite to the instance and finally click on INVITE.
+    5. Provide the emails of the users you want to invite to the selected instance and finally click "INVITE".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.40.12-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-1.16.52-pm.png)
 
 #### If you are encountering a problem inviting instance users, refer to the troubleshooting guide here. 
 
