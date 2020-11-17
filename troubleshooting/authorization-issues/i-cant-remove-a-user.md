@@ -8,7 +8,7 @@ To remove a user from an organization, you must have an organization manager rol
 
 * **You are following the wrong steps.**
 
-To revoke an organization-level role, follow the steps [here](../../settings-and-administration/organization-management/revoke-user-access.md), space-level [here](../../settings-and-administration/space-management/revoke-deactivate-space-administrators.md), and instance-level [here](../../settings-and-administration/space-management/revoke-deactivate-instance-users.md).
+To revoke an organization-level role, follow the steps [here](../../settings-and-administration/organization-management/revoke-user-access.md), space-level [here](../../settings-and-administration/space-management/revoke-deactivate-space-administrators.md), and instance-level [here]().
 
 * **You have lost connection to the internet.**
 
