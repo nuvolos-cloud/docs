@@ -1,18 +1,26 @@
-# Revoke/deactivate space administrators
+# Revoke a space administrator
 
 {% hint style="info" %}
-A space administrator can revoke or deactivate space administrators.
-
-* **Revoke** will simply revoke the space role from the user. User account and instances/snapshots are not deleted, only the affected users won't see them anymore.
-* **Deactivate** blocks user login, so it's a user-global operation.
+Only a space administrator role or higher can revoke other space administrators.
 {% endhint %}
 
-## To revoke or deactivate a space administrator:
+### To revoke a space administrator:
 
-1. Open a space.
-2. From the left sidebar, click on the settings icon and select "Space users".
-3. From the user list, identify the user\(s\) you want to revoke/deactivate.
-4. To revoke, click the red delete button, and to deactivate click on the red user cancel account button.
+1. Open a space. In the following example, we open the course called "Demo Space".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.37.13-pm%20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
+
+    2. From the overview screen, click on "Course Users".
+
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-10.40.13-am.png)
+
+    3. Navigate to the "MEMBERS" tab, identify the user, and click on the cross icon next to the role field.
+
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-1.28.41-pm.png)
+
+    4. Select whether you want to revoke all instance-level roles as well or not by checking the "Revoke all instance roles for this user" box.
+
+    5. Click "REVOKE"
+
+![](../../.gitbook/assets/screen-shot-2020-11-17-at-1.29.13-pm.png)
 

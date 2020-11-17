@@ -10,7 +10,7 @@
 
 ![](../../.gitbook/assets/screen-shot-2020-11-17-at-10.40.13-am.png)
 
-    3. Navigate to the "INVITE" tab, select "Option 2 - Administrator Invitation", provide the emails of the users you want to invite, and click "INVITE"
+    3. Navigate to the "INVITE" tab, select "Option 2 - Administrator Invitation", provide the emails of the users you want to invite, and click "INVITE".
 
 ![](../../.gitbook/assets/screen-shot-2020-11-17-at-11.16.58-am.png)
 

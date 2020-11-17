@@ -62,7 +62,7 @@
     * [Create shared instance](settings-and-administration/space-management/create-shared-instance.md)
     * [Invite instance users](settings-and-administration/space-management/invite-instance-users.md)
     * [Invite Space Administrators](settings-and-administration/space-management/invite-space-admins.md)
-    * [Revoke/deactivate space administrators](settings-and-administration/space-management/revoke-deactivate-space-administrators.md)
+    * [Revoke a space administrator](settings-and-administration/space-management/revoke-deactivate-space-administrators.md)
     * [Revoke/deactivate instance users](settings-and-administration/space-management/revoke-deactivate-instance-users.md)
     * [Delete an instance](settings-and-administration/space-management/delete-an-instance.md)
 * [FAQ](troubleshooting/README.md)
