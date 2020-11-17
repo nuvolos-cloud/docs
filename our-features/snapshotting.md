@@ -50,5 +50,5 @@ Once the new research project members are invited to Nuvolos, you can distribute
 
 ### Create an audit trail for assignments
 
-Students also have the ability to take snapshot of their work. A snapshot is always time-stamped, and greatly simplifies handling in assignment. The student does not need to worry whether their work is reproducible, and the educator does not have to worry about managing a myriad of files and e-mails.
+Students also have the ability to take snapshots of their work. A snapshot is always time-stamped and greatly simplifies the handling in assignments. The student does not need to worry whether their work is reproducible, and the educator does not have to worry about managing a myriad of files and e-mails.
 

@@ -10,7 +10,7 @@ Other states are called _snapshots._ A snapshot is an immutable state. Snapshots
 
 ## Features
 
-* **Complete:** A snapshot encompasses all relevant information of the state of a research project for complete reproducibility. Not only data and code is saved, but also applications and their software dependencies. 
+* **Complete:** A snapshot encompasses all relevant information of the state of a research project for complete reproducibility. Not only data and code are saved, but also applications and their software dependencies. 
 * **Restorable:** A snapshot can be restored to be the current state, and Nuvolos ensures that the restored state will be consistent with previous behaviour of the same state. 
 * **Distributable:** A snapshot can be distributed to the current state of other instances. This facilitates the dissemination of teaching material or results. 
 * **Simple:** Creation of a snapshot requires one simple operation; Nuvolos ensures the completeness of the operation, and the end-user does not have to tally each step required.
