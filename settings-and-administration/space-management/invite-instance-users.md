@@ -5,6 +5,21 @@
 * Before granting access rights to an instance, make sure that the right permissions are set. Only space administrators are allowed to grant access right for an instance.
 {% endhint %}
 
+## **Create a new instance**
+
+In order to create a new instance, follow our visual guide:
+
+![Creating a new instance](../../.gitbook/assets/create_instance_ed%20%281%29.gif)
+
+Step-by-step:
+
+1. Navigate to the space where you want to create the instance.
+2. Click on the **Project Users** icon in the **Manage** section of the right hand menu panel.
+3. Click on **Invite** on the top right corner of the Project Users menu and click **Add new instance** in the Invite To field.
+4. Select whether you want the instance to start from a snapshot or initialize it empty.
+5. Fill out name and details.
+6. Invite users if you need to.
+
 ## **To invite a new instance user:**
 
     1. Open a space \(course or research project\). In the following example, we open the course called "Demo Space".
