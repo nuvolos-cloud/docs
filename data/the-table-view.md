@@ -8,18 +8,19 @@ The Tables view can be found in the sidebar once you are viewing work in a state
 
 ## Overview
 
-![](../.gitbook/assets/screen-shot-2020-03-17-at-10.02.56-am.png)
+![](../.gitbook/assets/screen-shot-2020-11-19-at-10.50.34-am%20%281%29.png)
 
 The functionalities as a list:
 
 1. Tables list
-2. Columns list can be activated if you click on the table name.
+2. Column list can be activated if you click on the table name.
 3. Table preview can be activated if you click on the table name.
 4. Query files - results of previous queries.
 5. Query preview - preview the results of a complex query before you run a complete version
 6. Query history - recall previous queries
 7. SQL Editor - create your own SQL statements here
-8. Connection guide - for application users
+8. Query builder - build your SQL statement using a user-friendly U
+9. Connection guide - for application users
 
 ## Tables list
 
@@ -27,11 +28,11 @@ The tables list is the list of tables in the currently selected snapshot or curr
 
 It is possible to stage, delete, rename, and describe tables - hovering over a line will reveal the possible actions.
 
-## Columns list and table preview
+## Column list and table preview
 
 In order to see the columns list, click the table name, and select **Explore columns.** Similarly, select **Preview table** to look at the first ten rows of the table.
 
-![](../.gitbook/assets/screen-shot-2019-12-10-at-7.28.29.png)
+![](../.gitbook/assets/screen-shot-2020-11-19-at-11.10.58-am.png)
 
 In order to guide documentation, it is also possible to give a description to columns in the **Explore columns** view.
 
