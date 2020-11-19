@@ -8,7 +8,7 @@ The Tables view can be found in the sidebar once you are viewing work in a state
 
 ## Overview
 
-![](../.gitbook/assets/screen-shot-2020-11-19-at-10.50.34-am%20%281%29.png)
+![](../.gitbook/assets/screen-shot-2020-11-19-at-10.50.34-am.png)
 
 The functionalities as a list:
 
@@ -40,9 +40,15 @@ In order to guide documentation, it is also possible to give a description to co
 
 It is possible to run queries directly from the web interface. Currently, only SELECT queries are allowed. For the complete syntax of such a construct, please refer to the [database system documentation](https://docs.snowflake.com/en/sql-reference/constructs.html).
 
-1- Design your SQL query in the query editor. Once you are done, click **PREVIEW**.
+1- Design your SQL query in the query editor or via the query builder. 
+
+* From the SQL editor, you can directly type in your query and then click on PREVIEW.
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.14.04-pm.png)
+
+* From the query builder, you first need to open it via the QUERY button and then follow the steps where you can select columns, add filters, number of rows, and finally click on "SUBMIT QUERY PREVIEW"
+
+![](../.gitbook/assets/screen-shot-2020-11-19-at-11.25.58-am.png)
 
 2- Review the results. If what you see makes sense, you can proceed to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
 
