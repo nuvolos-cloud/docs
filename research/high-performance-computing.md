@@ -397,6 +397,34 @@ The computation is structured in 3 files:
 
   This file contains the actual implementation of the prime counting function. Note the absence of parfor in this implementation: this function is purely sequential.
 
+### Working directory and input/output files
+
+When you submit a MATLAB job using the submission script templates discussed above, the working directory will be the folder of the referenced main function, provided it's under the **/files** folder.   
+  
+So for example, if your main function is **/files/my\_folder/my\_func.m**, the working directory will be **/files/my\_folder** on all worker machines. However, if you main function is in **/usr/local/my\_func.m**, the working directory will be **/files**.
+
+This makes is easy to work with input/output files and extensions: if everything is referenced relative to the main script's location in your code \(the most common approach\), your code will run the same way on the HPC cluster as it does in Nuvolos, provided all you code resides under **/files**.
+
+### Tracking progress
+
+It is useful to add log messages to your code, to track the progress of code execution. We provide an auxiliary function **hpc\_diary\_on\(\)** along with a worked example to demonstrate progress tracking in your scripts. Just execute
+
+```text
+copy_example
+```
+
+in the MATLAB terminal. This will copy the example to **/files/communicatingJob\_logging** where you will be able to edit the files directly. The purpose of the files in the folder are:
+
+* You can use **prime\_job\_logging\_n\_nowait.m** or **prime\_job\_logging\_n.m** to submit the job
+* The main function is **prime\_start\_logging\_n.m**, it shows how to use **hpc\_diary\_on\(\)** in the main function
+* The function **prime\_logging\_n.m** shows how to use **hpc\_diary\_on\(\)** in a parfor loop
+
+The **hpc\_diary\_on\(\)** function will create a **./hpc\_logs** folder in the working directory of the job \(see previous section\). ****Separate log files will be generated under this folder for the main MATLAB process and each worker process in a parfor loop. The log files are synced back regularly from the worker machines to Nuvolos in the background, so you can track the progress of your script by observing the logs of the worker or main processes.
+
+{% hint style="info" %}
+Any terminal output emitted by the worker process will also appear in the terminal output of the main process, which is thus an aggregate of all emitted messages by all workers plus the main process itself.
+{% endhint %}
+
 ### FAQ
 
 * **How many MATLAB workers can I allocate for my job?**
