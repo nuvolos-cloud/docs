@@ -40,7 +40,9 @@ It is important to consider which queue you use as it will have impact on the cr
 * `sharedq` is non-MATLAB purpose only and any jobs on `sharedq` count as regular HPC usage.
 {% endhint %}
 
+### Best practices
 
+* Folder and file names containing spaces and special characters should be avoided
 
 ### Interacting with the HPC cluster
 
@@ -353,7 +355,7 @@ To execute a MATLAB script or function on the Parallel Server, we’ll have to d
 
 A simple communicating job example is available in the following folder: `<MATLAB_root_folder>/toolbox/local/alphacruncher/examples/communicatingJob_simple` 
 
-In the MATLAB terminal, execute `edit prime_job_comm_n.m` to open the job description file in the Editor.
+In the MATLAB terminal, execute `edit prime_job_comm_n_nowait.m` to open the job description file in the Editor.
 
 This simple job computes the number of primes from 2 until 1000. The computation is structured in 3 files:
 
@@ -375,7 +377,7 @@ This simple job computes the number of primes from 2 until 1000. The computation
 
 A simple independent example is available in the following folder: `<MATLAB_root_folder>/toolbox/local/alphacruncher/examples/independentJob_simple` 
 
-In the MATLAB terminal, execute `edit prime_job_ind_n.m` to open the job description file in the Editor.
+In the MATLAB terminal, execute `edit prime_job_ind_n_nowait.m` to open the job description file in the Editor.
 
 This simple job computes the number of primes for 3 different cases
 
