@@ -75,9 +75,9 @@ odbc load, exec(`"<SQL_COMMAND>"') connectionstring($conn_str)
 
 ### Connecting with R
 
-First, please download and install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You do not need to create a named data source.
+First, please download and install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You only need to satisfy the prerequisites and finish the ODBC driver installation \(first step\).  You don't need to further configure and test the driver. 
 
-Once the ODBC driver is installed, please install the Nuvolos `r-connector` package developed by Alphacruncher:
+Once the ODBC driver is installed, please install the Nuvolos `r-connector` package developed for Nuvolos:
 
 ```r
 install.packages("remotes")
@@ -88,12 +88,23 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 
 ![Connection Guide](https://gblobscdn.gitbook.com/assets%2F-LihBjXi93rsUENhHsab%2F-M2cRBfkOEK87ab37B2l%2F-M2cRkQS_MidAHIPoC3K%2FScreen%20Shot%202020-03-17%20at%201.22.49%20PM.png)
 
-Finally, pass the username, password, database name and schema name to the `get_connection()` function:
+Finally, pass the database name and schema name to the`get_connection()` function:
 
 ```r
-con <- nuvolos::get_connection(username = "my_user", password = "my_password", 
-                      dbname = "my_database", schemaname= "my_schema")
+con <- nuvolos::get_connection(dbname = '"my_database"', schemaname= '"my_schema"')
 result_data <- dbGetQuery(con,"SELECT * FROM table LIMIT 10")
+```
+
+**Attention:** you need to follow the quotation approach as the example code, i.e., writing the database and schema names with double-quotation, and **adding the single quote outside of the double quote**.
+
+**Credentials**: When you connect to the Nuvolos database for the first time, it will ask for your credentials. Check "Remember with keyring" box to avoid your future input. You can find your credentials following the [connection guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  You don't need to write your credentials explicitly in your scripts, and the connector can safely access your token during the connection process.
+
+![](../../.gitbook/assets/screen-shot-2020-11-25-at-2.05.52-pm.png)
+
+In case you need to re-input your credentials, please execute the command below in R's console.
+
+```sql
+nuvolos::input_nuvolos_credential()
 ```
 
 #### Stopping queries from R
@@ -106,7 +117,9 @@ result_data <- dbGetQuery(con,"<SQL_COMMAND>")
 
 ### Connecting with Python
 
-First, install the `nuvolos` package developed by Alphacruncher:
+First, please download and install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You only need to satisfy the prerequisites and finish the ODBC driver installation \(first step\).  You don't need to further configure and test the driver. 
+
+Second, install the `nuvolos` package developed for Nuvolos:
 
 ```bash
 pip install nuvolos
@@ -116,15 +129,29 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
 
-Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the `get_connection()` function:
+Finally, pass the database and schema names specified in the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/) to the `get_connection()` function:
 
 ```python
 from nuvolos import get_connection
 import pandas as pd
 
-con = get_connection(username="username", password = "password", 
-                    dbname = "dbname", schemaname="schemaname")
+con = get_connection(dbname = "dbname", schemaname="schemaname")
 df = pd.read_sql("SELECT * FROM \"table\"", con=con)
+```
+
+**Credentials**: When you connect to the Nuvolos database for the first time, it will ask for your credentials. You can find your credentials following the [connection guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  You don't need to write your credentials explicitly in your scripts, and the connector can safely access your token during the connection process.
+
+![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.39.07-am.png)
+
+This will trigger the request to access your credential if it is the first time to access the Nuvolos database.  Please input your local computer's password to allow the Python connector to read your Nuvolos credential.
+
+![](../../.gitbook/assets/screen-shot-2020-11-24-at-7.30.24-pm.png)
+
+In case you need to re-input your credentials, please execute the command below in Python's console.
+
+```sql
+from nuvolos import input_nuvolos_credential
+input_nuvolos_credential()
 ```
 
 #### Stopping queries from Python
@@ -133,6 +160,20 @@ Please refer to the [Cancelling queries](./#cancelling-queries) section for the 
 
 ```sql
 df = pd.read_sql("<SQL_COMMAND>", con=con)
+```
+
+#### Special Notes for Win10
+
+If you meet the error below:
+
+```sql
+RuntimeError: The current Numpy installation (...) fails to pass a sanity check due to a bug in the windows runtime...
+```
+
+Please install an older version of NumPy from a terminal to solve this.  It is a temporary solution specifically for windows 10.
+
+```sql
+pip install numpy==1.19.3
 ```
 
 ### Connecting with Stata
@@ -227,6 +268,31 @@ To analyze the above SAS statement, notice the following:
 1. We are using the SAS SQL Procedure Pass-Through Facility twice.
 2. The first statement makes sure that SAS connects to the correct database and schema. We strongly suggest using this statement first whenever you are using the Pass-Through Facility.
 3. The second statement creates a table called `test` based on the code that is in the file `source/to/file.sql.`
+
+### Connecting with MATLAB
+
+First, please download and install the [`nuvolos`](https://ch.mathworks.com/matlabcentral/fileexchange/82903-nuvolos?s_tid=srchtitle) toolbox developed for Nuvolos.  You can also click "Get Add-ons", search "nuvolos" in the MATLAB Add-on Explorer, and then “Add" in your toolbox. 
+
+Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
+
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
+
+Finally, pass the database and schema names specified in the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/) to the `get_connection()` function:
+
+```python
+con = get_connection("dbname", "schemaname");
+dataset = execute_query(con,"SELECT * FROM my_table");
+```
+
+For your credential's safety consideration, the MATLAB connector will display the login dialog for the first time connecting to the Nuvolos database.  Please find your credentials following the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  
+
+![](../../.gitbook/assets/screen-shot-2020-11-24-at-8.32.14-pm.png)
+
+If you need to correct or change your credential, you can use the command below to input your credentials again.
+
+```sql
+create_credential(true)
+```
 
 ## Canceling queries
 
