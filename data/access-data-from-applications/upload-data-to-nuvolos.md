@@ -4,9 +4,7 @@
 
 ### **1. Data import for small datasets**
 
-If the data to be loaded is small-to-midsize \(&lt;1 million rows\), then the approach is simple and requires a few steps as illustrated below:
-
-If you want to import moderate data sizes  \(&lt;1 million rows\) into Nuvolos, the current avenue is to do it through applications. Read and format the data in the app and then write it to the tables. Below are a few examples 
+If you want to import moderate data sizes  \(&lt;1 million rows\) into Nuvolos, the current avenue is to do it through applications. Read and format the data in the app and then you can write it to the tables using any of the application scripts provided [here](small-data-upload-scripts.md). 
 
 ### **2. Data import for large datasets**
 
