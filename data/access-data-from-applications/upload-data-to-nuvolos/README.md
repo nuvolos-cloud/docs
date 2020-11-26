@@ -8,6 +8,8 @@ Before proceeding, please consider if your use-case is well suited for loading t
 * **Combining with other datasets**: if combining with other data on Nuvolos that comes in a table format, it is often easiest to do the joins directly via SQL statements.
 * **Cross-application compatibility**: tables provide a cross-application typed data structure that can make data easier to analyze with multiple applications.
 * **Large dataset support**: tables support data volumes that are sometimes difficult to efficiently store in regular files.
+
+If the above are not essential, then often storing data in files is the simpler solution.
 {% endhint %}
 
 ### **1. Data import for small datasets**
