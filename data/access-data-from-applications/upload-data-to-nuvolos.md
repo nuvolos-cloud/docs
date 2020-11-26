@@ -6,17 +6,7 @@
 
 If the data to be loaded is small-to-midsize \(&lt;1 million rows\), then the approach is simple and requires a few steps as illustrated below:
 
-If you want to import moderate data sizes  \(&lt;1 million rows\) into Nuvolos, the current avenue is to do it through applications. Read and format the data in the app and then write it to the tables. Below is an example of how to perform an import operation using Python
-
-```python
-from nuvolos import get_connection
-import pandas as pd
-
-df = pd.read_csv(...) #read your data
-
-con = get_connection()
-df.to_sql("TABLE_NAME", con=con, if_exists='replace', index=False, chunksize=10000)
-```
+If you want to import moderate data sizes  \(&lt;1 million rows\) into Nuvolos, the current avenue is to do it through applications. Read and format the data in the app and then write it to the tables. Below are a few examples 
 
 ### **2. Data import for large datasets**
 
@@ -33,7 +23,7 @@ pip install -I git+https://github.com/nuvolos-cloud/snowflake-connector-python.g
 pip install -I nuvolos==0.2.9
 ```
 
-3- Restart the Jupyter Kernel
+3- Restart the Jupyter Kernel.
 
 4- Get a database connection with:
 

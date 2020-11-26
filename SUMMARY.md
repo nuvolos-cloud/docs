@@ -27,6 +27,7 @@
     * [Setting up ODBC drivers](data/access-data-from-applications/setting-up-odbc-drivers.md)
     * [Obtain tokens for data access](data/access-data-from-applications/obtain-tokens-for-your-data.md)
     * [Find the database and schema path](data/access-data-from-applications/find-your-database-and-schema-path.md)
+    * [Small data upload scripts](data/access-data-from-applications/small-data-upload-scripts.md)
     * [Upload data to Nuvolos](data/access-data-from-applications/upload-data-to-nuvolos.md)
   * [Worked examples](data/work-with-specific-datasets/README.md)
     * [CRSP and Compustat](data/work-with-specific-datasets/crsp-and-compustat.md)
