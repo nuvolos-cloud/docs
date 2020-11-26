@@ -7,7 +7,7 @@ description: >-
 # Small table upload scripts
 
 {% hint style="info" %}
-The examples in this section assume that the user is uploading tables to Nuvolos using Nuvolos UI. Make sure that the table file has been uploaded to Nuvolos. Check the documentation [here](../../../getting-started/work-with-files/) for information on file upload.
+The examples in this section assume that the user is uploading tables to Nuvolos using Nuvolos UI. Make sure that the table file has been uploaded to Nuvolos. Check the documentation [here](../../getting-started/work-with-files/) for information on file upload.
 {% endhint %}
 
 ### 1. Python
