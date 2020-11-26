@@ -1,10 +1,12 @@
 # Upload data to Nuvolos
 
-Nuvolos users can import and upload data into their tables. To do so, the user has to use Python via the latest Jupyter image.
+#### Nuvolos users can import and upload data into their tables. To do so, the user has a number of options which are illustrated below.
 
-## **Data import for small datasets**
+### **1. Data import for small datasets**
 
 If the data to be loaded is small-to-midsize \(&lt;1 million rows\), then the approach is simple and requires a few steps as illustrated below:
+
+If you want to import moderate data sizes  \(&lt;1 million rows\) into Nuvolos, the current avenue is to do it through applications. Read and format the data in the app and then write it to the tables. Below is an example of how to perform an import operation using Python
 
 ```python
 from nuvolos import get_connection
@@ -16,7 +18,7 @@ con = get_connection()
 df.to_sql("TABLE_NAME", con=con, if_exists='replace', index=False, chunksize=10000)
 ```
 
-## **Data import for large datasets**
+### **2. Data import for large datasets**
 
 If the data is large,  the above approach would be too slow, as it performs INSERT INTO statements in batches of 10000 records. Nuvolos's alternative approach for large datasets requires the following steps:
 
@@ -50,5 +52,7 @@ for df in pd.read_csv("/files/large_csv_sample.csv", chunksize=10000000):
               index=False, method=pd_writer)
 ```
 
+### 3. Support request
 
+If you have a specific data onboarding task that you want to discuss with us, you can open a support request by sending an email to **support@nuvolos.cloud.**
 
