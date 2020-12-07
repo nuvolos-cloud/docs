@@ -15,7 +15,7 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 
 ## The conda environment
 
-Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user.
+Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda.**
 
 {% hint style="info" %}
 Always try to install software with conda first. We suggest using [conda-forge](https://conda-forge.org/docs/user/introduction.html) instead of anaconda repositories.
