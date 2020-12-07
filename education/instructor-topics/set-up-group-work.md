@@ -8,6 +8,8 @@ This space will only contain group work-related instances. The "normal", single-
 
 {% hint style="info" %}
 We suggest creating a new space due to the fact that distributing two threads of workflows on top of each other means that individual and group work might get unnecessarily tangled.
+
+**New spaces can only be created by faculty members**. If you are a TA and don't have faculty permissions, please ask the course instructor to create the space for you.
 {% endhint %}
 
 ##  Add group instances
