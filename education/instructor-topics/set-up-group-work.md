@@ -14,7 +14,9 @@ We suggest creating a new space due to the fact that distributing two threads of
 
 ##  Add group instances
 
-New instances should be created for each group one-by-one, using the "Joint instance for multiple users" option. This will result in a setup where each group member will be an editor of the instance that was created for the group. This has the following consequences:
+New instances should be created for each group one-by-one, using the "Joint instance for multiple users" option. When entering emails for users already attending a course on Nuvolos, please make sure to enter the e-mail they have listed under their name in the **Members** list for the course they are attending. **If the group invitation is sent to the wrong e-mail, the student will not be able accept with their existing Nuvolos user.**
+
+Once the invitations are accepted, each group member will be an editor of the instance that was created for the group. This has the following consequences:
 
 * Each group member will be able to modify files in a common workspace, and the current state of the instance becomes more transparent. 
 
