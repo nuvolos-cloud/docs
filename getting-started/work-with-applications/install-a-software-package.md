@@ -20,13 +20,15 @@ Except for R, all Nuvolos applications come equipped with the package manager [c
 {% hint style="info" %}
 Always try to install software with conda first. We suggest using [conda-forge](https://conda-forge.org/docs/user/introduction.html) instead of anaconda repositories.
 
+We also recommend passing the '--freeze-installed' flag when installing with conda, to ensure the minimal possible changes to the conda environment.
+
 If you cannot self-service your packages, contact us at [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud) and we will help you.
 {% endhint %}
 
 As an example, suppose you want to install [imagemagick](https://anaconda.org/conda-forge/imagemagick) and [gifsicle](https://anaconda.org/conda-forge/gifsicle) for mass editing gifs. The following command will install this to the conda environment of your application:
 
 ```text
-conda install -c conda-forge gifsicle imagemagick
+conda install -c conda-forge --freeze-installed gifsicle imagemagick
 ```
 
 {% hint style="success" %}
