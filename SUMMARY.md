@@ -53,6 +53,7 @@
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
 * [Administration](settings-and-administration/README.md)
   * [Roles](settings-and-administration/role-system.md)
+  * [Monitoring resource usage](settings-and-administration/monitoring-resource-usage.md)
   * [Application licenses](settings-and-administration/application-licenses.md)
   * [Organization management](settings-and-administration/organization-management/README.md)
     * [Invite organization members](settings-and-administration/organization-management/invite-organization-members.md)
