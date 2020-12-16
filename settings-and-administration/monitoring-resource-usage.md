@@ -73,14 +73,8 @@ Application reports give information on applications run on Nuvolos.
 We report the following information on the dashboard:
 
 * **Maximum concurrent** - Maximum number of concurrent applications run on a given day and for a given time period: the count of the widest activity of application use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the methodology section applies.
-  * When a time period is selected the maximum is calculated over the time period.
-  * When viewing daily information \(as time series\), values presented are daily maxima. The summary values correspond to the maximum of the time series.
 * **Activity** - Number of applications starts on a given day and for a given time period: the count of applications tarts between 0:00 - 23:59 or taken over a time window. Rule \[1\] in the methodology section _does not_ apply.
-  * When a time period is selected, activity is summed over that time period.
-  * When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
 * **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1\] in the methodology section applies.
-  * When a time period is selected, runtime is summed over that time period.
-  * When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
 
 ### Interpretation
 
