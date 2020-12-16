@@ -28,6 +28,36 @@ Currently the usage metrics dashboard provides metrics on the following resource
 
 Clicking on this menu will always bring you to the Usage metrics dashboard.
 
+## Structure
+
+All reports consist of three zones:
+
+### Selectors and tabs
+
+You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report. The refresh button \(highlighted\) loads the data with the updated selections. 
+
+![The report selector](../.gitbook/assets/screenshot-2020-12-16-165857%20%282%29.png)
+
+### Summary
+
+The summary information is presented as a doughnut chart with a total in the middle for each relevant category for the report. By hovering over the edge of the doughnut chart, you are able to display drill-down information of the statistic you are viewing.
+
+![Summary doughnut charts](../.gitbook/assets/screenshot-2020-12-16-165857.png)
+
+{% hint style="info" %}
+Special aggregation rules might apply to the summary and the drill-down information displayed - please confirm the interpretation section of the corresponding report type if you are not sure about how data might be related.
+{% endhint %}
+
+### Details
+
+The detail section is presented below the summary section and contains time series and tabular representation of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view.
+
+![Detailed time series view of application usage](../.gitbook/assets/screenshot-2020-12-16-170720.png)
+
+{% hint style="info" %}
+Special aggregation rules might apply to how the information displayed in the summary section is related to how the information is displayed in the details section. Please make sure to consult the interpretation section of the relevant report category.
+{% endhint %}
+
 ## General usage
 
 All reports are context sensitive and contain drill-down functionality, while respecting user roles.
