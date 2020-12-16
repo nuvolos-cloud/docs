@@ -73,8 +73,22 @@ Application reports give information on applications run on Nuvolos.
 We report the following information on the dashboard:
 
 * **Maximum concurrent** - Maximum number of concurrent applications run on a given day and for a given time period: the count of the widest activity of application use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the methodology section applies.
+  * When a time period is selected the maximum is calculated over the time period.
+  * When viewing daily information \(as time series\), values presented are daily maxima. The summary values correspond to the maximum of the time series.
 * **Activity** - Number of applications starts on a given day and for a given time period: the count of applications tarts between 0:00 - 23:59 or taken over a time window. Rule \[1\] in the methodology section _does not_ apply.
+  * When a time period is selected, activity is summed over that time period.
+  * When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
 * **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1\] in the methodology section applies.
+  * When a time period is selected, runtime is summed over that time period.
+  * When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
+
+### Interpretation
+
+Some general guidance to interpreting values:
+
+* When a time period is selected, all application metrics are aggregated over the selected time period. Activity and Runtime are summed, while for the Maximum concurrent metric, maximum is taken over the selected time period.
+* When viewing daily information \(as time series\), values presented are daily sums for Activity and Runtime, and daily maxima are presented for Maximum concurrent.
+* The summary values correspond to the sum of the time series for Activity and Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
 
 ### Methodology
 
@@ -96,6 +110,13 @@ We report the following information on the dashboard:
 * **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the corresponding methodology section applies.
 * **CPU hour** - Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section applies.
 * **GB RAM hour** - Total amount of memory resources used on a given day and for a given time period: the sum total of GB RAM hours used between 0:00 - 23:59 on a given date or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section applies. 
+
+### Interpretation
+
+Some general guidance to interpreting values:
+
+* When a time period is selected, all HPC metrics are summed over the selected time period.
+* When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
 
 ### Methodology
 
@@ -120,6 +141,13 @@ We report the following information on the dashboard. Compared to application an
 * **Pending** -  Number of pending invitations _up to_ a given day. When viewed as a time series, the time series reflects information up to a date 02:00AM CEST.
 * **Total** - Total amount of invitations sent _up to_ a given day. When viewed as a time series, the time series reflects information up to a date 02:00AM CEST.
 
+### Interpretation
+
+Some general guidance to interpreting values:
+
+* When a time period is selected, all invitation statistics correspond to the state of the system _as of the last report run date_ of the period.
+* When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
+
 ### Methodology
 
 Invitation reports are prepared on a daily basis, report runs are started 02:00 CEST. Previous reports are stored for 60 days, then removed.
@@ -140,13 +168,22 @@ We report the following information on the dashboard. Compared to application an
 
 In general, when viewed as a time series, the time series reflects information as of a date 02:00AM CEST.
 
-* **Manager** - number of organization managers as of a given date. 
+Some general remarks to interpret the data precisely:
+
+* **Manager** - number of organization managers as of a given date.
+  * 
 * **Faculty** - number of faculty members of the organization as of a given date.
+  * When a time period is selected, the number of faculty members correspond to the state of the system _as of the last report run date_ of the period.
+  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
 * **Member** - number of regular members of the organization as of a given date.
+  * When a time period is selected, the number of regular members correspond to the state of the system _as of the last report run date_ of the period.
+  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
 
 #### Space-level
 
 * **Space administrator** - number of space administrators in the given space as of a given date. 
+  * When a time period is selected, the number of space administrators correspond to the state of the system _as of the last report run date_ of the period.
+  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
 * **End-user** - number of distinct non-space administrator users who have accepted their invitations into the given space as of a given date.
   * If a user is invited as instance editor into two instances in a space, we count them as one. If they are also space administrators as well as having two explicit invitations, then they are not counted in this category.
 
@@ -154,6 +191,13 @@ In general, when viewed as a time series, the time series reflects information a
 
 * **Editor** - Number of instance editors in a given instance as of a given date.
 * **Viewer** - Number of instance viewers in a given instance as of a given date.
+
+### Interpretation
+
+Some general guidance to interpreting values:
+
+* When a time period is selected, the number of users \(any category\) correspond to the state of the system _as of the last report run date_ of the period.
+* When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
 
 ### Methodology
 
