@@ -294,6 +294,106 @@ If you need to correct or change your credential, you can use the command below 
 create_credential(true)
 ```
 
+### Connecting with Excel
+
+For both Windows and Mac OS, please first install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You only need to satisfy the prerequisites and finish the ODBC driver installation \(first step\).  You don't need to further configure and test the driver. 
+
+#### Windows
+
+1. After installation of ODBC driver, please download the "[Excelerator](https://github.com/Snowflake-Labs/Excelerator)" package to local and unzip it into a local folder.
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-2.00.23-pm.png)
+
+2. Open the Excel application.  The user needs to install the downloaded Excel add-in for the first time usage.  
+
+* Navigate to the add-in management window following "File"$$\Rightarrow$$"Option"$$\Rightarrow$$"Add-ins"$$\Rightarrow$$ "Go...".   
+* Click the "Browse" button and navigate to the folder with the unzipped "Excelerator" package.
+* Choose the file "SnowflakeExcelAddinReadOnly.xlam" file, click "OK"
+
+For more detailed Excel add-in installation and management, please refer to this [guide](https://exceloffthegrid.com/install-uninstall-excel-add/).
+
+3. User can find the installed "Excelerator" add-in on the the Home tab of the Ribbon.
+
+![](../../.gitbook/assets/image.png)
+
+4. Click the "connect" button to open the connection window.
+
+![](../../.gitbook/assets/image%20%282%29.png)
+
+5. Under the "User & Password" authentication type, the user needs to input "server URL", "User ID" and "Password" to login.  The user can [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the interface of the Nuvolos "Tables".  **Note**: "Hostname" is the "server URL".
+
+6. Click the "Query" button in the add-in.  It shows the SQL execution window to query data.  The user needs to first select the target "Database", "Schema" and "Table".  The default is to query all columns unless the user click "Choose" to select a few target columns only.  After inputing SQL command in the window below and execute, it will output the data to your active Excel worksheet.
+
+**Attention**: the SQL command must quote the table as the way of "database-name"."schema-name"."table-name".
+
+![](../../.gitbook/assets/image%20%281%29.png)
+
+#### 
+
+#### Mac OS
+
+1. After installation of the ODBC driver, please open a terminal and use the command below to copy all the folders and files created from downloading the Snowflake ODBC driver \(typically the **`/opt/snowflake/`** path**\)** to the **`/Library/ODBC/ODBCDataSources`** folder:
+
+   ```text
+   ~$ sudo cp -r /opt/snowflake/ /Library/ODBC/ODBCDataSources
+   ```
+
+2. The user has to manually update the Snowflake ODBC Driver's file at  **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/simba.snowflake.ini`.**  After navigate and open this file, please change two lines below in the file to remap the new locations of its associated files: 
+
+```text
+ErrorMessagesPath = /Library/ODBC/ODBCDataSources/snowflakeodbc/ErrorMessages
+CABundleFile = /Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/cacert.pem
+```
+
+After the changes, the file should look like below, and please save the file.
+
+![](../../.gitbook/assets/screen-shot-2021-01-11-at-1.51.25-pm.png)
+
+3. Run the command below to open the application with **administrator** rights, otherwise, it will show "General installer error" in the later stage.
+
+```sql
+sudo /Applications/iODBC/iODBC\ Administrator64.app/Contents/MacOS/iODBC\ Administrator64
+```
+
+![](../../.gitbook/assets/screen-shot-2021-01-11-at-4.26.05-pm.png)
+
+4. Click on the **ODBC Drivers** tab, and check if the Snowflake driver is already present. If it is, verify that the file path is  **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/Snowflake.dylib`**. If it is not, click **Add a driver**.
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-4.34.48-pm.png)
+
+* In the field **Description of the driver**, type a name for the driver, such as "SnowflakeODBC".
+* In the field **Driver file name**, click **Browse** and navigate to the driver file **`libSnowflake.dylib`** in the **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/`** folder.
+* Click **Ok**.
+* Under the **System DSN** tab, click **Add**. A dialog opens.
+* Select the Snowflake driver you added. The DSN configuration window opens.
+
+![](../../.gitbook/assets/odbc_setting.jpg)
+
+* Enter a unique DSN name for your Snowflake connection, such as "SnowflakeExcel".
+* In the keyword section, click the "+" button at the left bottom to add keyword and value pairs of "server", "port", "database" and "schema". The user can [obtain these values and access tokens](obtain-tokens-for-your-data.md) from the Connection Guide on the interface of the Nuvolos "Tables". 
+* Click **OK** to save settings. 
+
+ 5.  Launch Microsoft Excel.  Go to **Data** &gt; **New Database Query** &gt; **From Database**.
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-12.15.10-pm.png)
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-12.15.31-pm.png)
+
+6. With the **iODBC Data Source Chooser** window open, switch to the **System DSN** tab and select the DSN created, and hit **OK**.
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-4.48.20-pm.png)
+
+7. Enter your Snowflake username and password.  The user can [obtain access tokens](obtain-tokens-for-your-data.md) from the Connection Guide on the interface of the Nuvolos "Tables". 
+
+8. The **Microsoft Query** window opens.
+
+* Type the desired SQL statement, and click **Run**.
+* Click **Return Data** to import the results to the spreadsheet.
+* **Attention**: the SQL command must quote the table as the way of "database-name"."schema-name"."table-name".
+* The user can [obtain the database, schema, and table names](obtain-tokens-for-your-data.md) from the Connection Guide on the interface of the Nuvolos "Tables". 
+
+![](../../.gitbook/assets/screen-shot-2021-01-13-at-4.51.25-pm.png)
+
 ## Canceling queries
 
 Running queries can be listed and \(selectively\) canceled using SQL statements.
