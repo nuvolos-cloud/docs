@@ -69,7 +69,9 @@ In order to preserve unused resources, Nuvolos automatically stops inactive appl
 * In Education-purpose spaces, the inactivity limit is **one hours**.
 * In Research-purpose spaces, the inactivity limit is **twenty-four hours**.
 
+{% hint style="info" %}
 If you want to keep your application active, you need to make sure that the application is in focus in your browser for more than one \(uninterrupted\) minute either every hour or every twenty-four hours depending on the space your application is running in.
+{% endhint %}
 
 
 
