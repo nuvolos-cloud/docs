@@ -62,7 +62,7 @@ If you are visiting an instance, it is possible to view the list of applications
 
 ![](../../.gitbook/assets/screenshot-2020-10-15-180914.png)
 
-### Automatic stopping
+### Automatic stopping due to inactivity
 
 In order to preserve unused resources, Nuvolos automatically stops inactive applications. Depending on the space type, this happens after different inactivity periods:
 
