@@ -64,7 +64,7 @@ If you are visiting an instance, it is possible to view the list of applications
 
 ### Automatic stopping due to inactivity
 
-In order to preserve unused resources, Nuvolos automatically stops inactive applications. Depending on the space type, this happens after different inactivity periods:
+In order to efficiently allocate unused resources, Nuvolos automatically stops inactive applications. Depending on the space type, this happens after different inactivity periods:
 
 * In Education-purpose spaces, the inactivity limit is **one hours**.
 * In Research-purpose spaces, the inactivity limit is **twenty-four hours**.
