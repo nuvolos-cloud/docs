@@ -8,7 +8,7 @@ For users who require advanced database management capabilities, we offer DBeave
 
 You can add DBeaver by selecting the option 'Other applications' when creating a new Nuvolos application. The connection to Nuvolos is automatically configured in DBeaver, however the first time you connect to Nuvolos, DBeaver will prompt to install the relevant database driver \(Snowflake\), which needs to be approved.
 
-For more information on DBeaver, please visit: [https://github.com/dbeaver/dbeaver](https://github.com/dbeaver/dbeaver)
+For more information on DBeaver, please visit: [https://github.com/dbeaver/dbeaver/wiki](https://github.com/dbeaver/dbeaver/wiki)
 
 ### Collaborating in DBeaver
 
