@@ -27,6 +27,7 @@
     * [Setting up ODBC drivers](data/access-data-from-applications/setting-up-odbc-drivers.md)
     * [Obtain tokens for data access](data/access-data-from-applications/obtain-tokens-for-your-data.md)
     * [Find the database and schema path](data/access-data-from-applications/find-your-database-and-schema-path.md)
+  * [Database management \(advanced\)](data/database-management-advanced.md)
   * [Upload tables to Nuvolos](data/upload-data-to-nuvolos/README.md)
     * [Small table upload scripts](data/upload-data-to-nuvolos/small-data-upload-scripts.md)
   * [Worked examples](data/work-with-specific-datasets/README.md)
