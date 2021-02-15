@@ -304,31 +304,48 @@ For both Windows and Mac OS, please first install the [Snowflake ODBC database d
 
 ![](../../.gitbook/assets/screen-shot-2021-01-13-at-2.00.23-pm.png)
 
-2. Open the Excel application.  The user needs to install the downloaded Excel add-in for the first time usage.  
+2. In the Windows File Explorer, navigate to the download location and right-click the`SnowflakeExcelAddin.xlam`   file, click Properties, and tick "Unblock":
+
+![](../../.gitbook/assets/screenshot-2021-02-15-at-17.59.09.png)
+
+3. Open Excel. The add-in needs to be installed before it can be used:  
 
 * Navigate to the add-in management window following "File"$$\Rightarrow$$"Option"$$\Rightarrow$$"Add-ins"$$\Rightarrow$$ "Go...".   
 * Click the "Browse" button and navigate to the folder with the unzipped "Excelerator" package.
-* Choose the file "SnowflakeExcelAddinReadOnly.xlam" file, click "OK"
+* Choose the file `SnowflakeExcelAddin.xlam` file, click "OK"
 
 For more detailed Excel add-in installation and management, please refer to this [guide](https://exceloffthegrid.com/install-uninstall-excel-add/).
 
-3. User can find the installed "Excelerator" add-in on the the Home tab of the Ribbon.
+4. You can find the installed "Excelerator" add-in on the Home tab of the Ribbon.
 
 ![](../../.gitbook/assets/image.png)
 
-4. Click the "connect" button to open the connection window.
+5. Click the "connect" button to open the connection window:  
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/screenshot-2021-02-15-at-18.08.08.png)
 
-5. Under the "User & Password" authentication type, the user needs to input "server URL", "User ID" and "Password" to login.  The user can [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the interface of the Nuvolos "Tables".  **Note**: "Hostname" is the "server URL".
+6. Under the "User & Password" authentication type, please enter the appropriate values "server URL", "User ID" and "Password" to login. You can find the required[ access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the "Tables" ****page of your Nuvolos space.  **Note**: "Hostname" is the "server URL".
 
-6. Click the "Query" button in the add-in.  It shows the SQL execution window to query data.  The user needs to first select the target "Database", "Schema" and "Table".  The default is to query all columns unless the user click "Choose" to select a few target columns only.  After inputing SQL command in the window below and execute, it will output the data to your active Excel worksheet.
+7. Click the "Query" button in the add-in.  It shows the SQL execution window to query data.  Please select the target "Database", "Schema" first, then the add-in will load all the available tables in "Table".  The default is to query all columns unless the user click "Choose" to select a few target columns only.  After entering the SQL command in the window below and clicking "Execute", the results will be inserted as a table to the active Excel sheet.
 
 **Attention**: the SQL command must quote the table as the way of "database-name"."schema-name"."table-name".
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
-#### 
+#### Uploading Data
+
+Table data can be updated or a new table can be created with sheet data using the Excelator add-in.
+
+To upload data to Nuvolos, please perform the following steps:
+
+1. Click on the cell of the first row and the first column of the data you wish to upload.
+2. Click "Define Data Types" on the Home ribbon. This will add a row above the first row, where you will need to select the appropriate data types for the data columns you wish to upload. Unfortunately, the Add-In cannot automatically infer the data types for the columns: ![](../../.gitbook/assets/screenshot-2021-02-15-at-18.11.16.png) 
+
+3. Once you have the data types selected, click "Upload": 
+
+![](../../.gitbook/assets/screenshot-2021-02-15-at-18.16.23.png) 
+
+4. Select the upload action to be taken: An existing table can be updated, appended to, or replaced with the data in the sheet. Alternatively, you can tick "Create new table then upload", then enter the name of the new table. Click "Upload" to upload your data.
 
 #### Mac OS
 
