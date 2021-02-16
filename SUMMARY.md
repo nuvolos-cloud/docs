@@ -11,7 +11,7 @@
   * [Get started](research/researcher-guide.md)
   * [High-performance computing](research/high-performance-computing.md)
 * [Work with Data](data/README.md)
-  * [Introduction](data/work-with-data.md)
+  * [Datasets](data/work-with-data.md)
   * [The Tables view](data/the-table-view.md)
   * [Accessing table data from applications](data/access-data-from-applications/README.md)
     * [Setting up ODBC drivers](data/access-data-from-applications/setting-up-odbc-drivers.md)
