@@ -19,7 +19,7 @@ The functionalities as a list:
 5. Query preview - preview the results of a complex query before you run a complete version
 6. Query history - recall previous queries
 7. SQL Editor - create your own SQL statements here
-8. Query builder - build your SQL statement using a user-friendly U
+8. Query builder - build your SQL statement using a user-friendly UI
 9. Connection guide - for application users
 
 ## Tables list
@@ -40,21 +40,33 @@ In order to guide documentation, it is also possible to give a description to co
 
 It is possible to run queries directly from the web interface. Currently, only SELECT queries are allowed. For the complete syntax of such a construct, please refer to the [database system documentation](https://docs.snowflake.com/en/sql-reference/constructs.html).
 
-1- Design your SQL query in the query editor or via the query builder. 
+### Design your SQL query via the query builder or in the query editor
 
-* From the SQL editor, you can directly type in your query and then click on PREVIEW.
-
-![](../.gitbook/assets/screen-shot-2020-03-17-at-1.14.04-pm.png)
-
-* From the query builder, you first need to open it via the QUERY button and then follow the steps where you can select columns, add filters, number of rows, and finally click on "SUBMIT QUERY PREVIEW"
+* To query data using the query builder \(this is recommended if you need data from a single table and you are not very familiar with SQL\), you first need to open it via the QUERY button and then follow the steps where you can select columns, add filters, number of rows, and finally click on "SUBMIT QUERY PREVIEW"
 
 ![](../.gitbook/assets/screen-shot-2020-11-19-at-11.25.58-am.png)
 
-2- Review the results. If what you see makes sense, you can proceed to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
+* Alternatively from the SQL editor \(click on the toggle to reveal\), you can directly type in your query and then click on PREVIEW. This can be useful if you need complex queries or combine data from different tables
+
+### Review the results
+
+If what you see makes sense, you can proceed to run the full query from an application or to save the full results of the query \(export\).
+
+#### Run from application
+
+If you click on the "Run From Application" button, you will be given an option to select which application to run the query from. Selecting the appropriate application will provide you with instructions how to run the query either on Nuvolos or on your local machine.
+
+{% hint style="info" %}
+If you will repeatedly access the same data, we recommend to export the results instead of running it each time from the application. For programmatic access \(i.e. iterating through dates, etc..\) running from an application can be easier. However in all cases data that will be reused is recommended to be saved either to disc or to a new table.
+{% endhint %}
+
+#### Export results
+
+If you want To run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
 
-      3. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
+You will then be taken to the **QUERY HISTORY** page, where you can see queries that have been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
 

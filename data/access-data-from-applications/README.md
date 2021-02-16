@@ -4,7 +4,7 @@ Nuvolos is set up so you can access your data tables stored in Nuvolos from eith
 
 ## Accessing data from applications running in Nuvolos
 
-Currently, data access from Nuvolos is supported in the following applications: Python \(Spyder, JupyterLab and VS Code\), RStudio, Matlab and Stata.
+Currently, three applications are supported in Nuvolos: Spyder, JupyterLab and RStudio.
 
 ### Accessing data tables from Python in Nuvolos
 
@@ -70,10 +70,6 @@ Please refer to the [Cancelling queries](./#cancelling-queries) section for the 
 ```sql
 odbc load, exec(`"<SQL_COMMAND>"') connectionstring($conn_str)
 ```
-
-### Accessing data tables from Matlab in Nuvolos
-
-First test your query in the Tables view of your space \(or create a new query by using our Querybuilder Form\). Then select the option **Run from application &gt; Matlab** when looking at the query results preview to see the instructions on executing the given query inside Matlab on Nuvolos.
 
 ## Accessing data tables from external, non-Nuvolos applications
 
