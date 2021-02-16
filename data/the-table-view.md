@@ -62,7 +62,7 @@ If you will repeatedly access the same data, we recommend to export the results 
 
 #### Export results
 
-If you want To run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
+If you want to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
 
 ![](../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
 
