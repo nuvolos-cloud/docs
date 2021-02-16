@@ -9,7 +9,7 @@ Nuvolos differentiates two types of data:
 
 This page describes working with _tabular data. ****_For working with files, consult [our guide](../getting-started/work-with-files/).
 
-## Datasets
+## Dataset spaces
 
 Datasets are special kinds of spaces, with the main goal of containing only tabular data and documentation related to that tabular data and potentially other descriptor files. For obtaining a full list of the datasets available to you in your current organization, navigate to your dashboard, and pick the datasets menu.
 
