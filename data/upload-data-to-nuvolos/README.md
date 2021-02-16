@@ -50,7 +50,13 @@ for df in pd.read_csv("/files/large_csv_sample.csv", chunksize=10000000):
               index=False, method=pd_writer)
 ```
 
-### 3. Support request
+### 
+
+### 3. Using Excel
+
+To upload data to Nuvolos using Excel, please refer to our instructions on [accessing and uploading data with Excel.](https://docs.nuvolos.cloud/data/access-data-from-applications#connecting-with-excel)
+
+### 4. Support request
 
 If you have a specific data onboarding task that you want to discuss with us, you can open a support request by sending an email to **support@nuvolos.cloud.**
 
