@@ -14,3 +14,5 @@ Scaling can be done inside Nuvolos by hovering on the application icon once it h
 
 ![Scaling an application](../.gitbook/assets/scaling_ed.gif)
 
+
+
