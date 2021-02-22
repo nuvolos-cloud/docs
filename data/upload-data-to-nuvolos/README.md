@@ -5,11 +5,11 @@
 {% hint style="info" %}
 Before proceeding, please consider if your use-case is well suited for loading table data into Nuvolos. Table data has a number of advantages, especially in the following use-cases:
 
-* **Combining with other datasets**: if combining with other data on Nuvolos that comes in a table format, it is often easiest to do the joins directly via SQL statements.
+* **Combining with other datasets**: if you are combining a dataset with other datasets on Nuvolos that come in a table format, it is often easiest to do the joins directly via SQL statements.
 * **Cross-application compatibility**: tables provide a cross-application typed data structure that can make data easier to analyze with multiple applications.
 * **Large dataset support**: tables support data volumes that are sometimes difficult to efficiently store in regular files.
 
-If the above are not essential, then often storing data in files is the simpler solution.
+If none of the above benefits are essential, then storing data in files is often the simpler solution.
 {% endhint %}
 
 ### **1. Data import for small datasets**
