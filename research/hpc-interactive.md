@@ -24,3 +24,13 @@ For Rstudio we recommend using the 'Local Jobs' feature to run the jobs in the b
 
 [Learn more about local jobs in Rstudio](https://github.com/rstudio/webinars/blob/master/74-background-jobs/slides.pdf)  
 
+#### JupyterLab
+
+If running notebooks via Jupyter, we recommend submitting the notebooks for computation  using [papermill](https://papermill.readthedocs.io/en/latest/) and specifying an explicit logfile when executing from the Jupyter terminal. This way you can disconnect from the Jupyter application and the notebook execution can continue whilst being able to monitor run progress.
+
+```text
+papermill --stdout-file /files/my_job.out --stderr-file /files/my_job.err NOTEBOOK_PATH [OUTPUT_PATH]
+```
+
+
+
