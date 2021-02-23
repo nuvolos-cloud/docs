@@ -14,5 +14,13 @@ Scaling can be done inside Nuvolos by hovering on the application icon once it h
 
 ![Scaling an application](../.gitbook/assets/scaling_ed.gif)
 
+### Application specific notes
 
+#### Rstudio
+
+For Rstudio we recommend using the 'Local Jobs' feature to run the jobs in the background, this way you can submit multiple jobs whilst also making sure the job continues to run if you navigate away from Rstudio, without blocking the interface.
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+[Learn more about local jobs in Rstudio](https://github.com/rstudio/webinars/blob/master/74-background-jobs/slides.pdf)  
 
