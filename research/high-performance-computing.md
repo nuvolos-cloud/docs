@@ -497,7 +497,7 @@ With MATLAB, generally you don't have custom packages provided by 3rd party vend
 
 There are three options to choose from when you plan to run HPC jobs in R.
 
-1. From Nuvolos: use the r-nuvolos-tools package 
+1. From Nuvolos: use the r-nuvolos-tools package \(RECOMMENDED\)
 2. Use the [bash toolkit on Nuvolos](high-performance-computing.md#working-with-the-bash-toolkit-on-nuvolos)
 3. Use SLURM commands [directly on the login node](high-performance-computing.md#working-with-scc-from-the-login-node)
 
@@ -505,7 +505,13 @@ In this section, only the r-nuvolos-tools package is discussed in detail.
 
 ### **r-nuvolos-tools**
 
-The developers of Nuvolos maintain the r-nuvolos-tools package on github as an open repository. For the latest documentation, always refer to the package source and documentation that can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools).
+The developers of Nuvolos maintain the r-nuvolos-tools package on github as an open repository. For the latest documentation, always refer to the package source and documentation that can be found [here](https://github.com/nuvolos-cloud/r-nuvolos-tools). To install:
+
+```text
+install.packages('remotes')
+remotes::install_github('nuvolos-cloud/r-nuvolos-tools')
+library(nuvolos.tools)
+```
 
 The package offers convenience features for R users who are running RStudio applications from Nuvolos and want to use the HPC capabilities.
 
@@ -550,8 +556,10 @@ An interactive session and an HPC job are in general two orthogonal contexts for
 
 R packages on Nuvolos are stored in a standard library structure. In order to reflect the R environment on the cluster the function `nuvolos.tools::package_sync_hpc` needs to be called.
 
+Alternatively, if the `nuvolos.tools` library is loaded, then you can use the `install.packages` command to install packages both inside Nuvolos and the HPC cluster.
+
 {% hint style="warning" %}
-The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case that might cause very infrequent issues, currently this cannot be ameliorated. We are working on a wholesale solution to address this issue and expect to deliver to our users in Q1 2021.
+The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case that might cause very infrequent issues, currently this cannot be ameliorated. If this is an issue, then please try our [interactive HPC service](hpc-interactive.md).
 {% endhint %}
 
 ### Multi-node jobs
@@ -560,23 +568,27 @@ If you are running jobs requiring multiple nodes \(i.e. large CPU count\), you n
 
 To use MPI, it’s easiest to use the `snow` library to create an MPI cluster that can then be used by the `parallel` package to use all the usual parallel commands \(see `?parallel::parApply`\). If you use the `foreach` package, you can use the `doSNOW` package to register the resulting cluster as a `foreach` backend.
 
-An example script is below:
+An example script is below \(Note: you do not need to install Rmpi on Nuvolos, it is only used during the HPC job on the cluster\):
 
 ```text
 ### Set up cluster
-library(parallel, lib.loc = .Library.site)
-library(Rmpi, lib.loc = .Library.site)
-library(snow, lib.loc = .Library.site)
+if (Sys.getenv("SLURM_JOB_ID") != "" ) {
+  library(parallel, lib.loc = .Library.site)
+  library(Rmpi, lib.loc = .Library.site)
+  library(snow, lib.loc = .Library.site)
 
-# the universe size will be specified by SLURM scheduler through the respective config file
-np <- mpi.universe.size()
+  # the universe size will be specified by SLURM scheduler through the respective config file
+  np <- mpi.universe.size()
 
-# master will take an additional task
-cl <- makeMPIcluster(np-1)
+  # master will take an additional task
+  cl <- makeMPIcluster(np-1)
 
-.Last <- function(){
+  .Last <- function(){
     mpi.close.Rslaves()
     mpi.exit()
+  }
+} else {
+  cl <- parallel::makeCluster(4)
 }
 
 ### your R-code here .....
