@@ -29,5 +29,9 @@ If Dropbox integration is enabled, proceed as follows to restore from a snapshot
 5. In Nuvolos, start your application. Upon the successful start, the Dropbox synchronisation service in Nuvolos will recreate the instance folder. Next, the synchronisation with Dropbox for the restored files shall resume.
 {% endhint %}
 
+### Excluding files
 
+Files can be excluded from synchronization by editing the hidden file /files/.mignore 
+
+This file follows the [same syntax as .gitignore ](https://git-scm.com/docs/gitignore#_pattern_format)
 
