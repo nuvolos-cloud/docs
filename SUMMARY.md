@@ -5,6 +5,7 @@
   * [Instructor](education/instructor-topics/README.md)
     * [Get started with a course](education/instructor-topics/instructor-guide.md)
     * [Set up group work](education/instructor-topics/set-up-group-work.md)
+    * [Application performance](education/instructor-topics/performance.md)
   * [Student](education/student-topics/README.md)
     * [Enroll in a course](education/student-topics/student-guide.md)
 * [Research](research/README.md)
