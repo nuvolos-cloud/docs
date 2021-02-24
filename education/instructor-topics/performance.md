@@ -22,7 +22,11 @@ On Nuvolos each student runs the code with the same application configuration as
 
 Nevertheless it is important to consider that when many students are concurrently executing a computationally intensive code, the application performance might be inferior to what the instructor experienced during material development when potentially the load from other users was lower.
 
-Whilst usually this is within a reasonable factor, we recommend that during interactive sessions with a large number of students code examples are adjusted such that  they execute within a couple of minutes maximum.
+Whilst usually this is within a reasonable factor, we recommend that during **interactive sessions with a large number of students**, either:
+
+a\) code examples should be adjusted such that  they execute within a minute or so maximum
+
+b\) the space should be configured to have larger per-student resources to provide adequate compute performance
 
 For out-of-class work when concurrency is lower, these considerations can be appropriately relaxed.
 
