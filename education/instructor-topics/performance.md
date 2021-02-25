@@ -8,9 +8,11 @@ description: >-
 
 When working with student applications on Nuvolos, it is important to consider the following performance characteristics:
 
-### Higher resource requirements
+### Resource allocation time
 
-If a class size is large \(e.g. above ~50 users / or if individual applications have higher resource settings\) and students are expected to launch their applications at the same time, it can happen that resource allocation becomes slower. For a good user experience, we recommend that instructors pre-launch the required application\(s\) for all users between **30-45 minutes before** students are expected to start work with it.
+If a class size is large \(e.g. above ~50 users / or if individual applications have been customized to request higher resources\) and students are expected to launch their applications at the same time, it can happen that resource allocation becomes slower \(e.g. application launch time can be around 5 minutes instead of the usual 30-60 seconds\). 
+
+For a good user experience, we recommend that instructors pre-launch the required application\(s\) for all users around **30 minutes before** students are expected to start work with it.
 
 {% hint style="info" %}
 Student application are stopped automatically after 1 hour of inactivity, so it does not make sense to perform the pre-launch more than an hour before the planned start time.
