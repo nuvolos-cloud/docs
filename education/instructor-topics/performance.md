@@ -30,9 +30,9 @@ Nevertheless it is important to consider that when many students are concurrentl
 
 Whilst usually this is within a reasonable factor, we recommend that during **interactive sessions with a large number of students**, either:
 
-a\) code examples should be adjusted such that  they execute within a minute or so maximum
+a\) Code examples should be adjusted such that  they execute within a minute or so maximum.
 
-b\) the space should be configured to have larger per-student resources to provide adequate compute performance
+b\) The space should be configured to have larger per-student resources to provide adequate compute performance. For the most performance sensitive cases, we suggest dedicated compute nodes for each application - please reach out to our support team to discuss such an option.
 
 For out-of-class work when concurrency is lower, these considerations can be appropriately relaxed.
 
