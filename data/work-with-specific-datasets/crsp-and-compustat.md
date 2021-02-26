@@ -70,7 +70,7 @@ In the following, it will be assumed that the tables have been distributed to th
 
 #### Designing the query
 
-The suggested workflow is to use the query editor on the UI first to design the query. This step is not compulsory, however, it is considered best practice. The steps to perform query design can be found [here](../the-table-view.md).
+The suggested workflow is to use the query editor on the UI first to design the query. This step is not compulsory, however, it is considered best practice. The steps to perform query design can be found [here](../the-table-view/).
 
 #### The query
 

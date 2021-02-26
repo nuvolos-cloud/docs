@@ -4,7 +4,7 @@
 Tokens are only necessary for working remotely with data in Nuvolos. Nuvolos applications are automatically set up to connect to data stored in Nuvolos.
 {% endhint %}
 
-The credentials to access data are not regular Nuvolos credentials. To obtain the required credentials to access data, please navigate to the [table view](../the-table-view.md), and click the **CONNECTION GUIDE** button:
+The credentials to access data are not regular Nuvolos credentials. To obtain the required credentials to access data, please navigate to the [table view](../the-table-view/), and click the **CONNECTION GUIDE** button:
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
 

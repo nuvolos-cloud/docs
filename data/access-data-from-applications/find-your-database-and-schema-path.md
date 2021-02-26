@@ -4,7 +4,7 @@
 This is only required if you are not using an Alphacruncher-supported Nuvolos connector package.
 {% endhint %}
 
-Nuvolos relies on database technology provided by Snowflake. Snowflake is handled via its [own flavour of SQL](https://docs.snowflake.net/manuals/sql-reference-commands.html).  Data in a particular snapshot or current state of an instance is located in a schema in Snowflake. Schemas are contained in databases. To obtain the required database and schema information to interact with your data, first, navigate to the [table view](../the-table-view.md), and click the **CONNECTION GUIDE** button:
+Nuvolos relies on database technology provided by Snowflake. Snowflake is handled via its [own flavour of SQL](https://docs.snowflake.net/manuals/sql-reference-commands.html).  Data in a particular snapshot or current state of an instance is located in a schema in Snowflake. Schemas are contained in databases. To obtain the required database and schema information to interact with your data, first, navigate to the [table view](../the-table-view/), and click the **CONNECTION GUIDE** button:
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm.png)
 

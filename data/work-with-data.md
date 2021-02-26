@@ -35,7 +35,7 @@ You will now be able to work with data in your workspace, without having to worr
 
 Please follow our detailed guides:
 
-* The [tables view](the-table-view.md) helps you explore and write basic queries against tables.
+* The [tables view](the-table-view/) helps you explore and write basic queries against tables.
 * Once the structure of data is clear, we suggest [working from applications](access-data-from-applications/) with data.
 * Some[ worked examples](work-with-specific-datasets/crsp-and-compustat.md) demonstrate the power of Nuvolos.
 
