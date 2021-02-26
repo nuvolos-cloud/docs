@@ -86,6 +86,7 @@
     * [I can't create an application](troubleshooting/application-issues/cannot-create-an-application.md)
     * [I can't delete an application](troubleshooting/application-issues/cannot-delete-an-application.md)
     * [I can't stop a running application](troubleshooting/application-issues/cannot-stop-an-application.md)
+    * [Spyder 3.7 tips and tricks](troubleshooting/application-issues/spyder-3.7-tips-and-tricks.md)
   * [Authorization issues](troubleshooting/authorization-issues/README.md)
     * [I can't see a space](troubleshooting/authorization-issues/cannot-see-a-space.md)
     * [I can't create a space](troubleshooting/authorization-issues/cannot-create-a-space.md)
