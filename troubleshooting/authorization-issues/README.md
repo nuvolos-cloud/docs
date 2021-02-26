@@ -1,2 +1,2 @@
-# Authorization issues
+# Authorization related
 

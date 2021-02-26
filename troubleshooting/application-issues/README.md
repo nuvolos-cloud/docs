@@ -1,2 +1,2 @@
-# Application issues
+# Application related
 
