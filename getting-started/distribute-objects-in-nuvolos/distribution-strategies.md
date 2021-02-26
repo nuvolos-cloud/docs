@@ -34,6 +34,14 @@ Clear target and replace is the most straightforward and intrusive strategy. It 
 Clear target and replace is most useful if you want to guarantee that whatever you distributed runs exactly as in your environment.
 {% endhint %}
 
+## Skip
+
+Skip excludes certain types of objects \(files, tables, or applications\) from the distribution.
+
+{% hint style="info" %}
+Skip is convenient to use when you want to distribute all contents of a snapshot or current state with the exception of one or more types of objects \(e.g. if you want to exclude tables\)
+{% endhint %}
+
 
 
 
