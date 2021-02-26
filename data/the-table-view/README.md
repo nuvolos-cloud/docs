@@ -42,10 +42,7 @@ It is possible to run queries directly from the web interface. Currently, only S
 
 ### Design your SQL query via the query builder or in the query editor
 
-* To query data using the query builder \(this is recommended if you need data from a single table and you are not very familiar with SQL\), you first need to open it via the QUERY button and then follow the steps where you can select columns, add filters, number of rows, and finally click on "SUBMIT QUERY PREVIEW"
-
-![](../../.gitbook/assets/screen-shot-2020-11-19-at-11.25.58-am.png)
-
+* To query data using the query builder \(this is recommended if you need data from a single table and you are not very familiar with SQL\). Check the query builder page [here](the-query-builder.md) for more details. 
 * Alternatively from the SQL editor \(click on the toggle to reveal\), you can directly type in your query and then click on PREVIEW. This can be useful if you need complex queries or combine data from different tables
 
 ### Review the results
