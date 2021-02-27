@@ -15,12 +15,12 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 
 ## The conda environment
 
-Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda.**
+Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/), and more recent applications support a faster drop-in replacement of conda called [mamba](https://github.com/mamba-org/mamba). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda \(**or equivalently via **mamba**\).
 
 {% hint style="info" %}
-Always try to install software with conda first. We suggest using [conda-forge](https://conda-forge.org/docs/user/introduction.html) instead of anaconda repositories.
+Always try to install software with **mamba** first \(this is only available in newer applications, so if mamba is not found, then use conda\), then with **conda** and keep **pip** as a last option.
 
-We also recommend passing the '--freeze-installed' flag when installing with conda, to ensure the minimal possible changes to the conda environment.
+We also recommend passing the '--freeze-installed' flag when installing with mamba/conda, to ensure the minimal possible changes to the conda environment.
 
 If you cannot self-service your packages, contact us at [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud) and we will help you.
 {% endhint %}
@@ -28,7 +28,7 @@ If you cannot self-service your packages, contact us at [**support@nuvolos.cloud
 As an example, suppose you want to install [imagemagick](https://anaconda.org/conda-forge/imagemagick) and [gifsicle](https://anaconda.org/conda-forge/gifsicle) for mass editing gifs. The following command will install this to the conda environment of your application:
 
 ```text
-conda install -c conda-forge --freeze-installed gifsicle imagemagick
+mamba install --freeze-installed gifsicle imagemagick
 ```
 
 {% hint style="success" %}
