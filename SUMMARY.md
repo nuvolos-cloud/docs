@@ -24,6 +24,7 @@
   * [Upload tables to Nuvolos](data/upload-data-to-nuvolos/README.md)
     * [Data upload workflow](data/upload-data-to-nuvolos/small-data-upload-scripts.md)
   * [Worked examples](data/work-with-specific-datasets/README.md)
+    * [Complete research workflow](data/work-with-specific-datasets/complete-research-workflow.md)
     * [CRSP and Compustat](data/work-with-specific-datasets/crsp-and-compustat.md)
 * [User Guides](getting-started/README.md)
   * [Navigate in Nuvolos](getting-started/navigation-in-nuvolos.md)
