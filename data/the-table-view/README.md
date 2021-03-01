@@ -67,22 +67,6 @@ You will then be taken to the **QUERY HISTORY** page, where you can see queries 
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
 
-#### Extracting results
-
-Compressed files are stored with the `.gz` extension, which is a short-hand for `gzip`. 
-
-On MacOS and Linux to extract a `gzip` files you can use the `gzip` tool, for example: 
-
- `gzip -d example.gz`
-
-would extract the contents of `example.gz` to the same folder. 
-
-Windows does not have a native gzip extraction tool, however most standard tools are able to unzip gzip files such as:
-
-* [WinRar](https://www.win-rar.com/start.html?&L=0)
-* [7zip](https://www.7-zip.org/)
-* [WinZip](https://www.winzip.com/win/en/gz-file.html)
-
 ## Connection guide
 
 Clicking the connection guide gives you information on access credentials to the database behind your particular workspace. You can find more about connecting via applications in this guide.
