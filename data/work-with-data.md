@@ -12,7 +12,7 @@ This page describes working with _tabular data. ****_For working with files, con
 {% hint style="info" %}
 This documentation distinguishes tabular and file based data.
 
-Tabular data means that stored in the Scientific Data Warehouse \(SDW\), a SQL compliant cloud-based data warehouse. 
+Tabular data means refers to data stored in the Scientific Data Warehouse \(SDW\), a SQL compliant cloud-based data warehouse. 
 
 File based data means data that is stored on a regular file system. This guide focuses on database-stored datasets.
 {% endhint %}
