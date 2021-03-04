@@ -77,9 +77,9 @@ After opening the RStudio application, the following bit of code will return the
 The SQL query:
 
 ```text
-SELECT NAF.*, SM.MPRC, SM.MRET*100, SM.MTCAP 
+SELECT NAF.*, SM.MPRC, SM.MRET*100 AS SM_MRET_100, SM.MTCAP 
 FROM NORTH_AMERICA_5_FACTORS NAF 
-INNER JOIN SAZ_MTH SM 
+INNER JOIN TIME_SERIES_MONTHLY SM 
 ON SM.MCALDT = NAF.DATE 
 WHERE KYPERMNO = 14593
 ```
@@ -96,7 +96,8 @@ dataset_factor <- dbGetQuery(conn, query_string)
 The previous step resulted in `dataset_factor` containing an R `data.frame` object that holds the data. The `lm` method fits a linear regression on the data frame. We put the fitted values to the data frame.
 
 ```text
-mod <- lm(SM_MRET_100 ~ 1 + MKT_RF + SMB + HML + RMW + CMA, dataset_factor)
+dataset_factor$EXCESS_RETURN <- dataset_factor$SM_MRET_100 - dataset_factor$RF
+mod <- lm(EXCESS_RETURN ~ (-1) + MKT_RF + SMB + HML + RMW + CMA, dataset_factor)
 dataset_factor$FIT_FACTOR_5 <- mod$fitted.values
 ```
 
