@@ -86,3 +86,29 @@ WHERE KYPERMNO = 14593
 
 The code that executes the query, the above string is saved in `query_string`.
 
+```text
+conn <- nuvolos::get_connection()
+dataset_factor <- dbGetQuery(conn, query_string)
+```
+
+### The simple analysis
+
+The previous step resulted in `dataset_factor` containing an R `data.frame` object that holds the data. The `lm` method fits a linear regression on the data frame. We put the fitted values to the data frame.
+
+```text
+mod <- lm(SM_MRET_100 ~ 1 + MKT_RF + SMB + HML + RMW + CMA, dataset_factor)
+dataset_factor$FIT_FACTOR_5 <- mod$fitted.values
+```
+
+### Storing results in the database
+
+As a final step, we write back the results using the [data upload](../upload-data-to-nuvolos/small-data-upload-scripts.md#2-r) command for R:
+
+```text
+DBI::dbWriteTable(conn, name="APPLE_5FACTOR_FIT", value=dataset_factor)
+```
+
+
+
+
+
