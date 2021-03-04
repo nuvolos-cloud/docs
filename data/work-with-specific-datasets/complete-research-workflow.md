@@ -46,7 +46,7 @@ mod = fitlm(dataset_factor,'SM_MRET_100 ~ 1 + MKT_RF + SMB + HML + RMW + CMA')
 dataset_factor.FitFactor5 = mod.Fitted
 ```
 
-### Writing results to the database
+### Storing results in the database
 
 As a final step, we write back the results using the [data upload](../upload-data-to-nuvolos/small-data-upload-scripts.md#3-matlab) command for Matlab:
 
