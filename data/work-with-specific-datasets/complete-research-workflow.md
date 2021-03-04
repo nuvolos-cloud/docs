@@ -44,7 +44,7 @@ The previous step resulted in `dataset_factor` containing a Matlab `Table` objec
 ```text
 dataset_factor.EXCESS_RETURN = dataset_factor.SM_MRET_100 - dataset_factor.RF;
 mod = fitlm(dataset_factor,'EXCESS_RETURN ~ (-1) + MKT_RF + SMB + HML + RMW + CMA')
-dataset_factor.FitFactor5 = mod.Fitted;
+dataset_factor.FIT_FACTOR_5 = mod.Fitted;
 ```
 
 ### Storing results in the database
@@ -52,7 +52,7 @@ dataset_factor.FitFactor5 = mod.Fitted;
 As a final step, we write back the results using the [data upload](../upload-data-to-nuvolos/small-data-upload-scripts.md#3-matlab) command for Matlab:
 
 ```text
-sqlwrite(con,'APPLE_5FACTOR_FIT',dataset_factor)
+sqlwrite(con,'APPLE_5FACTOR_FIT',dataset_factor);
 ```
 
 As an end result, we can then find the table on the Nuvolos UI:
