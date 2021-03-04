@@ -20,7 +20,7 @@ Except for R, all Nuvolos applications come equipped with the package manager [c
 {% hint style="info" %}
 Always try to install software with **conda** first and keep **pip** as a last option.
 
-We also recommend passing the '--freeze-installed' flag when installing with mamba/conda, to ensure the minimal possible changes to the conda environment.
+We also recommend passing the '--freeze-installed' flag when installing with conda, to ensure the minimal possible changes to the conda environment.
 
 If you cannot self-service your packages, contact us at [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud) and we will help you.
 {% endhint %}
