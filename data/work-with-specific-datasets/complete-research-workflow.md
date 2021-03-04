@@ -11,7 +11,7 @@ Nuvolos supports a query-analyze-insert cycle to help researchers query, analyse
 A standard skeleton scientific workflow in Matlab can be broken down into three main steps:
 
 1. Query research-relevant data
-2. Analyze, transform or otherwise manipulate data
+2. Analyse, transform or otherwise manipulate data
 3. Store results
 
 ### Querying relevant data
@@ -63,7 +63,7 @@ As an end result, we can then find the table on the Nuvolos UI:
 A standard skeleton scientific workflow in RStudio can be broken down into three main steps:
 
 1. Query research-relevant data
-2. Analyze, transform or otherwise manipulate data
+2. Analyse, transform or otherwise manipulate data
 3. Store results
 
 It is possible to create more complext workflows, but it will usually consist of three-step modules such as above.
