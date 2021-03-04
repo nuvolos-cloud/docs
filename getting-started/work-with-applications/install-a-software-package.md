@@ -64,7 +64,7 @@ This practice has the following benefits:
 
 ### Package disappears after application restart
 
-In very specific contexts it may happen that you install a package, and when you start your application the next time, the package seems to have been lost. This is a due to a very specific behaviour between our file system and the behaviour of the package manager and is restricted to a limited number of cases.
+In very specific contexts it may happen that you install a package, and when you start your application the next time, the package seems to have been lost. This is a due to a very specific behaviour between our file system and the behaviour of the package manager and is restricted to a limited number of cases. We are currently in the process of resolving this issue.
 
 In case you encounter the issue, just re-install the package and the problem should not reoccur for the given application. For example, to reinstall the `jpeg` package, type
 
