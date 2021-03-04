@@ -107,7 +107,7 @@ dataset_factor$FIT_FACTOR_5 <- mod$fitted.values
 As a final step, we write back the results using the [data upload](../upload-data-to-nuvolos/small-data-upload-scripts.md#2-r) command for R:
 
 ```text
-DBI::dbWriteTable(conn, name="APPLE_5FACTOR_FIT", value=dataset_factor)
+DBI::dbWriteTable(conn, name="APPLE_5FACTOR_FIT", value=dataset_factor, batch_rows = 10000)
 ```
 
 
