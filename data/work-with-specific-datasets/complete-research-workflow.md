@@ -25,7 +25,7 @@ The SQL query:
 ```text
 SELECT NAF.*, SM.MPRC, SM.MRET*100, SM.MTCAP 
 FROM NORTH_AMERICA_5_FACTORS NAF 
-INNER JOIN SAZ_MTH SM 
+INNER JOIN TIME_SERIES_MONTHLY SM 
 ON SM.MCALDT = NAF.DATE 
 WHERE KYPERMNO = 14593
 ```
@@ -42,8 +42,9 @@ dataset_factor = select(con, query_string);
 The previous step resulted in `dataset_factor` containing a Matlab `Table` object that holds the data. The `fitlm` method fits a linear regression on the table with an R-style formula. We then write back the fitted values to the Table as a column.
 
 ```text
-mod = fitlm(dataset_factor,'SM_MRET_100 ~ 1 + MKT_RF + SMB + HML + RMW + CMA')
-dataset_factor.FitFactor5 = mod.Fitted
+dataset_factor.EXCESS_RETURN = dataset_factor.SM_MRET_100 - dataset_factor.RF;
+mod = fitlm(dataset_factor,'EXCESS_RETURN ~ (-1) + MKT_RF + SMB + HML + RMW + CMA')
+dataset_factor.FitFactor5 = mod.Fitted;
 ```
 
 ### Storing results in the database
