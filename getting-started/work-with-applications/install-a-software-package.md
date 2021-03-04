@@ -15,10 +15,10 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 
 ## The conda environment
 
-Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/), and more recent applications support a faster drop-in replacement of conda called [mamba](https://github.com/mamba-org/mamba). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda \(**or equivalently via **mamba**\).
+Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/), and more recent applications alias conda to a faster drop-in replacement called [mamba](https://github.com/mamba-org/mamba). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda \(**or equivalently via **mamba**\).
 
 {% hint style="info" %}
-Always try to install software with **mamba** first \(this is only available in newer applications, so if mamba is not found, then use conda\), then with **conda** and keep **pip** as a last option.
+Always try to install software with **conda** first and keep **pip** as a last option.
 
 We also recommend passing the '--freeze-installed' flag when installing with mamba/conda, to ensure the minimal possible changes to the conda environment.
 
@@ -28,16 +28,12 @@ If you cannot self-service your packages, contact us at [**support@nuvolos.cloud
 As an example, suppose you want to install [imagemagick](https://anaconda.org/conda-forge/imagemagick) and [gifsicle](https://anaconda.org/conda-forge/gifsicle) for mass editing gifs. The following command will install this to the conda environment of your application:
 
 ```text
-mamba install --freeze-installed gifsicle imagemagick
+conda install --freeze-installed gifsicle imagemagick
 ```
 
 {% hint style="success" %}
 When distributing and snapshotting an application, the contents of the conda environment are also impacted. This is a key feature for reproducibility.
 {% endhint %}
-
-## The /dhlib folder
-
-The `/dhlib` folder is the persistent package storage folder on Nuvolos. If a conda environment exists, it is also stored under `/dhlib`, as well as R packages. Only work in conda environments that are based under `/dhlib`!
 
 ## Tips and tricks
 
@@ -63,4 +59,20 @@ This practice has the following benefits:
 1. Conda environments can break after major updates.
 2. The reproducibility of your work may suffer - however it is trivial to maintain two monolithic and separate application structures in parallel, even in the same instance!
 3. Distribution is based on filesystem-differences and after-upgrade distributions may become less stable due to the massive number of changes occurring on the filesystem.
+
+## Known issues
+
+### Package disappears after application restart
+
+In very specific contexts it may happen that you install a package, and when you start your application the next time, the package seems to have been lost. This is a due to a very specific behaviour between our file system and the behaviour of the package manager and is restricted to a limited number of cases.
+
+In case you encounter the issue, just re-install the package and the problem should not reoccur for the given application. For example, to reinstall the `jpeg` package, type
+
+```text
+conda install --force-reinstall --freeze-installed jpeg
+```
+
+
+
+
 
