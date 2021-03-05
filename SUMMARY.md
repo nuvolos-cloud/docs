@@ -8,7 +8,7 @@
     * [Application performance](education/instructor-topics/performance.md)
   * [Student](education/student-topics/README.md)
     * [Enroll in a course](education/student-topics/student-guide.md)
-    * [Unenrolling from a course](education/student-topics/unenrolling-from-a-course.md)
+    * [Unenroll from a course](education/student-topics/unenrolling-from-a-course.md)
 * [Research](research/README.md)
   * [Get started](research/researcher-guide.md)
   * [High-performance computing \(interactive\)](research/hpc-interactive.md)
