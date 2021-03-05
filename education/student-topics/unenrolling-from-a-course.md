@@ -1,4 +1,4 @@
-# Unenroll from a course
+# Leave a course
 
 It might happen that as a student you decide to not take on the challenge of a course any more. 
 
