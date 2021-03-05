@@ -10,5 +10,5 @@ Once you clarified the steps to be taken, on Nuvolos you can remove yourself fro
 
 ![The leave course menu](../../.gitbook/assets/screenshot-2021-03-05-165516.png)
 
-Leaving a course will remove your roles in the course \(any viewer and editing role\), however your instance will not be deleted - you might change your mind later or what you have already stored might have administrative use later.
+Leaving a course will remove your roles in the course \(any viewer and editing role\), however your instance will not be deleted - you might change your mind later or what you have already stored might be required by your institution at a later point in time.
 
