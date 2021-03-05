@@ -432,7 +432,7 @@ Any terminal output emitted by the worker process will also appear in the termin
 
 * **How many MATLAB workers can I allocate for my job?**
 
-  In our experience, each MATLAB job sooner or later reaches a point where adding more compute nodes does not increase the overall performance much. For your own benefit and courtesy towards other MATLAB users, we recommend not to allocate more than 40 workers for any job in the `defq` and maximum of four in the `intq`.
+  In our experience, each MATLAB job sooner or later reaches a point where adding more compute nodes does not increase the overall performance much. For your own benefit and courtesy towards other MATLAB users, we recommend not to allocate more than 40 workers for any job in the `defq` and maximum of two in the `intq`.
 
 * **How do I monitor my MATLAB jobs?**
 
