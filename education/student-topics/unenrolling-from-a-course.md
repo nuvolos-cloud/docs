@@ -3,7 +3,7 @@
 It might happen that as a student you decide to not take on the challenge of a course any more. 
 
 {% hint style="danger" %}
-Clarify with your professor and institution the unenrollment policy. Nuvolos is currently **not** linked to any institutional administrative systems, so there if there are administrative steps to be taken to unenroll formally from the course at your institution, you have to make those steps yourself. Nuvolos support cannot offer you guidance on steps relating to your institution.
+Clarify with your professor and institution the policy before leaving the course. Nuvolos is currently not linked to any institutional administrative systems, so if there are administrative steps to be taken to unenroll formally from the course at your institution, you have to make those steps yourself. Nuvolos support cannot offer you guidance on steps relating to your institution.
 {% endhint %}
 
 Once you clarified the steps to be taken, on Nuvolos you can remove yourself from a course by finding the leave course menu from the top left corner of your overview. 
