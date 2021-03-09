@@ -73,6 +73,7 @@
     * [Invite Space Administrators](settings-and-administration/space-management/invite-space-admins.md)
     * [Revoke a space user](settings-and-administration/space-management/revoke-deactivate-space-administrators.md)
     * [Delete an instance](settings-and-administration/space-management/delete-an-instance.md)
+    * [Integrations](settings-and-administration/space-management/integrations.md)
 * [FAQ](troubleshooting/README.md)
   * [Education](troubleshooting/education.md)
   * [Research](troubleshooting/research.md)
