@@ -1,6 +1,6 @@
 # Revoke a request
 
-To revoke a request that you have submitted which is still pending approval, follow these two steps:
+To revoke a request that you have submitted and is still waiting for approval, follow these two steps:
 
 1- [Find](find-requests.md) the user request you want to approve in the "REQUESTS SUBMITTED" section.
 
