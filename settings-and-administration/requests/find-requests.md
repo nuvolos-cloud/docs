@@ -1,4 +1,4 @@
-# Find requests
+# Find a request
 
 To find and review requests, you can use the notifications icon in the toolbar.
 

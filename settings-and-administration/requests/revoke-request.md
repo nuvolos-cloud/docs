@@ -1,4 +1,4 @@
-# Revoke request
+# Revoke a request
 
 To revoke a request that you have submitted which is still pending approval, follow these two steps:
 

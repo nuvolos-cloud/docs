@@ -1,4 +1,4 @@
-# Approve/Reject request
+# Approve/Reject a request
 
 To approve a submitted user request:
 
