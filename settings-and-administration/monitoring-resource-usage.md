@@ -18,7 +18,7 @@ Currently, the usage metrics dashboard provides metrics on the following resourc
 
 ## The usage metrics dashboard
 
-**Organization managers** can find the usage metrics view on the dashboard in the left hand sidebar:
+**Organization managers** can find the usage metrics view on the dashboard in the left-hand sidebar:
 
 ![The usage metrics icon on the sidebar](../.gitbook/assets/usage_metrics.png)
 
@@ -86,7 +86,7 @@ Space administrators automatically select the context space - organization manag
 
 #### Time window
 
-The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always at maximum 30 days\). 
+The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always at maximum of 30 days\). 
 
 {% hint style="success" %}
 Please refer to the appropriate report section for the available time window for a particular type of report. 
