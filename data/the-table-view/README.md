@@ -54,7 +54,7 @@ If what you see makes sense, you can proceed to run the full query from an appli
 If you click on the "Run From Application" button, you will be given an option to select which application to run the query from. Selecting the appropriate application will provide you with instructions how to run the query either on Nuvolos or on your local machine.
 
 {% hint style="info" %}
-If you will repeatedly access the same data, we recommend to export the results instead of running it each time from the application. For programmatic access \(i.e. iterating through dates, etc..\) running from an application can be easier. However in all cases data that will be reused is recommended to be saved either to disc or to a new table.
+If you will repeatedly access the same data, we recommend exporting the results instead of running it each time from the application. For programmatic access \(i.e. iterating through dates, etc..\) running from an application can be easier. However, in all cases data that will be reused is recommended to be saved either to disc or to a new table.
 
 See [Exporting big data](https://docs.nuvolos.cloud/data/access-data-from-applications#exporting-big-data) for instructions.
 {% endhint %}
