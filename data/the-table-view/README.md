@@ -56,7 +56,7 @@ If you click on the "Run From Application" button, you will be given an option t
 {% hint style="info" %}
 If you will repeatedly access the same data, we recommend to export the results instead of running it each time from the application. For programmatic access \(i.e. iterating through dates, etc..\) running from an application can be easier. However in all cases data that will be reused is recommended to be saved either to disc or to a new table.
 
-See Exporting big data for instructions.
+See [Exporting big data](https://docs.nuvolos.cloud/data/access-data-from-applications#exporting-big-data) for instructions.
 {% endhint %}
 
 #### Export results
