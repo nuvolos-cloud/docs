@@ -47,6 +47,7 @@
     * [Create an application](getting-started/work-with-applications/create-an-application.md)
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
+    * [VS Code](getting-started/work-with-applications/vs-code.md)
 * [Features](our-features/README.md)
   * [Structure](our-features/data-organization/README.md)
     * [Organizations](our-features/data-organization/organizations.md)
