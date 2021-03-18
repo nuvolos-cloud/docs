@@ -14,10 +14,10 @@ The VS Code application is an excellent interactive development environment. You
 
 VS Code comes equipped with a conda package manager. In order to be able to start interactive IPython windows, you will first need to install some packages into the VS Code app. To do so, take the following steps:
 
-1. Open a terminal in VS Code. You can do this by finding **Terminal &gt; New Terminal** in the menu or hitting the **Ctrl + Shift + \`** key combination.
-2. In the terminal type `conda install --freeze-installed ipykernel`.
-3. Once the process completes and the packages are installed successfully, open a VS Code command prompt either by finding **View &gt; Command Palette** in the menu, or by hittin the **Ctrl + Shift + P** key combination.
-4. In the VS Code command palette, type Jupyter: Create and the autocomplete should offer you the Create Interactive Window option.
+1. Open a VS Code command prompt either by finding **View &gt; Command Palette** in the menu, or by ~~**hittin**~~ the **Ctrl + Shift + P** key combination. 
+2. In the VS Code command palette, type Jupyter: Create and the autocomplete should offer you the Create Interactive Window option. 
+3. You might be prompted to install ipykernel, in this case proceed to do so \(this might take a minute or so to complete\).  **If you have ommited step 3, you can later:** 
+4. Open a terminal in VS Code. You can do this by finding **Terminal &gt; New Terminal** in the menu or hitting the **Ctrl + Shift + \`** key combination. In the terminal type conda install --freeze-installed ipykernel
 
-You will need to perform steps \#1 and \#2 only once for each application you create, you will only need to repeat steps \#3 and \#4 in any later application runs.
+
 
