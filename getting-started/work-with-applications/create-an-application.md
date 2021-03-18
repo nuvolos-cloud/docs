@@ -8,7 +8,7 @@
 4. Select the type and version of the application, and provide a name and \(optionally\) a description. If you miss a particular application from the list available to you, please contact your organization manager. 
 5. Click "ADD APPLICATION".
 
-![](../../.gitbook/assets/detailed_snapshot_ed%20%281%29.gif)
+![Create an application](../../.gitbook/assets/create_app_research_ed.gif)
 
 ![](../../.gitbook/assets/info_simple.svg.png)**If you are encountering a problem creating an application, refer to the troubleshooting guide** [**here**](../../troubleshooting/application-issues/cannot-create-an-application.md)**.**
 
