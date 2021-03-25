@@ -20,7 +20,7 @@ Assignment deadlines and descriptions can be changed by selecting the "Object bu
 
 ### Reviewing assignments
 
-When an assignment is created a special "Assignments" folder will appear inside the instructor's application \(in the master instance\) with two sub-folders:
+When an assignment is created a special "Assignments" folder will appear inside the instructor's application \(in the master instance - if the application is already running it should be restarted\) with two sub-folders:
 
 * **handin**: This folder contains the original work submitted by students and is not editable. It is for audit purposes so that both instructor and the student can see what has been submitted.
 * **handback**: This folder contains the reviewed work by the instructor and is editable. Instructors need to work inside the handback directory. It contains the same content as **handin** before the review begins.
