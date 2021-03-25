@@ -25,13 +25,17 @@ When an assignment is created a special "Assignments" folder will appear inside 
 * **handin**: This folder contains the original work submitted by students and is not editable. It is for audit purposes so that both instructor and the student can see what has been submitted.
 * **handback**: This folder contains the reviewed work by the instructor and is editable. Instructors need to work inside the handback directory. It contains the same content as **handin** before the review begins.
 
-Each hand-in by a student will be under the following folder structure:
+Each hand-in by a student will be under the following folder structure in the **Assignments &gt; handin** directory:
 
 ```text
-Assignments > handin > [student_instance_name] > [assignment_name]> [handin_id]
+[student_instance_id] > [assignment_name]> [handin_id]
 ```
 
-A hand-in ID is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.
+{% hint style="info" %}
+The `student_instance_id` is a random identifier which does not reveal the source instance of the hand-in \(i.e. which student handed in\). 
+{% endhint %}
+
+To match the hand-in to a student, the hand-in ID  can be used, which is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.
 
 {% hint style="info" %}
 The Assignments folder is only visible inside the application and currently is not accessible from the web-interface.
