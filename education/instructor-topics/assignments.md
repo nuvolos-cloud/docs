@@ -33,6 +33,10 @@ Assignments > handin > [student_instance_name] > [assignment_name] > [handin_id]
 
 A hand-in ID is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.
 
+{% hint style="info" %}
+The Assignments folder is only visible inside the application and currently is not accessible from the web-interface.
+{% endhint %}
+
 #### Providing feedback
 
 Feedback can be provided inside the files in the Assignments &gt; handback folder in any form the instructor sees fit. We suggest making explicit comments so that it is clear to the student when reviewing the hand-back what has been the instructor's \(I\) comment. An example is below:
