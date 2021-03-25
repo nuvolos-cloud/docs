@@ -43,7 +43,9 @@ The Assignments folder is only visible inside the application and currently is n
 
 #### Providing feedback
 
-Feedback can be provided inside the files in the Assignments &gt; handback folder in any form the instructor sees fit. We suggest making explicit comments so that it is clear to the student when reviewing the hand-back what has been the instructor's \(I\) comment. An example is below:
+Feedback can be provided inside the files in the **Assignments &gt; handback** folder in any form the instructor sees fit \(the Assignments &gt; handin folder is not writeable to maintain a record of submitted work\). 
+
+We suggest making explicit comments so that it is clear to the student when reviewing the hand-back what has been the instructor's \(I\) comment. An example is below:
 
 ```text
 test_tuple = (False, "test")
