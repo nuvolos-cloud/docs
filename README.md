@@ -17,6 +17,7 @@ A course in Nuvolos is a space to organise all course-related teaching material 
 * [Work with applications](getting-started/work-with-applications/)
 * [Distribute material](getting-started/distribute-objects-in-nuvolos/)
 * [Invite students](education/instructor-topics/instructor-guide.md#invite-students)
+* Create assignments
 {% endtab %}
 
 {% tab title="Student" %}
@@ -25,7 +26,8 @@ As a first step, read the guide on how to enroll in a course:
 * \*\*\*\*[**Enroll in a course**](education/student-topics/student-guide.md)\*\*\*\*
 * [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
-* Take snapshots of your work
+* [Take snapshots of your work](getting-started/working-with-snapshots/create-a-snapshot.md)
+* Hand in assignments
 {% endtab %}
 
 {% tab title="Researcher" %}
@@ -36,9 +38,8 @@ As a first step, read the guide for getting started:
 * [Work with applications](getting-started/work-with-applications/)
 * [Work with data tables](data/work-with-data.md)
 * [High Performance Computing \(HPC\)](research/high-performance-computing.md)
-* Invite collaborators
-* Take snapshots
-* Share results
+* [Invite collaborators](settings-and-administration/space-management/invite-instance-users.md#invite-users-to-an-existing-instance)
+* [Take snapshots](getting-started/working-with-snapshots/create-a-snapshot.md)
 {% endtab %}
 {% endtabs %}
 
