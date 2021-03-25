@@ -28,7 +28,7 @@ When an assignment is created a special "Assignments" folder will appear inside 
 Each hand-in by a student will be under the following folder structure:
 
 ```text
-Assignments > handin > [assignment_name] > [student_instance_name] > [handin_id]
+Assignments > handin > [student_instance_name] > [assignment_name] > [handin_id]
 ```
 
 A hand-in ID is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.

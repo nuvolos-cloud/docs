@@ -9,6 +9,7 @@
     * [Application performance](education/instructor-topics/performance.md)
   * [Student](education/student-topics/README.md)
     * [Join a course](education/student-topics/student-guide.md)
+    * [Assignments](education/student-topics/assignments.md)
     * [Leave a course](education/student-topics/unenrolling-from-a-course.md)
 * [Research](research/README.md)
   * [Get started](research/researcher-guide.md)
