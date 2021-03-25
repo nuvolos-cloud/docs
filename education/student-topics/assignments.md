@@ -23,7 +23,7 @@ To hand-in an assignment, click on the assignment on the dashboard and then clic
 Once you have handed in your assignment, you will be able to see the **read-only** handed in copy in the **Assignments &gt; handin** folder inside your application.
 
 {% hint style="info" %}
-The handed in version of the files are only visible from the application and currently cannot be downloaded from the web-interface.
+The handed in version of the files \(under the files &gt; Assignments folder\) are only visible from the application and currently cannot be downloaded from the web-interface.
 
 You will be able to see however a list of your past submissions if you click on the assignment.
 {% endhint %}
