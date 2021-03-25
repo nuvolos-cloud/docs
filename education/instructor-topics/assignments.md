@@ -32,7 +32,7 @@ Each hand-in by a student will be under the following folder structure in the **
 ```
 
 {% hint style="info" %}
-The `student_instance_id` is a random identifier which does not reveal the source instance of the hand-in \(i.e. which student handed in\). 
+The `student_instance_id` is a random identifier \(example: single-user-instance-alkewhgh\) which does not reveal the source instance of the hand-in \(i.e. which student handed in\). 
 {% endhint %}
 
 To match the hand-in to a student, the hand-in ID  can be used, which is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.
