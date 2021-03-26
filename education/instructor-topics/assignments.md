@@ -8,11 +8,15 @@ Nuvolos supports the creation, dissemination and review of assignments, without 
 
 ### Creating an assignment
 
-An assignment is a collection of Nuvolos objects \(e.g. files\) and an associated deadline until which the students can hand in their work.
+An assignment is a collection of Nuvolos objects \(e.g. files, folders\) and an associated deadline until which the students can hand in their work.
 
 An assignment is created whenever during material distribution time, the "Create an assignment" checkbox is selected. In this case, the deadline until which hand-ins are accepted needs to be selected \(after the deadline passes, students can no longer hand-in material\).
 
 Created assignments are visible on the dashboard of a space, as well from the Distribute &gt; Object Bundles menu from the sidebar.
+
+{% hint style="info" %}
+In most cases, the instructor prepares the placeholder files that will be filled out by the student and distributes these placeholders. It is also possible however to distribute entire directories, in this case the whole directory will be handed in by the student and the instructor can review whatever material is inside.
+{% endhint %}
 
 #### Modifying assignments
 
@@ -55,6 +59,12 @@ test_tuple = (False, "test")
 if test_tuple:   # I: Use test_tuple[0] instead
     print("This should not appear.")
 ```
+
+#### Student installed custom packages
+
+If the students are expected to install their own packages during the assignment, it might be necessary to grade the application not in the master instance, but in the individual student instances, as packages can differ compared to the master instance.
+
+In this case the instructor needs to go through each student instance and launch the application. Only the hand-back folder for the given student will be then visible in the Assignments &gt; handback directory, since the grading is specific to the given instance. 
 
 ### Handing back assignments
 
