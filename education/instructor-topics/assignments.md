@@ -67,7 +67,7 @@ If the students are expected to install their own packages during the assignment
 In this case the instructor should go through each student instance and perform the review in the application of the instance. Only the hand-back folder for the given student will be then visible in the Assignments &gt; handback directory, since the grading is specific to the given instance. 
 
 {% hint style="info" %}
-To minimize wait time, we recommend reviewing work in batches of 3-5 instances and launching the application in each of them as a first step. After the launch of all applications in the batch, the review can begin. This way applications will already be running in the rest of the batch by the time the grading process arrives there. 
+To minimize wait time, we recommend reviewing work in batches of 3-5 instances and launching the application in each of them as a first step \(i.e. iterate through each instance using the dropdown in the toolbar and launch the application in each\). After the launch of all applications in the batch, the review can begin. This way applications will already be running in the rest of the batch by the time the grading process arrives there. 
 {% endhint %}
 
 ### Handing back assignments
