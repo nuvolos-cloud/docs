@@ -28,7 +28,7 @@ When an assignment is created a special "Assignments" folder will appear inside 
 Each hand-in by a student will be under the following folder structure in the **Assignments &gt; handin** directory:
 
 ```text
-[student_instance_id] > [assignment_name]> [handin_id]
+[student_instance_id] > [assignment_name] > [handin_id]
 ```
 
 {% hint style="info" %}
@@ -45,14 +45,14 @@ The Assignments folder is only visible inside the application and currently is n
 
 Feedback can be provided inside the files in the **Assignments &gt; handback** folder in any form the instructor sees fit \(the Assignments &gt; handin folder is not writeable to maintain a record of submitted work\). 
 
-We suggest making explicit comments so that it is clear to the student when reviewing the hand-back what has been the instructor's \(I\) comment. An example is below:
+We suggest making explicit \(inline\) comments so that it is clear to the student when reviewing the hand-back what has been the instructor's \(I\) comment. An example is below:
 
 ```text
+var = 1   # I: Use a more informative variable name
+
 test_tuple = (False, "test")
 
-### I: Test_tuple will evaluate to a "truthy" value. 
-### I: Use test_tuple[0] instead.
-if test_tuple:
+if test_tuple:   # I: Use test_tuple[0] instead
     print("This should not appear.")
 ```
 
