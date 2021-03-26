@@ -15,7 +15,7 @@ An assignment is created whenever during material distribution time, the "Create
 Created assignments are visible on the dashboard of a space, as well from the Distribute &gt; Object Bundles menu from the sidebar.
 
 {% hint style="info" %}
-In most cases, the instructor prepares the placeholder files that will be filled out by the student and distributes these placeholders. It is also possible however to distribute entire directories, in this case the whole directory will be handed in by the student and the instructor can review whatever material is inside.
+In most cases, the instructor prepares the placeholder files that will be filled out by the student and distributes these placeholders. It is also possible however to stage and distribute entire directories when an assignment is created, in this case the whole directory will be handed in by the student and the instructor can review whatever material was inside at hand-in time.
 {% endhint %}
 
 #### Modifying assignments
