@@ -62,7 +62,7 @@ if test_tuple:   # I: Use test_tuple[0] instead
 
 #### Student installed custom packages
 
-If the students are expected to install their own packages during the assignment, it might be necessary to grade the application not in the master instance, but in the individual student instances, as packages can differ compared to the master instance.
+If the students are expected to install their own packages during the assignment, it might be necessary to grade the assignment not in the master instance, but in the individual student instances, as packages can differ compared to the master instance.
 
 In this case the instructor should go through each student instance and perform the review in the application of the instance. Only the hand-back folder for the given student will be then visible in the Assignments &gt; handback directory, since the grading is specific to the given instance. 
 
