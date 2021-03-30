@@ -12,7 +12,7 @@ If you want to use Nuvolos-hosted Python \(via JupyterLab or Spyder\), the data 
 
 1. Make sure you have the data available.
 2. **Run** your application.
-3. Inside your app, you will need to use the `nuvolos` [Python library](https://github.com/nuvolos-cloud/python-connector) developed by Alphacruncher, which is pre-installed in the Jupyter application.
+3. Inside your app, you will need to use the `nuvolos-odbc` [Python library](https://github.com/nuvolos-cloud/python-connector) developed by Alphacruncher, which is pre-installed in the Jupyter application.
 
 Usage example:
 
@@ -21,7 +21,7 @@ from nuvolos import get_connection
 import pandas as pd
 
 con = get_connection()
-df = pd.read_sql("SELECT * FROM \"table\"", con=con)
+df = pd.read_sql("SELECT * FROM table", con=con)
 ```
 
 #### Stopping queries from Python
@@ -119,15 +119,17 @@ Please refer to the [Cancelling queries](./#cancelling-queries) section for the 
 result_data <- dbGetQuery(con,"<SQL_COMMAND>")
 ```
 
-### Connecting with Python
+### Connecting with Python 
 
-First, please download and install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You only need to satisfy the prerequisites and finish the ODBC driver installation \(first step\).  You don't need to further configure and test the driver. 
-
-Second, install the `nuvolos` package developed for Nuvolos:
+First, install the `nuvolos` package developed for Nuvolos:
 
 ```bash
-pip install nuvolos
+pip install --upgrade nuvolos
 ```
+
+{% hint style="info" %}
+Since version 0.4.0 of the `nuvolos` package, installing the ODBC driver is no longer required.
+{% endhint %}
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
@@ -140,7 +142,7 @@ from nuvolos import get_connection
 import pandas as pd
 
 con = get_connection(dbname = "dbname", schemaname="schemaname")
-df = pd.read_sql("SELECT * FROM \"table\"", con=con)
+df = pd.read_sql("SELECT * FROM table", con=con)
 ```
 
 **Credentials**: When you connect to the Nuvolos database for the first time, it will ask for your credentials. You can find your credentials following the [connection guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  You don't need to write your credentials explicitly in your scripts, and the connector can safely access your token during the connection process.
