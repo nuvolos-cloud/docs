@@ -6,6 +6,20 @@ description: A short introduction to working with database tables in the web int
 
 The Tables view can be found in the sidebar once you are viewing work in a state.  You can view the data tables available in the active instance and run SELECT queries on the tables. This section details the functionality accessible from this view.
 
+## Activating tables
+
+{% hint style="info" %}
+Tables can only be activated by [Space Administrators](../../settings-and-administration/space-management/) and only if your organization has tables enabled. If you are not a space administrator but you need to work with tables, please bring up the issue with your space and organization administrator\(s\).
+{% endhint %}
+
+In order for you to be able to work with tables, make sure you have tables enabled. To enable tables navigate to the Tables view and click on the Activate Tables button. The process might take a few minutes. Once it completes, you will have a fully featured interface you can interact with.
+
+![The activate tables option](../../.gitbook/assets/screenshot-2021-03-31-163421.png)
+
+{% hint style="warning" %}
+If you have running applications and you activated the tables during the session, please make sure to restart your applications in the instance so your database credentials and information can be appropriately loaded. 
+{% endhint %}
+
 ## Overview
 
 ![](../../.gitbook/assets/screen-shot-2020-11-19-at-10.50.34-am.png)

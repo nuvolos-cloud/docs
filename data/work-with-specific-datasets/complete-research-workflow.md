@@ -16,7 +16,7 @@ A standard skeleton scientific workflow in Matlab can be broken down into three 
 
 ### Querying relevant data
 
-For the mock example, we are going to work with the Fama-French factor set that is available for our Demo user, we will be focusing on the [North America](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5developed.html) 5-factor table. The `NORTH_AMERICA_5_FACTORS`  [table has been distributed](../work-with-data.md#distribute-data-you-need) to the instance we are working in.
+For the mock example, we are going to work with the Fama-French factor set that is available for our Demo user, we will be focusing on the [North America](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5developed.html) 5-factor table. The `NORTH_AMERICA_5_FACTORS`  [table has been distributed](../work-with-data/#distribute-data-you-need) to the instance we are working in.
 
 After opening the Matlab application, the following bit of code will return the entire database table as a Matlab table-type object. The query we are executing is a merge of a monthly stock series table \(for Apple monthly stock prices\) and the Fama-French factor table as follows.
 
@@ -71,7 +71,7 @@ It is possible to create more complext workflows, but it will usually consist of
 
 ### Querying relevant data
 
-For the mock example, we are going to work with the Fama-French factor set that is available for our Demo user, we will be focusing on the [North America](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5developed.html) 5-factor table. The `NORTH_AMERICA_5_FACTORS`  [table has been distributed](../work-with-data.md#distribute-data-you-need) to the instance we are working in.
+For the mock example, we are going to work with the Fama-French factor set that is available for our Demo user, we will be focusing on the [North America](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5developed.html) 5-factor table. The `NORTH_AMERICA_5_FACTORS`  [table has been distributed](../work-with-data/#distribute-data-you-need) to the instance we are working in.
 
 After opening the RStudio application, the following bit of code will return the entire database table as an R data frame object. The query we are executing is a merge of a monthly stock series table \(for Apple monthly stock prices\) and the Fama-French factor table as follows.
 

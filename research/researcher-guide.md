@@ -150,7 +150,7 @@ We present a hybrid of the two approaches by showing how to find the recent appl
 
 ## Work with data
 
-[Consult our detailed guide](../data/work-with-data.md) to start working with data.
+[Consult our detailed guide](../data/work-with-data/) to start working with data.
 
 
 

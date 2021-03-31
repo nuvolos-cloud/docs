@@ -36,7 +36,7 @@ As a first step, read the guide for getting started:
 * [**Get started**](research/researcher-guide.md)\*\*\*\*
 * [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
-* [Work with data tables](data/work-with-data.md)
+* [Work with data tables](data/work-with-data/)
 * [High Performance Computing \(HPC\)](research/high-performance-computing.md)
 * [Invite collaborators](settings-and-administration/space-management/invite-instance-users.md#invite-users-to-an-existing-instance)
 * [Take snapshots](getting-started/working-with-snapshots/create-a-snapshot.md)
