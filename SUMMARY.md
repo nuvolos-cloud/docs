@@ -52,7 +52,7 @@
     * [VS Code](getting-started/work-with-applications/vs-code.md)
     * [Stata](getting-started/work-with-applications/stata.md)
   * [Advanced workflows](getting-started/advanced-workflows/README.md)
-    * [Invite a reviwer to your research project](getting-started/advanced-workflows/invite-a-reviwer-to-your-research-project.md)
+    * [Invite a reviewer to your research project](getting-started/advanced-workflows/invite-a-reviwer-to-your-research-project.md)
 * [Features](our-features/README.md)
   * [Structure](our-features/data-organization/README.md)
     * [Organizations](our-features/data-organization/organizations.md)

@@ -1,4 +1,4 @@
-# Invite a reviwer to your research project
+# Invite a reviewer to your research project
 
 The following guide describes how to invite a foreign reviewer \(such as a journal editor\) to your research project.
 
