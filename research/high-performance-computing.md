@@ -663,7 +663,7 @@ Note the -u flag which helps writing the outputs to the jobs logs immediately, w
 module load conda-4.6.3 && source activate $CONDA_ENV && ipython myscript.py
 ```
 
-For ipython, there is no -u flag. The CONDA\_ENV environment variable is populated automatically by the bash toolkit.
+For ipython, the -u flag is not available. The CONDA\_ENV environment variable is populated automatically by the bash toolkit.
 
 ### Environment synchronization
 
