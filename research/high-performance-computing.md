@@ -609,6 +609,16 @@ Currently support for python environments is provided via the [bash toolkit.](hi
 
 ### Access
 
+#### Initialize conda environment on the login node
+
+First execute from a Sypder or JupyterLab Nuvolos application's terminal
+
+```text
+create_cluster_env
+```
+
+This will initialize a conda environment on the cluster.
+
 #### Connect to conda environment on the login node
 
 The command
@@ -631,21 +641,33 @@ connects to the cluster and without activating a mapped conda environment.
 
 ### Managing jobs
 
-Please refer to the [Managing jobs](high-performance-computing.md#managing-jobs-1) section of the bash toolkit.
+You should use the [bash toolkit](high-performance-computing.md#working-with-the-bash-toolkit-on-nuvolos) to manage Python jobs. For details, please refer to the [Managing jobs](high-performance-computing.md#managing-jobs-1) section of the bash toolkit.  
+  
+There is one specific point for python jobs: in the submission script, the proper python environment has to be loaded first.
+
+```text
+#!/bin/bash
+.
+.
+.
+module load conda-4.6.3 && source activate $CONDA_ENV && python -u myscript.py
+```
+
+Note the -u flag which helps writing the outputs to the jobs logs immediately, without delay. For ipython jobs, you can use
+
+```text
+#!/bin/bash
+.
+.
+.
+module load conda-4.6.3 && source activate $CONDA_ENV && ipython myscript.py
+```
+
+For ipython, there is no -u flag. The CONDA\_ENV environment variable is populated automatically by the bash toolkit.
 
 ### Environment synchronization
 
 Support for synchronization is provided via the bash toolkit on Nuvolos. If HPC access is activated in your space, in any terminal with access to a conda environment you can issue the following commands in your terminal shell.
-
-#### Create mapped cluster environment
-
-The command
-
-```text
-create_cluster_env
-```
-
-generates a conda environment on the HPC cluster if it does not exist yet for the particular application you are using.
 
 #### Update mapped cluster environment
 
