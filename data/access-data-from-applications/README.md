@@ -284,9 +284,9 @@ To analyze the above SAS statement, notice the following:
 2. The first statement makes sure that SAS connects to the correct database and schema. We strongly suggest using this statement first whenever you are using the Pass-Through Facility.
 3. The second statement creates a table called `test` based on the code that is in the file `source/to/file.sql.`
 
-### Connecting with MATLAB
+### Connecting with Matlab
 
-First, please download and install the [`nuvolos`](https://ch.mathworks.com/matlabcentral/fileexchange/82903-nuvolos?s_tid=srchtitle) toolbox developed for Nuvolos.  You can also click "Get Add-ons", search "nuvolos" in the MATLAB Add-on Explorer, and then “Add" in your toolbox. 
+First, please download and install the [`nuvolos`](https://ch.mathworks.com/matlabcentral/fileexchange/82903-nuvolos?s_tid=srchtitle) toolbox developed for Nuvolos.  You can also click "Get Add-ons", search "nuvolos" in the Matlab Add-on Explorer, and then “Add" in your toolbox. 
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
@@ -299,7 +299,7 @@ conn = get_connection("dbname", "schemaname");
 dataset = select(conn, "SELECT * FROM my_table");
 ```
 
-For your credential's safety consideration, the MATLAB connector will display the login dialog for the first time connecting to the Nuvolos database.  Please find your credentials following the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  
+For your credential's safety consideration, the Matlab connector will display the login dialog for the first time connecting to the Nuvolos database.  Please find your credentials following the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  
 
 ![](../../.gitbook/assets/screen-shot-2020-11-24-at-8.32.14-pm.png)
 
