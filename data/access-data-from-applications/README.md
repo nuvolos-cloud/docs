@@ -75,6 +75,15 @@ odbc load, exec(`"<SQL_COMMAND>"') connectionstring($conn_str)
 
 First test your query in the Tables view of your space \(or create a new query by using our Querybuilder Form\). Then select the option **Run from application &gt; Matlab** when looking at the query results preview to see the instructions on executing the given query inside Matlab on Nuvolos.
 
+We suggest using the `select` statement of Matlab as it provides results in the [table](https://www.mathworks.com/help/matlab/tables.html) data type. For example:
+
+```text
+conn = get_connection();
+result_data = select(conn,'SELECT * FROM TABLE_NAME LIMIT 10');
+```
+
+In this example, `result_data` will be of the table type, and thus column names will be also available for the programmer as part of the return data structure.
+
 ## Accessing data tables from external, non-Nuvolos applications
 
 ### Connecting with R
