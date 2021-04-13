@@ -295,8 +295,8 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 Finally, pass the database and schema names specified in the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/) to the `get_connection()` function:
 
 ```python
-con = get_connection("dbname", "schemaname");
-dataset = executeQuery(con,"SELECT * FROM my_table");
+conn = get_connection("dbname", "schemaname");
+dataset = select(conn, "SELECT * FROM my_table");
 ```
 
 For your credential's safety consideration, the MATLAB connector will display the login dialog for the first time connecting to the Nuvolos database.  Please find your credentials following the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  
