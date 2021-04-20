@@ -30,7 +30,7 @@ It is possible to partially restore a snapshot via the [distribution feature](..
 
 The steps to take are the following:
 
-1. [Navigate to the snapshot](../navigation-in-nuvolos.md) that you want to restore from.
+1. [Navigate to the snapshot](../navigation-in-nuvolos.md#the-breadcrumb) that you want to restore from.
 
     2. [Stage the objects](../distribute-objects-in-nuvolos/#distributing-a-selected-list-of-items-a-worked-example) \(files, tables or applications\) you want to restore.
 
