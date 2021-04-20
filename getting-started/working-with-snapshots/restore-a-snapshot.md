@@ -30,15 +30,20 @@ It is possible to partially restore a snapshot via the [distribution feature](..
 
 The steps to take are the following:
 
-1. [Navigate to the snapshot](../navigation-in-nuvolos.md#the-breadcrumb) that you want to restore from.
+1.  Open your space.
+2. Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
 
-    2. [Stage the objects](../distribute-objects-in-nuvolos/#distributing-a-selected-list-of-items-a-worked-example) \(files, tables or applications\) you want to restore.
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.17.21-pm.png)
 
-    3. Select the same instance you are in as the distribution target.
+    3. Identify the snapshot you want to restore & click on the name of the snapshot.
+
+    4. [Stage the objects](../distribute-objects-in-nuvolos/#distributing-a-selected-list-of-items-a-worked-example) \(files, tables or applications\) you want to restore.
+
+    5. Select the same instance you are in as the distribution target.
 
 ![Make sure the instance you are on is the same you are distributing to.](../../.gitbook/assets/screenshot-2020-10-12-121236.png)
 
-    4. Proceed with the overwriting distribution strategy.
+    6. Proceed with the overwriting distribution strategy.
 
 These steps will overwrite the selected files in the current state with the files that were stored in the snapshot.
 
