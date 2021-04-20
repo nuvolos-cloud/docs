@@ -35,7 +35,7 @@ The steps to take are the following:
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.17.21-pm.png)
 
-    3. Identify the snapshot you want to restore & click on the name of the snapshot.
+    3. Identify the snapshot you want to restore & click on the name of the snapshot to open the snapshot.
 
     4. [Stage the objects](../distribute-objects-in-nuvolos/#distributing-a-selected-list-of-items-a-worked-example) \(files, tables or applications\) you want to restore.
 
