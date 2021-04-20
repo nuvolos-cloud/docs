@@ -6,7 +6,7 @@ Restoring a snapshot means replacing the content of the current state with the c
 
 ## **Restore a snapshot**
 
-1. Open your space.
+1.Open your space.
 
 2. Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
 
@@ -30,7 +30,7 @@ It is possible to partially restore a snapshot via the [distribution feature](..
 
 The steps to take are the following:
 
-1.  Open your space.
+1. Open your space.
 2. Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.17.21-pm.png)
