@@ -8,7 +8,7 @@ description: Getting started with teaching a course
 In most cases, it is possible to set up a course from scratch in less than 5 minutes.
 {% endhint %}
 
-## Add a new course
+## 1- Add a new course
 
 Courses are spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organization managers and faculty members may create courses.
 
@@ -22,31 +22,21 @@ Courses are spaces in Nuvolos where instructors add learning materials \(data, c
 
 ![Create a course](../../.gitbook/assets/create_class_ed.gif)
 
-## Add teaching material
+## 2- Complete course checklist
 
-Course material are items like code, documents or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
+To have a complete course setup, a list of operations are recommended to complete: uploading files, inviting students, distributing course material to the students, and creating assignments/exercises for students.
+
+On the overview page of each course, course administrators can see the course checklist and the status of each list item \(completed or pending\). Below is a screenshot showing an example of a course checklist where only one item \(uploading files\) is completed while the other three items are pending.
+
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.02.08-pm.png)
+
+###      2.1. Add teaching material
+
+Course material consists of items like code, documents, or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
 ![Uploading two files](../../.gitbook/assets/upload_files_ed.gif)
 
-## Distribute to prospective students
-
-You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
-
-![](../../.gitbook/assets/distribute_ed.gif)
-
-The key steps of the process:
-
-1. **Select the objects you want to distribute**
-   * Not selecting anything will default to distributing everything from the current state of the instance.
-   * Applications are automatically added to the distribution, you have the option to remove them.
-2. **Select the target**
-   * By default you will distribute to all students - every existing instance and future instance.
-3. **Select distribution strategy**
-   * By default overwrite is suggested, consult the detailed distribution documentation for other options and their use cases.
-4. **Specify a notification message**
-   * Your current students will receive the message you specified to their e-mail address.
-
-## Invite students
+###      2.2. Invite students
 
 Ways to invite students to join the course :
 
@@ -63,6 +53,29 @@ Invite with a Sharing Link:
 3. Copy Sharing Link.
 
 ![Finding and copying the invitation link](../../.gitbook/assets/invitation_link_out_ed.gif)
+
+###     2.3. Distribute to prospective students
+
+You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
+
+![](../../.gitbook/assets/distribute_ed.gif)
+
+The key steps of the process:
+
+1. **Select the objects you want to distribute**
+   * Not selecting anything will default to distributing everything from the current state of the instance.
+   * Applications are automatically added to the distribution, you have the option to remove them.
+2. **Select the target**
+   * By default, you will distribute to all students - every existing instance and future instance.
+3. **Select distribution strategy**
+   * By default overwrite is suggested, consult the detailed distribution documentation for other options and their use cases.
+4. **Specify a notification message**
+   * Your current students will receive the message you specified to their e-mail addresses. 
+
+###     2.4. Create an assignment
+
+  
+
 
 ## Invite teaching assistants
 
