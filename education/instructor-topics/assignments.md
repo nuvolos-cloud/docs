@@ -4,7 +4,7 @@ description: Create and review assignments in Nuvolos
 
 # Assignments
 
-Nuvolos supports the creation, dissemination and review of assignments, without having to download, upload and send files around.
+Nuvolos supports the creation, dissemination, and review of assignments, without having to download, upload, and send files around.
 
 ### Creating an assignment
 
@@ -15,7 +15,7 @@ An assignment is created whenever during material distribution time, the "Create
 Created assignments are visible on the dashboard of a space, as well from the Distribute &gt; Object Bundles menu from the sidebar.
 
 {% hint style="info" %}
-In most cases, the instructor prepares the placeholder files that will be filled out by the student and distributes these placeholders. It is also possible however to stage and distribute entire directories when an assignment is created, in this case the whole directory will be handed in by the student and the instructor can review whatever material was inside at hand-in time.
+In most cases, the instructor prepares the placeholder files that will be filled out by the student and distributes these placeholders. It is also possible however to stage and distribute entire directories when an assignment is created, in this case, the whole directory will be handed in by the student and the instructor can review whatever material was inside at hand-in time.
 {% endhint %}
 
 #### Modifying assignments
@@ -36,7 +36,7 @@ Each hand-in by a student will be under the following folder structure in the **
 ```
 
 {% hint style="info" %}
-The `student_instance_id` is a random identifier \(example: single-user-instance-alkewhgh\) which does not reveal the source instance of the hand-in \(i.e. which student handed in\). 
+The `student_instance_id` is a random identifier \(example: single-user-instance-alkewhgh\) that does not reveal the source instance of the hand-in \(i.e. which student handed in\). 
 {% endhint %}
 
 To match the hand-in to a student, the hand-in ID  can be used, which is a timestamp + identifier combination, where the student can choose an identifier \(by default their instance name, but can be changed if needed for better anonymity\). Students can hand-in multiple versions of their work, so the instructor generally needs to review the latest submission.
@@ -64,7 +64,7 @@ if test_tuple:   # I: Use test_tuple[0] instead
 
 If the students are expected to install their own packages during the assignment, it might be necessary to grade the assignment not in the master instance, but in the individual student instances, as packages can differ compared to the master instance.
 
-In this case the instructor should go through each student instance and perform the review in the application of the instance. Only the hand-back folder for the given student will be then visible in the Assignments &gt; handback directory, since the grading is specific to the given instance. 
+In this case, the instructor should go through each student instance and perform the review in the application of the instance. Only the hand-back folder for the given student will be then visible in the Assignments &gt; handback directory, since the grading is specific to the given instance. 
 
 {% hint style="info" %}
 To minimize wait time, we recommend reviewing work in batches of 3-5 instances and launching the application in each of them as a first step \(i.e. iterate through each instance using the dropdown in the toolbar and launch the application in each\). After the launch of all applications in the batch, the review can begin. This way applications will already be running in the rest of the batch by the time the grading process arrives there. 
