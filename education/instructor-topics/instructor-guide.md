@@ -8,7 +8,7 @@ description: Getting started with teaching a course
 In most cases, it is possible to set up a course from scratch in less than 5 minutes.
 {% endhint %}
 
-## 1- Add a new course
+## 1. Add a new course
 
 Courses are spaces in Nuvolos where instructors add learning materials \(data, code and applications\) for their students. Organization managers and faculty members may create courses.
 
@@ -22,7 +22,7 @@ Courses are spaces in Nuvolos where instructors add learning materials \(data, c
 
 ![Create a course](../../.gitbook/assets/create_class_ed.gif)
 
-## 2- Complete course checklist
+## 2. Complete course checklist
 
 To have a complete course setup, a list of operations is recommended to complete: uploading files, inviting students, distributing course material to the students, and creating assignments/exercises for students.
 
