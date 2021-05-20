@@ -2,19 +2,19 @@
 
 Nuvolos offers an easy-to-use query builder interface for building and running SQL queries. To open the query builder, navigate to the tables view and click the _Query table_ button next from the list of table actions or the _Query_ button available next to the table name.
 
-![](../../.gitbook/assets/screen-shot-2021-02-26-at-10.20.50-am.png)
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.36.43-pm.png)
 
-A modal will be displayed where the user can go through the following steps to build their query:
+## 1- Column selection and preview
 
-## 1- Column selection
+The first step concerns the selection of the columns to include in the query. The user can select all columns via the "Select all" button or select a subset of the columns by clicking on the column name in the list of columns on the left. E.g. in the screenshot below, three columns were selected.
 
-The first step concerns the selection of the columns to include in the query. The user can select all columns via the "Select all columns" checkbox or select a subset of the columns via the column selector.
+Selected columns will appear in a list on the right side as shown in the screenshot below. To remove a column from selection, click on the red 'clear' button next to the column name in the selected columns list. Otherwise, use the "Remove all" button to unselect all selected columns.
 
 {% hint style="warning" %}
 At least one column must be selected in order to move to the next step
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2021-02-26-at-10.32.41-am.png)
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.38.48-pm.png)
 
 ## 2- Filters
 
@@ -88,7 +88,9 @@ A limit condition limits the number of rows returned by the query and it is a re
 
 ## 6- Review and submit the query
 
-The final step consists of reviewing the SQL query and submitting it.
+The final step consists of reviewing the SQL query and submitting it. By clicking on 'Submit for data export', the constructed SQL query will be executed and the user will be able to download a zipped file containing the outcome of the query in CSV format.  
+  
+An option is available to obtain a snippet code that the user can use to run the constructed query from an application. To obtain a snippet, click on the 'Run from application' button and select the programming language you want to use to run the query. A modal will open from which the user can copy the generated code and instructions on how to run it.
 
-![](../../.gitbook/assets/screen-shot-2021-02-26-at-12.59.21-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.48.44-pm.png)
 

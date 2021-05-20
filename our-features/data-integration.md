@@ -1,17 +1,17 @@
 ---
-description: Integrate your data with your research project or your class
+description: Integrate your data with your research project or your course
 ---
 
 # Data integration
 
 ## What is data integration?
 
-Nuvolos' data integration ensures that educators and researchers can access licensed data in the most efficient manner and integrate data in their regular workflow. In particular:
+Nuvolos' data integration ensures that educators and researchers can access licensed data in the most efficient manner and integrate data into their regular workflow. In particular:
 
 * Data can be accessed in Nuvolos applications natively.
 * Data can be accessed in non-Nuvolos applications via standard API solutions.
 * Data in Nuvolos is stored in a cloud-based, scalable, low-overhead SQL-compliant DBMS.
-* Access to licensed data can be controlled by the organization owning the licence.
+* Access to licensed data can be controlled by the organization owning the license.
 
 ## Why is data integration useful?
 
@@ -21,7 +21,7 @@ Data integration creates novel workflows in research and education.
 
 Nuvolos makes it possible to fine-tune access to data both on an organization and on a research project level.
 
-Organization-wide public data is viewable by any member, and it is also possible to define restricted datasets which are available only to specified users.
+Organization-wide public data is viewable by any member, and it is also possible to define restricted datasets that are available only to specified users.
 
 ### Data is annotated
 
@@ -29,5 +29,5 @@ Nuvolos supports and encourages adding table and column descriptions to your dat
 
 ### Data is vintaged
 
-It is possible to maintain multiple vintages of a dataset via Nuvolos. This makes it possible to reference multiple time-states of a particular data set in research, further aiding replicability of research.
+It is possible to maintain multiple vintages of a dataset via Nuvolos. This makes it possible to reference multiple time-states of a particular data set in research, further aiding the replicability of research.
 
