@@ -24,7 +24,7 @@ Courses are spaces in Nuvolos where instructors add learning materials \(data, c
 
 ## 2- Complete course checklist
 
-To have a complete course setup, a list of operations are recommended to complete: uploading files, inviting students, distributing course material to the students, and creating assignments/exercises for students.
+To have a complete course setup, a list of operations is recommended to complete: uploading files, inviting students, distributing course material to the students, and creating assignments/exercises for students.
 
 On the overview page of each course, course administrators can see the course checklist and the status of each list item \(completed or pending\). Below is a screenshot showing an example of a course checklist where only one item \(uploading files\) is completed while the other three items are pending.
 
@@ -35,6 +35,10 @@ On the overview page of each course, course administrators can see the course ch
 Course material consists of items like code, documents, or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
 ![Uploading two files](../../.gitbook/assets/upload_files_ed.gif)
+
+Alternatively, you can click on the 'Upload files' tile in the Overview course checklist and it will directly open the file upload modal.
+
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.28.02-pm.png)
 
 ###      2.2. Invite students
 
@@ -53,6 +57,10 @@ Invite with a Sharing Link:
 3. Copy Sharing Link.
 
 ![Finding and copying the invitation link](../../.gitbook/assets/invitation_link_out_ed.gif)
+
+Alternatively, you can click on the 'Invite students' tile in the Overview course checklist and it will directly open the invitation dialog.
+
+![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.31.09-pm.png)
 
 ###     2.3. Distribute to prospective students
 
@@ -74,16 +82,15 @@ The key steps of the process:
 
 ###     2.4. Create an assignment
 
-  
+For instructions on how to create an assignment, please check the documentation page on assignments [here](assignments.md).
 
-
-## Invite teaching assistants
+## 3. Invite teaching assistants
 
 Teaching assistants are able to see everything that is going on in the course, they have the _space admin_ role. The user who created the course automatically becomes a _space admin_ as well. To invite teaching assistants with this elevated role, follow the instructions below.
 
 ![Inviting a teaching assistant](../../.gitbook/assets/space_admin_invite_ed.gif)
 
-## Best practice: Structuring your course
+## 4. Best practice: Structuring your course
 
 As described in the structure document, a space \(in particular, a course\) consists of multiple instances. As a space administrator of your course, you have complete control over how many instances your space might have and which students may access what instance.
 
