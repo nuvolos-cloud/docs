@@ -42,25 +42,22 @@ Alternatively, you can click on the 'Upload files' tile in the Overview course c
 
 ###      2.2. Invite students
 
-Ways to invite students to join the course :
-
-* By sharing an Invite Link \(requires the least work from the instructors' side\)
-* By e-mail \(good for small courses\)
-* By inviting a group \(via e-mail\)
-
-Invited students will be able to see only their workspace, not the master instance or other students' instances.
-
-Invite with a Sharing Link:
-
-1. Navigate to _Course Users_
-2. Select + INVITE
-3. Copy Sharing Link.
-
-![Finding and copying the invitation link](../../.gitbook/assets/invitation_link_out_ed.gif)
-
-Alternatively, you can click on the 'Invite students' tile in the Overview course checklist and it will directly open the invitation dialog.
+To invite students, you can click on the 'Invite students' tile in the Overview course checklist and it will directly open the invitation dialog.
 
 ![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.31.09-pm.png)
+
+Ways to invite students to join the course :
+
+* By sharing an Invite Link \(requires the least work from the instructors' side\).
+* By e-mail \(good for small courses\)
+
+Alternatively, more invitations options are available in the course users/instance view which can be opened from the sidebar as illustrated below
+
+![](../../.gitbook/assets/screen-shot-2021-05-25-at-1.06.21-pm.png)
+
+{% hint style="info" %}
+Invited students will be able to see only their workspace, not the master instance or other students' instances.
+{% endhint %}
 
 ###     2.3. Distribute to prospective students
 
