@@ -68,7 +68,6 @@ You can distribute the teaching material to prospective and existing students by
 The key steps of the process:
 
 1. **Select the objects you want to distribute**
-   * Not selecting anything will default to distributing everything from the current state of the instance.
    * Applications are automatically added to the distribution, you have the option to remove them.
 2. **Select the target**
    * By default, you will distribute to all students - every existing instance and future instance.
