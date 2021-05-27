@@ -20,7 +20,7 @@ To work on assignments, you need to work on the files that are part of the assig
 
 To hand-in an assignment, click on the assignment on the dashboard and then click on the "Hand-in" button on the top right of the dialog. 
 
-All files in the assignment **have to exist at submission time**, otherwise your submission will fail. You can check your submission status on the tasks page \(bell symbol at the top right of the Nuvolos web UI\).
+All files in the assignment **have to exist at submission time**, otherwise, your submission will fail. You can check your submission status on the tasks page \(bell symbol at the top right of the Nuvolos web UI\).
 
 You can submit multiple times for the same assignment until the assignment deadline has passed. The instructor will see all your submissions organised in different folders in chronological order.
 
@@ -31,7 +31,7 @@ Assignments > handin > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-It's recommended to check the handin folder from your application after a submission to make sure all the files have been successfully submitted.
+It's recommended to check the handin folder from your application after submission to make sure all the files have been successfully submitted.
 
 The handed in version of the files \(under the files &gt; Assignments folder\) are only visible from the application and currently cannot be downloaded from the web-interface.
 
@@ -40,7 +40,7 @@ You will be able to see however a list of your past submissions if you click on 
 
 ### Reviewing feedback
 
-Once the instructor has reviewed your work, they will enable you to see the hand-back version of the files. Start your application \(if it was already running, then re-start it\) and in the **Assignments &gt; handback** folder you will see a read-only copy of the reviewed / graded file, with the appropriate comments from the instructor. The structure is the same as for the handins:
+Once the instructor has reviewed your work, they will enable you to see the hand-back version of the files. Start your application \(if it was already running, then re-start it\), and in the **Assignments &gt; handback** folder you will see a read-only copy of the reviewed/graded file, with the appropriate comments from the instructor. The structure is the same as for the handins:
 
 ```text
 Assignments > handback > [assignment_name]> [handin_id]

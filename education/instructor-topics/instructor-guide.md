@@ -95,11 +95,17 @@ As described in the structure document, a space \(in particular, a course\) cons
 In the suggested standard layout:
 
 * All instructors \(professors and teaching assistants alike\) control the teaching material in the **master** instance. In terms of roles:
-  * The professor and designated teaching assistants have space admin role in the space and they edit material in the master instance.
+  * The professor and designated teaching assistants have space admin role in the space and edit material in the master instance.
 * Every student is invited to their own instance, each student having the following roles:
   * Editor role in their own personal instance.
   * Viewer role on the distributed instance \(this is given by definition\).
 * [Group work](set-up-group-work.md) is kept in a separate space, any specialized instances are not kept together with the standard layout.
+
+{% hint style="success" %}
+The benefit of this layout is that the distribution target can be "All Students" without compromising integrity. 
+
+In general, we suggest keeping your spaces simple if you have the ability to create multiple.
+{% endhint %}
 
 ### **Alternate layout**
 
