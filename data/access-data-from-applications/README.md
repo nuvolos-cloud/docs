@@ -88,11 +88,10 @@ In this example, `result_data` will be of the table type, and thus column names 
 
 ### Connecting with R
 
-First, please download and install the [Snowflake ODBC database driver](https://docs.snowflake.com/en/user-guide/odbc.html) for your platform, which is required to access the Nuvolos database service. You only need to satisfy the prerequisites and finish the ODBC driver installation \(first step\).  You don't need to further configure and test the driver. 
-
-Once the ODBC driver is installed, please install the Nuvolos `r-connector` package developed for Nuvolos:
+First, please install the Nuvolos `r-connector` package developed for Nuvolos:
 
 ```r
+options(repos = "https://cran.rstudio.com")
 install.packages("remotes")
 remotes::install_github("nuvolos-cloud/r-connector")
 ```
@@ -101,14 +100,13 @@ Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schem
 
 ![Connection Guide](https://gblobscdn.gitbook.com/assets%2F-LihBjXi93rsUENhHsab%2F-M2cRBfkOEK87ab37B2l%2F-M2cRkQS_MidAHIPoC3K%2FScreen%20Shot%202020-03-17%20at%201.22.49%20PM.png)
 
-Finally, pass the database name and schema name to the`get_connection()` function:
+Finally, pass the SQL statement, the database name and schema name to the`read_sql()` function:
 
 ```r
-con <- nuvolos::get_connection(dbname = '"my_database"', schemaname= '"my_schema"')
-result_data <- dbGetQuery(con,"SELECT * FROM table LIMIT 10")
+result_data <- nuvolos::read_sql("SELECT * FROM \"TABLE\" LIMIT 10", dbname = "my_database", schemaname= "my_schema")
 ```
 
-**Attention:** you need to follow the quotation approach as the example code, i.e., writing the database and schema names with double-quotation, and **adding the single quote outside of the double quote**.
+**Attention:** you need to follow the quotation approach as the example code. If the table name is case insensitive, it can be referred as _table_ or _\"TABLE\"_. If the table name is case sensitive \(containing upper-and lowercase letters or special characters\), quotation is needed. For example: _\"Table\"._ 
 
 **Credentials**: When you connect to the Nuvolos database for the first time, it will ask for your credentials. Check "Remember with keyring" box to avoid your future input. You can find your credentials following the [connection guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  You don't need to write your credentials explicitly in your scripts, and the connector can safely access your token during the connection process.
 
@@ -125,7 +123,7 @@ nuvolos::input_nuvolos_credential()
 Please refer to the [Cancelling queries](./#cancelling-queries) section for the available SQL commands. You can execute them as
 
 ```sql
-result_data <- dbGetQuery(con,"<SQL_COMMAND>")
+result_data <- novolos::execute("<SQL_COMMAND>", dbname = "my_database", schemaname= "my_schema")
 ```
 
 ### Connecting with Python 

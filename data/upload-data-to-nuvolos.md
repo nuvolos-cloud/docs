@@ -76,7 +76,14 @@ pip install --upgrade nuvolos
 ```r
 df <- read.csv('path_to_data') #read your data
 con <- nuvolos::get_connection()
-DBI::dbWriteTable(con, name="TABLE_NAME", value=df)
+DBI::dbWriteTable(con, name="table_name", value=df)
+```
+
+If you wish to upload data to Nuvolos from your own PC, please follow the [instructions on how to obtain connection tokens](https://docs.nuvolos.cloud/data/access-data-from-applications#connecting-with-r) and the database name and schema name to use:
+
+```python
+df <- read.csv('path_to_data') #read your data
+nuvolos::to_sql(df=df, name="table_name", dbname="dbname", schemaname="schemaname", if_exists='replace', index=FALSE)
 ```
 
 #### 3. Matlab
