@@ -53,8 +53,6 @@ The management view provides two menus:
 
 ## The resource usage metrics dashboard
 
-
-
 All reports consist of three zones:
 
 ### Selectors and tabs
@@ -84,10 +82,6 @@ Special aggregation rules might apply to how the information displayed in the su
 ## General usage
 
 All reports are context-sensitive and contain drill-down functionality while respecting user roles.
-
-For **organization managers**, available views are organization and space level, information will change according to what is intuitive and applicable at a certain level.
-
-For **space administrators**, available views are space level, information will be available when applicable even on the instance level.
 
 ### Aggregation levels
 
@@ -119,44 +113,42 @@ Application and HPC reports concern 'flow' type of resource usage while invitati
 
 ## Application reports
 
-Application reports give information on applications run on Nuvolos. 
+Application reports give information on applications run on Nuvolos. The reporting unit is always Nuvolos Compute Units \(NCUs\). One Nuvolos Compute Unit corresponds to one vCPU and 4 GBs of RAM.
 
 ### Report content
 
 We report the following information on the dashboard:
 
-* **Maximum concurrent** - Maximum number of concurrent applications run on a given day and for a given time period: the count of the widest activity of application use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the methodology section applies.
-* **Activity** - Number of applications starts on a given day and for a given time period: the count of applications tarts between 0:00 - 23:59 or taken over a time window. Rule \[1\] in the methodology section _does not_ apply.
+* **Maximum concurrent** - Maximum number of concurrent NCUs used a given day and for a given time period: the count of the widest activity of NCU use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the methodology section applies.
 * **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1\] in the methodology section applies.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
-* When a time period is selected, all application metrics are aggregated over the selected time period. Activity and Runtime are summed, while for the Maximum concurrent metric, maximum is taken over the selected time period.
-* When viewing daily information \(as time series\), values presented are daily sums for Activity and Runtime, and daily maxima are presented for Maximum concurrent.
-* The summary values correspond to the sum of the time series for Activity and Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
+* When a time period is selected, all application metrics are aggregated over the selected time period. Runtime is summed, while for the Maximum concurrent metric, maximum is taken over the selected time period.
+* When viewing daily information \(as time series\), values presented are daily sums for Runtime, and daily maxima are presented for Maximum concurrent.
+* The summary values correspond to the sum of the time series for Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
 
 ### Methodology
 
-Application reports are prepared on a daily basis, report runs are started at 02:00 CEST. Previous reports are stored for 30 days, then removed.
+Application reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. Application reports on a given date report about applications that have concluded \(killed, stopped, timed out\) until the reporting date 02:00 CEST. 
-   1. For example, if you are looking at the report on 2020-12-24 12:15 CEST, then if an application was concluded at 2020-12-24 04:10 CEST, it will not be part of the day's report. However, if you check back on 2020-12-25 09:15 CEST, the new report will contain this application run.
+1. Application reports on a given date report about applications that have concluded \(killed, stopped, timed out\) until the reporting timestamp. 
 2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
    1. For example, for the report on 2020-12-24, we guarantee that the report will contain data going back to 2020-10-25 and until 2020-12-24 02:00.
 
 ## HPC reports
 
-HPC reports give information on HPC jobs run on Nuvolos. 
+HPC reports give information on HPC batch jobs and HPC interactive, scaled applications run on Nuvolos. 
 
-### Report content
+### HPC Batch Report content
 
 We report the following information on the dashboard:
 
 * **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the corresponding methodology section applies.
 * **CPU hour** - Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section apply.
-* **GB RAM hour** - Total amount of memory resources used on a given day and for a given time period: the sum total of GB RAM hours used between 0:00 - 23:59 on a given date or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section apply. 
+* **Balance used** - Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
 
 ### Interpretation
 
@@ -167,41 +159,32 @@ Some general guidance to interpreting values:
 
 ### Methodology
 
-HPC reports are prepared on a daily basis, report runs are started at 02:00 CEST. Previous reports are stored for 30 days, then removed.
+HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. HPC reports on a given date report about HPC that have concluded \(killed, canceled, completed, failed\) until the reporting date 02:00 CEST. 
-   1. For example, if you are looking at the report on 2020-12-24 12:15 CEST, then if an HPC job was concluded at 2020-12-24 04:10 CEST, it will not be part of the day's report. However, if you check back on 2020-12-25 09:15 CEST, the new report will contain this HPC job.
+1. HPC reports on a given date report about HPC that have concluded \(killed, canceled, completed, failed\) until the reporting time. 
 2. HPC jobs are accounted for in totality on the day of conclusion \(job state is killed, canceled, completed, failed, _not_ running, or pending\).
-   1. For example, if a job runs between 2020-12-01 0:01 and 2020-12-10 23:59, then the total runtime and resource usage is accounted on the date 2020-12-10 and will be first visible in the monitoring report on 2020-12-11.
 3. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
-   1. For example, for the report on 2020-12-24, we guarantee that the report will contain data going back to 2020-10-25 and until 2020-12-24 02:00.
 
-## Invitation reports
+### HPC Interactive Report content
 
-Invitation reports give information on invitation activity on Nuvolos. This information is most valuable during onboarding periods to classes and research projects.
+We report the following information on the dashboard:
 
-### Report content
-
-We report the following information on the dashboard. Compared to application and HPC reports, the values reflect point-in-time information as of the report being made, and a comparison is possible between reports previously made.
-
-* **Accepted** - Number of accepted invitations _up to_ a given day. When viewed as a time series, the time series reflects information up to a date 02:00 AM CEST.
-* **Pending** -  Number of pending invitations _up to_ a given day. When viewed as a time series, the time series reflects information up to a date 02:00 AM CEST.
-* **Total** - Total amount of invitations sent _up to_ a given day. When viewed as a time series, the time series reflects information up to a date 02:00 AM CEST.
+* **Runtime** - Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section apply.
+* **Balance used** - Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
-* When a time period is selected, all invitation statistics correspond to the state of the system _as of the last report run date_ of the period.
-* When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
+* When a time period is selected, all HPC metrics are summed over the selected time period.
+* When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
 
 ### Methodology
 
-Invitation reports are prepared on a daily basis, report runs are started at 02:00 CEST. Previous reports are stored for 60 days, then removed.
+HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. Invitation reports on a given date report about the invitation status of a given entity _as of_ 02:00 CEST of the given date.
-   1. For example, if you are looking at the report on 2020-12-24 12:15 CEST, and you see 2 pending invitations in a given space, this means that at 2020-12-24 02:00 CEST there were 2 pending invitations.
-2. _Time comparison between dates_: since per Rule \[1\] invitation reports refer to a state of the system as of a given date 02:00 CEST, date-by-date comparisons show the difference between two selected dates.
+1. HPC interactive applications are accounted for for the _starting date_ of the application run.
+2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
 
 ## User reports
 
@@ -246,11 +229,7 @@ Some general guidance to interpreting values:
 * When a time period is selected, the number of users \(any category\) corresponds to the state of the system _as of the last report run date_ of the period.
 * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
 
-### Methodology
 
-User reports are prepared on a daily basis, report runs are started at 02:00 CEST. Previous reports are stored for 60 days, then removed.
 
-1. User reports on a given date report about the user status of a given entity _as of_ 02:00 CEST of the given date.
-   1. For example, if you are looking at the report on 2020-12-24 12:15 CEST, and you see two end-users in a given space this means that at 2020-12-24 02:00 CEST there were two end-users in the space. If a pending invitation \(as of 02:00\) has been accepted between 02:00 and 12:15, you will not see that reflected until the next day's report.
-2. _Time comparison between dates:_ since per Rule \[1\] user reports refer to a state of the system as of a given date 02:00 CEST, date-by-date comparisons show the difference between two selected dates.
+
 
