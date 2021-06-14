@@ -63,7 +63,7 @@ You can switch between report types using the tabs. Selector fields clarify the 
 
 The summary information is presented as a doughnut chart with a total in the middle for each relevant category for the report. By hovering over the edge of the doughnut chart, you are able to display drill-down information of the statistic you are viewing.
 
-![Summary doughnut charts](../../.gitbook/assets/screenshot-2020-12-16-165857.png)
+![Doughnut overview charts](../../.gitbook/assets/screenshot-2021-06-14-122820.png)
 
 {% hint style="info" %}
 Special aggregation rules might apply to the summary and the drill-down information displayed - please confirm the interpretation section of the corresponding report type if you are not sure about how data might be related.
