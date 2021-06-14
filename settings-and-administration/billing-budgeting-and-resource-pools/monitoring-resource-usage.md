@@ -71,9 +71,9 @@ Special aggregation rules might apply to the summary and the drill-down informat
 
 ### Details
 
-The detail section is presented below the summary section and contains time series and tabular representation of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view.
+The detail section is presented below the summary section and contains time series and tabular representation of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view. The tabular section data can always be exported to an `xlsx` file.
 
-![Detailed time series view of application usage](../../.gitbook/assets/screenshot-2020-12-16-170720.png)
+![The time series overview of the details section](../../.gitbook/assets/screenshot-2021-06-14-122324.png)
 
 {% hint style="info" %}
 Special aggregation rules might apply to how the information displayed in the summary section is related to how the information is displayed in the details section. Please make sure to consult the interpretation section of the relevant report category.
