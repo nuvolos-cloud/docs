@@ -4,17 +4,17 @@ description: Monitor your resource usage with the Usage metrics view
 
 # Monitoring resource usage
 
+{% hint style="info" %}
+We strongly suggest reading the [billing overview](./) before reading this page as there are some critical concepts to get familiar with.
+{% endhint %}
+
 Resource monitoring is possible to a different extent for all users. The view provided by the monitoring interface depends on your roles related to the resource pool you are viewing.
 
 * All users are capable of seeing a minimal overview of the resource pools they are members of. The globally available information consists of the current balance and size of the resource pool.
-* Resource pool managers can review activity in the resource pool they are managers in, and they can drill to review usage on the space level.
+* [Resource pool](resource-pools.md) managers can review activity in the resource pool they are managers in, and they can drill to review usage on the space level.
 * Space administrators can review activity in the space they are administrating.
 
-Currently, the usage metrics dashboard provides metrics on the following resource groups:
 
-* Applications - metrics on standard Nuvolos application runs
-* HPC usage - metrics on HPC jobs and interactive HPC applications run in the Nuvolos infrastructure
-* User reports - metrics on user participation and activity
 
 
 
@@ -28,9 +28,30 @@ The resource and usage dashboard is available in the user menu for all users:
 
 ### Main page
 
-The main page provides an overview of the organization.
+The main page provides an overview of the resource pool. The exact view provided to the user is [based on their role](resource-pools.md#resource-pool-roles).
 
+### Usage views
 
+Usage views are only available for users that are at least a space administrator in one of the spaces associated with the resource pool.
+
+Currently, the usage metrics dashboard provides metrics on the following resource groups:
+
+* Applications - metrics on standard Nuvolos application runs
+* HPC usage - metrics on HPC jobs and interactive HPC applications run in the Nuvolos infrastructure
+* User reports - metrics on user participation and activity
+
+{% hint style="info" %}
+Please note that for privacy purposes we only show to the user the name of the space where they have a space administrator role. Every other space shows up with a numerical identifier. Usage may still be viewed, but contents of the space will not be visible to the user.
+{% endhint %}
+
+### Management view
+
+The management view provides two menus:
+
+* The contents menu shows for each \(redacted\) space the mapped [resource types](resource-pools.md#resource-types) of the space to the resource pool.
+* The users menu shows for each \(redacted\) space the space administrator for reach out purposes.
+
+## The resource usage metrics dashboard
 
 
 
