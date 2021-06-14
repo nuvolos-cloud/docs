@@ -57,7 +57,7 @@ All reports consist of three zones:
 
 ### Selectors and tabs
 
-You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report. The refresh button \(highlighted\) loads the data with the updated selections. 
+You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report.  
 
 ### Summary
 
@@ -104,6 +104,10 @@ Space administrators automatically select the context space - organization manag
 #### Time window
 
 The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always at maximum of 30 days\). 
+
+{% hint style="danger" %}
+Changing resource mappings are not immediately reflected in usage reports. The changes will appear in the next report release \(our current schedule is at least one report a day\).
+{% endhint %}
 
 {% hint style="success" %}
 Please refer to the appropriate report section for the available time window for a particular type of report. 
