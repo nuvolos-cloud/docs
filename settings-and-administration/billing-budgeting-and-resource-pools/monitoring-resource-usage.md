@@ -14,10 +14,6 @@ Resource monitoring is possible to a different extent for all users. The view pr
 * [Resource pool](resource-pools.md) managers can review activity in the resource pool they are managers in, and they can drill to review usage on the space level.
 * Space administrators can review activity in the space they are administrating.
 
-
-
-
-
 ## The resource and usage metrics dashboard
 
 The resource and usage dashboard is available in the user menu for all users:

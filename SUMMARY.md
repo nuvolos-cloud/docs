@@ -76,6 +76,7 @@
     * [Resource pools](settings-and-administration/billing-budgeting-and-resource-pools/resource-pools.md)
     * [Budgets](settings-and-administration/billing-budgeting-and-resource-pools/budgets.md)
     * [Monitoring resource usage](settings-and-administration/billing-budgeting-and-resource-pools/monitoring-resource-usage.md)
+    * [Nuvolos Compute Units](settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units.md)
   * [Application licenses](settings-and-administration/application-licenses.md)
   * [Organization management](settings-and-administration/organization-management/README.md)
     * [Invite organization members](settings-and-administration/organization-management/invite-organization-members.md)
