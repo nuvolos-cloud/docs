@@ -2,7 +2,7 @@
 
 #### If you're having problems creating a new application, here are some issues you might want to examine:
 
-* **You do not have the permission to create an application.**
+* **You do not have permission to create an application.**
 
 In order to create an application in an instance, the user must be the instance editor. If you don't have the required role to create an application, you can ask the instance editor to do it, or you can create the application in one of the instances or which you are the editor.
 
