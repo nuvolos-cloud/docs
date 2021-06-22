@@ -22,19 +22,19 @@ If you have running applications and you activated the tables during the session
 
 ## Overview
 
-![](../../.gitbook/assets/screen-shot-2020-11-19-at-10.50.34-am.png)
+![](../../.gitbook/assets/screen-shot-2021-06-22-at-4.08.21-pm%20%281%29.png)
 
 The functionalities as a list:
 
-1. Tables list
-2. The column list can be activated if you click on the table name.
-3. Table preview can be activated if you click on the table name.
-4. Query files - results of previous queries.
-5. Query preview - preview the results of a complex query before you run a complete version
-6. Query history - recall previous queries
-7. SQL Editor - create your own SQL statements here
-8. Query builder - build your SQL statement using a user-friendly UI
-9. Connection guide - for application users
+1. Tables and columns.
+2. The query builder: build your SQL statement using a user-friendly UI.
+3. The query history.
+4. Tables list.
+5. Tables columns: can be viewed by clicking on the table name.
+6. Table preview: can be viewed by clicking on the table name.
+7. Query table using the query builder.
+8. SQL Editor - create your own SQL statements here.
+9. Connection guide - for application users.
 
 ## Tables list
 
@@ -65,7 +65,7 @@ If what you see makes sense, you can proceed to run the full query from an appli
 
 #### Run from application
 
-If you click on the "Run From Application" button, you will be given an option to select which application to run the query from. Selecting the appropriate application will provide you with instructions how to run the query either on Nuvolos or on your local machine.
+If you click on the "Run From Application" button, you will be given an option to select which application to run the query from. Selecting the appropriate application will provide you with instructions on how to run the query either on Nuvolos or on your local machine.
 
 {% hint style="info" %}
 If you will repeatedly access the same data, we recommend exporting the results instead of running it each time from the application. For programmatic access \(i.e. iterating through dates, etc..\) running from an application can be easier. However, in all cases data that will be reused is recommended to be saved either to disc or to a new table.
@@ -75,13 +75,9 @@ See [Exporting big data](https://docs.nuvolos.cloud/data/access-data-from-applic
 
 #### Export results
 
-If you want to run the entire query by clicking **SAVE FULL RESULTS** on the query preview:
+If you run a query with Preview mode \(e.g. using the SQL editor\) and you want to get the full results of the query then you can use the SAVE FULL RESULTS option.
 
-![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
-
-You will then be taken to the **QUERY HISTORY** page, where you can see queries that have been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
-
-![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-06-22-at-4.18.59-pm.png)
 
 #### Extracting results
 
