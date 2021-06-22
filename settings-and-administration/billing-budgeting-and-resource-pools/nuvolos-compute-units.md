@@ -21,11 +21,11 @@ It is possible to calibrate applications with different NCU requirements, please
 
 ## NCU limits of a resource pool
 
-Each resource pool is endowed with a certain number of NCUs available to be used consecutively. The information of NCU limits is available in the [Monitoring dashboard](monitoring-resource-usage.md). There are three types of NCUs quoted, each differ in terms of time availability:
+Each resource pool is endowed with a certain number of NCUs available to be used consecutively. The information on NCU limits is available in the [Monitoring dashboard](monitoring-resource-usage.md). There are three types of NCUs quoted, each differs in terms of time availability:
 
 * **Round-the-clock** NCUs are available to use 24 hours a day, every day of the term of the Nuvolos subscription.
 * **Power save** NCUs are available to use 12 hours a day, every day of the month during the academic year \(thus power save NCUs are not available in the summer months\).
-* **Burst** NCUs are available to user 3 hours a day every workday during the academic year \(thus, burst NCUs are not available in the summer months\).
+* **Burst** NCUs are available to users 3 hours a day every workday during the academic year \(thus, burst NCUs are not available in the summer months\).
 
 In practice, each NCU type corresponds to a certain amount of compute hour limit for the subscription term:
 
@@ -33,5 +33,5 @@ In practice, each NCU type corresponds to a certain amount of compute hour limit
 * **Power save** NCUs are available for 3240 hours a year.
 * **Burst** NCUs are available for 540 hours a year.
 
-To calculate the total compute hours available to a resource pool for a year, the total amount of compute hours available to a resource pool is the sumproduct of resource pools and the above yearly rates.
+To calculate the total compute hours available to a resource pool for a year, the total amount of compute hours available to a resource pool is the sum product of resource pools and the above yearly rates.
 

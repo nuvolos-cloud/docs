@@ -37,7 +37,7 @@ Currently, the usage metrics dashboard provides metrics on the following resourc
 * User reports - metrics on user participation and activity
 
 {% hint style="info" %}
-Please note that for privacy purposes we only show to the user the name of the space where they have a space administrator role. Every other space shows up with a numerical identifier. Usage may still be viewed, but contents of the space will not be visible to the user.
+Please note that for privacy purposes we only show to the user the name of the space where they have a space administrator role. Every other space shows up with a numerical identifier. Usage may still be viewed, but the contents of the space will not be visible to the user.
 {% endhint %}
 
 ### Management view
@@ -45,7 +45,7 @@ Please note that for privacy purposes we only show to the user the name of the s
 The management view provides two menus:
 
 * The contents menu shows for each \(redacted\) space the mapped [resource types](resource-pools.md#resource-types) of the space to the resource pool.
-* The users menu shows for each \(redacted\) space the space administrator for reach out purposes.
+* The user's menu shows for each \(redacted\) space the space administrator for reach out purposes.
 
 ## The resource usage metrics dashboard
 
@@ -67,7 +67,7 @@ Special aggregation rules might apply to the summary and the drill-down informat
 
 ### Details
 
-The detail section is presented below the summary section and contains time series and tabular representation of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view. The tabular section data can always be exported to an `xlsx` file.
+The detail section is presented below the summary section and contains time series and tabular representations of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view. The tabular section data can always be exported to an `xlsx` file.
 
 ![The time series overview of the details section](../../.gitbook/assets/screenshot-2021-06-14-122324.png)
 
@@ -89,17 +89,17 @@ Organization managers can select either 'All spaces' or just a particular space 
 
 * Application and HPC metrics get aggregated to the organization level.
 * User reports show organization-level roles - see the [user report section](monitoring-resource-usage.md#user-reports).
-* Invitation reports show instance-level invitations aggregated to the organization level with drill-down to the space level as part of the doughnut-chart.
+* Invitation reports show instance-level invitations aggregated to the organization level with drill-down to the space level as part of the doughnut chart.
 
 Space administrators automatically select the context space - organization managers can get this view either by navigating to the space overview or by explicitly selecting the space in the organization manager dashboard.
 
 * Application and HPC metrics get aggregated to the space level.
 * User reports show space-level roles - see the [user report section](monitoring-resource-usage.md#user-reports).
-* Invitation reports show instance-level invitations aggregated to the space level with drill-down to the instance level as part of the doughnut-chart.
+* Invitation reports show instance-level invitations aggregated to the space level with drill-down to the instance level as part of the doughnut chart.
 
 #### Time window
 
-The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always at maximum of 30 days\). 
+The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always a maximum of 30 days\). 
 
 {% hint style="danger" %}
 Changing resource mappings are not immediately reflected in usage reports. The changes will appear in the next report release \(our current schedule is at least one report a day\).
@@ -126,7 +126,7 @@ We report the following information on the dashboard:
 
 Some general guidance to interpreting values:
 
-* When a time period is selected, all application metrics are aggregated over the selected time period. Runtime is summed, while for the Maximum concurrent metric, maximum is taken over the selected time period.
+* When a time period is selected, all application metrics are aggregated over the selected time period. Runtime is summed, while for the Maximum concurrent metric, the maximum is taken over the selected time period.
 * When viewing daily information \(as time series\), values presented are daily sums for Runtime, and daily maxima are presented for Maximum concurrent.
 * The summary values correspond to the sum of the time series for Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
 
@@ -183,7 +183,7 @@ Some general guidance to interpreting values:
 
 HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. HPC interactive applications are accounted for for the _starting date_ of the application run.
+1. HPC interactive applications are accounted for the _starting date_ of the application run.
 2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
 
 ## User reports

@@ -14,7 +14,7 @@ In order to create a new instance, follow our visual guide:
 Step-by-step:
 
 1. Navigate to the space where you want to create the instance.
-2. Click on the **Project Users** icon in the **Manage** section of the right hand menu panel in the overview screen.
+2. Click on the **Project Users** icon in the **Manage** section of the right-hand menu panel in the overview screen.
 3. Click on **Invite** on the top right corner of the Project Users menu and click **Add new instance** in the Invite To field.
 4. Select whether you want the instance to start from a snapshot or initialize it empty.
 5. Fill out name and details.
@@ -30,7 +30,7 @@ Step-by-step:
 
 1. Navigate to the space where the instance you want to invite to is located. In this example, the space is called _Test Research Project_.
 
-    2. From the overview screen, click on **Project Users**. For courses this option would be named **Course users.**
+    2. From the overview screen, click on **Project Users**. For courses, this option would be named **Course users.**
 
     3. Navigate to the **Instances** tab, identify the instance you want to invite to, and click on **Invite users**. In the example below, we invite users to the instance called _Example 1_.
 
