@@ -21,3 +21,11 @@ You can set the desired archival date at space creation time. The default value 
 
 The space will be archived automatically shortly after the set date.
 
+### Instance re-archival
+
+To access data in student instances of archived spaces, each student can restore past snapshots to the current state. They will be able to work in the instance as before, however after a 3 days grace period, the contents of the current state will be deleted again.
+
+{% hint style="warning" %}
+When and instance is re-archived, all files and folders in its current state are deleted permanently. Don't upload new, valuable data to archived instances, as no automatic backup will be taken before re-archival!
+{% endhint %}
+
