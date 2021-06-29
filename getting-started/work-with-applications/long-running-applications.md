@@ -37,7 +37,7 @@ For **education spaces** the application is only considered active if it is acti
 In Education-purpose spaces, the default inactivity limit is **one hour**.
 
 {% hint style="info" %}
-To keep an application active in an education space, you need to make sure that the application is in focus in your browser for more than one \(uninterrupted\) minute either every hour.
+To keep an application active in an education space, you need to make sure that the application is in focus in your browser for more than one \(uninterrupted\) minute every hour.
 {% endhint %}
 
 
