@@ -62,9 +62,16 @@ If you are visiting an instance, it is possible to view the list of applications
 
 ![](../../.gitbook/assets/screenshot-2020-10-15-180914.png)
 
-### Auto-stop for applications
+### Automatic stopping due to inactivity
 
-Nuvolos can also [automatically stop unused applications](long-running-applications.md#automatic-stopping-due-to-inactivity).
+In order to efficiently allocate unused resources, Nuvolos automatically stops inactive applications. Depending on the space type, this happens after different inactivity periods:
+
+* In Education-purpose spaces, the inactivity limit is **one hours**.
+* In Research-purpose spaces, the inactivity limit is **twenty-four hours**.
+
+{% hint style="info" %}
+If you want to keep your application active, you need to make sure that the application is in focus in your browser for more than one \(uninterrupted\) minute either every hour or every twenty-four hours depending on the space your application is running in.
+{% endhint %}
 
 
 
