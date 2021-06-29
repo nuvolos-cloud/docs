@@ -5,7 +5,7 @@ If a given computation requires a large number of CPUs or memory \(RAM\), it is 
 {% hint style="warning" %}
 Application scaling is charged against the credits of the underlying account and is directly based on the amount of application runtime. Please turn off the scaled application if you no longer require the larger resources and relaunch it without scaling when the baseline resources are sufficient \(e.g. investigating outputs\).
 
-For long running jobs you can also rely on the ****[**automated inactivity stopper**](../getting-started/work-with-applications/#automatic-stopping-due-to-inactivity) to handle application stops. The automated inactivity stopper will shut down the application if it is not using at least half of a single vCPU for computation and it is not opened in Nuvolos for at least 6 hours.
+For long running jobs you can also rely on the ****[**automated inactivity stopper**](../getting-started/work-with-applications/long-running-applications.md) to handle application stops. The automated inactivity stopper will shut down the application if it is not using at least half of a single vCPU for computation and it is not opened in Nuvolos for at least 6 hours.
 {% endhint %}
 
 ### How to scale your app

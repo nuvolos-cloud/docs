@@ -50,6 +50,7 @@
     * [Create an application](getting-started/work-with-applications/create-an-application.md)
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
+    * [Long-running applications](getting-started/work-with-applications/long-running-applications.md)
     * [VS Code](getting-started/work-with-applications/vs-code.md)
     * [Stata](getting-started/work-with-applications/stata.md)
   * [Advanced workflows](getting-started/advanced-workflows/README.md)
