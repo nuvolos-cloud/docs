@@ -125,11 +125,6 @@
     * [I can't delete a file](troubleshooting/authorization-issues/i-cant-delete-a-file.md)
     * [I can't revoke a user role](troubleshooting/authorization-issues/i-cant-remove-a-user.md)
   * [Accidental content change](troubleshooting/accidental-content-change/README.md)
-    * [Accidental data loss](troubleshooting/accidental-content-change/accidental-data-loss/README.md)
-      * [Deleted a space](troubleshooting/accidental-content-change/accidental-data-loss/deleted-a-space-by-mistake.md)
-      * [Deleted an instance](troubleshooting/accidental-content-change/accidental-data-loss/deleted-an-instance-by-mistake.md)
-      * [Deleted a snapshot](troubleshooting/accidental-content-change/accidental-data-loss/deleted-a-snapshot-by-mistake.md)
-      * [Deleted an application](troubleshooting/accidental-content-change/accidental-data-loss/deleted-an-application-by-mistake.md)
     * [Restored a snapshot by mistake](troubleshooting/accidental-content-change/restored-a-snapshot-by-mistake.md)
     * [Distributed a snapshot by mistake](troubleshooting/accidental-content-change/distributed-a-snapshot-by-mistake.md)
 
