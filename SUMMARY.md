@@ -119,6 +119,7 @@
     * [I can't create a snapshot](troubleshooting/authorization-issues/cannot-create-a-snapshot.md)
     * [I can't delete a snapshot](troubleshooting/authorization-issues/cannot-delete-a-snapshot.md)
     * [I can't distribute a snapshot](troubleshooting/authorization-issues/i-cant-distribute-a-snapshot.md)
+    * [The invitation link to my class is not working](troubleshooting/authorization-issues/the-invitation-link-to-my-class-is-not-working.md)
     * [I can't invite instance users](troubleshooting/authorization-issues/i-cant-invite-instance-users.md)
     * [I can't invite space administrators](troubleshooting/authorization-issues/i-cant-invite-space-administrators.md)
     * [I can't see distributed content in my instance](troubleshooting/authorization-issues/cannot-see-distributed-content-in-my-instance.md)
