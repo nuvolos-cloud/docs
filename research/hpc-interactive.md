@@ -32,5 +32,23 @@ If running notebooks via Jupyter, we recommend submitting the notebooks for comp
 papermill --stdout-file /files/my_job.out --stderr-file /files/my_job.err NOTEBOOK_PATH [OUTPUT_PATH]
 ```
 
+#### MATLAB
 
+MATLAB constructs like [parfor ](https://www.mathworks.com/help/parallel-computing/parfor.html)can be leveraged on scaled applications using local [parallel pools](https://www.mathworks.com/help/parallel-computing/parpool.html). MATLAB detects the number of available cores only once on the first startup, so it's best to start the parallel pool manually for your computations with the appropriate number of workers and not let MATLAB figure it out automatically. It is recommended to set one less worker as available CPU, because the MATLAB master process also requires CPU power to orchestrate the pool.  
+  
+Example: if you've scaled up your application to 16 vCPU, then you should start a pool with 15 workers:
+
+```text
+pp = parpool('local', 15);
+```
+
+The pool will be deleted after 30 minutes of idle time or with an application restart. To delete it manually, use
+
+```text
+pp.delete()
+```
+
+
+
+ 
 
