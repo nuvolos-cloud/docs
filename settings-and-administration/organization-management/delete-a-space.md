@@ -10,8 +10,6 @@ Only space administrators have the ability to delete a space. Deleting a space w
 
 1- Open the space by selecting it from the toolbar breadcrumbs or from the dashboard. For example, let's say we want to delete a space called "Demo Space". Clicking on 'Demo Space' vwill take us to the overview view.
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm%20%281%29.png)
-
   
 2- From the left sidebar, hover on the settings icon and select Delete Space
 

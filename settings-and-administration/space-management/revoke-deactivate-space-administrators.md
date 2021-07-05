@@ -8,8 +8,6 @@ Only a space administrator role or higher can revoke other space administrators.
 
 1. Open a space. In the following example, we open the course called "Demo Space".
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
-
     2. From the overview screen, click on "Course Users".
 
 ![](../../.gitbook/assets/screen-shot-2020-11-17-at-10.40.13-am.png)
