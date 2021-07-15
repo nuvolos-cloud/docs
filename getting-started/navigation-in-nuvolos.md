@@ -6,8 +6,6 @@ description: How to find your way around Nuvolos
 
 Navigation in Nuvolos is closely linked to the [structure of Nuvolos](../our-features/data-organization/). The user can understand their position and navigate using the following highlighted parts of the user interface.
 
-![](../.gitbook/assets/screen-shot-2020-03-16-at-1.50.05-pm-2.png)
-
 1. The **Nuvolos** logo
 2. The **breadcrumbs**
 3. The **navigational sidebar**
@@ -19,8 +17,6 @@ The Nuvolos logo will always take the user to the _Dashboard._
 ## The breadcrumb
 
 The breadcrumb is a sequence of selectable drop-down lists that allows the user to choose the organization \(level 1\), space \(level 2\), instance \(level 3\), and state \(level 4\). For example, if the user is looking at a state overview, the breadcrumb will look like the following:
-
-![](../.gitbook/assets/screen-shot-2020-03-16-at-1.58.17-pm.png)
 
 In the above breadcrumb, the following information is available:
 
@@ -48,8 +44,6 @@ There are two navigational sidebars in Nuvolos: the dashboard sidebar and the st
 
 From the dashboard, the sidebar will look similar to this:
 
-![The Dashboard sidebar](../.gitbook/assets/screen-shot-2020-03-16-at-2.33.29-pm.png)
-
 Visibly, the Dashboard icon is highlighted, making clear that the user is currently viewing the Dashboard of Nuvolos. Clicking on any of the other icons, either a list of spaces will be visible, or the list of Organization Users \(granted that the viewer has an appropriate role to view the list of the organization users\).
 
 ### State-level sidebar
@@ -57,8 +51,6 @@ Visibly, the Dashboard icon is highlighted, making clear that the user is curren
 The second sidebar is used in state-level work, or when the user is doing work in an application.
 
 The layout is the following:
-
-![](../.gitbook/assets/screen-shot-2020-03-16-at-4.06.37-pm.png)
 
 From top to bottom the icons will take the user to the following views \(also visible by hovering over an icon\):
 
