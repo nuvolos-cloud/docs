@@ -10,8 +10,6 @@ Only space administrators are allowed to create new instances in their space.
 
 1. Open a class. In the following example, we open the class called _Demo Space_.
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
-
     2. From the overview screen, click on the "Course Users" tile
 
 ![](../../.gitbook/assets/screen-shot-2020-05-22-at-1.35.55-pm.png)
@@ -37,8 +35,6 @@ If you haven't distributed any material to all students, you can still continue 
 ## 2- Create a single instance.
 
 Open a class or research project. In the following example, we open the class called Demo Space and invite students to this space.
-
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.02.10-pm.png)
 
  2. From the overview screen, click on the "Course Users" tile \("Project Users" for research projects\)
 

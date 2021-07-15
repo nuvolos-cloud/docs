@@ -74,8 +74,6 @@ pip install nuvolos
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
-![](../../../.gitbook/assets/screen-shot-2020-03-17-at-1.22.49-pm%20%281%29.png)
-
 Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the get\_engine\(\) function:
 
 ```python

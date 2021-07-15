@@ -17,15 +17,9 @@ Assume that you want to distribute a file and an application in the following ex
 
 1. Select the file you want to stage and either click **STAGE** or click **STAGE SELECTED** on the following screen:
 
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.39.46-pm%20%281%29.png)
-
      2. Select the application you want to stage by navigating to the application list and staging the appropriate one:
 
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.39.53-pm.png)
-
      3. Navigate to the stage area to begin distribution using the share icon on the sidebar. Observe your current set of staged objects. If everything checks out, click **CONTINUE**.  In our particular example, we have one file and one application \(as selected previously\) in the stage. Using the red cross button, items can be removed from the stage.
-
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.32.09-pm.png)
 
      4. The next step selects the target for distribution. It is possible to remain in the current context or to distribute into some other space or even organization. In the current example, we select a space in the same organization. You can also choose whether to share with all instance or just one. Once you are done finding the target, click **CONTINUE**.
 
@@ -39,11 +33,7 @@ Please note that whenever you distribute, a snapshot gets created in the target,
 
  Once done, click **CONTINUE.**
 
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.31.53-pm.png)
-
 6. Finally, you can send a message along with the distribution to notify the users in the targets about the change being made. In this particular case, we decided _not_ to notify users by emptying the checkbox.
-
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-4.24.26-pm.png)
 
 Once you are done, click **SHARE OBJECTS** and you are done.
 
