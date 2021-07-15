@@ -13,11 +13,7 @@
 
 2. From the sidebar, select Instance Users
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.46.22-pm-2.png)
-
 3. Identify the user you want to remove and click on the red cancel button under Revoke Access.
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.46.31-pm-2.png)
 
 4. Confirm using the REVOKE button.
 
@@ -33,11 +29,7 @@
 
 2. From the sidebar, select Space Users.
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.53.52-pm-2.png)
-
 3. Identify the user you want to remove and click on the red cancel button under Revoke Access.
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.54.02-pm-2.png)
 
 4. Confirm using the REVOKE button.
 
@@ -53,11 +45,7 @@
 
 2. From the sidebar, select Organization Users.
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.39.31-pm-2.png)
-
 3. Identify the user you want to remove and click on the red cancel button under Revoke Access.
-
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-1.43.05-pm-2.png)
 
 4. Confirm using the REVOKE button.
 

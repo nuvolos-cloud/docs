@@ -6,8 +6,6 @@ Adding data to your working instance in Nuvolos is a special case of [distributi
 
 In the following example, we assume the working instance to be in the **Empty Org** organization and the **Documentation Class** space. This is the target of the distribution. The source is one of the two datasets currently available for the organization:
 
-![Datasets are highlighted separetly from other types of spaces](../../.gitbook/assets/screen-shot-2019-12-10-at-6.54.06.png)
-
 ## Choose what you need and stage
 
 We navigate into the dataset named **Test dataset** and to the Tables view of the **Current state**.

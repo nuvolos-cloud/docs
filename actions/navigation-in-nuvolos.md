@@ -21,8 +21,6 @@ The nuvolos logo will always take you to your _Dashboard._
 
 The breadcrumb is a sequence of hyperlinks to levels above the current level you are staying in. For example, if you are looking at a state overview, the breadcrumb will look like the following:
 
-![](../.gitbook/assets/breadcrumb.PNG)
-
 In the above breadcrumb, you can find the following information:
 
 * You are currently in the "Demonstration space for documentation" space of Nuvolos.
@@ -42,13 +40,9 @@ In the expanded form, the sidebar varies according to context.
 
 On the top level, the sidebar will look similar to this:
 
-![The top level expanded sidebar](../.gitbook/assets/sidebar_dashboard.PNG)
-
 Visibly, the Dashboard line is highlighted, making clear that the user is currently viewing the Dashboard of Nuvolos. Clicking on any of the lines, either a list of spaces will be visible, or the list of Organization Users \(granted that the viewer has access\).
 
 On the space level, the sidebar will be different:
-
-![Space level expanded sidebar](../.gitbook/assets/sidebar_space.PNG)
 
 Visibly, currently the 'Instances' element is selected, pointing to the fact that the user is currently viewing the list of instances in the space. Switching to 'Space Users' will show the list of users that have some specific role in the space being selected.
 
@@ -57,8 +51,6 @@ Visibly, currently the 'Instances' element is selected, pointing to the fact tha
 The compact sidebar is used in state level work, or when the user is doing work in an application.
 
 It looks similar to this:
-
-![](../.gitbook/assets/sidebar_compact.PNG)
 
 From top to bottom the icons will transport the user to the following views \(also visible by hovering over an icon\):
 

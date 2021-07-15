@@ -10,8 +10,6 @@ In this tutorial, you will learn how to set up a research project with multiple 
 
 To start a research project, you have to create a space for it. Before creating a space, you have to select the organization where you want to host the research project. A default organization is selected automatically at login but you can select another organization from the toolbar at the top.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.24.12-pm-2%20%281%29.png)
-
 Once you have chosen the organization, create a space for your research project following the steps described [here](../../actions/organization-management/create-a-space.md).
 
 ## Step 2: Upload files to your instance

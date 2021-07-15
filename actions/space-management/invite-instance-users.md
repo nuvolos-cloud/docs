@@ -12,8 +12,6 @@
 4. Provide the emails of the users you want to invite to the instance. 
 5. Click on invite.
 
-![](../../.gitbook/assets/screen-shot-2019-09-26-at-9.44.41-am.png)
-
 
 
 #### If you are encountering a problem inviting instance users, refer to the troubleshooting guide here. 

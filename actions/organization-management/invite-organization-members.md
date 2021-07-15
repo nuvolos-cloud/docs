@@ -12,5 +12,3 @@
 4. Provide the emails of the users you want to invite to the organization. 
 5. Click on **Invite**.
 
-![](../../.gitbook/assets/screen-shot-2019-09-26-at-10.34.54-am.png)
-

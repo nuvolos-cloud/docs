@@ -10,8 +10,6 @@ Select from the Dashboard the organization that contains the space and click on 
 
 #### 2. Search for your space.
 
-![](../../.gitbook/assets/screen-shot-2019-09-25-at-3.22.16-pm-2.png)
-
 
 
 **If you are encountering a problem finding a space, refer to the troubleshooting guide** [**here**](../../troubleshooting/authorization-issues/cannot-see-a-space.md)**.**

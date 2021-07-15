@@ -10,7 +10,3 @@ To work with the newly distributed files using one of your applications, simply 
 
 If none of your applications are currently running, you will need to first start the application with the START button and then open it with the  \[FILE NAME\] green button under Open Application. If instead your application is already running, then you can simply use the \[FILE NAME\] button.
 
-![Application list view with no running applications](../../.gitbook/assets/screen-shot-2019-09-23-at-3.27.10-pm.png)
-
-![Application list view with one Python application running](../../.gitbook/assets/screen-shot-2019-09-23-at-3.26.07-pm.png)
-

@@ -12,13 +12,9 @@ Access to a class is by invitation only. The class instructor invites prospectiv
 
 Several options are currently available to accept the invitation. If you are a member of a Swiss academic institution \(e.g. University of Lugano\), choose the option “**I have a Swiss University account**” and sign in with your institution credentials. Contingent on successful authentication, the invitation is confirmed, and sign-in to class happens automatically.  
 
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-3.54.27-pm-2.png)
-
 ## 2. Start application
 
 The Nuvolos Dashboard home page provides useful at-a-glance information about the status of your applications and your membership in [organizations](http:///@alphacruncher-1/s/datahub/~/drafts/-LpMzyPUrAQ03FcWCTT_/primary/data-organization/organizations). Use the links on the right side of each application to manage it, e.g. to  **START** or **STOP** it. The screenshot below exemplifies an RStudio application deployed and ready to start.
-
-![](../../.gitbook/assets/screen-shot-2019-09-20-at-4.11.31-pm-2.png)
 
 ### ![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LihBjXi93rsUENhHsab%2F-Lp3NGFCrRoUpqQTtdaw%2F-Lp3OSAbBBFjJ-9cs0Dz%2FInfo_Simple.svg.png?alt=media&token=b86c3ad7-3529-462f-b35e-3f150fc95b01)Concurrent instances of applications are currently not supported in different browser tabs / windows.
 

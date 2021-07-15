@@ -10,15 +10,9 @@ Before uploading new files, make sure the right privileges are granted: only _in
 
 1- Open a class, research project, or a dataset from the dashboard. This can be done by clicking on the name of the space.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.39.31-pm.png)
-
 2- Go to the files view by clicking on the BROWSE FILES button from the main view, or via the file icon from the left sidebar.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.41.26-pm.png)
-
 3- Click on the **UPLOAD FILES** button, and an upload box will appear.
-
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.44.11-pm.png)
 
 ![](../../.gitbook/assets/screen-shot-2020-02-12-at-3.44.15-pm.png)
 
