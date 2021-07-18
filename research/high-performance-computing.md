@@ -560,7 +560,7 @@ R packages on Nuvolos are stored in a standard library structure. In order to re
 Alternatively, if the `nuvolos.tools` library is loaded, then you can use the `install.packages` command to install packages both inside Nuvolos and the HPC cluster.
 
 {% hint style="warning" %}
-The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case might cause very infrequent issues, currently this cannot be ameliorated. If this is an issue, then please try our [interactive HPC service](hpc-interactive.md).
+The HPC cluster and the Nuvolos environment depend on different compilers and thus exact package versions might not represent exactly the same binaries. Although an edge case might cause very infrequent issues, currently this cannot be ameliorated. If this is an issue, then please try our [interactive HPC service](hpc-interactive/).
 {% endhint %}
 
 ### Multi-node jobs
