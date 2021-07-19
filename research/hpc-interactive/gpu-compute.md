@@ -33,7 +33,7 @@ pip install gast==0.3.3
 
 ## Rstudio
 
-With CUDA enabled Rstudio images you can run GPU computations on GPU accelerated nodes. These images have the CUDA runtime / toolkit installed as well.
+With Machine Learning \(CUDA enabled\) Rstudio images you can run GPU computations on GPU accelerated nodes. These images have the CUDA runtime / toolkit installed as well.
 
 ### XGBoost
 
