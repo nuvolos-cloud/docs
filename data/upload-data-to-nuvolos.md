@@ -14,13 +14,13 @@ If none of the above benefits are essential, then storing data in files is often
 
 ### \*\*\*\*
 
-### 1. Uploading data programmatically
+## 1. Uploading data programmatically
 
 {% hint style="info" %}
 The examples below assume that the user is uploading tables to Nuvolos using Nuvolos Applications. Make sure that the table file has been uploaded to Nuvolos. Check the documentation [here](../getting-started/work-with-files/) for information on file upload.
 {% endhint %}
 
-#### 1. Python
+### 1. Python
 
 **Instead of Pandas's `df.to_sql`, use `nuvolos.to_sql`** , which has a similar signature but uses highly efficient bulk data loading. `df.to_sql` is not supported in Python applications running on Nuvolos. 
 
@@ -71,7 +71,7 @@ Off-Nuvolos, on your local PC:
 pip install --upgrade nuvolos
 ```
 
-#### 2. R
+### 2. R
 
 ```r
 df <- read.csv('path_to_data') #read your data
@@ -105,7 +105,7 @@ remotes::install_github("nuvolos-cloud/r-connector")
 nuvolos::to_sql(df=df, name="table_name", dbname="dbname", schemaname="schemaname", if_exists='replace', index=FALSE)
 ```
 
-#### 3. Matlab
+### 3. Matlab
 
 ```text
 df = readtable('path_to_data')
@@ -113,11 +113,11 @@ con = get_connection()
 sqlwrite(con,'TABLE_NAME',df)
 ```
 
-### 2. Using Excel
+## 2. Using Excel
 
 To upload data to Nuvolos using Excel, please refer to our instructions on [accessing and uploading data with Excel.](https://docs.nuvolos.cloud/data/access-data-from-applications#connecting-with-excel)
 
-### 3. Support request
+## 3. Support request
 
 If you have a specific data onboarding task that you want to discuss with us, you can open a support request by sending an email to **support@nuvolos.cloud.**
 
