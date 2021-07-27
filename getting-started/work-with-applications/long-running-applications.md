@@ -14,7 +14,7 @@ Nuvolos aims to provide the maximal resources for applications that require it, 
 We achieve the above through our automatic inactivity stopper as described below.
 
 {% hint style="success" %}
-For certain applications such as RStudio, long-running computations are best done using specific features off the app \(e.g. RStudio jobs\). Please take a look at our [recommendations](../../research/hpc-interactive/#application-specific-notes).
+For certain applications such as RStudio, long-running computations are best done using specific features off the app \(e.g. RStudio jobs\). Please take a look at our [recommendations](../../research/hpc-interactive.md#application-specific-notes).
 {% endhint %}
 
 ### Automatic stopping due to inactivity

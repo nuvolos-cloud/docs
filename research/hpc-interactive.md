@@ -1,4 +1,4 @@
-# High-performance computing \(interactive\)
+# High-performance computing
 
 If a given computation requires a large number of CPUs or memory \(RAM\), it is possible to **scale** the application to a **dedicated high-performance compute node**. In this case the same application will launch with the exact same interface, however the available resources can be significantly larger \(e.g. up to 120 vCPU and 456GB memory\) or can include additional devices \(e.g. a GPU\).
 

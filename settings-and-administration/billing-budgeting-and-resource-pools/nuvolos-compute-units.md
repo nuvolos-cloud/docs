@@ -6,7 +6,7 @@ description: Nuvolos Compute Units explained
 
 ## Definition
 
-Nuvolos Compute Unit \(NCU\) is the computational unit for regular \(non-[HPC](../../research/hpc-interactive/)\) applications run by users.
+Nuvolos Compute Unit \(NCU\) is the computational unit for regular \(non-[HPC](../../research/hpc-interactive.md)\) applications run by users.
 
 In terms of computational resource, an NCU consists of 1 virtual CPU \(vCPU\) and 4 GBs of RAM and adequate temporary storage to run a particular application.
 
