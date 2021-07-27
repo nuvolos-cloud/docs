@@ -79,10 +79,29 @@ con <- nuvolos::get_connection()
 DBI::dbWriteTable(con, name="table_name", value=df)
 ```
 
+{% hint style="info" %}
+For large datasets we do not recommend the `dbWriteTable` method from the DBI package, as it can be quite slow, rather the `to_sql` function below should be used
+{% endhint %}
+
+```text
+# Update the Nuvolos connector to the latest version
+options(repos = "https://cran.rstudio.com")
+install.packages("remotes")
+remotes::install_github("nuvolos-cloud/r-connector")
+
+nuvolos::to_sql(df=df, name="table_name", if_exists='replace', index=FALSE)
+```
+
 If you wish to upload data to Nuvolos from your own PC, please follow the [instructions on how to obtain connection tokens](https://docs.nuvolos.cloud/data/access-data-from-applications#connecting-with-r) and the database name and schema name to use:
 
 ```python
 df <- read.csv('path_to_data') #read your data
+
+# Update the Nuvolos connector to the latest version
+options(repos = "https://cran.rstudio.com")
+install.packages("remotes")
+remotes::install_github("nuvolos-cloud/r-connector")
+
 nuvolos::to_sql(df=df, name="table_name", dbname="dbname", schemaname="schemaname", if_exists='replace', index=FALSE)
 ```
 
