@@ -73,21 +73,28 @@ pip install --upgrade nuvolos
 
 ### 2. R
 
+{% hint style="info" %}
+We provide two solutions to load data into Nuvolos. The standard solution relies on the `DBI::dbWriteTable` call, which is sufficient for smaller tables. For larger tables, we suggest using an alternative method, as it provides significantly better performance and other convenience features.
+{% endhint %}
+
+#### Loading smaller tables:
+
 ```r
 df <- read.csv('path_to_data') #read your data
 con <- nuvolos::get_connection()
 DBI::dbWriteTable(con, name="table_name", value=df)
 ```
 
-{% hint style="info" %}
-For large datasets we do not recommend the `dbWriteTable` method from the DBI package, as it can be quite slow, rather the `to_sql` function below should be used
-{% endhint %}
+#### Loading large tables:
 
-```text
+```r
 # Update the Nuvolos connector to the latest version
 options(repos = "https://cran.rstudio.com")
 install.packages("remotes")
 remotes::install_github("nuvolos-cloud/r-connector")
+reticulate::install_miniconda()
+
+# You need to restart your R session if miniconda was installed on line 5 and not before
 
 nuvolos::to_sql(df=df, name="table_name", if_exists='replace', index=FALSE)
 ```
@@ -101,6 +108,9 @@ df <- read.csv('path_to_data') #read your data
 options(repos = "https://cran.rstudio.com")
 install.packages("remotes")
 remotes::install_github("nuvolos-cloud/r-connector")
+reticulate::install_miniconda()
+
+# You need to restart your R session if miniconda was installed on line 7 and not before
 
 nuvolos::to_sql(df=df, name="table_name", dbname="dbname", schemaname="schemaname", if_exists='replace', index=FALSE)
 ```
