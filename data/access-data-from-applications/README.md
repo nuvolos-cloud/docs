@@ -472,7 +472,16 @@ CREATE OR REPLACE FILE FORMAT PARQUET_FORMAT TYPE = PARQUET COMPRESSION = SNAPPY
 CREATE OR REPLACE STAGE PARQUET_STAGE FILE_FORMAT=PARQUET_FORMAT;
 
 COPY INTO @PARQUET_STAGE/orders.parquet
-FROM (SELECT * FROM ORDERS)
+FROM (SELECT 
+    O_ORDERKEY, 
+    O_CUSTKEY, 
+    O_TOTALPRICE, 
+    O_ORDERDATE, 
+    O_ORDERPRIORITY, 
+    O_CLERK, 
+    O_SHIPPRIORITY, 
+    O_COMMENT 
+FROM ORDERS)
 HEADER = TRUE
 OVERWRITE = TRUE
 SINGLE = TRUE
@@ -492,7 +501,16 @@ CREATE OR REPLACE FILE FORMAT PARQUET_FORMAT TYPE = PARQUET COMPRESSION = SNAPPY
 CREATE OR REPLACE STAGE PARQUET_STAGE FILE_FORMAT=PARQUET_FORMAT;
 
 COPY INTO @PARQUET_STAGE/orders_
-FROM (SELECT * FROM ORDERS)
+FROM (SELECT 
+    O_ORDERKEY, 
+    O_CUSTKEY, 
+    O_TOTALPRICE, 
+    O_ORDERDATE, 
+    O_ORDERPRIORITY, 
+    O_CLERK, 
+    O_SHIPPRIORITY, 
+    O_COMMENT 
+FROM ORDERS)
 HEADER = TRUE
 OVERWRITE = TRUE
 SINGLE = FALSE
@@ -507,7 +525,9 @@ DROP FILE FORMAT PARQUET_FORMAT;
 
 ### Matlab example
 
-You can download data as Parquet files and read them with Matlab as the following example demonstrates, which retrieves and loads the ORDERS table containing 15 million records:
+You can download data as Parquet files and read them with Matlab as the following example demonstrates, which retrieves and loads the ORDERS table containing 15 million records.
+
+Please note that Matlab requires integer columns to be explicitly cast to an integer field in order to have the logical data type in the Parquet file be INT. Each field in a Parquet file has a physical type \(INT64, DOUBLE, BYTE, etc\) and a logical type telling the processing application  how to interpret the data saved in the field. Please refer to the [Matlab documentation on the supported Parquet logical types](https://www.mathworks.com/help/matlab/import_export/datatype-mappings-matlab-parquet.html).
 
 ```text
 conn = get_connection();
@@ -515,7 +535,16 @@ execute(conn, 'CREATE OR REPLACE FILE FORMAT PARQUET_FORMAT TYPE = PARQUET COMPR
 execute(conn, 'CREATE OR REPLACE STAGE PARQUET_STAGE FILE_FORMAT=PARQUET_FORMAT;');
 execute(conn, sprintf([ ... 
 'COPY INTO @PARQUET_STAGE/orders.parquet '...
-'FROM (SELECT * FROM ORDERS) '...
+'FROM FROM (SELECT  '...
+'    O_ORDERKEY::INT,  '...
+'    O_CUSTKEY::INT,  '...
+'    O_TOTALPRICE::DOUBLE,  '... 
+'    O_ORDERDATE,  '...
+'    O_ORDERPRIORITY,  '...
+'    O_CLERK,  '...
+'    O_SHIPPRIORITY::INT,  '...
+'    O_COMMENT  '...
+FROM ORDERS) '...
 'HEADER = TRUE '...
 'OVERWRITE = TRUE '...
 'SINGLE = TRUE '...
