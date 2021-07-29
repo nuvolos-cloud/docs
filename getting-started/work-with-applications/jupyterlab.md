@@ -8,6 +8,8 @@ description: Tips for using JupyterLab on Nuvolos
 
 In some cases it might be useful to have multiple conda environments inside a single JupyterLab application.
 
+### Python
+
 In this case we recommend to create a new conda environment and install a launcher **into the environment** as following:
 
 ```text
