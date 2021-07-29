@@ -6,7 +6,7 @@ description: Tips for using JupyterLab on Nuvolos
 
 ## Adding a new launcher
 
-In some cases it might be useful to have multiple conda environments inside a single JupyterLab application. 
+In some cases it might be useful to have multiple conda environments inside a single JupyterLab application and be able to launch notebooks from the JupyterLab launcher with kernels that run in these environments.
 
 {% hint style="info" %}
 We recommend that the kernel specification associated with the new conda environments created is always installed into the base conda environment \(and not user / system prefix\) to make sure that the kernel/launcher will function well after distributing an application. 
