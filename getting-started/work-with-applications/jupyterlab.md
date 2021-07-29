@@ -12,6 +12,7 @@ In this case we recommend to create a new conda environment and install a launch
 
 ```text
 conda create env --name my_new_env
+conda activate my_new_env
 conda install ipykernel
 ipython kernel install --prefix=/opt/conda --name "My New Env"
 ```
