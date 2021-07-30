@@ -10,7 +10,9 @@ If the package cannot be installed via self-service, then please contact us at [
 
 Yes, git is supported via applications. In any application you can start, **git and git-lfs is available on the command line** of your application.
 
+Each user has their own ssh key which they can use to authenticate with git repositories. Just add your [public key](https://az.nuvolos.cloud/user/settings/ssh) to your git provider.
+
 ## Researcher: Is Dropbox supported?
 
-Currently no. We are working on Dropbox integration and we expect this feature to be implemented by the end of 2020.
+Yes, please see our [Dropbox integration guide](../getting-started/work-with-files/dropbox-synchronization.md).
 
