@@ -29,6 +29,7 @@
   * [Upload table data to Nuvolos](data/upload-data-to-nuvolos.md)
   * [Worked examples](data/work-with-specific-datasets/README.md)
     * [Complete research workflow](data/work-with-specific-datasets/complete-research-workflow.md)
+    * [Accessing data as data.frames in R](data/work-with-specific-datasets/accessing-data-as-data.frames-in-r.md)
     * [CRSP and Compustat](data/work-with-specific-datasets/crsp-and-compustat.md)
 * [User Guides](getting-started/README.md)
   * [Navigate in Nuvolos](getting-started/navigation-in-nuvolos.md)
