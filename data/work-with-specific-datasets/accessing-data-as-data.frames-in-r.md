@@ -12,7 +12,7 @@ As an example, the following code queries the `test` database table, selects two
 ```r
 con <- nuvolos::get_connection()
 data <- dplyr::tbl(con, "test")
-data %>% select(V1, V2) %>% filter(V2 > 0)
+data %>% dplyr::select(V1, V2) %>% dplyr::filter(V2 > 0)
 ```
 
 The equivalent SQL statement would be:
