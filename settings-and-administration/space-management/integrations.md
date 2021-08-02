@@ -6,7 +6,9 @@ For interactive or batch high-performance computing support, the space needs to 
 
 This can be enabled under the Project Settings &gt; Project Configuration menu on the sidebar:
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![The project configuration menu](../../.gitbook/assets/screenshot-2021-08-02-221242.png)
 
+Once in the configuration menu, toggle the enable/disable button to enable scaling. Please note that applications need to be restarted after clicking the enable button for the scaling options to become available.
 
+![](../../.gitbook/assets/screenshot-2021-08-02-221527.png)
 
