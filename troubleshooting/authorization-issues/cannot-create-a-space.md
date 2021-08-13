@@ -2,6 +2,10 @@
 
 #### If you're having problems creating a new space, here are some issues you might want to examine:
 
+* **The space name is already taken**
+
+Space names have to be unique in an organization, to avoid confusion. Note that it is possible a space with a given name already exists in an organization, but you don't see it because case it's private and you were not given access to it. Please use a different name to proceed.
+
 * **You don't have the right permission to create a space.**
 
 To be able to create a space in an organization you need to be an **organization manager** or **faculty member**. If you don't have any of these roles, then contact the organization manager to send you an invitation for a faculty or organization manager role, or ask the organization manager to set up a space for you.
