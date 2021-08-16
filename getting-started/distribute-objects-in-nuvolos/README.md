@@ -37,6 +37,16 @@ Once you are done, click **SHARE OBJECTS** and you are done.
 
 ![](../../.gitbook/assets/distribute_selection_ed.gif)
 
+## Recall files
+
+It occurs time to time that a file or folder is accidentally distributed to students that should not have been sent to them. **Space administrators** have the option to remedy the situation by deleting all copies of a distributed file or folder from all other instances using the **Delete for others** option:
+
+![](../../.gitbook/assets/image%20%2812%29.png)
+
+Note that you must be viewing the **Master** instance in the space to have the special file deletion options displayed. In all other instances, only simple deletion is allowed.
+
+The **Delete for all** option deletes the file or folder from all instances, including Master.
+
 ## Distribute an entire snapshot
 
 To distribute all the contents of a snapshot:
