@@ -60,7 +60,7 @@ On the dashboard, the three most recently used applications are always listed. H
 
 If you are visiting an instance, it is possible to view the list of applications on the Applications view \(see previous sections\). Here, it is also possible to a running app by opening the actions menu:
 
-![](../../.gitbook/assets/screenshot-2020-10-15-180914.png)
+![](../../.gitbook/assets/stop_app_menu_ed.gif)
 
 ### Auto-stop for applications
 
