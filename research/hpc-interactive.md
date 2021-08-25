@@ -12,7 +12,7 @@ For long-running jobs, you can also rely on the ****[**automated inactivity stop
 
 Scaling can be done inside Nuvolos by hovering on the application icon once it has been launched and clicking the 'Scale' button. High-performance computing integration needs to be enabled for this to be possible, please reach out to support using Intercom or by e-mail if you require assistance with this.
 
-![Scaling an application](../.gitbook/assets/scaling_ed.gif)
+![](../.gitbook/assets/scale_app_ed.gif)
 
 ### Application-specific notes
 
