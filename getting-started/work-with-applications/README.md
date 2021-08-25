@@ -20,7 +20,7 @@ In the [workflow guide](../../research/), we previously created an RStudio appli
 2. Click on the Applications tile or sidebar menu item.
 3. Click "ADD NEW APPLICATION" and choose the appropriate type.
 
-![Add a new application](../../.gitbook/assets/create_app_research_ed.gif)
+![](../../.gitbook/assets/create_app_ed.gif)
 
 ## Run an application
 
