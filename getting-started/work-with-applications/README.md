@@ -39,7 +39,7 @@ You can navigate to the application view of your instance and find the list of a
 
 We present a hybrid of the two approaches by showing how to find the recent applications' instance and running it from there:
 
-![Starting an application by navigating to the instance](../../.gitbook/assets/start_app_dashboard_ed.gif)
+![Starting an app on Nuvolos](../../.gitbook/assets/run_app_ed.gif)
 
 ## Stop an application
 
