@@ -5,7 +5,7 @@ Education spaces typically have a well-defined lifecycle: first the space is pre
 ### What space archival means:
 
 1. Application and personal data in student instances will be backed up to cold storage to free up storage space for use in other spaces.
-2. Application and personal data can be restored easily from snapshots in archived spaces, after which the data can be downloaded or the application\(s\) can be started again.
+2. Application and personal data can be [restored easily from snapshots](../../getting-started/working-with-snapshots/restore-a-snapshot.md#restore-a-snapshot) in archived spaces, after which the data can be downloaded or the application\(s\) can be started again.
 3. After a few days grace period, restored instances in archived spaces are re-archived. To access the data or application again, the appropriate snapshot must be restored again. This can be repeated as many times as necessary.
 
 ### Notes for space archival:
