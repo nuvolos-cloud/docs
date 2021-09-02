@@ -2,7 +2,7 @@
 
 Resource pools are the cost center units of Nuvolos. Resource pools are associated with the [tree structure](../../our-features/data-organization/) of Nuvolos. Organizations and spaces can be completely or partially mapped to Nuvolos via the management view of the Nuvolos resource control center. 
 
-{% hint style="info" %}
+{% hint style="success" %}
 Resource pools hold a budget against which resources mapped to the resource pool account their usage.
 {% endhint %}
 
