@@ -134,7 +134,7 @@ Some general guidance to interpreting values:
 
 Application reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. Application reports on a given date report about applications that have concluded \(killed, stopped, timed out\) until the reporting timestamp. 
+1. Application reports on a given date report about applications that are currently running or have concluded \(killed, stopped, timed out\) until the reporting timestamp. 
 2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
    1. For example, for the report on 2020-12-24, we guarantee that the report will contain data going back to 2020-10-25 and until 2020-12-24 02:00.
 
@@ -161,7 +161,7 @@ Some general guidance to interpreting values:
 
 HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. HPC reports on a given date report about HPC that have concluded \(killed, canceled, completed, failed\) until the reporting time. 
+1. HPC reports on a given date report about HPC that are running or have concluded \(killed, canceled, completed, failed\) until the reporting time. 
 2. HPC jobs are accounted for in totality on the day of conclusion \(job state is killed, canceled, completed, failed, _not_ running, or pending\).
 3. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
 
