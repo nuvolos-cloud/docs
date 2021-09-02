@@ -18,7 +18,7 @@ Resource monitoring is possible to a different extent for all users. The view pr
 
 The resource and usage dashboard is available in the user menu for all users:
 
-![Find the resource and usage metrics in the personal menu](../../.gitbook/assets/screenshot-2021-06-11-150150.png)
+![](../../.gitbook/assets/screenshot-2021-09-02-100344.png)
 
 ## Structure
 
