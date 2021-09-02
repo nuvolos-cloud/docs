@@ -79,6 +79,6 @@ In order to change the space mapping, navigate to **Project Configuration** from
 ![](../../.gitbook/assets/map_rp_later_ed.gif)
 
 {% hint style="warning" %}
-Please note that previous usage will not be re-mapped by changing the resource pool of a space. In order to reconcile previous usage, please reach out to our support.
+Please note that previous resource usage will not be re-mapped by changing the resource pool of a space. In order to reconcile previous usage, please reach out to our support.
 {% endhint %}
 
