@@ -50,7 +50,35 @@ The role structure of the resource pool builds on top of the Nuvolos role hierar
 New resource pools can only be created by the Nuvolos support. Please reach out to us via intercom to originate a new resource pool.
 {% endhint %}
 
+## Mapping spaces to resource pools
 
+Users who are **space administrators** of a space and **resource pool managers** of a resource pool may map all extra services to resource pools they are managers of. This is particularly useful for researchers who have their own research budget and work in a shared organization resource pool normally.
 
+This mapping impacts:
 
+* HPC interactive computation - any scaled application runs will be accounted against the selected resource pool.
+* Database computation - any query compute time will be accounted against the selected resource pool.
+* Database storage - any database storage hold of the space will be accounted against the selected resource pool.
+
+{% hint style="info" %}
+The map does not impact regular provisions, such as NCU capacity for application runs and file system storage hold.
+{% endhint %}
+
+### Mapping a space upon space creation
+
+To map a space upon creation to a particular resource pool, if you have resource pool management role in at least one resource pool, you will see a **Resource Pool dropdown** menu. Select the resource pool you want to map all the extra services in the space to. Following the selection, all extra services will be booked against the selected resource pool. The basic services will still be booked against the organization's default resource pool.
+
+![](../../.gitbook/assets/map_rp_at_space_c_ed.gif)
+
+### Mapping a space during space lifetime
+
+If you want to change the resource pool mapping of extra services for an existing space, you need to have both **space administrator** rights and **resource pool manager** rights in the resource pool you want to map to. 
+
+In order to change the space mapping, navigate to **Project Configuration** from the space overview and select the resource pool in the **Resource Pool selection** menu item.
+
+![](../../.gitbook/assets/map_rp_later_ed.gif)
+
+{% hint style="warning" %}
+Please note that previous usage will not be re-mapped by changing the resource pool of a space. In order to reconcile previous usage, please reach out to our support.
+{% endhint %}
 
