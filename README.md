@@ -37,9 +37,9 @@ As a first step, read the guide for getting started:
 * [Work with files](getting-started/work-with-files/)
 * [Work with applications](getting-started/work-with-applications/)
 * [Work with data tables](data/work-with-data/)
-* [High Performance Computing \(HPC\)]()
 * [Invite collaborators](settings-and-administration/space-management/invite-instance-users.md#invite-users-to-an-existing-instance)
 * [Take snapshots](getting-started/working-with-snapshots/create-a-snapshot.md)
+* [High performance Computing](research/hpc-interactive.md)
 {% endtab %}
 {% endtabs %}
 
