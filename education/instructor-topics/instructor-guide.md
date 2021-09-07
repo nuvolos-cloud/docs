@@ -20,7 +20,7 @@ Courses are spaces in Nuvolos where instructors add learning materials \(data, c
 6. Enter desired application name
 7. Select + ADD APPLICATION
 
-![Create a course](../../.gitbook/assets/create_class_ed.gif)
+![Creating a new course](../../.gitbook/assets/new_course_ed.gif)
 
 ## 2. Complete course checklist
 
