@@ -34,7 +34,7 @@ On the overview page of each course, course administrators can see the course ch
 
 Course material consists of items like code, documents, or data files that are used to support learning. The following animation shows you how to navigate to the files of the master instance and upload course material.
 
-![Uploading two files](../../.gitbook/assets/upload_files_ed.gif)
+![](../../.gitbook/assets/upload_tm_ed.gif)
 
 Alternatively, you can click on the 'Upload files' tile in the Overview course checklist and it will directly open the file upload modal.
 
