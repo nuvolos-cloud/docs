@@ -63,7 +63,7 @@ Invited students will be able to see only their workspace, not the master instan
 
 You can distribute the teaching material to prospective and existing students by using the distribute feature. For a very basic use case, we demonstrate how to distribute the two files uploaded previously.
 
-![](../../.gitbook/assets/distribute_ed.gif)
+![](../../.gitbook/assets/distribute_tm_ed.gif)
 
 The key steps of the process:
 
