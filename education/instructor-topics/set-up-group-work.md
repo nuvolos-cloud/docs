@@ -28,7 +28,12 @@ _Warning:_ _multiple users might be editing the same file_. The exact outcome of
 
 The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their group work instance.
 
-![](../../.gitbook/assets/group_invite_ed.gif)
+The below workflow comprises of two main steps:
+
+1. Creating a group instance named `Group 1` for the students,
+2. Inviting the students as editors to the created `Group 1` instance. 
+
+![](../../.gitbook/assets/invite_group_student_ed.gif)
 
 ## Upload files to the master instance of the group workspace
 
