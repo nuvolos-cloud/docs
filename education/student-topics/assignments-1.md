@@ -22,7 +22,7 @@ To hand-in an assignment, click on the assignment on the dashboard and then clic
 
 All files in the assignment **have to exist at submission time**, otherwise, your submission will fail. You can check your submission status on the tasks page \(bell symbol at the top right of the Nuvolos web UI\).
 
-You can submit multiple times for the same assignment until the assignment deadline has passed. The **instructor will only see your latest hand-in and will grade this version**.
+**You can submit multiple times** for the same assignment until the assignment deadline has passed. The **instructor will only see your latest hand-in and will grade this version**.
 
 Once you have handed in your assignment, you will be able to see the **read-only** handed in copy in the **Assignments &gt; handin** folder inside your application under the following structure:
 
@@ -31,7 +31,7 @@ Assignments > handin > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-It's recommended to check the handin folder from your application after submission to make sure all the files have been successfully submitted.
+It is recommended to check the handin folder from your application after submission to make sure all the files have been successfully submitted with the right version. Don't worry, you cannot modify the files in the handin folder, they are read-only.
 
 The handed in version of the files \(under the files &gt; Assignments folder\) are only visible from the application and currently cannot be downloaded from the web-interface.
 
