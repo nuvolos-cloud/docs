@@ -47,6 +47,10 @@ Note that you must be viewing the **Master** instance in the space to have the s
 
 The **Delete for all** option deletes the file or folder from all instances, including Master.
 
+{% hint style="info" %}
+If you want to recall accidentally distributed files, make sure you trigger the **Delete for others** action **after the distribution has finished**, otherwise the deletion task might be executed before the distribution task, and hence will have no effect.
+{% endhint %}
+
 ## Distribute an entire snapshot
 
 To distribute all the contents of a snapshot:
