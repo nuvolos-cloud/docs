@@ -63,10 +63,14 @@ Merging CRSP and COMPUSTAT using **LINK\_HISTORY**, the following steps are requ
 ### A worked example using the RStudio app
 
 {% hint style="info" %}
-**The code examples below are meant for providing a starting point, but may need to be adjusted depending on the research question. All researchers should review and verify that the code they use is in line with their research questions.**
+**The code examples below are meant for providing a starting point but may need to be adjusted depending on the research question. All researchers should review and verify that the code they use is in line with their research questions.**
 {% endhint %}
 
-In the following, it will be assumed that the tables have been distributed to the current state of the instance of the example. To distribute data, follow the instructions detailed [here]().
+In the following, it will be assumed that the tables have been distributed **from the Compustat North America dataset** to the current state of the instance of the example. To distribute data, follow the instructions detailed [here](). 
+
+{% hint style="info" %}
+The Compustat North America dataset is no longer updated in Nuvolos. Please use the "Compustat Global for &lt;your institution&gt;" if you wish to work with data newer than December 2020 and refer to the [alternative solution](https://docs.nuvolos.cloud/data/work-with-specific-datasets/crsp-and-compustat#an-alternative-solution) described after this example.
+{% endhint %}
 
 #### Designing the query
 
@@ -84,13 +88,13 @@ CSRP:
 
 1. `MSF` \(Monthly price information\)
 
-CCM \(The merge database\):
+CCM \(The merged database\):
 
 1. `CCMXPF_LINKTABLE`
 
 **The first subquery - fundamentals from Compustat:**
 
-We select a couple of fundamentals from `FUNDA` along with the important identifiers `GVKEY` and `DATADATE`. It is important to note that the result of a naive query might contain some duplicate `GVKEY`-`DATADATE` combinations which need to be deduplicated.
+We select a couple of fundamentals from `FUNDA` along with the important identifiers `GVKEY` and `DATADATE`. It is important to note that the result of a naive query might contain some duplicate `GVKEY`-`DATADATE` combinations that need to be deduplicated.
 
 A simple query that does basic deduplication is the following:
 
@@ -120,7 +124,7 @@ result_data_dedup <- result_data %>% dplyr::distinct(GVKEY, DATADATE, .keep_all 
 
 **The second subquery - using the linking table:**
 
-The following is a simplified possible query of the linking logic. The first table named `INP` is just the result of the previously presented query. This is joined together based on `GVKEY` with the linking table. Some care is needed, due to the fact that a link between a `GVKEY` and `PERMNO` can be transient - hence the linking happens only for timestamps that fall in the linking period. More complicated logics can be implemented using overlap intervals. For the appropriate choice of `LINKTYPE`, consult the dataset documentation, the present version is a standard choice.
+The following is a simplified possible query of the linking logic. The first table named `INP` is just the result of the previously presented query. This is joined together based on `GVKEY` with the linking table. Some care is needed, due to the fact that a link between a `GVKEY` and `PERMNO` can be transient - hence the linking happens only for timestamps that fall in the linking period. More complicated logic can be implemented using overlap intervals. For the appropriate choice of `LINKTYPE`, consult the dataset documentation, the present version is a standard choice.
 
 ```sql
 SELECT  INP.*, LT.LPERMNO, LT.LINKPRIM, LT.LINKDT, LT.LINKENDDT FROM
@@ -192,6 +196,12 @@ Compared to the previous route, it is possible to directly link CRSP and COMPUST
 
 The below query provides an example of doing this, it is assumed that `TIME_SERIES_DAILY_PRIMARY,` `LINK_HISTORY` and `CO_AFND1` tables are available in the working instance's current state. 
 
+{% hint style="info" %}
+For the new regularly updated "Compustat Global for &lt;your institution&gt;" datasets, we have created the COMPANY\_ANNUAL\_DATA\_ITEMS table which joins the split Compustat company annual fundamentals tables CO\_AFND1 and CO\_AFND2 for your convenience.
+
+You can replace CO\_AFND1 with COMPANY\_ANNUAL\_DATA\_ITEMS in the examples below to use all data item columns from A to Z without needing to join CO\_AFND1 with CO\_AFND2.
+{% endhint %}
+
 ```sql
 SELECT TS.CALDT AS DATE, TS.KYPERMNO AS PERMNO, FN.GVKEY, ABS(TS.PRC) AS PRC, FN.EPSFX AS EPS
 FROM
@@ -207,7 +217,7 @@ WHERE L.LPERMNO = 57913
 ORDER BY DATE;
 ```
 
-In order to run this query and assign it do a data.frame object in R, the following snippet can be used.
+In order to run this query and assign it to a data.frame object in R, the following snippet can be used.
 
 ```sql
 # Standard practice to access data in Nuvolos from R inside the Nuvolos app
