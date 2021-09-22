@@ -101,7 +101,7 @@ In the suggested standard layout:
 * Every student is invited to their own instance, each student having the following roles:
   * Editor role in their own personal instance.
   * Viewer role on the distributed instance \(this is given by definition\).
-* [Group work](set-up-group-work.md) is kept in a separate space, any specialized instances are not kept together with the standard layout.
+* [Group work](set-up-group-work/) is kept in a separate space, any specialized instances are not kept together with the standard layout.
 
 ### **Alternate layout**
 
