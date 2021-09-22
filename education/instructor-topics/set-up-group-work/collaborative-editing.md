@@ -23,7 +23,7 @@ In order to set up a collaborative JupyterLab application, follow these steps:
 
 ![Enabling shared mode for an application](../../../.gitbook/assets/screenshot-2021-09-22-175534.png)
 
-    5. Finally, distribute the application to the student instances along with regular files and instructions.
+    5. Finally, [distribute](../instructor-guide.md#2-3-distribute-to-prospective-students) the application to the student instances along with regular files and instructions.
 
 
 
