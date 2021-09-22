@@ -43,12 +43,12 @@ It occurs time to time that a file or folder is accidentally distributed to stud
 
 ![](../../.gitbook/assets/image%20%2812%29.png)
 
-Note that you must be viewing the **Master** instance in the space to have the special file deletion options displayed. In all other instances, only simple deletion is allowed.
-
 The **Delete for all** option deletes the file or folder from all instances, including Master.
 
+Note that you must be viewing the **Master** instance in the space to have the above file deletion options displayed. In the **Distributed** and **student instances** instance, you can recall files from all current and future students via the **Delete for students** option. This will create a new snapshot in the distributed instance with the selected file\(s\) removed, so that future students will not get them automatically.
+
 {% hint style="info" %}
-If you want to recall accidentally distributed files, make sure you trigger the **Delete for others** action **after the distribution has finished**, otherwise the deletion task might be executed before the distribution task, and hence will have no effect.
+If you want to recall accidentally distributed files, make sure you trigger the **Delete for others/Delete for students** action **after the distribution has finished**, otherwise the deletion task might be executed before the distribution task, and hence will have no effect.
 {% endhint %}
 
 ## Distribute an entire snapshot
