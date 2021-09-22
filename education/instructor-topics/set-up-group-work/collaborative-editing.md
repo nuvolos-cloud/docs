@@ -4,7 +4,7 @@ description: Collaboration support for students
 
 # Collaborative editing
 
-For JupyterLab 3.1 or higher, Nuvolos supports collaborative editing. We recommend that for group instances, a JupyterLab 3.1 application is made available for students, with "Shared mode" enabled first. This allows multiple students to connect at the same time and edit the files / notebooks together \(like Google Docs\), without causing conflicts when saving.
+For JupyterLab 3.1 or higher, Nuvolos supports collaborative editing \(like Google Docs\). We recommend that for group instances, a JupyterLab 3.1 application is made available for students, with "Shared mode" enabled first. This allows multiple students to connect at the same time and edit the files / notebooks together, without causing conflicts when saving.
 
 Steps:
 
