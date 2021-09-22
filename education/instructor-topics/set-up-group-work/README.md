@@ -20,10 +20,8 @@ Once the invitations are accepted, each group member will be an editor of the in
 
 * Each group member will be able to modify files in a common workspace, and the current state of the instance becomes more transparent. 
 
-For creating spaces, follow these steps:
-
 {% hint style="warning" %}
-_Warning:_ _multiple users might be editing the same file_. The exact outcome of this operation is application-dependent, but this is a situation that needs to be avoided by the group. It is suggested that work is broken down into appropriately small blocks if possible and scheduled if multiple users editing a single file is not avoidable.
+_Warning:_ _multiple users might be editing the same file_. We highly recommend to [use JupyterLab 3.1 or higher with "Shared" editing mode](collaborative-editing.md) for group instances. For other configurations, the exact outcome of this operation is application-dependent, but this is a situation that needs to be avoided by the group. It is suggested that work is broken down into appropriately small blocks if possible and scheduled if multiple users editing a single file is not avoidable.
 {% endhint %}
 
 The students will receive an invitation to this particular instance to their e-mail address. Once they accept the invitation, they will be able to see two spaces - their regular coursework space and their own single-user instance as well as the group-work space with their group work instance.
@@ -33,7 +31,7 @@ The below workflow comprises of two main steps:
 1. Creating a group instance named `Group 1` for the students,
 2. Inviting the students as editors to the created `Group 1` instance. 
 
-![](../../.gitbook/assets/invite_group_student_ed.gif)
+![](../../../.gitbook/assets/invite_group_student_ed.gif)
 
 ## Upload files to the master instance of the group workspace
 
