@@ -24,6 +24,38 @@ Pre-launching can be performed from the 'Applications' view on the sidebar, by c
 
 Pre-launching will start the application for all users in the space: for students, their respective applications will be started, for space administrators the application in the master instance will be started. In case a space administrator is also an editor in a student instance, that application will also be started for the administrator.
 
+### Configuring applications
+
+Each application can be configured by a space administrator. The following aspects may be customized:
+
+1. Application inactivity timeout
+2. Application resources
+3. Shared access
+
+All of these items can be found by clicking on **Configure** in the Applications view of an Instance.
+
+![](../../.gitbook/assets/configuration.png)
+
+#### Configuring application inactivity timeout
+
+Please refer to our documentation of [inactivity](https://docs.nuvolos.cloud/getting-started/work-with-applications/long-running-applications#automatic-stopping-due-to-inactivity) for details on what we understand on an application breaching the inactivity limit. The slider changes the amount of time \(in hours\) after which the application is shut down if it is inactive during the time period. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
+
+{% hint style="warning" %}
+Increasing the inactivity limit may result in higher-than-desired resource utilization of your organization.
+{% endhint %}
+
+#### Configuring application resources
+
+Resource availability to applications running in non-exclusive environments is understood in Nuvolos Compute Units \(NCUs\). For a detailed description of NCUs, you may refer to its [documentation](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units#definition). You may scale the NCU allocation of an application to a higher or lower level depending on the expected workload of the application. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
+
+{% hint style="warning" %}
+Increasing the NCU utilization of an application may result in higher-than-desired resource utilization of your organization.
+{% endhint %}
+
+#### Configuring shared access
+
+Applications can be configured to be shared access in case shared group work is expected from users of an instance. Please refer to our detailed guide [here](set-up-group-work/collaborative-editing.md).
+
 ### Performance sensitive code
 
 On Nuvolos each student runs the code with the same application configuration as the instructor.
