@@ -12,7 +12,7 @@ You may edit the `README.md` file from the Nuvolos UI, via the text edit feature
 
 ![The editor for changing your readme file.](../../.gitbook/assets/screenshot-2021-09-27-190531.png)
 
-
+You may also embed videos from streaming providers to your readme file, creating a journal of previous lectures for the students to review. This may be done by copying the **Embed** snippets provided by the standard streaming services as a link into the readme file.
 
 ## The videos feature
 
@@ -45,4 +45,6 @@ The above snippet is saved under a filed named `.videos.json`:
 {% hint style="info" %}
 Notice that the file name starts with a dot character and the **Hidden file** toggle is set to show hidden files in the top folder of the instance!
 {% endhint %}
+
+
 
