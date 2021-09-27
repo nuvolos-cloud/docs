@@ -1,10 +1,8 @@
 ---
-description: >-
-  Suggestions on how to achieve best performance and good user experience for
-  students when running code on Nuvolos
+description: 'Performance, timeout limits, shared access and optimizations'
 ---
 
-# Application performance
+# Configuring applications
 
 When working with student applications on Nuvolos, it is important to consider the following performance characteristics:
 

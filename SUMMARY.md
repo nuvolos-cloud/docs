@@ -7,7 +7,7 @@
     * [Assignments](education/instructor-topics/assignments.md)
     * [Set up group work](education/instructor-topics/set-up-group-work/README.md)
       * [Collaborative editing](education/instructor-topics/set-up-group-work/collaborative-editing.md)
-    * [Application performance](education/instructor-topics/performance.md)
+    * [Configuring applications](education/instructor-topics/performance.md)
     * [Archival](education/instructor-topics/archival.md)
   * [Student](education/student-topics/README.md)
     * [Join a course](education/student-topics/student-guide.md)
