@@ -5,6 +5,7 @@
   * [Instructor](education/instructor-topics/README.md)
     * [Get started with a course](education/instructor-topics/instructor-guide.md)
     * [Assignments](education/instructor-topics/assignments.md)
+    * [Document your course](education/instructor-topics/document-your-course.md)
     * [Set up group work](education/instructor-topics/set-up-group-work/README.md)
       * [Collaborative editing](education/instructor-topics/set-up-group-work/collaborative-editing.md)
     * [Configuring applications](education/instructor-topics/performance.md)
