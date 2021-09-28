@@ -49,7 +49,7 @@ Assignments > handback > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-By default only the latest assignment handback will be visible \(if any\), if you wish to review the corrections for an older assignment, stop the application and launch it using the "Review Corrections" button from the assignments dialog which will then have the corrections for the given assignment.
+By default only the latest assignment handback will be visible \(if any\) in a running application. If you wish to review the corrections for an older assignment, stop the application and launch it using the "Review Corrections" button from the assignments dialog which will then show the corrections for the given assignment.
 {% endhint %}
 
 {% hint style="info" %}
