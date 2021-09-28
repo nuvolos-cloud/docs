@@ -42,13 +42,13 @@ You will be able to see however a list of your past submissions if you click on 
 
 Once the instructor has reviewed your work, they will enable you to see the hand-back version of the files. Click on the Assignment tile to open the Assignment dialog which will show the grade your received. 
 
-You will can also launch your application to review the corrected version of your files, which will be available in the following folder:
+You can also launch the application using the "Review Corrections" button from the assignments dialog \(make sure the application is stopped first\) to review the corrected version of your files, which will be available in the following folder:
 
 ```text
 Assignments > handback > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-You'll only see the feedback in the handback folder if the **teacher has made handbacks available.**
+You'll only see the feedback in the handback folder if the **teacher has made handbacks available.** Only the latest handin will be graded.
 {% endhint %}
 
