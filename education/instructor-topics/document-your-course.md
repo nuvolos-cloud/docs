@@ -31,7 +31,7 @@ The following overview contains a single video file:
     "nvVIDEOS": [
         {
             "url": "https://player.vimeo.com/video/507887919",
-            "description": "6.09.2020 - 12:15 to 14:00  CEST"
+            "description": "The knowledge creation cloud"
         }
     ]
 }
