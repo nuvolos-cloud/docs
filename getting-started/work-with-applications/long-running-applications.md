@@ -28,10 +28,14 @@ For **research spaces** Nuvolos considers an application being active if **eithe
 * It is actively opened on Nuvolos
 * It is actively computing \(using more than half of a single virtual CPU\)
 
-In Research-purpose spaces, the default inactivity limit is **six hours** \(configurable\).
+In Research-purpose spaces, there can be two types of applications: applications with dedicated resources \(a.k.a "scaled apps"\) and applications without dedicated resources \(a.k.a  "unscaled apps"\). the default inactivity limit is **six hours** for unscaled apps and **one hour** for scaled apps. 
+
+For unscaled apps, the inactivity limit can be set between 1 hour and 24 hours by space administrators and instance editors, at the applications configuration menu. This has no effect on scaled applications.
+
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 {% hint style="info" %}
-Researchers can launch long running computations and their application will keep running until actively computing. If the computation is finished \(either due to completion or an error\) and the application is not opened on Nuvolos, it will be auto-stopped. We therefore recommend explicitly capturing output logs to ensure that any warnings or errors are captured.
+Researchers can launch long running computations and their application will keep running until actively computing. If the computation is finished \(either due to completion or an error\) and the application is not opened on Nuvolos, it will be auto-stopped. We therefore recommend explicitly capturing and saving output logs to ensure that any warnings or errors are captured.
 {% endhint %}
 
 #### Education spaces
