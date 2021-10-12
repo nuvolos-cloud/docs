@@ -27,7 +27,7 @@
     * [Setting up ODBC drivers](data/access-data-from-applications/setting-up-odbc-drivers.md)
     * [Obtain tokens for data access](data/access-data-from-applications/obtain-tokens-for-your-data.md)
     * [Find the database and schema path](data/access-data-from-applications/find-your-database-and-schema-path.md)
-  * [Database management \(advanced\)](data/database-management-advanced.md)
+  * [Database management (advanced)](data/database-management-advanced.md)
   * [Upload table data to Nuvolos](data/upload-data-to-nuvolos.md)
   * [Worked examples](data/work-with-specific-datasets/README.md)
     * [Complete research workflow](data/work-with-specific-datasets/complete-research-workflow.md)
@@ -55,6 +55,7 @@
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
     * [Long-running applications](getting-started/work-with-applications/long-running-applications.md)
     * [JupyterLab](getting-started/work-with-applications/jupyterlab.md)
+    * [RStudio](getting-started/work-with-applications/rstudio.md)
     * [VS Code](getting-started/work-with-applications/vs-code.md)
     * [Stata](getting-started/work-with-applications/stata.md)
   * [Advanced workflows](getting-started/advanced-workflows/README.md)
@@ -133,4 +134,3 @@
   * [Accidental content change](troubleshooting/accidental-content-change/README.md)
     * [Restored a snapshot by mistake](troubleshooting/accidental-content-change/restored-a-snapshot-by-mistake.md)
     * [Distributed a snapshot by mistake](troubleshooting/accidental-content-change/distributed-a-snapshot-by-mistake.md)
-
