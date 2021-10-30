@@ -58,6 +58,7 @@
     * [RStudio](getting-started/work-with-applications/rstudio.md)
     * [VS Code](getting-started/work-with-applications/vs-code.md)
     * [Stata](getting-started/work-with-applications/stata.md)
+    * [Airflow](getting-started/work-with-applications/airflow.md)
   * [Advanced workflows](getting-started/advanced-workflows/README.md)
     * [Invite a reviewer to your research project](getting-started/advanced-workflows/invite-a-reviwer-to-your-research-project.md)
 * [Features](our-features/README.md)
