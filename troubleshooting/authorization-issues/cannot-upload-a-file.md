@@ -8,7 +8,7 @@ To upload a file to an instance, you need to be an editor of that instance. Inst
 
 * **You followed the wrong steps for uploading the file.**
 
-Make sure you follow the correct steps required for uploading files. For more details, check [here]().
+Make sure you follow the correct steps required for uploading files. For more details, check [here](broken-reference).
 
 * **Give it some time.**
 
@@ -16,7 +16,7 @@ Adding new files might take several seconds, in particular, if the file has a la
 
 * **You are looking in the wrong place.**
 
-To upload new files, you must be in the **CURRENT STATE** of an instance of which you are an editor.
+To upload new files, you must be in the **CURRENT STATE **of an instance of which you are an editor.
 
 * **You have lost connection to the internet.**
 
@@ -24,10 +24,9 @@ If you lose your internet connection, the file upload operation might fail. Make
 
 * **There has been a server-side error and the file upload request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and, then try to upload the files again.  
+In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and, then try to upload the files again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

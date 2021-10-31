@@ -20,26 +20,34 @@ If a user has no role in an organization, they cannot view any content contained
 
 An organization member is any user who has been invited in any capacity into any space in the organization.
 
-* Members are able to view **Public** spaces in the organization. 
-* Members are able to view any content in the organization they are specifically invited to. 
+* Members are able to view **Public** spaces in the organization.\
+
+* Members are able to view any content in the organization they are specifically invited to.\
+
 * The membership role signifies that a connection has at least at one point in time existed between the user and the organization.
 
 ### Faculty
 
-An organization faculty member is a user who has the ability to control resources in the organization. 
+An organization faculty member is a user who has the ability to control resources in the organization.&#x20;
 
-* Faculty members can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space. 
-* Faculty members can view **Public** and **Faculty only** spaces as well as any content they are invited to. 
+* Faculty members can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space.\
+
+* Faculty members can view **Public** and **Faculty only** spaces as well as any content they are invited to.\
+
 * The faculty role is powerful in the sense that it has the ability to propagate licensed content to other users.
 
 ### Manager
 
 An organization manager is a user who has the ability to view resources in the organization as well as control membership.
 
-* Organization managers can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space. 
-* Organization managers can view all content in the organization however they can modify content where they received explicit invitation to do so. 
-* Organization managers can invite additional Faculty to the organization. 
-* Organization managers can revoke access to the organization's resources. 
+* Organization managers can create spaces and invite users to the spaces they have created. Any user who creates a space automatically becomes _space admin_ of that space.\
+
+* Organization managers can view all content in the organization however they can modify content where they received explicit invitation to do so.\
+
+* Organization managers can invite additional Faculty to the organization.\
+
+* Organization managers can revoke access to the organization's resources.\
+
 
 ## Space level roles
 
@@ -51,22 +59,22 @@ Space admins have administrative power restricted to the scope of a single space
 
 * Space admins can view and edit every instance in the space:
   * They can upload/download files, run applications and query/modify tables.
-  * They can create/delete snapshots. 
-* Space admins have the right to invite users to instances as editors or viewers. 
+  * They can create/delete snapshots.\
+
+* Space admins have the right to invite users to instances as editors or viewers.\
+
 * Space admins have the right to create instances in a space.
 
 ## Instance level roles
 
 ### Editor
 
-* Instance editors **can modify** the contents of the **current state** of an instance: they can upload/download files and run applications. 
+* Instance editors **can modify **the contents of the **current state** of an instance: they can upload/download files and run applications.&#x20;
 * Instance editors **can** also **create snapshots** of the current state of the instance.
 
 ### Viewer
 
 * Instance viewers can view the contents of snapshots in the instance, including writing queries against data.
-
-
 
 
 

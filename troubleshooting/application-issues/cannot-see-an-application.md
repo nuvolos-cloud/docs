@@ -26,10 +26,9 @@ If you lose your internet connection, the data retrieval request might fail and 
 
 * **There has been a server-side error and the list of applications was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the application data is not served properly. Wait for a few minutes, refresh the page and then check again.  
+In some cases, it might happen that a server-side error occurs such that the application data is not served properly. Wait for a few minutes, refresh the page and then check again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

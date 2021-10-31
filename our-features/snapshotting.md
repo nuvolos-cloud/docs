@@ -6,11 +6,11 @@ description: >-
 
 # Snapshots
 
-This page describes snapshots conceptually. 
+This page describes snapshots conceptually.&#x20;
 
 ## What is snapshotting?
 
-Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable, and shareable_ copy of the current state of your workflow. Snapshotting is a key component to speeding up the dissemination of scientific results.
+Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable, and shareable _copy of the current state of your workflow. Snapshotting is a key component to speeding up the dissemination of scientific results.
 
 ### Completeness
 
@@ -30,7 +30,7 @@ Nuvolos makes it possible to restore a snapshot to the current state of a projec
 
 ### Shareability
 
-Nuvolos makes it possible to share a snapshot with a colleague or a student. 
+Nuvolos makes it possible to share a snapshot with a colleague or a student.&#x20;
 
 ## Why is snapshotting useful?
 
@@ -51,4 +51,3 @@ Once the new research project members are invited to Nuvolos, you can distribute
 ### Create an audit trail for assignments
 
 Students also have the ability to take snapshots of their work. A snapshot is always time-stamped and greatly simplifies the handling in assignments. The student does not need to worry whether their work is reproducible, and the educator does not have to worry about managing a myriad of files and e-mails.
-

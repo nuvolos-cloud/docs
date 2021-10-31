@@ -12,7 +12,7 @@ Instances live within a space. In order to see an instance, you need to at least
 
 * **The instance does not exist anymore because it was deleted.**
 
-An instance might disappear because the space administrator deleted it. Contact the space administrator \(professor, teaching assistant, project manager\) to inquire about the issue.
+An instance might disappear because the space administrator deleted it. Contact the space administrator (professor, teaching assistant, project manager) to inquire about the issue.
 
 * **You have lost connection to the internet.**
 
@@ -20,10 +20,9 @@ If you lose your internet connection, the data retrieval request might fail and 
 
 * **There has been a server-side error and the list of instances was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that instance data is not served properly. Wait for a few minutes, refresh the page, and check again.  
+In some cases, it might happen that a server-side error occurs such that instance data is not served properly. Wait for a few minutes, refresh the page, and check again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

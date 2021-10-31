@@ -14,17 +14,17 @@ To invite instance users, follow the steps detailed [here](../../settings-and-ad
 
 Make sure that the user email you provide when inviting is the correct one.
 
-* **You are inviting users to a deleted instance.** 
+* **You are inviting users to a deleted instance.**\
+  ****
 * **You have lost connection to the internet.**
 
 If you lose your internet connection, the user invitation request might not reach the server and, therefore,  the invitation might not be sent to the server. Make sure you restore your connection,  refresh the page, and try to invite the users again.
 
 * **There has been a server-side error and the invitation request was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the invitation request is not processed properly, making it impossible to invite instance users. Wait for a few minutes, refresh the page, and then try to invite the users again.  
+In some cases, it might happen that a server-side error occurs such that the invitation request is not processed properly, making it impossible to invite instance users. Wait for a few minutes, refresh the page, and then try to invite the users again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

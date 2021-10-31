@@ -44,8 +44,8 @@ Please note that for privacy purposes we only show to the user the name of the s
 
 The management view provides two menus:
 
-* The contents menu shows for each \(redacted\) space the mapped [resource types](resource-pools.md#resource-types) of the space to the resource pool.
-* The user's menu shows for each \(redacted\) space the space administrator for reach out purposes.
+* The contents menu shows for each (redacted) space the mapped [resource types](resource-pools.md#resource-types) of the space to the resource pool.
+* The user's menu shows for each (redacted) space the space administrator for reach out purposes.
 
 ## The resource usage metrics dashboard
 
@@ -53,7 +53,7 @@ All reports consist of three zones:
 
 ### Selectors and tabs
 
-You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report.  
+You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report. &#x20;
 
 ### Summary
 
@@ -99,92 +99,92 @@ Space administrators automatically select the context space - organization manag
 
 #### Time window
 
-The time window of the report by default is the last 30 days, however, it is possible to choose different time windows \(the length of the window is always a maximum of 30 days\). 
+The time window of the report by default is the last 30 days, however, it is possible to choose different time windows (the length of the window is always a maximum of 30 days).&#x20;
 
 {% hint style="danger" %}
-Changing resource mappings are not immediately reflected in usage reports. The changes will appear in the next report release \(our current schedule is at least one report a day\).
+Changing resource mappings are not immediately reflected in usage reports. The changes will appear in the next report release (our current schedule is at least one report a day).
 {% endhint %}
 
 {% hint style="success" %}
-Please refer to the appropriate report section for the available time window for a particular type of report. 
+Please refer to the appropriate report section for the available time window for a particular type of report.&#x20;
 
 Application and HPC reports concern 'flow' type of resource usage while invitation and user reports concern 'stock' type of system status, so interpretation of values is different in the two report classes.
 {% endhint %}
 
 ## Application reports
 
-Application reports give information on applications run on Nuvolos. The reporting unit is always Nuvolos Compute Units \(NCUs\). One Nuvolos Compute Unit corresponds to one vCPU and 4 GBs of RAM.
+Application reports give information on applications run on Nuvolos. The reporting unit is always Nuvolos Compute Units (NCUs). One Nuvolos Compute Unit corresponds to one vCPU and 4 GBs of RAM.
 
 ### Report content
 
 We report the following information on the dashboard:
 
-* **Maximum concurrent** - Maximum number of concurrent NCUs used a given day and for a given time period: the count of the widest activity of NCU use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the methodology section applies.
-* **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1\] in the methodology section applies.
+* **Maximum concurrent** - Maximum number of concurrent NCUs used a given day and for a given time period: the count of the widest activity of NCU use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the methodology section applies.
+* **Runtime **- Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1] in the methodology section applies.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
 * When a time period is selected, all application metrics are aggregated over the selected time period. Runtime is summed, while for the Maximum concurrent metric, the maximum is taken over the selected time period.
-* When viewing daily information \(as time series\), values presented are daily sums for Runtime, and daily maxima are presented for Maximum concurrent.
+* When viewing daily information (as time series), values presented are daily sums for Runtime, and daily maxima are presented for Maximum concurrent.
 * The summary values correspond to the sum of the time series for Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
 
 ### Methodology
 
 Application reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. Application reports on a given date report about applications that are currently running or have concluded \(killed, stopped, timed out\) until the reporting timestamp. 
-2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
+1. Application reports on a given date report about applications that are currently running or have concluded (killed, stopped, timed out) until the reporting timestamp.&#x20;
+2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
    1. For example, for the report on 2020-12-24, we guarantee that the report will contain data going back to 2020-10-25 and until 2020-12-24 02:00.
 
 ## HPC reports
 
-HPC reports give information on HPC batch jobs and HPC interactive, scaled applications run on Nuvolos. 
+HPC reports give information on HPC batch jobs and HPC interactive, scaled applications run on Nuvolos.&#x20;
 
 ### HPC Batch Report content
 
 We report the following information on the dashboard:
 
-* **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1\] in the corresponding methodology section applies.
-* **CPU hour** - Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section apply.
-* **Balance used** - Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
+* **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the corresponding methodology section applies.
+* **CPU hour **- Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
+* **Balance used **- Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
 * When a time period is selected, all HPC metrics are summed over the selected time period.
-* When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
+* When viewing daily information (as time series), values presented are daily sums. The summary values correspond to the sum total of the time series.
 
 ### Methodology
 
 HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
-1. HPC reports on a given date report about HPC that are running or have concluded \(killed, canceled, completed, failed\) until the reporting time. 
-2. HPC jobs are accounted for in totality on the day of conclusion \(job state is killed, canceled, completed, failed, _not_ running, or pending\).
-3. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
+1. HPC reports on a given date report about HPC that are running or have concluded (killed, canceled, completed, failed) until the reporting time.&#x20;
+2. HPC jobs are accounted for in totality on the day of conclusion (job state is killed, canceled, completed, failed, _not_ running, or pending).
+3. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
 
 ### HPC Interactive Report content
 
 We report the following information on the dashboard:
 
-* **Runtime** - Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1\] and Rule \[2\] in the corresponding methodology section apply.
-* **Balance used** - Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
+* **Runtime **- Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
+* **Balance used **- Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
 * When a time period is selected, all HPC metrics are summed over the selected time period.
-* When viewing daily information \(as time series\), values presented are daily sums. The summary values correspond to the sum total of the time series.
+* When viewing daily information (as time series), values presented are daily sums. The summary values correspond to the sum total of the time series.
 
 ### Methodology
 
 HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
 
 1. HPC interactive applications are accounted for the _starting date_ of the application run.
-2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date. 
+2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
 
 ## User reports
 
@@ -201,35 +201,33 @@ In general, when viewed as a time series, the time series reflects information a
 Some general remarks to interpret the data precisely:
 
 * **Manager** - number of organization managers as of a given date.
-  * 
+  *
 * **Faculty** - number of faculty members of the organization as of a given date.
   * When a time period is selected, the number of faculty members corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
+  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
 * **Member** - number of regular members of the organization as of a given date.
   * When a time period is selected, the number of regular members corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
+  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
 
 #### Space-level
 
-* **Space administrator** - number of space administrators in the given space as of a given date. 
+* **Space administrator** - number of space administrators in the given space as of a given date.&#x20;
   * When a time period is selected, the number of space administrators corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
+  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
 * **End-user** - number of distinct non-space administrator users who have accepted their invitations into the given space as of a given date.
   * If a user is invited as an instance editor into two instances in a space, we count them as one. If they are also space administrators as well as having two explicit invitations, then they are not counted in this category.
 
 #### Instance-level
 
-* **Editor** - Number of instance editors in a given instance as of a given date.
+* **Editor **- Number of instance editors in a given instance as of a given date.
 * **Viewer** - Number of instance viewers in a given instance as of a given date.
 
 ### Interpretation
 
 Some general guidance to interpreting values:
 
-* When a time period is selected, the number of users \(any category\) corresponds to the state of the system _as of the last report run date_ of the period.
-* When viewing daily information \(as time series\), values presented are states of the system at report run dates that fall in the period.
-
-
+* When a time period is selected, the number of users (any category) corresponds to the state of the system _as of the last report run date_ of the period.
+* When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
 
 
 

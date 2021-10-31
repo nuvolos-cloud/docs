@@ -1,6 +1,6 @@
 # Setting up ODBC drivers
 
-Setting up ODBC drivers on your computer is only required if want to connect to Nuvolos via non-Nuvolos hosted applications. **If you are relying on our web interface on** [**nuvolos.cloud**](https://nuvolos.cloud)**, you don't need to follow these steps.**
+Setting up ODBC drivers on your computer is only required if want to connect to Nuvolos via non-Nuvolos hosted applications. **If you are relying on our web interface on **[**nuvolos.cloud**](https://nuvolos.cloud)**, you don't need to follow these steps.**
 
 ## Windows setup
 
@@ -19,4 +19,3 @@ To install the Snowflake Linux ODBC driver, please follow [these](https://docs.s
 Nuvolos uses Snowflake as a database provider, consequently, you have to install the ODBC driver for Snowflake to be able to connect to Nuvolos from your non-Nuvolos MacOS-based applications.
 
 To install the Snowflake MacOS ODBC driver, please follow [these](https://docs.snowflake.net/manuals/user-guide/odbc-mac.html) steps.
-

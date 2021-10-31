@@ -24,11 +24,11 @@ Adding filters is an optional step and the user can skip it. However, all added 
 
 In the second step, the user can add conditions that filter selected columns for rows that meet certain criteria. Filters can be added for any of the selected columns using the ADD FILTER button and they can be deleted using the red bin button:
 
-![](../../.gitbook/assets/screen-shot-2021-02-26-at-10.58.01-am%20%281%29.png)
+![](<../../.gitbook/assets/screen-shot-2021-02-26-at-10.58.01-am (1).png>)
 
 * **Filtering a FLOAT or NUMERIC column**
 
-For NUMERIC and FLOAT columns, all types of filters are allowed \(equal, not equal, greater than, less than,...\).  It is also possible to use the "in" filter to upload a file that contains the filtering values.
+For NUMERIC and FLOAT columns, all types of filters are allowed (equal, not equal, greater than, less than,...).  It is also possible to use the "in" filter to upload a file that contains the filtering values.
 
 {% hint style="warning" %}
 FLOAT and NUMERIC filters can only take numbers as filtering values.
@@ -36,9 +36,9 @@ FLOAT and NUMERIC filters can only take numbers as filtering values.
 
 ![](../../.gitbook/assets/screen-shot-2021-02-26-at-11.13.29-am.png)
 
-* **Filtering a VARCHAR \(String\) column**
+* **Filtering a VARCHAR (String) column**
 
-Varchar or string columns can be filtered using non-order filters such as \(equal, not equal,...\) but not filters such as greater than or less than.
+Varchar or string columns can be filtered using non-order filters such as (equal, not equal,...) but not filters such as greater than or less than.
 
 ![](../../.gitbook/assets/screen-shot-2021-02-26-at-11.19.42-am.png)
 
@@ -49,7 +49,7 @@ To filter date and time columns, date and time pickers are used. A date picker l
 ![](../../.gitbook/assets/screen-shot-2021-02-26-at-11.52.35-am.png)
 
 {% hint style="info" %}
-To easily select past dates, you can click on the date field on the date picker to get a list of months \(single click\) or years \(double click\) as shown below.
+To easily select past dates, you can click on the date field on the date picker to get a list of months (single click) or years (double click) as shown below.
 {% endhint %}
 
 ![](../../.gitbook/assets/screen-shot-2021-02-26-at-11.44.38-am.png)
@@ -88,9 +88,8 @@ A limit condition limits the number of rows returned by the query and it is a re
 
 ## 6- Review and submit the query
 
-The final step consists of reviewing the SQL query and submitting it. By clicking on 'Submit for data export', the constructed SQL query will be executed and the user will be able to download a zipped file containing the outcome of the query in CSV format.  
-  
+The final step consists of reviewing the SQL query and submitting it. By clicking on 'Submit for data export', the constructed SQL query will be executed and the user will be able to download a zipped file containing the outcome of the query in CSV format.\
+\
 An option is available to obtain a snippet code that the user can use to run the constructed query from an application. To obtain a snippet, click on the 'Run from application' button and select the programming language you want to use to run the query. A modal will open from which the user can copy the generated code and instructions on how to run it.
 
 ![](../../.gitbook/assets/screen-shot-2021-05-20-at-3.48.44-pm.png)
-

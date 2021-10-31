@@ -9,7 +9,7 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 * git
 * git-lfs
 * vim
-* build-essential \(includes make\)
+* build-essential (includes make)
 * xterm for GUI based applications for terminal emulation
 * Nuvolos data connectors for supported languages
 
@@ -18,7 +18,7 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/), and more recent applications alias conda to a faster drop-in replacement called [mamba](https://github.com/mamba-org/mamba). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda**.
 
 {% hint style="info" %}
-Always try to install software with **conda** first and keep **pip** as a last option.
+Always try to install software with **conda **first and keep **pip **as a last option.
 
 We also recommend passing the '--freeze-installed' flag when installing with conda, to ensure the minimal possible changes to the conda environment.
 
@@ -27,7 +27,7 @@ If you cannot self-service your packages, contact us at [**support@nuvolos.cloud
 
 As an example, suppose you want to install [imagemagick](https://anaconda.org/conda-forge/imagemagick) and [gifsicle](https://anaconda.org/conda-forge/gifsicle) for mass editing gifs. The following command will install this to the conda environment of your application:
 
-```text
+```
 conda install --freeze-installed gifsicle imagemagick
 ```
 
@@ -40,7 +40,7 @@ When distributing and snapshotting an application, the contents of the conda env
 ### Single-purpose applications
 
 {% hint style="info" %}
-We strongly suggest creating single-purpose applications. 
+We strongly suggest creating single-purpose applications.&#x20;
 {% endhint %}
 
 This practice has the following benefits:
@@ -63,8 +63,6 @@ This practice has the following benefits:
 ## Known issues
 
 There are no current known issues. Please do not hesitate to reach out to us if you see anything out of the ordinary.
-
-
 
 
 

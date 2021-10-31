@@ -20,9 +20,9 @@ Starting an application might require several seconds, please wait for some time
 
 * **You are looking in the wrong place.**
 
-To start an application, you must be in the CURRENT STATE ****of an instance of which you are an editor. 
+To start an application, you must be in the CURRENT STATE** **of an instance of which you are an editor.&#x20;
 
-![](../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am%20%284%29.png)
+![](<../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am (4).png>)
 
 For more information on how to find an application, check the documentation [here](../../getting-started/work-with-applications/find-an-application.md).
 
@@ -40,10 +40,9 @@ If you lose your internet connection, the data retrieval request might fail and 
 
 * **There has been a server-side error and the application start data was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to start the application. Wait for a few minutes, refresh the page, and then try to start the application.  
+In some cases, it might happen that a server-side error occurs such that the application data is not served properly, making it impossible to start the application. Wait for a few minutes, refresh the page, and then try to start the application.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

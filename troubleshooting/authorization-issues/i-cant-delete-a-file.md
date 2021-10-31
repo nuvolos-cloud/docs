@@ -12,7 +12,7 @@ Deleting files might take several seconds, please wait for some time until the o
 
 * **You are looking in the wrong place.**
 
-To delete files, you must be in the **CURRENT STATE** of an instance of which you are an editor.
+To delete files, you must be in the **CURRENT STATE **of an instance of which you are an editor.
 
 * **You have lost connection to the internet.**
 
@@ -20,10 +20,9 @@ If you lose your internet connection, the file deletion operation might fail. Ma
 
 * **There has been a server-side error and the file deletion request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the file deletion request is not processed properly by Nuvolos. Wait for some time, refresh the page and then try to delete the files again.  
+In some cases, it might happen that a server-side error occurs such that the file deletion request is not processed properly by Nuvolos. Wait for some time, refresh the page and then try to delete the files again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

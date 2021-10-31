@@ -6,15 +6,13 @@ The Spyder 3.7 application is able to run and render Jupyter notebooks. This can
 
 1. Install by `mamba install -c spyder-ide spyder-notebook` in the Spyder Terminal. Please note that usually, the terminal is the last sub-tab in the top right pane of Spyder.
 
-![](../../.gitbook/assets/jupyter_notebook_install_spyder%20%281%29.png)
+![](<../../.gitbook/assets/jupyter\_notebook\_install\_spyder (1).png>)
 
-     2. Enable the notebook view in the menu: **View &gt; Panes &gt; Notebook** by checking its tickbox.
+&#x20;    2\. Enable the notebook view in the menu: **View > Panes > Notebook** by checking its tickbox.
 
 ![](../../.gitbook/assets/checkbox.png)
 
-   3. To open a notebook, use the gear icon. 
+&#x20;  3\. To open a notebook, use the gear icon.&#x20;
 
-![](../../.gitbook/assets/notebook_open.png)
-
-
+![](../../.gitbook/assets/notebook\_open.png)
 

@@ -10,17 +10,17 @@ To invite space administrators to a space, you need to have a space administrato
 
 Make sure that the user email you provide is the correct one.
 
-* **You are inviting users to a deleted space.** 
+* **You are inviting users to a deleted space.**\
+  ****
 * **You have lost connection to the internet.**
 
 If you lose your internet connection, the user invitation request might not reach the server and, therefore,  the invitations might not be sent. Make sure you restore your connection,  refresh the page, and try to invite again.
 
 * **There has been a server-side error and the invitation request was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the invitation request is not properly processed, making it impossible to invite space administrators. Wait for a few minutes, refresh the page, and then try to invite the users again.  
+In some cases, it might happen that a server-side error occurs such that the invitation request is not properly processed, making it impossible to invite space administrators. Wait for a few minutes, refresh the page, and then try to invite the users again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-

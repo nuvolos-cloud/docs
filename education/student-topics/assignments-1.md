@@ -18,37 +18,36 @@ To work on assignments, you need to work on the files that are part of the assig
 
 ### Handing in assignments
 
-To hand-in an assignment, click on the assignment on the dashboard and then click on the "Hand-in" button on the top right of the dialog. 
+To hand-in an assignment, click on the assignment on the dashboard and then click on the "Hand-in" button on the top right of the dialog.&#x20;
 
-All files in the assignment **have to exist at submission time**, otherwise, your submission will fail. You can check your submission status on the tasks page \(bell symbol at the top right of the Nuvolos web UI\).
+All files in the assignment **have to exist at submission time**, otherwise, your submission will fail. You can check your submission status on the tasks page (bell symbol at the top right of the Nuvolos web UI).
 
 **You can submit multiple times** for the same assignment until the assignment deadline has passed. The **instructor will only see your latest hand-in and will grade this version**.
 
-Once you have handed in your assignment, you will be able to see the **read-only** handed in copy in the **Assignments &gt; handin** folder inside your application under the following structure:
+Once you have handed in your assignment, you will be able to see the **read-only **handed in copy in the **Assignments > handin** folder inside your application under the following structure:
 
-```text
+```
 Assignments > handin > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
 It is recommended to check the handin folder from your application after submission to make sure all the files have been successfully submitted with the right version. Don't worry, you cannot modify the files in the handin folder, they are read-only.
 
-The handed in version of the files \(under the files &gt; Assignments folder\) are only visible from the application and currently cannot be downloaded from the web-interface.
+The handed in version of the files (under the files > Assignments folder) are only visible from the application and currently cannot be downloaded from the web-interface.
 
 You will be able to see however a list of your past submissions if you click on the assignment.
 {% endhint %}
 
 ### Reviewing feedback
 
-Once the instructor has reviewed your work, they will enable you to see the hand-back version of the files. Click on the Assignment tile to open the Assignment dialog which will show the grade your received. 
+Once the instructor has reviewed your work, they will enable you to see the hand-back version of the files. Click on the Assignment tile to open the Assignment dialog which will show the grade your received.&#x20;
 
-You can also launch the application to review the corrected version of your files \(first make sure any running applications are stopped\), using the "Review Corrections" button from the assignments dialog which will then show the corrections for the given assignment in the following folder:
+You can also launch the application to review the corrected version of your files (first make sure any running applications are stopped), using the "Review Corrections" button from the assignments dialog which will then show the corrections for the given assignment in the following folder:
 
-```text
+```
 Assignments > handback > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-You'll only see the feedback in the handback folder if the **teacher has made handbacks available.** Only the latest handin will be graded.
+You'll only see the feedback in the handback folder if the **teacher has made handbacks available. **Only the latest handin will be graded.
 {% endhint %}
-
