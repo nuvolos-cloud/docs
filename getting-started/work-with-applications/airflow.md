@@ -27,7 +27,7 @@ Airflow on Nuvolos uses a CeleryExecutor back-end to be able to execute tasks in
 
 ### Installing packages
 
-To install packages used in DAGs, simply open a JupyterLab terminal and pip / conda / mamba install the required package. See the[ Install a software package](airflow.md#installing-packages) chapter of this documentation for detailed instructions.
+To install packages used in DAGs, simply open a JupyterLab terminal and pip / conda / mamba install the required package. Please refer to the [Install a software package](install-a-software-package.md) chapter of our documentation for detailed instructions.
 
 ### Logs
 
