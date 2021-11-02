@@ -19,7 +19,7 @@ DAGs should be created as Python files in the `/files/airflow/dags` folder, [ref
 3. Click on the slider toggle next to the `tutorial` DAG name to enable the DAG and start the first execution.
 4. You should quickly see that the DAG has executed successfully by seeing a _1_ in a green circle in the _Runs_ column.
 
-![](<../../.gitbook/assets/Screenshot 2021-11-01 at 15.16.59.png>)
+![](<../../.gitbook/assets/Screenshot 2021-11-02 at 10.31.07.png>)
 
 Airlfow Connections and Variables can be configured on the Airflow UI.
 
