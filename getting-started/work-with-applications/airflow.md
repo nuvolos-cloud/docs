@@ -15,7 +15,7 @@ DAGs should be created as Python files in the `/files/airflow/dags` folder, [ref
 #### Setting up your first DAG
 
 1. Create a new Python file named `/files/airflow/dags/tutorial.py` and copy the contents of the tutorial DAG from [the Airflow tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html#example-pipeline-definition).
-2. Click on the Airflow tab and click on the All DAGs filter selector on the UI, the DAG should show up on the list like on the screenshot below.
+2. Click on the Airflow tab and click on the All DAGs filter selector on the UI, the DAG should show up on the list like on the screenshot below. It can take up to a minute for the DAG to show up on the list, as Airflow is periodically scanning Python files the `/files/airflow/dags` folder for new DAG definitions.
 3. Click on the slider toggle next to the `tutorial` DAG name to enable the DAG and start the first execution.
 4. You should quickly see that the DAG has executed successfully by seeing a _1_ in a green circle in the _Runs_ column.
 
