@@ -33,8 +33,108 @@ To install packages used in DAGs, simply open a JupyterLab terminal and pip / co
 
 Task execution, scheduler and DAG bag update logs are in `/files/airflow/logs`.
 
+### Saving data to Nuvolos
+
+The following example illustrates how to create a DAG that downloads CSV data from an API, saves the data as a compressed Parquet file and uploads the data as a Nuvolos table.
+
+#### Prerequisites
+
+1. Create a new Airflow application in your working instance and start the application.
+2. Once Airflow starts, open a new terminal tab and run the following commands to install package dependencies:
+   1. `mamba install -y --freeze-installed -c conda-forge pandas-datareader`
+   2. `mamba install -y --freeze-installed -c conda-forge pyarrow`
+3. To be able to create Nuvolos tables and load data from the shared Airflow application, the following variables need to be set in Airflow, using values from the [Connection Guide](../../data/the-table-view/):&#x20;
+   1. NUVOLOS\_DATABASE
+   2. NUVOLOS\_SCHEMA
+   3. NUVOLOS\_USERNAME
+   4. NUVOLOS\_PASSWORD
+
+![Add Airflow variables](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.38.46.png>)
+
+Once the setup is complete, the following script should be saved as the file `/files/airflow/dags/csv_to_nuvolos`:
+
+```python
+""" Example DAG to demonstrate how to download a time series as a CSV file, 
+convert it to Parquet then upload it to Nuvolos. """
+from datetime import datetime, timedelta
+
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
+from airflow.models import Variable
 
 
+def export_to_parquet(series, start, end):
+    """ Downloads a time-series from St. Luis FRED and exports it as a Parquet file. """
+    import pandas_datareader as pdr
+
+    df = pdr.get_data_fred(series, start=datetime.strptime(start, "%Y-%m-%d"), end=datetime.strptime(end, "%Y-%m-%d"))
+    df.reset_index(inplace=True)
+    df.to_parquet("/files/fred_data.parquet")
+    
+
+def upload_data():
+    from nuvolos import get_connection, to_sql
+    import pandas as pd
+    
+    df = pd.read_parquet("/files/fred_data.parquet")
+    with get_connection(dbname=Variable.get("NUVOLOS_DATABASE", default_var=""), 
+                        schemaname=Variable.get("NUVOLOS_SCHEMA", default_var="master/development"),
+                        username=Variable.get("NUVOLOS_USERNAME", default_var="<YOUR_USER>"),
+                        password=Variable.get("NUVOLOS_PASSWORD", default_var="dummy")) as conn:
+        to_sql(df=df, name="fred_data", con=conn, if_exists='replace', index=False)
 
 
-####
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'email': ['airflow@example.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5),
+}
+
+with DAG(
+    'csv_to_nuvolos',
+    default_args=default_args,
+    description='CSV upload to Nuvolos example DAG',
+    schedule_interval=None,
+    start_date=datetime(2021, 1, 1),
+    catchup=False,
+    tags=['example'],
+) as dag:
+    
+    t1 = PythonOperator(
+        task_id='export_to_parquet',
+        python_callable=export_to_parquet,
+        op_kwargs = {
+            "series" : ['TB3MS'],
+            "start" : "1934-01-01",
+            "end" : "2021-10-01"
+        },
+    )
+    t1.doc_md = """#### FRED data download
+Downloads time-series data from FRED and saves them to /files/fred_data.parquet.
+"""
+
+    t2 = PythonOperator(
+        task_id='upload_to_nuvolos',
+        python_callable=upload_data
+    )
+    t2.doc_md = """#### Data upload to Nuvolos
+Uses the [to_sql function](https://docs.nuvolos.cloud/data/upload-data-to-nuvolos#1.-python) of the Nuvolos connector to upload the data as a Nuvolos table.
+"""
+    t1 >> t2
+```
+
+Save the file, a new DAG should show up within a couple of seconds on the Airflow tab. Click on the slider toggle next to the `csv_to_nuvolos` DAG name to enable the DAG:
+
+![](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.45.43.png>)
+
+Click on the blue "play" icon to trigger the execution of the DAG. Click on the name of the DAG to see the progress:
+
+![](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.48.26.png>)
+
+When all steps run to success, they show up dark green in Airflow. You can now check the resulting table in the Tables view:
+
+![](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.51.06.png>)
