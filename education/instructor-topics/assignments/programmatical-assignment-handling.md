@@ -66,17 +66,17 @@ Please refer to our [guide](./#creating-an-assignment) on creating assignments. 
 
 In our example, we copy the file from `/files/otter-test/dist/student/demo.ipynb` to `/files/assignment_1/demo.ipynb`, then we stage the entire folder and distribute it as an assignment to our students.
 
-Going forward please note that we named our assignment `first_assignment` in the assignment name field during assignment creation. This is going to be used to identify the assignments. If you do not remember the assignment name, you can just check the directory structure under `assignment-reviews` in your JupyterLab application to find out.
+Going forward please note that we named our assignment `assignment_1 `in the assignment name field during assignment creation. This is going to be used to identify the assignments. If you do not remember the assignment name, you can just check the directory structure under `assignment-reviews` in your JupyterLab application to find out.
 
 ### Collect hand-ins
 
 Once the assignment deadline has passed, the assignments are ready to be collected. We use the following command available in the JupyterLab terminal to collect:
 
 ```
-nvcollect collect --assignment_name "first_assignment" --assignment_folder assignment_1 --target_folder /files/test_collect
+nvcollect collect --assignment_name "assignment_1 " --assignment_folder assignment_1 --target_folder /files/test_collect
 ```
 
-This tells the collect tool to gather from all students whatever is contained in the `assignment_1` folder in the first assignment and the collected files should be placed under `/files/test_collect`.
+This tells the collect tool to gather from all students whatever is contained in the `assignment_1` folder in the Nuvolos a and the collected files should be placed under `/files/test_collect`.
 
 The directory structure will be as such:
 
