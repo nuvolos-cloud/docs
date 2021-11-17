@@ -17,7 +17,7 @@ A course in Nuvolos is a space to organise all course-related teaching material 
 * [Work with applications](getting-started/work-with-applications/)
 * [Distribute material](getting-started/distribute-objects-in-nuvolos/)
 * [Invite students](education/instructor-topics/instructor-guide.md#invite-students)
-* [Create assignments](education/instructor-topics/assignments.md)
+* [Create assignments](education/instructor-topics/assignments/)
 {% endtab %}
 
 {% tab title="Student" %}

@@ -81,7 +81,7 @@ The key steps of the process:
 
 ### &#x20;   2.4. Create an assignment
 
-For instructions on how to create an assignment, please check the documentation page on assignments [here](assignments.md).
+For instructions on how to create an assignment, please check the documentation page on assignments [here](assignments/).
 
 ## 3. Invite teaching assistants
 
