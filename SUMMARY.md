@@ -34,6 +34,7 @@
     * [Complete research workflow](data/work-with-specific-datasets/complete-research-workflow.md)
     * [Accessing data as data.frames in R](data/work-with-specific-datasets/accessing-data-as-data.frames-in-r.md)
     * [CRSP and Compustat](data/work-with-specific-datasets/crsp-and-compustat.md)
+    * [S\&P 500](data/work-with-specific-datasets/s-and-p-500.md)
 * [User Guides](getting-started/README.md)
   * [Navigate in Nuvolos](getting-started/navigation-in-nuvolos.md)
   * [Distribute objects](getting-started/distribute-objects-in-nuvolos/README.md)
