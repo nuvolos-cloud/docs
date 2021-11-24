@@ -2,15 +2,15 @@
 description: Working with S&P 500 data on Nuvolos
 ---
 
-# S\&P 500
+# S\&P 500®
 
-## S\&P 500 index level history
+## S\&P 500® index level history
 
-There are multiple possible sources to obtain S\&P 500 index level history when working on Nuvolos:
+There are multiple possible sources to obtain S\&P 500® index level history when working on Nuvolos:
 
 ### S\&P Dow Jones Indices (SPDJI) \[license required]
 
-If you have access to the SPDJI dataset on Nuvolos, the `INDEX_LEVELS` and `INDEX_LEVELS_V1` tables contain the official S\&P 500 index level history, please distribute these two tables from the latest available SPDJI dataset snapshot to your working instance.
+If you have access to the SPDJI dataset on Nuvolos, the `INDEX_LEVELS` and `INDEX_LEVELS_V1` tables contain the official S\&P 500® index level history, please distribute these two tables from the latest available SPDJI dataset snapshot to your working instance.
 
 You can use the following query to obtain the time series:
 
@@ -59,7 +59,7 @@ Please start a Jupyter or Visual Studio Code application in Nuvolos and run the 
 mamba install -y -c conda-forge --freeze-installed pandas-datareader
 ```
 
-Then you can use the following code to retrieve historical S\&P 500 index levels as a pandas DataFrame:
+Then you can use the following code to retrieve historical S\&P 500® index levels as a pandas DataFrame:
 
 ```python
 from pandas_datareader import data as pdr
@@ -68,13 +68,13 @@ from datetime import date
 df = pdr.get_data_yahoo("^GSPC", start="1928-01-03", end=date.today())
 ```
 
-## S\&P 500 index historical constituents
+## S\&P 500® index historical constituents
 
 There are multiple possible ways to obtain the historical constituents of the S\&P 500 index when working on Nuvolos:
 
 ### S\&P Dow Jones Indices (SPDJI) \[license required]
 
-If you have access to the SPDJI dataset on Nuvolos, the `CONSTITUENT_DETAILS` and `CONSTITUENT_DETAILS_V1` tables contain the official S\&P 500 index level history, please distribute these two tables from the latest available SPDJI dataset snapshot to your working instance.
+If you have access to the SPDJI dataset on Nuvolos, the `CONSTITUENT_DETAILS` and `CONSTITUENT_DETAILS_V1` tables contain the official S\&P 500® constituents history, please distribute these two tables from the latest available SPDJI dataset snapshot to your working instance.
 
 You can use the following query to obtain the time series:
 
@@ -93,7 +93,7 @@ ORDER BY EFFECTIVE_DATE ASC, SEQUENCE_NUMBER ASC;
 
 ### Compustat North America (up to 2020-03-31) \[license required]
 
-If you have access to Compustat NA on Nuvolos, please distribute the `IDX_DAILY` table from the latest dataset snapshot to your working instance.
+If you have access to Compustat NA on Nuvolos, please distribute the `SPIDX_CST` table from the latest dataset snapshot to your working instance.
 
 You can use the following query to obtain the time series:
 
@@ -106,9 +106,9 @@ ORDER BY DATADATE ASC;
 
 ### CRSP US Stock and Indexes \[license required]
 
-If you have access to CRSP US Stock and Indexes on Nuvolos, please distribute the `DSI` table from the latest dataset to your working instance.
+If you have access to CRSP US Stock and Indexes on Nuvolos, please distribute the `INDEX_MEMBERSHIP` and `NAME_HISTORY` tables from the latest dataset to your working instance.
 
-CRSP makes the following note in their [documentation](https://www.crsp.org/products/documentation/crsp-indexes-sp-500%C2%AE-universe-0) on working with CRSP S\&P indices:
+CRSP makes the following note in their [documentation](https://www.crsp.org/products/documentation/crsp-indexes-sp-500%C2%AE-universe-0) on working with CRSP S\&P 500® indices:
 
 > Due to differences in handling mergers, reorganizations, and other major corporate actions, CRSP data and the S\&P 500® universe do not always have a one-to-one mapping. In some cases this results in a short period where CRSP is missing prices or has multiple prices per company listed by S\&P.
 >
