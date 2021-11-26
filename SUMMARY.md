@@ -136,4 +136,3 @@
     * [I can't revoke a user role](troubleshooting/authorization-issues/i-cant-remove-a-user.md)
   * [Accidental content change](troubleshooting/accidental-content-change/README.md)
     * [Restored a snapshot by mistake](troubleshooting/accidental-content-change/restored-a-snapshot-by-mistake.md)
-    * [Distributed a snapshot by mistake](troubleshooting/accidental-content-change/distributed-a-snapshot-by-mistake.md)
