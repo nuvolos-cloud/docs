@@ -50,21 +50,3 @@ Note that you must be viewing the **Master **instance in the space to have the a
 {% hint style="info" %}
 If you want to recall accidentally distributed files, make sure you trigger the **Delete for others/Delete for students** action **after the distribution has finished**, otherwise the deletion task might be executed before the distribution task, and hence will have no effect.
 {% endhint %}
-
-## Distribute an entire snapshot
-
-To distribute all the contents of a snapshot:
-
-1. Open the snapshot.
-2. Navigate to the stage area using the sidebar.
-3. Click Start
-4. Select Option 1: Distribute all objects in "SNAPSHOT NAME HERE"
-5. Same as step 4 above.
-6. Same as step 5 above.
-7. Same as step 6 above.
-
-**Example**
-
-Assume we are in the Demo Space and we have a snapshot called "First Snapshot" that we want to distribute. First, from the toolbar, we select the snapshot, and then from the sidebar, we navigate to the stage area.
-
-![](../../.gitbook/assets/distribute\_snapshot\_ed.gif)
