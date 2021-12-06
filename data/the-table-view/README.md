@@ -44,7 +44,7 @@ It is possible to stage, delete, rename, and describe tables - hovering over a l
 
 ## Column list and table preview
 
-In order to see the columns list, click the table name, and select **Explore columns. **Similarly, select **Preview table** to look at the first ten rows of the table.
+In order to see the columns list, click the table name, and select **Explore columns.** Similarly, select **Preview table** to look at the first ten rows of the table.
 
 ![](../../.gitbook/assets/screen-shot-2020-11-19-at-11.10.58-am.png)
 
@@ -86,7 +86,7 @@ Compressed files are stored with the `.gz` extension, which is a short-hand for 
 
 On MacOS and Linux to extract a `gzip` files you can use the `gzip` tool, for example:&#x20;
 
-` gzip -d example.gz`
+&#x20;`gzip -d example.gz`
 
 would extract the contents of `example.gz` to the same folder.&#x20;
 

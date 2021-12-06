@@ -10,7 +10,7 @@ Education spaces typically have a well-defined lifecycle: first the space is pre
 
 ### Notes for space archival:
 
-1. The master and distributed instances in teaching spaces are **never **archived. We understand that instructors usually rely on past courses to build current ones - for that reason, data in the Master and Distributed instances is always just a few clicks away.
+1. The master and distributed instances in teaching spaces are **never** archived. We understand that instructors usually rely on past courses to build current ones - for that reason, data in the Master and Distributed instances is always just a few clicks away.
 2. After a space has been archived, students can still access data and run applications in it. However, archived spaces are not meant for everyday use: instances with restored snapshots are periodically re-archived, without taking safety backups. Restoring a snapshot in an archived space should serve 2 purposes: either to download data or to distribute files/tables/applications to another space.
 
 ### Configuring space archival:

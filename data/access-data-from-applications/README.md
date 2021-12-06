@@ -106,7 +106,7 @@ Finally, pass the SQL statement, the database name and schema name to the`read_s
 result_data <- nuvolos::read_sql("SELECT * FROM \"TABLE\" LIMIT 10", dbname = "my_database", schemaname= "my_schema")
 ```
 
-**Attention: **you need to follow the quotation approach as the example code. If the table name is case insensitive, it can be referred as _table _or _\\"TABLE\\"_. If the table name is case sensitive (containing upper-and lowercase letters or special characters), quotation is needed. For example: _\\"Table\\". _
+**Attention:** you need to follow the quotation approach as the example code. If the table name is case insensitive, it can be referred as _table_ or _\\"TABLE\\"_. If the table name is case sensitive (containing upper-and lowercase letters or special characters), quotation is needed. For example: _\\"Table\\"._&#x20;
 
 **Credentials**: When you connect to the Nuvolos database for the first time, it will ask for your credentials. Check "Remember with keyring" box to avoid your future input. You can find your credentials following the [connection guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/\~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/).  You don't need to write your credentials explicitly in your scripts, and the connector can safely access your token during the connection process.
 
@@ -317,7 +317,7 @@ For both Windows and Mac OS, please first install the [Snowflake ODBC database d
 
 ![](../../.gitbook/assets/screen-shot-2021-01-13-at-2.00.23-pm.png)
 
-2\. In the Windows File Explorer, navigate to the download location and right-click the`SnowflakeExcelAddin.xlam `  file, click Properties, and tick "Unblock":
+2\. In the Windows File Explorer, navigate to the download location and right-click the`SnowflakeExcelAddin.xlam`  file, click Properties, and tick "Unblock":
 
 ![](../../.gitbook/assets/screenshot-2021-02-15-at-17.59.09.png)
 
@@ -337,7 +337,7 @@ For more detailed Excel add-in installation and management, please refer to this
 
 ![](../../.gitbook/assets/screenshot-2021-02-15-at-18.08.08.png)
 
-6\. Under the "User & Password" authentication type, please enter the appropriate values "server URL", "User ID" and "Password" to login. You can find the required[ access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the "Tables"** **page of your Nuvolos space.  **Note**: "Hostname" is the "server URL".
+6\. Under the "User & Password" authentication type, please enter the appropriate values "server URL", "User ID" and "Password" to login. You can find the required[ access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the "Tables" **** page of your Nuvolos space.  **Note**: "Hostname" is the "server URL".
 
 7\. Click the "Query" button in the add-in.  It shows the SQL execution window to query data.  Please select the target "Database", "Schema" first, then the add-in will load all the available tables in "Table".  The default is to query all columns unless the user click "Choose" to select a few target columns only.  After entering the SQL command in the window below and clicking "Execute", the results will be inserted as a table to the active Excel sheet.
 
@@ -362,12 +362,12 @@ To upload data to Nuvolos, please perform the following steps:
 
 #### Mac OS
 
-1.  After installation of the ODBC driver, please open a terminal and use the command below to copy all the folders and files created from downloading the Snowflake ODBC driver (typically the **`/opt/snowflake/` **path**)** to the **`/Library/ODBC/ODBCDataSources`** folder:
+1.  After installation of the ODBC driver, please open a terminal and use the command below to copy all the folders and files created from downloading the Snowflake ODBC driver (typically the **`/opt/snowflake/` ** path**)** to the **`/Library/ODBC/ODBCDataSources`** folder:
 
     ```
     ~$ sudo cp -r /opt/snowflake/ /Library/ODBC/ODBCDataSources
     ```
-2. The user has to manually update the Snowflake ODBC Driver's file at  **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/simba.snowflake.ini`.  **After navigate and open this file, please change two lines below in the file to remap the new locations of its associated files:&#x20;
+2. The user has to manually update the Snowflake ODBC Driver's file at  **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/simba.snowflake.ini`.**  After navigate and open this file, please change two lines below in the file to remap the new locations of its associated files:&#x20;
 
 ```
 ErrorMessagesPath = /Library/ODBC/ODBCDataSources/snowflakeodbc/ErrorMessages
@@ -391,7 +391,7 @@ sudo /Applications/iODBC/iODBC\ Administrator64.app/Contents/MacOS/iODBC\ Admini
 ![](../../.gitbook/assets/screen-shot-2021-01-13-at-4.34.48-pm.png)
 
 * In the field **Description of the driver**, type a name for the driver, such as "SnowflakeODBC".
-* In the field **Driver file name**, click **Browse** and navigate to the driver file **`libSnowflake.dylib`** in the **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/` **folder.
+* In the field **Driver file name**, click **Browse** and navigate to the driver file **`libSnowflake.dylib`** in the **`/Library/ODBC/ODBCDataSources/snowflakeodbc/lib/universal/` ** folder.
 * Click **Ok**.
 * Under the **System DSN** tab, click **Add**. A dialog opens.
 * Select the Snowflake driver you added. The DSN configuration window opens.
@@ -408,7 +408,7 @@ sudo /Applications/iODBC/iODBC\ Administrator64.app/Contents/MacOS/iODBC\ Admini
 
 ![](../../.gitbook/assets/screen-shot-2021-01-13-at-12.15.31-pm.png)
 
-6\. With the **iODBC Data Source Chooser** window open, switch to the **System DSN **tab and select the DSN created, and hit **OK**.
+6\. With the **iODBC Data Source Chooser** window open, switch to the **System DSN** tab and select the DSN created, and hit **OK**.
 
 ![](../../.gitbook/assets/screen-shot-2021-01-13-at-4.48.20-pm.png)
 

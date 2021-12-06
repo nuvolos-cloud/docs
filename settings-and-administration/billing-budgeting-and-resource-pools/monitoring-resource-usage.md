@@ -120,7 +120,7 @@ Application reports give information on applications run on Nuvolos. The reporti
 We report the following information on the dashboard:
 
 * **Maximum concurrent** - Maximum number of concurrent NCUs used a given day and for a given time period: the count of the widest activity of NCU use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the methodology section applies.
-* **Runtime **- Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1] in the methodology section applies.
+* **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1] in the methodology section applies.
 
 ### Interpretation
 
@@ -147,8 +147,8 @@ HPC reports give information on HPC batch jobs and HPC interactive, scaled appli
 We report the following information on the dashboard:
 
 * **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the corresponding methodology section applies.
-* **CPU hour **- Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
-* **Balance used **- Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
+* **CPU hour** - Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
+* **Balance used** - Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
 
 ### Interpretation
 
@@ -169,8 +169,8 @@ HPC reports are prepared on a daily basis, the latest report runtime is shown in
 
 We report the following information on the dashboard:
 
-* **Runtime **- Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
-* **Balance used **- Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
+* **Runtime** - Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
+* **Balance used** - Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
 
 ### Interpretation
 
@@ -219,7 +219,7 @@ Some general remarks to interpret the data precisely:
 
 #### Instance-level
 
-* **Editor **- Number of instance editors in a given instance as of a given date.
+* **Editor** - Number of instance editors in a given instance as of a given date.
 * **Viewer** - Number of instance viewers in a given instance as of a given date.
 
 ### Interpretation

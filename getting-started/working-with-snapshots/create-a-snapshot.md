@@ -3,8 +3,8 @@
 {% hint style="info" %}
 There are two types of snapshots that the user can create:
 
-* **Quick snapshot: **represents a quick option to snapshot the current state of an instance.
-* **Detailed snapshot: ** a snapshot with a user-provided description and a summary of what will be the next work phase in the current state.
+* **Quick snapshot:** represents a quick option to snapshot the current state of an instance.
+* **Detailed snapshot:** a snapshot with a user-provided description and a summary of what will be the next work phase in the current state.
 {% endhint %}
 
 ## **Create a quick snapshot**

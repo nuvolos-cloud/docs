@@ -24,7 +24,7 @@ All files in the assignment **have to exist at submission time**, otherwise, you
 
 **You can submit multiple times** for the same assignment until the assignment deadline has passed. The **instructor will only see your latest hand-in and will grade this version**.
 
-Once you have handed in your assignment, you will be able to see the **read-only **handed in copy in the **Assignments > handin** folder inside your application under the following structure:
+Once you have handed in your assignment, you will be able to see the **read-only** handed in copy in the **Assignments > handin** folder inside your application under the following structure:
 
 ```
 Assignments > handin > [assignment_name]> [handin_id]
@@ -49,5 +49,5 @@ Assignments > handback > [assignment_name]> [handin_id]
 ```
 
 {% hint style="info" %}
-You'll only see the feedback in the handback folder if the **teacher has made handbacks available. **Only the latest handin will be graded.
+You'll only see the feedback in the handback folder if the **teacher has made handbacks available.** Only the latest handin will be graded.
 {% endhint %}

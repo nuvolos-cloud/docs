@@ -10,7 +10,7 @@ This page describes snapshots conceptually.&#x20;
 
 ## What is snapshotting?
 
-Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable, and shareable _copy of the current state of your workflow. Snapshotting is a key component to speeding up the dissemination of scientific results.
+Snapshotting is a key feature of Nuvolos. Snapshotting creates a _complete, immutable, persistent, restorable, and shareable_ copy of the current state of your workflow. Snapshotting is a key component to speeding up the dissemination of scientific results.
 
 ### Completeness
 

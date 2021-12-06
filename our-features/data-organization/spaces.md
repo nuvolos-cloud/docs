@@ -2,7 +2,7 @@
 
 ## Overview
 
-A core feature of Nuvolos is that projects are encapsulated and self-contained in terms of both data and software. This feature is realized by the concept and hierarchical level called _space. _A space lives within the context of an organization, and different spaces can be created for managing activities such as a course, a summer school, a research project, or a dataset. Spaces contain at least one, but in certain use cases may contain a number of instances, which represent separate work contexts that allow for access control and sharing of data between the members of a space (e.g. teachers and students). A space, therefore, can be seen as a logical unit to organize:
+A core feature of Nuvolos is that projects are encapsulated and self-contained in terms of both data and software. This feature is realized by the concept and hierarchical level called _space._ A space lives within the context of an organization, and different spaces can be created for managing activities such as a course, a summer school, a research project, or a dataset. Spaces contain at least one, but in certain use cases may contain a number of instances, which represent separate work contexts that allow for access control and sharing of data between the members of a space (e.g. teachers and students). A space, therefore, can be seen as a logical unit to organize:
 
 * **Tabular data**
   * Raw tabular data (tables)
@@ -13,7 +13,7 @@ A core feature of Nuvolos is that projects are encapsulated and self-contained i
 
 ## Features
 
-* **Self-contained: **Nuvolos strongly supports the _gather and manipulate _workflow paradigm. The user first gathers all the relevant data available in the organization into their space, then begins work with the data in a self-contained and enclosed environment.\
+* **Self-contained:** Nuvolos strongly supports the _gather and manipulate_ workflow paradigm. The user first gathers all the relevant data available in the organization into their space, then begins work with the data in a self-contained and enclosed environment.\
 
 * **Branched:** Instances provide the possibility of maintaining multiple mutations of the same core concept.\
 

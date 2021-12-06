@@ -25,12 +25,12 @@ Each resource pool is endowed with a certain number of NCUs available to be used
 
 * **Round-the-clock** NCUs are available to use 24 hours a day, every day of the term of the Nuvolos subscription.
 * **Power save** NCUs are available to use 12 hours a day, every day of the month during the academic year (thus power save NCUs are not available in the summer months).
-* **Burst **NCUs are available to users 3 hours a day every workday during the academic year (thus, burst NCUs are not available in the summer months).
+* **Burst** NCUs are available to users 3 hours a day every workday during the academic year (thus, burst NCUs are not available in the summer months).
 
 In practice, each NCU type corresponds to a certain amount of compute hour limit for the subscription term:
 
 * **Round-the-clock** NCUs are available for 8760 hours a year.
 * **Power save** NCUs are available for 3240 hours a year.
-* **Burst **NCUs are available for 540 hours a year.
+* **Burst** NCUs are available for 540 hours a year.
 
 To calculate the total compute hours available to a resource pool for a year, the total amount of compute hours available to a resource pool is the sum product of resource pools and the above yearly rates.

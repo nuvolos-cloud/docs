@@ -26,7 +26,7 @@ Space administrators can modify assignments (deadlines, descriptions and handbac
 
 To grade assignments, a space administrator can click the "Grade" button on the assignment dialog header. This will open the grade table, from which each assignment hand-in can be opened by clicking the "Review" button.
 
-This will launch the application inside the student instance, with a **copy **of the student submission mounted in the files area. All packages installed by the student will be available for the instructor, so open-ended projects are fully supported as well.
+This will launch the application inside the student instance, with a **copy** of the student submission mounted in the files area. All packages installed by the student will be available for the instructor, so open-ended projects are fully supported as well.
 
 #### Providing feedback
 

@@ -13,7 +13,7 @@ Yes, git is supported via applications. In any application you can start, **git 
 Each user has their own ssh key which they can use to authenticate with git repositories. This requires two steps:
 
 1. [Copy your Nuvolos public key](https://az.nuvolos.cloud/user/settings/ssh) and [add it to your git provider](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-2. Clone the git repository using the **SSH** protocol (make sure the repository URL starts with **git@**)** **and not via the https protocol.
+2. Clone the git repository using the **SSH** protocol (make sure the repository URL starts with **git@**) **** and not via the https protocol.
 
 ![](<../.gitbook/assets/image (13).png>)
 

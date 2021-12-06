@@ -1,6 +1,6 @@
 # I can't see distributed content in my instance
 
-**If you expect to see new content in your instance because another member has shared contents with you, but you are having trouble finding the new content, here are some issues you can examine: **
+**If you expect to see new content in your instance because another member has shared contents with you, but you are having trouble finding the new content, here are some issues you can examine:**&#x20;
 
 * **You don't have the right permission.**
 
@@ -16,7 +16,7 @@ Merging the contents of your current state with the newly shared contents might 
 
 * **You are looking in the wrong place.**
 
-To see the shared contents, you must be in the **CURRENT STATE **of the instance with which the content was shared.
+To see the shared contents, you must be in the **CURRENT STATE** of the instance with which the content was shared.
 
 * **You restored a previous snapshot**
 

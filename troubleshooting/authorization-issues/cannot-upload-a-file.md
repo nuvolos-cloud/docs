@@ -16,7 +16,7 @@ Adding new files might take several seconds, in particular, if the file has a la
 
 * **You are looking in the wrong place.**
 
-To upload new files, you must be in the **CURRENT STATE **of an instance of which you are an editor.
+To upload new files, you must be in the **CURRENT STATE** of an instance of which you are an editor.
 
 * **You have lost connection to the internet.**
 

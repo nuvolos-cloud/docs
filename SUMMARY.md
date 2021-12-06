@@ -56,6 +56,7 @@
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
     * [Long-running applications](getting-started/work-with-applications/long-running-applications.md)
+    * [Troubleshooting applications](getting-started/work-with-applications/troubleshooting-applications.md)
     * [JupyterLab](getting-started/work-with-applications/jupyterlab.md)
     * [RStudio](getting-started/work-with-applications/rstudio.md)
     * [VS Code](getting-started/work-with-applications/vs-code.md)

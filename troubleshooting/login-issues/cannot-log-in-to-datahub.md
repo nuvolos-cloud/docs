@@ -4,11 +4,11 @@
 
 * **Do you have a valid account**? The first step is to make sure that your account is valid. In order to log in to Nuvolos, you must either have a valid Nuvolos account or a valid email from a Swiss university that is a client of Alphacruncher.\
 
-* **Check your credentials: ** Make sure that you are typing the correct username and password. Look closely for typos, unnecessary accents, or missing characters. If you find typos, clear the password field and type your password again. Notice that Nuvolos passwords are case-sensitive. \
+* **Check your credentials:** Make sure that you are typing the correct username and password. Look closely for typos, unnecessary accents, or missing characters. If you find typos, clear the password field and type your password again. Notice that Nuvolos passwords are case-sensitive. \
 
 * **App issue**: It might happen that certain devices have certain issues that prevent you from logging into  Nuvolos, it's likely a device or app-specific issue. Consider logging into Nuvolos from your personal computer.\
 
-* **Make sure that your account hasn't been hacked or used by someone else. **This can be done in several ways:
+* **Make sure that your account hasn't been hacked or used by someone else.** This can be done in several ways:
   * Make sure you can log in to the email address that you used to create your Nuvolos account. If you cannot log in, then your email might be compromised. In this case, contact the organization manager and inform him/her about the issue.
   * If you can log in to your email, then consider [resetting](forgot-my-password.md) your Nuvolos account.\
 

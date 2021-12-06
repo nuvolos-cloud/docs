@@ -18,7 +18,7 @@ In this setup, the following important features should be observed:
 
 * Snowflake object names are case sensitive and can contain special characters - consequently, they should be always quoted.
   * In program code, quotes should be appropriately escaped!
-* ****[**USE SCHEMA**](https://docs.snowflake.net/manuals/sql-reference/sql/use-schema.html)** **simplifies referencing to tables - once you've given this command, you can reference tables as you see them on the user interface.
+* ****[**USE SCHEMA**](https://docs.snowflake.net/manuals/sql-reference/sql/use-schema.html) **** simplifies referencing to tables - once you've given this command, you can reference tables as you see them on the user interface.
 * Databases are Organization and Space joined by a slash, while schema is determined by Instance and State name (current state is always referred to as _development)._
 
 __

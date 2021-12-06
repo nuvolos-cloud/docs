@@ -1,6 +1,6 @@
 # Distribute objects
 
-Object distribution is a building-block feature of Nuvolos. The key concept to remember is that distribution is a _push-_type operation, you have to initiate it from the source and you send to the specified target. Consequently, you need [**EDITOR** access](../../settings-and-administration/role-system.md#editor) on the target instance you want to write to and you need at least [**VIEWER **access](../../settings-and-administration/role-system.md#viewer) on the source.
+Object distribution is a building-block feature of Nuvolos. The key concept to remember is that distribution is a _push-_type operation, you have to initiate it from the source and you send to the specified target. Consequently, you need [**EDITOR** access](../../settings-and-administration/role-system.md#editor) on the target instance you want to write to and you need at least [**VIEWER** access](../../settings-and-administration/role-system.md#viewer) on the source.
 
 The following type of objects (or a combination of these) can be distributed:
 
@@ -33,7 +33,7 @@ Please note that whenever you distribute, a snapshot gets created in the target,
 
 &#x20;      6\. Finally, you can send a message along with the distribution to notify the users in the targets about the change being made. In this particular case, we decided _not_ to notify users by emptying the checkbox.
 
-Once you are done, click **SHARE OBJECTS **and you are done.
+Once you are done, click **SHARE OBJECTS** and you are done.
 
 ![](../../.gitbook/assets/distribute\_selection\_ed.gif)
 
@@ -45,7 +45,7 @@ It occurs time to time that a file or folder is accidentally distributed to stud
 
 The **Delete for all** option deletes the file or folder from all instances, including Master.
 
-Note that you must be viewing the **Master **instance in the space to have the above file deletion options displayed. In the **Distributed **and **student instances **instance, you can recall files from all current and future students via the **Delete for students** option. This will create a new snapshot in the distributed instance with the selected file(s) removed, so that future students will not get them automatically.
+Note that you must be viewing the **Master** instance in the space to have the above file deletion options displayed. In the **Distributed** and **student instances** instance, you can recall files from all current and future students via the **Delete for students** option. This will create a new snapshot in the distributed instance with the selected file(s) removed, so that future students will not get them automatically.
 
 {% hint style="info" %}
 If you want to recall accidentally distributed files, make sure you trigger the **Delete for others/Delete for students** action **after the distribution has finished**, otherwise the deletion task might be executed before the distribution task, and hence will have no effect.

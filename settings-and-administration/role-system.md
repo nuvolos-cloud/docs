@@ -69,7 +69,7 @@ Space admins have administrative power restricted to the scope of a single space
 
 ### Editor
 
-* Instance editors **can modify **the contents of the **current state** of an instance: they can upload/download files and run applications.&#x20;
+* Instance editors **can modify** the contents of the **current state** of an instance: they can upload/download files and run applications.&#x20;
 * Instance editors **can** also **create snapshots** of the current state of the instance.
 
 ### Viewer

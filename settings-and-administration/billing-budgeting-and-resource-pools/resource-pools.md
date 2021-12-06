@@ -8,7 +8,7 @@ Resource pools hold a budget against which resources mapped to the resource pool
 
 ## Resource pool mappings
 
-We call associations between resource pools and Nuvolos objects _mappings. _The following type of objects can be mapped to resource pools:
+We call associations between resource pools and Nuvolos objects _mappings._ The following type of objects can be mapped to resource pools:
 
 * **Organizations**: An entire organization may be mapped to a resource pool. This means that all resource usage in the organization will be billed against the corresponding resource pool.
 * **Spaces:** An entire space may be mapped to a resource pool. All usage in the space will be billed against the corresponding resource pool.
@@ -75,7 +75,7 @@ To map a space upon creation to a particular resource pool, if you have resource
 
 ### Mapping a space during space lifetime
 
-If you want to change the resource pool mapping of extra services for an existing space, you need to have both **space administrator **rights and **resource pool manager** rights in the resource pool you want to map to.&#x20;
+If you want to change the resource pool mapping of extra services for an existing space, you need to have both **space administrator** rights and **resource pool manager** rights in the resource pool you want to map to.&#x20;
 
 In order to change the space mapping, navigate to **Project Configuration** from the space overview and select the resource pool in the **Resource Pool selection** menu item.
 

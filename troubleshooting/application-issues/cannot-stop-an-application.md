@@ -12,7 +12,7 @@ Stopping an application might require some time. Please give it some time to sto
 
 * **You are looking in the wrong place.**
 
-To stop an application, you must be either in the **CURRENT STATE **of an instance of which you are an editor
+To stop an application, you must be either in the **CURRENT STATE** of an instance of which you are an editor
 
 ![](<../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am (2).png>)
 

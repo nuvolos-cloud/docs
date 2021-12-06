@@ -6,7 +6,7 @@ Nuvolos supports reproducible research and safe work organization by guaranteein
 
 Each instance consists of _states_. A state is a collection of data, code and applications at a given point in time. The _current state_ is the only mutable state: it is the only state in an instance that can be modified. Working in the current state, you can upload, delete, rename, and work with files and tables, as well as create and start applications. \
 \
-Other states are called _snapshots. _A snapshot is an immutable state. Snapshots can be created of the current state.
+Other states are called _snapshots._ A snapshot is an immutable state. Snapshots can be created of the current state.
 
 ## Features
 

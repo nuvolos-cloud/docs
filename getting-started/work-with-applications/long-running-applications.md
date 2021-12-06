@@ -28,7 +28,7 @@ For **research spaces** Nuvolos considers an application being active if **eithe
 * It is actively opened on Nuvolos
 * It is actively computing (using more than half of a single virtual CPU)
 
-In Research-purpose spaces, there can be two types of applications: applications with dedicated resources (a.k.a. "scaled apps") and applications without dedicated resources (a.k.a.  "unscaled apps"). the default inactivity limit is **six hours **for unscaled apps and **one hour** for scaled apps.&#x20;
+In Research-purpose spaces, there can be two types of applications: applications with dedicated resources (a.k.a. "scaled apps") and applications without dedicated resources (a.k.a.  "unscaled apps"). the default inactivity limit is **six hours** for unscaled apps and **one hour** for scaled apps.&#x20;
 
 For unscaled apps, the inactivity limit can be set between 1 hour and 24 hours by space administrators, at the applications configuration menu. This has no effect on scaled applications.
 

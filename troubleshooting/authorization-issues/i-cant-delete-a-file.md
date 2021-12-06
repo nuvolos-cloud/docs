@@ -12,7 +12,7 @@ Deleting files might take several seconds, please wait for some time until the o
 
 * **You are looking in the wrong place.**
 
-To delete files, you must be in the **CURRENT STATE **of an instance of which you are an editor.
+To delete files, you must be in the **CURRENT STATE** of an instance of which you are an editor.
 
 * **You have lost connection to the internet.**
 

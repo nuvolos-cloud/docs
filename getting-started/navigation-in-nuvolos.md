@@ -6,7 +6,7 @@ description: How to find your way around Nuvolos
 
 Navigation in Nuvolos is closely linked to the [structure of Nuvolos](../our-features/data-organization/). The user can understand their position and navigate using the following highlighted parts of the user interface.
 
-1. The **Nuvolos **logo
+1. The **Nuvolos** logo
 2. The **breadcrumbs**
 3. In lower level views, the **sidebar.**
 

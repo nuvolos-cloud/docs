@@ -76,7 +76,7 @@ Hovering over the dot pops up the diff menu:
 
 ## The readme feature
 
-If you create a file named `README.md` in a folder, the user interface of Nuvolos will try to interpret and render it as a markdown file. **The **`README.md`** created in the root directory will also be displayed on the space overview page.**
+If you create a file named `README.md` in a folder, the user interface of Nuvolos will try to interpret and render it as a markdown file. **The** `README.md` **created in the root directory will also be displayed on the space overview page.**
 
 As an example:
 

@@ -18,7 +18,7 @@ All Nuvolos applications come with a set of useful \*nix applications pre-instal
 Except for R, all Nuvolos applications come equipped with the package manager [conda](https://docs.conda.io/en/latest/), and more recent applications alias conda to a faster drop-in replacement called [mamba](https://github.com/mamba-org/mamba). Conda is a non-language specific package manager which lets you install language-specific packages and system libraries as a non-root user. For the Python language, most packages available via **pip** can also be installed via **conda**.
 
 {% hint style="info" %}
-Always try to install software with **conda **first and keep **pip **as a last option.
+Always try to install software with **conda** first and keep **pip** as a last option.
 
 We also recommend passing the '--freeze-installed' flag when installing with conda, to ensure the minimal possible changes to the conda environment.
 

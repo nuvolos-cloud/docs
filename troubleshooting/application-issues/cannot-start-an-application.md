@@ -20,7 +20,7 @@ Starting an application might require several seconds, please wait for some time
 
 * **You are looking in the wrong place.**
 
-To start an application, you must be in the CURRENT STATE** **of an instance of which you are an editor.&#x20;
+To start an application, you must be in the CURRENT STATE **** of an instance of which you are an editor.&#x20;
 
 ![](<../../.gitbook/assets/screen-shot-2020-06-11-at-9.25.56-am (4).png>)
 
