@@ -28,12 +28,12 @@ Sys.setenv("RETICULATE_MINICONDA_ENABLED" = TRUE)
 reticulate::install_miniconda()
 ```
 
-3\. Install tensorflow R package and then call the install\_tensorflow() function:
+3\. Install tensorflow R package and then call the `install_tensorflow()` function. If you would like to use GPU acceleration, run `install_tensorflow(version="gpu")`:
 
 ```
 install.packages("tensorflow") 
 library(tensorflow)
-install_tensorflow()
+install_tensorflow() # use install_tensorflow(version = "gpu") for GPU support
 ```
 
 4\. Install Keras R package and then call the install\_keras() function:
