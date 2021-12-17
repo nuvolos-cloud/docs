@@ -6,6 +6,11 @@ description: Application specific recommendations for GPU computations
 
 ## Introduction
 
+To enable GPU acceleration of your code, 2 conditions need to be met:
+
+1. You need to run your application on a GPU enabled node. By default applications on Nuvolos run on nodes that do not have a GPU card integrated, however with a single click you can [scale your applications](hpc-interactive.md#how-to-scale-your-app) to run on GPU accelerated nodes.
+2. You need to make sure the applications are configured to use a GPU. The documentation below mostly addresses the configurations needs to be done for applications to be able to use a GPU once it's available.
+
 The NVIDIA device drivers will be loaded in all GPU supported images once a GPU node is started on Nuvolos. However depending on the image type additional components (e.g. CUDA toolkit) might need to be installed via conda.
 
 If you launch a GPU accelerated node on Nuvolos, the `nvidia-smi` [tool ](https://developer.nvidia.com/nvidia-system-management-interface)will be available from the command line / terminal. You can use this to check the load on the given GPU to verify how effectively the code is leveraging the accelerator.
