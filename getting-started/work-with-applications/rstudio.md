@@ -15,3 +15,33 @@ If this is the case, R is waiting for further input. As you can see in the above
 If you want to cancel the statement, make sure to focus on the R console in RStudio by clicking on it, then hit the Escape button on your keyboard.
 
 ![After the cancelled statement](<../../.gitbook/assets/Screenshot 2021-10-31 103918.png>)
+
+## Using Tensorflow and Keras with RStudio
+
+Tensorflow and Keras can be installed via miniconda in Rstudio. To install them, use the following steps:
+
+1. Restart the R session to be in a clean setting (select Session > Quit Session on the top menu)
+2. Make sure reticulate can use miniconda via running in the R commands:
+
+```
+Sys.setenv("RETICULATE_MINICONDA_ENABLED" = TRUE)
+reticulate::install_miniconda()
+```
+
+3\. Install tensorflow R package and then call the install\_tensorflow() function:
+
+```
+install.packages("tensorflow") 
+library(tensorflow)
+install_tensorflow()
+```
+
+4\. Install Keras R package and then call the install\_keras() function:
+
+```
+install.packages("keras")
+library(keras)
+install_keras()
+```
+
+To test the installation, follow the example from the RStudio website: [https://tensorflow.rstudio.com/guide/keras/#mnist-example](https://tensorflow.rstudio.com/guide/keras/#mnist-example)
