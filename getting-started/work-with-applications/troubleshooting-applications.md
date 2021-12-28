@@ -22,7 +22,7 @@ Steps:
 
 2\. Select "Clear settings" in the "..." menu for the given application
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (17) (1).png>)
 
 3\. Launch the application again.
 
