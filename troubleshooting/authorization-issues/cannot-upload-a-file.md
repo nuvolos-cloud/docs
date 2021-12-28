@@ -24,10 +24,9 @@ If you lose your internet connection, the file upload operation might fail. Make
 
 * **There has been a server-side error and the file upload request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and then try to upload the files again.  
+In some cases, it might happen that a server-side error occurs such that the upload operation is not processed properly by Nuvolos. Wait for a few minutes, refresh the page and then try to upload the files again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact **support@alphacruncher.com.**
-

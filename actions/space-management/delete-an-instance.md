@@ -7,11 +7,11 @@
 
 ## **To delete an instance:**
 
-1- Open the space where the instance is located \(using the breadcrumbs in the toolbar\).
+1- Open the space where the instance is located (using the breadcrumbs in the toolbar).
 
-2- From the overview screen, click on "Course Users" \(if education space\), "Project Users" \(research space\), or "Dataset Users". Assume we are in a class called Demo Space and we want to invite a user as an editor of the Master instance.
+2- From the overview screen, click on "Course Users" (if education space), "Project Users" (research space), or "Dataset Users". Assume we are in a class called Demo Space and we want to invite a user as an editor of the Master instance.
 
-![](../../.gitbook/assets/screen-shot-2020-05-22-at-1.35.55-pm%20%281%29.png)
+![](<../../.gitbook/assets/screen-shot-2020-05-22-at-1.35.55-pm (1).png>)
 
 2- Using the tabs, navigate to INSTANCES.
 
@@ -29,5 +29,4 @@
 
 #### If you are encountering a problem deleting a space, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-an-instance.md).
 
-\*\*\*\*
-
+****

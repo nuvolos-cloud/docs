@@ -8,7 +8,7 @@ Currently three applications are supported in Nuvolos: Spyder, JupyterLab and RS
 
 ### Accessing data tables from Python in Nuvolos
 
-If you want to use Nuvolos-hosted Python \(via JupyterLab or Spyder\), the data access will be simple:
+If you want to use Nuvolos-hosted Python (via JupyterLab or Spyder), the data access will be simple:
 
 1. Make sure you have the data available.
 2. **Run** your application.
@@ -26,7 +26,7 @@ df = pd.read_sql("SELECT * FROM table", con=engine)
 
 ### Accessing data tables from R in Nuvolos
 
-If you want to use Nuvolos-hosted R \(via RStudio\), the data access will be simple:
+If you want to use Nuvolos-hosted R (via RStudio), the data access will be simple:
 
 1. Make sure you have the data available.
 2. **Run** your application.
@@ -54,7 +54,7 @@ remotes::install_github("nuvolos-cloud/r-connector")
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
-![Connection Guide](https://gblobscdn.gitbook.com/assets%2F-LihBjXi93rsUENhHsab%2F-M2cRBfkOEK87ab37B2l%2F-M2cRkQS_MidAHIPoC3K%2FScreen%20Shot%202020-03-17%20at%201.22.49%20PM.png)
+![Connection Guide](https://gblobscdn.gitbook.com/assets%2F-LihBjXi93rsUENhHsab%2F-M2cRBfkOEK87ab37B2l%2F-M2cRkQS\_MidAHIPoC3K%2FScreen%20Shot%202020-03-17%20at%201.22.49%20PM.png)
 
 Finally, pass the username, password, database name and schema name to the `get_connection()` function:
 
@@ -74,7 +74,9 @@ pip install nuvolos
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
-Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the get\_engine\(\) function:
+![](broken-reference)
+
+Finally, pass the username/password and database/schema specified in the _Connection Guide_ to the get\_engine() function:
 
 ```python
 from nuvolos import get_engine
@@ -95,7 +97,7 @@ Accessing data from out-of-Nuvolos SAS applications consists of the following st
 
 In SAS we suggest creating a library of the contents of your instance. To do this, we suggest posing the following statement to SAS:
 
-```text
+```
 libname NUVOLOS odbc complete="DRIVER={SnowflakeDSIIDriver};
 SERVER=alphacruncher.eu-central-1.snowflakecomputing.com;
 UID=<USER NAME>;
@@ -110,7 +112,7 @@ In the above example `<USER NAME>, <PASSWORD>` can be learned from [obtaining yo
 
 Assuming you have composed an SQL query that you would like to run in SAS, and saved it in the file `source/to/file.sql`. The following code puts the SQL statement in the file to a macro named  `sqlcode` in SAS:
 
-```text
+```
 data _null_;
 infile 'source/to/file.sql' recfm=f lrecl=32767 pad;
 input @1 sqlcode $32767.;
@@ -121,7 +123,7 @@ run;
 
 The following statement executes the above query:
 
-```text
+```
 proc sql;
 	connect using NUVOLOS;
 	select * from connection to NUVOLOS(
@@ -138,6 +140,4 @@ To analyze the above SAS statement, notice the following:
 1. We are using the SAS SQL Procedure Pass-Through Facility twice.
 2. The first statement makes sure that SAS connects to the correct database and schema. We strongly suggest using this statement first whenever you are using the Pass-Through Facility.
 3. The second statement creates a table called `test` based on the code that is in the file `source/to/file.sql.`
-
-
 

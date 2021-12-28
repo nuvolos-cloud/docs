@@ -18,7 +18,6 @@
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.30.10-pm.png)
 
-#### ![](../../.gitbook/assets/info_simple.svg.png)If you are encountering a problem deleting a snapshot, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-a-snapshot.md).
+#### ![](../../.gitbook/assets/info\_simple.svg.png)If you are encountering a problem deleting a snapshot, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-a-snapshot.md).
 
-\*\*\*\*
-
+****

@@ -16,10 +16,9 @@ If you lose your internet connection, the user invitation request might not reac
 
 * **There has been a server-side error and the invitation request was not properly served by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the invitation request is not processed properly, making it impossible to invite organization members. Wait for a few minutes, refresh the page and then try to invite the users again.  
+In some cases, it might happen that a server-side error occurs such that the invitation request is not processed properly, making it impossible to invite organization members. Wait for a few minutes, refresh the page and then try to invite the users again.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact **support@alphacruncher.com.**
-

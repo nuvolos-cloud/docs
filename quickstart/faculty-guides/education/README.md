@@ -28,17 +28,17 @@ To start working on your class, you will need to have files and data that you wa
 
 ## Step 4: Invite students to join the class.
 
-To add students to your class, you need to send an invitation to each student to join the space you have created in Nuvolos. As a space admin, you will be assigned the MASTER instance which you will use to interact with your students. Students instead will be invited to join Nuvolos, and a separate instance can be created for each student.  
-  
+To add students to your class, you need to send an invitation to each student to join the space you have created in Nuvolos. As a space admin, you will be assigned the MASTER instance which you will use to interact with your students. Students instead will be invited to join Nuvolos, and a separate instance can be created for each student.\
+\
 To invite students, follow the steps detailed [here](../../../actions/space-management/create-an-instance.md).
 
 ## Step 5: Share updates with your collaborators
 
-If you want to to share a _new file_ \(e.g. code, data,...\) with one or more students, then you need to first upload the file\(s\) to your current state \(step 3\). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files. 
+If you want to to share a _new file_ (e.g. code, data,...) with one or more students, then you need to first upload the file(s) to your current state (step 3). Upon uploading new files, you will see a blue snack bar at the bottom suggesting you to stage the newly uploaded files for sharing. Click on STAGE to stage the new files.&#x20;
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.02-am.png)
 
-After that, from the left sidebar click on the share icon to share the new files with other instances. 
+After that, from the left sidebar click on the share icon to share the new files with other instances.&#x20;
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-25-at-10.23.53-am.png)
 
@@ -46,7 +46,6 @@ Then follow the steps detailed [here](../../../actions/distribute-objects-in-nuv
 
 ## Step 6: Check students\` progress.
 
-You can ask your students to make snapshots of their work to meet certain deadlines \(e.g for an assignment\). The snapshot will become immutable and unaffected by later work of the students. Steps for creating a snapshot are detailed [here](../../../actions/instance-management/create-a-snapshot.md).
+You can ask your students to make snapshots of their work to meet certain deadlines (e.g for an assignment). The snapshot will become immutable and unaffected by later work of the students. Steps for creating a snapshot are detailed [here](../../../actions/instance-management/create-a-snapshot.md).
 
-As the instructor, it is then possible to open the students\` instances and check the saved work states \(and whether they were saved on-time\) and provide feedback to the students. Steps for finding an instance are detailed [here](../../../actions/find-objects-in-nuvolos/find-an-instance.md).
-
+As the instructor, it is then possible to open the students\` instances and check the saved work states (and whether they were saved on-time) and provide feedback to the students. Steps for finding an instance are detailed [here](../../../actions/find-objects-in-nuvolos/find-an-instance.md).

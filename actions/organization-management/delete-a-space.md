@@ -8,7 +8,9 @@ Only space administrators and organization members
 
 1- Open the space by selecting it from the toolbar breadcrumbs or from the dashboard. For example, let's say we want to delete a space called "Demo Space". By clicking on Demo Space, this will take us to the overview view.
 
-  
+![](broken-reference)
+
+\
 2- From the left sidebar, hover on the settings icon and select Delete Space
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.04.34-pm.png)
@@ -17,9 +19,8 @@ Only space administrators and organization members
 
 ![](../../.gitbook/assets/screen-shot-2020-03-19-at-1.06.40-pm.png)
 
-#### If you are encountering a problem deleting a space, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-a-space-1.md). 
+#### If you are encountering a problem deleting a space, refer to the troubleshooting guide [here](../../troubleshooting/authorization-issues/cannot-delete-a-space-1.md).&#x20;
 
-\*\*\*\*
+****
 
-\*\*\*\*
-
+****

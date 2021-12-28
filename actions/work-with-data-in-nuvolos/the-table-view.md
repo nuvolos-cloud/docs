@@ -23,7 +23,7 @@ The functionalities as a list:
 
 ## Tables list
 
-The tables list is the list of tables in the currently selected snapshot or current state. 
+The tables list is the list of tables in the currently selected snapshot or current state.&#x20;
 
 It is possible to stage, delete, rename and describe tables - hovering over a line will reveal the possible actions.
 
@@ -47,13 +47,11 @@ It is possible to run queries directly from the web interface.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.15.17-pm.png)
 
-      3. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have                been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
+&#x20;     3\. You will then be taken to the **QUERY HISTORY** page, where you can see queries that have                been run previously. You can also click on the folder icon next to your query to look at the complete query result. Results are stored compressed.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-17-at-1.16.41-pm.png)
 
 ## Connection guide
 
 Clicking the connection guide gives you information on access credentials to the database behind you particular workspace. You can find more about connecting via applications in this guide.
-
-
 

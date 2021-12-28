@@ -16,10 +16,9 @@ If you lose your internet connection, your request to revoke a user might not be
 
 * **There has been a server-side error and the user revoke request was not properly processed by Nuvolos.**
 
-In some cases, it might happen that a server-side error occurs such that the user removal request is not processed properly by Nuvolos. Please wait for some time and then try to revoke the user again.  
+In some cases, it might happen that a server-side error occurs such that the user removal request is not processed properly by Nuvolos. Please wait for some time and then try to revoke the user again.\
 
 
-####  None of these solutions worked - how to proceed?
+#### &#x20;None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact **support@alphacruncher.com.**
-

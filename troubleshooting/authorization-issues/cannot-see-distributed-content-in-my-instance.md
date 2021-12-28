@@ -1,6 +1,6 @@
 # I can't see distributed content in my instance
 
-**If you expect to see new content in your instance because another member has shared contents with you, but you are having trouble finding the new content, here are some issues you can examine:** 
+**If you expect to see new content in your instance because another member has shared contents with you, but you are having trouble finding the new content, here are some issues you can examine:**&#x20;
 
 * **You don't have the right permission.**
 
@@ -28,10 +28,9 @@ If you lose your internet connection, the browser might not receive the new upda
 
 * **There has been a server-side error and the data sharing process did not succeed.**
 
-In some cases, it might happen that a server-side error occurs such that the data sharing is not processed successfully by the server. Wait for a few minutes, refresh the page and check again. If you still don't see the content, contact the person who shared the data with you and ask her if the data was shared successfully.  
+In some cases, it might happen that a server-side error occurs such that the data sharing is not processed successfully by the server. Wait for a few minutes, refresh the page and check again. If you still don't see the content, contact the person who shared the data with you and ask her if the data was shared successfully.\
 
 
 ### None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact **support@alphacruncher.com.**
-
