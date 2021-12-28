@@ -4,7 +4,7 @@ In case you forget your Nuvolos password, then you can reset your password by:&#
 
 1. Clicking on "**Don't remember** **your password?**" and provide your email which you use to log in to Nuvolos. A reset link will be sent to your email.
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (17).png>)
 
 2\. Once your password has been reset, please navigate again to https://www.nuvolos.cloud to log in.
 
