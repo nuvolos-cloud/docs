@@ -6,7 +6,7 @@ This is only required if you are not using an Alphacruncher-supported Nuvolos co
 
 Nuvolos relies on database technology provided by Snowflake. Snowflake is handled via its [own flavour of SQL](https://docs.snowflake.net/manuals/sql-reference-commands.html).  Data in a particular snapshot or current state of an instance is located in a schema in Snowflake. Schemas are contained in databases. To obtain the required database and schema information to interact with your data, first, navigate to the [table view](../the-table-view/), and click the **CONNECTION GUIDE** button:
 
-![](broken-reference)
+![](<../../.gitbook/assets/Screen Shot 2020-03-17 at 1.22.49 PM.png>)
 
 The Connection guide provides you with information regarding the database and schema you will need to use in the form of a statement such as:
 
