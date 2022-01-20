@@ -8,7 +8,7 @@ Only space administrators are allowed to invite students.
 
 1. Open a course. In the following example, we open the course called "Demo Space".
 
-![](broken-reference)
+![](<../../.gitbook/assets/Screenshot 2022-01-20 at 15.48.51.png>)
 
 &#x20;   2\. From the overview screen, click on "Course Users".
 
