@@ -140,7 +140,7 @@ Since version 0.4.0 of the `nuvolos` package, installing the ODBC driver is no l
 
 Next,  [obtain access tokens](obtain-tokens-for-your-data.md) and database/schema names from the Connection Guide on the Nuvolos _Tables_ interface of the instance you wish to access:
 
-![](broken-reference)
+![](<../../.gitbook/assets/Screen Shot 2020-03-17 at 1.22.49 PM.png>)
 
 Finally, pass the database and schema names specified in the [Connection Guide](https://app.gitbook.com/@alphacruncher-1/s/nuvolos/\~/drafts/-MMuNtFnFrIaP3B5ov-M/data/access-data-from-applications/obtain-tokens-for-your-data/) to the `get_connection()` function:
 
