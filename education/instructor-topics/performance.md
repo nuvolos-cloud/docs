@@ -1,5 +1,5 @@
 ---
-description: 'Performance, timeout limits, shared access and optimizations'
+description: Performance, timeout limits, shared access and optimizations
 ---
 
 # Configuring applications
@@ -8,19 +8,43 @@ When working with student applications on Nuvolos, it is important to consider t
 
 ### Resource allocation time
 
-If a class size is large \(e.g. above ~50 users / or if individual applications have been customized to request higher resources\) and students are expected to launch their applications at the same time, it can happen that resource allocation becomes slower \(e.g. application launch time can be around 5 minutes instead of the usual 30-60 seconds\). 
+If a class size is large (e.g. above \~50 users / or if individual applications have been customized to request higher resources) and students are expected to launch their applications at the same time, it can happen that resource allocation becomes slower (e.g. application launch time can be around 5 minutes instead of the usual 30-60 seconds).&#x20;
 
-For a good user experience, we recommend that instructors pre-launch the required application\(s\) for all users around **30 minutes before** students are expected to start work with it.
+For a good user experience, we recommend that instructors pre-launch the required application(s) for all users before students are expected to start work with it. Nuvolos supports both automatic and manual application prestart.&#x20;
+
+In both automatic and manual mode the progress and outcome of a pre-launch is visible in the task view.
+
+#### Automatic
+
+Using automatic application prestart instructors can create scheduled prestarts ahead of time. This can be performed from the 'Application' view in the sidebar, by clicking on the three dots beside the application name and selecting the 'Schedule for start' option, and setting the time and date by when all apps in the space should be up and running.&#x20;
+
+The following limitations apply:\
+\- The time of the schedule has to be in at least 30 minutes, as it takes time to start all applications. \
+\- In a space, up to twenty scheduled prestarts can exist at the same time\
+\- Setting a prestart date more than 6 months into the future is not allowed\
+\- Setting a prestart date for archived courses is not allowed
+
+![](../../.gitbook/assets/scheduled\_startup.png)
+
+The scheduled prestarts can be viewed, edited, and deleted from under the list of applications. If you wish the create a new schedule for the same time a week away, you can do that by clicking on 'add to next week' under the Actions column.
+
+![](../../.gitbook/assets/scheduled\_startups.png)
+
+The next scheduled startup can also be viewed from the space overview page.
+
+![](../../.gitbook/assets/next\_scheduled\_startup.png)
+
+#### Manual
+
+Pre-launching can be performed from the 'Applications' view on the sidebar, by clicking the three dots beside the application name and selecting the 'Start for all users' option:
+
+![](../../.gitbook/assets/start\_for\_all.png)
 
 {% hint style="info" %}
-Student application are stopped automatically after 1 hour of inactivity, so it does not make sense to perform the pre-launch more than an hour before the planned start time.
+Student applications are stopped automatically after 1 hour of inactivity, so it does not make sense to perform the pre-launch more than an hour before the planned start time.
 {% endhint %}
 
-Pre-launching can be performed from the 'Applications' view on the sidebar, by clicking the three dots besides the application name and selecting the "Start for all users" option:
-
-![](../../.gitbook/assets/start_for_all.png)
-
-Pre-launching will start the application for all users in the space: for students, their respective applications will be started, for space administrators the application in the master instance will be started. In case a space administrator is also an editor in a student instance, that application will also be started for the administrator.
+Pre-launching will start the application for all users in the space: for students, their respective applications will be started, for space administrators, the application in the master instance will be started. In case a space administrator is also an editor in a student instance, that application will also be started for the administrator.
 
 ### Configuring applications
 
@@ -36,7 +60,7 @@ All of these items can be found by clicking on **Configure** in the Applications
 
 #### Configuring application inactivity timeout
 
-Please refer to our documentation of [inactivity](https://docs.nuvolos.cloud/getting-started/work-with-applications/long-running-applications#automatic-stopping-due-to-inactivity) for details on what we understand on an application breaching the inactivity limit. The slider changes the amount of time \(in hours\) after which the application is shut down if it is inactive during the time period. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
+Please refer to our documentation of [inactivity](https://docs.nuvolos.cloud/getting-started/work-with-applications/long-running-applications#automatic-stopping-due-to-inactivity) for details on what we understand on an application breaching the inactivity limit. The slider changes the amount of time (in hours) after which the application is shut down if it is inactive during the time period. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
 
 {% hint style="warning" %}
 Increasing the inactivity limit may result in higher-than-desired resource utilization of your organization.
@@ -44,7 +68,7 @@ Increasing the inactivity limit may result in higher-than-desired resource utili
 
 #### Configuring application resources
 
-Resource availability to applications running in non-exclusive environments is understood in Nuvolos Compute Units \(NCUs\). For a detailed description of NCUs, you may refer to its [documentation](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units#definition). You may scale the NCU allocation of an application to a higher or lower level depending on the expected workload of the application. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
+Resource availability to applications running in non-exclusive environments is understood in Nuvolos Compute Units (NCUs). For a detailed description of NCUs, you may refer to its [documentation](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units#definition). You may scale the NCU allocation of an application to a higher or lower level depending on the expected workload of the application. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
 
 {% hint style="warning" %}
 Increasing the NCU utilization of an application may result in higher-than-desired resource utilization of your organization.
@@ -62,9 +86,8 @@ Nevertheless it is important to consider that when many students are concurrentl
 
 Whilst usually this is within a reasonable factor, we recommend that during **interactive sessions with a large number of students**, either:
 
-a\) Code examples should be adjusted such that  they execute within a minute or so maximum.
+a) Code examples should be adjusted such that  they execute within a minute or so maximum.
 
-b\) The space should be configured to have larger per-student resources to provide adequate compute performance. For the most performance sensitive cases, we suggest dedicated compute nodes for each application - please reach out to our support team to discuss such an option.
+b) The space should be configured to have larger per-student resources to provide adequate compute performance. For the most performance sensitive cases, we suggest dedicated compute nodes for each application - please reach out to our support team to discuss such an option.
 
 For out-of-class work when concurrency is lower, these considerations can be appropriately relaxed.
-
