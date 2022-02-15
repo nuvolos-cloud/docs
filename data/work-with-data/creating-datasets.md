@@ -24,8 +24,8 @@ Some important guidelines to consider when designing your dataset:
 
 A generic flow would require the following steps:
 
-1. [Create target dataset](../../settings-and-administration/organization-management/create-a-space/) as a dataset space. Choose the appropriate visibility option (public for open datasets and private for datasets with stringent access control requirements). Activate tables in the dataset.
-2. [Create a research space](../../settings-and-administration/organization-management/create-a-space/), an application and the appropriate data harvesting code. Activate tables in the research space.
+1. [Create target dataset](../../settings-and-administration/organization-management/create-a-space.md) as a dataset space. Choose the appropriate visibility option (public for open datasets and private for datasets with stringent access control requirements). Activate tables in the dataset.
+2. [Create a research space](../../settings-and-administration/organization-management/create-a-space.md), an application and the appropriate data harvesting code. Activate tables in the research space.
 3. Pull data from your source and [insert raw data into the Scientific Data Warehouse](../upload-data-to-nuvolos.md) (SDW).
 4. Clean and manipulate data to reach the desired layout and quality either via in-memory or in-SDW procedures or a combination of both.
 5. Document data.

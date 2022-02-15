@@ -12,7 +12,7 @@ To be able to create a space in an organization you need to be an **organization
 
 * **You followed the wrong steps for creating a space.**
 
-Make sure you follow the correct steps required for creating a space. For more details, check [here](../../settings-and-administration/organization-management/create-a-space/).
+Make sure you follow the correct steps required for creating a space. For more details, check [here](../../settings-and-administration/organization-management/create-a-space.md).
 
 * **You have lost connection to the internet.**
 
