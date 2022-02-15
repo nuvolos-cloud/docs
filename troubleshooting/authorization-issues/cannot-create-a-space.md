@@ -12,7 +12,7 @@ To be able to create a space in an organization you need to be an **organization
 
 * **You followed the wrong steps for creating a space.**
 
-Make sure you follow the correct steps required for creating a space. For more details, check [here](../../settings-and-administration/organization-management/create-a-space.md).
+Make sure you follow the correct steps required for creating a space. For more details, check [here](../../settings-and-administration/organization-management/create-a-space/).
 
 * **You have lost connection to the internet.**
 
@@ -22,7 +22,6 @@ If you lose your internet connection, your request to create a space might not b
 
 In some cases, it might happen that a server-side error occurs such that the request to create a space is not processed properly by the server. Please wait for some time and then try to create the space again.
 
-####  None of these solutions worked - how to proceed?
+#### &#x20;None of these solutions worked - how to proceed?
 
 If none of the above solutions worked, please contact [**support@nuvolos.cloud**](mailto:support@nuvolos.cloud)**.**
-
