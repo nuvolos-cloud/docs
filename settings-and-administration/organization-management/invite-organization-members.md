@@ -6,8 +6,8 @@
 
 ****
 
-1. &#x20;From the dashboard, click the users icon on the sidebar to navigate to the list of users and then click on "ADD NEW ORGANIZATION MEMBER" from the top right.\
+1. &#x20;From the dashboard, click the cogwheel button on the top right and select "Organization users".\
 
-2. Select the [type of organization membership](../role-system.md#organization-level-roles) you want to invite the user with, and then provide the email(s) of the users you want to invite.
+2. Select the [type of organization membership](../role-system.md#organization-level-roles) you want to invite the user with, and then provide the email(s) of the users you want to invite. Finally, click the invite button.
 
-![Inviting a faculty member](../../.gitbook/assets/invite\_faculty\_ed.gif)
+![](../../.gitbook/assets/invite\_org\_manager\_ed.gif)
