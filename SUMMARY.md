@@ -56,6 +56,7 @@
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
     * [Install a software package](getting-started/work-with-applications/install-a-software-package.md)
     * [Setting up a custom .bashrc](getting-started/work-with-applications/setting-up-a-custom-.bashrc.md)
+    * [Automatic code execution](getting-started/work-with-applications/automatic-code-execution.md)
     * [Long-running applications](getting-started/work-with-applications/long-running-applications.md)
     * [Troubleshooting applications](getting-started/work-with-applications/troubleshooting-applications.md)
     * [JupyterLab](getting-started/work-with-applications/jupyterlab.md)

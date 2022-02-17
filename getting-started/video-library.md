@@ -8,7 +8,7 @@ The video library is a feature that lets you upload videos to Nuvolos and then s
 
 ## Advantages of the video library
 
-The Video Library enables you enhance your space with video contents. As opposed to storing video files in your space, the video library has the following benefits:
+The Video Library enables you enhance your space with multimedia content. As opposed to storing video files in your space, the video library has the following benefits:
 
 * You can use the embed codes of videos in the library to embed videos in README.md files. Users having access to your space will be able to watch the videos directly from the browser.
 * Once a video is added to the library, it can be embedded into any number of README.md files, without any additional storage cost. This makes sharing class recordings fast and efficient: just add new recording embed codes to a README.md, and distribute the new version to all students. They'll receive the update is a few seconds.
