@@ -19,6 +19,8 @@ Each user has their own ssh key which they can use to authenticate with git repo
 
 Now you should be able to securely pull / push code from any application, without having to enter passwords.
 
+You can also [initialize a space from GitHub](../settings-and-administration/organization-management/create-a-space/clone-a-github-repository.md) directly from the UI.
+
 ## Researcher: Is Dropbox supported?
 
 Yes, please see our [Dropbox integration guide](../getting-started/work-with-files/dropbox-synchronization.md).
