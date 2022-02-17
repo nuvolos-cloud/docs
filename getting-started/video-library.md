@@ -1,24 +1,32 @@
 ---
-description: Add video recordings of classes, seminars and guides to your course
+description: Add video recordings of classes, seminars and guides to your space
 ---
 
 # Video Library
 
 The video library is a feature that lets you upload videos to Nuvolos and then store those videos as streams that are reviewable by your students on demand, any time when they require to review course content again.
 
+## Advantages of the video library
+
+The Video Library enables you enhance your space with video contents. As opposed to storing video files in your space, the video library has the following benefits:
+
+* You can use the embed codes of videos in the library to embed videos in README.md files. Users having access to your space will be able to watch the videos directly from the browser.
+* Once a video is added to the library, it can be embedded into any number of README.md files, without any additional storage cost. This makes sharing class recordings fast and efficient: just add new recording embed codes to a README.md, and distribute the new version to all students. They'll receive the update is a few seconds.
+* The video library has a privacy policy that prevents playback of videos if they're embedded on a site other than Nuvolos. This means, you don't need to worry about unauthorized reuse of your video embed codes on third party sites.
+
 ## Enable the video library
 
 {% hint style="info" %}
-By default, the video library service has to be enabled on the organization level. Please reach out to your organization managers whether the service is enabled for you.&#x20;
+The video library feature might not be included in your organization's subscription. Please reach out to your organization manager(s) to initiate a subscription upgrade if you'd like to use this feature.&#x20;
 {% endhint %}
 
 Once the video library feature is available in your organization, you may enable it for your space, by visiting the **Space configuration** menu, and there selecting the Enable option for the video library. This operation needs to be done once per space.
 
-![Enabling the video library for a space](../../.gitbook/assets/enable\_video\_ed.gif)
+![Enabling the video library for a space](../.gitbook/assets/enable\_video\_ed.gif)
 
 ## Add a video to the video library
 
-Once the video library feature is enabled, if you [upload](../../getting-started/work-with-files/) well-known video extension files to Nuvolos, you will have an option to add the file to the video library.
+Once the video library feature is enabled, if you [upload](work-with-files/) well-known video extension files to Nuvolos, you will have an option to add the file to the video library.
 
 If you add a file to the video library, you have to choose from two options:
 
@@ -31,7 +39,7 @@ We suggest to remove the video files from your file system - the video library s
 
 Once you have made your choice, the video upload will begin from Nuvolos to the streaming provider. After the upload has finished, the video will be processed by the streaming provider, for a one hour video, this might take up to 30 minutes.
 
-![Uploading a video to the video library](../../.gitbook/assets/upload\_video\_ed.gif)
+![Uploading a video to the video library](../.gitbook/assets/upload\_video\_ed.gif)
 
 ## Embed a video from the video library
 
@@ -42,7 +50,9 @@ You can obtain the _embed code_ of the video from the Video Library menu. You ha
 1. Fixed size option: In this case the video has a fixed width/height, which is useful in interactive documents where you have a lack of space or videos are embedded in a tabular format.
 2. Responsive option: In this case the video will try to fit to use the maximum available width in the interactive document it is embedded in, also detecting resizing of a browser window, etc.
 
-![Embedding a video into the main README.md of a space](../../.gitbook/assets/embed\_video\_ed.gif)
+The embed code can be used in README.md files on Nuvolos. If you paste the code into the markdown editor, you'll see immediately how it'll be rendered.
+
+![Embedding a video into the main README.md of a space](../.gitbook/assets/embed\_video\_ed.gif)
 
 ## Video library storage
 
