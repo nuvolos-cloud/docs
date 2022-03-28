@@ -52,6 +52,10 @@ You can obtain the _embed code_ of the video from the Video Library menu. You ha
 
 The embed code can be used in README.md files on Nuvolos. If you paste the code into the markdown editor, you'll see immediately how it'll be rendered.
 
+{% hint style="warning" %}
+Embedding videos only works in the side-by-side editor mode, not WYSIWG mode. You can change between the two modes at the bottom right corner in the editor, next to the Intercom button.
+{% endhint %}
+
 ![Embedding a video into the main README.md of a space](../.gitbook/assets/embed\_video\_ed.gif)
 
 ## Video library storage
