@@ -43,6 +43,14 @@ If you wish to write queries using SQL or you wish to create tables using SQL DD
 
 If you wish to use the query results to create charts, you can click on the "Explore" button to save the query as a virtual dataset.
 
+### Uploading CSV files
+
+You can upload small (< 1M rows) CSV files as Datasets (Nuvolos tables) with Superset by clicking on the "Data" menu and selecting "Upload a CSV".
+
+**Important: Use an UPPERCASE table name.**
+
+![](<../../.gitbook/assets/Screenshot 2022-04-12 at 16.34.26.png>)
+
 ### Creating charts and dashboards
 
 You can use the pre-created Datasets (Nuvolos tables) to create charts and you can also use saved SQL Lab queries as Datasets to create charts by clicking on the "Charts" menu and adding a new chart with the "+ CHART" button on the top-right:
