@@ -60,3 +60,7 @@ Once you have selected the Dataset to use and the chart type, you need to specif
 Once you have created the charts you wish to see on a Dashboard, you can create a Dashboard and configure the layout of the charts:
 
 ![](<../../.gitbook/assets/Screenshot 2022-04-12 at 16.33.39.png>)
+
+### Further reference
+
+The official Apache Superset documentation is available at: [https://superset.apache.org/docs](https://superset.apache.org/docs).
