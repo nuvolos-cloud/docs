@@ -352,11 +352,11 @@ Table data can be updated or a new table can be created with sheet data using th
 To upload data to Nuvolos, please perform the following steps:
 
 1. Click on the cell of the first row and the first column of the data you wish to upload.
-2. Click "Define Data Types" on the Home ribbon. This will add a row above the first row, where you will need to select the appropriate data types for the data columns you wish to upload. Unfortunately, the Add-In cannot automatically infer the data types for the columns: ![](../../.gitbook/assets/screenshot-2021-02-15-at-18.11.16.png)&#x20;
+2. Click "Define Data Types" on the Home ribbon. This will add a row above the first row, where you will need to select the appropriate data types for the data columns you wish to upload. Unfortunately, the Add-In cannot automatically infer the data types for the columns: <img src="../../.gitbook/assets/screenshot-2021-02-15-at-18.11.16.png" alt="" data-size="original">&#x20;
 
 3\. Once you have the data types selected, click "Upload":&#x20;
 
-![](../../.gitbook/assets/screenshot-2021-02-15-at-18.16.23.png)&#x20;
+<img src="../../.gitbook/assets/screenshot-2021-02-15-at-18.16.23.png" alt="" data-size="original">&#x20;
 
 4\. Select the upload action to be taken: An existing table can be updated, appended to, or replaced with the data in the sheet. Alternatively, you can tick "Create new table then upload", then enter the name of the new table. Click "Upload" to upload your data.
 

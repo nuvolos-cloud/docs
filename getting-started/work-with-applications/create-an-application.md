@@ -14,7 +14,7 @@
 
 ![](../../.gitbook/assets/new\_application\_ed.gif)
 
-![](../../.gitbook/assets/info\_simple.svg.png)**If you are encountering a problem creating an application, refer to the troubleshooting guide **[**here**](../../troubleshooting/application-issues/cannot-create-an-application.md)**.**
+<img src="../../.gitbook/assets/info_simple.svg.png" alt="" data-size="line">**If you are encountering a problem creating an application, refer to the troubleshooting guide** [**here**](../../troubleshooting/application-issues/cannot-create-an-application.md)**.**
 
 ##
 

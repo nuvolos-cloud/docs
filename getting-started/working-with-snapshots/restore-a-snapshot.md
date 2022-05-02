@@ -32,17 +32,14 @@ It is possible to partially restore a snapshot via the [distribution feature](..
 The steps to take are the following:
 
 1. Open your space.
-2. Go to the timeline view of snapshots, which you can do via the toolbar breadcrumbs or from the left sidebar.
 
-![](../../.gitbook/assets/screen-shot-2020-03-19-at-3.17.21-pm.png)
+&#x20; 2\. Identify the snapshot you want to restore and click on the name of the snapshot to open the snapshot.
 
-&#x20;   3\. Identify the snapshot you want to restore & click on the name of the snapshot to open the snapshot.
+![](<../../.gitbook/assets/Screenshot 2022-05-02 152731.png>)
 
 &#x20;   4\. [Stage the objects](../distribute-objects-in-nuvolos/#distributing-a-selected-list-of-items-a-worked-example) (files, tables or applications) you want to restore.
 
 &#x20;   5\. Select the same instance you are in as the distribution target.
-
-![Make sure the instance you are on is the same you are distributing to.](../../.gitbook/assets/screenshot-2020-10-12-121236.png)
 
 &#x20;   6\. Proceed with the overwriting distribution strategy.
 
