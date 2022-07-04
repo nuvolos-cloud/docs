@@ -68,7 +68,7 @@ Increasing the inactivity limit may result in higher-than-desired resource utili
 
 #### Configuring application resources
 
-Resource availability to applications running in non-exclusive environments is understood in Nuvolos Compute Units (NCUs). For a detailed description of NCUs, you may refer to its [documentation](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units#definition). You may scale the NCU allocation of an application to a higher or lower level depending on the expected workload of the application. If you distribute an application, the setting at the time of distribution is also enforced at the target application.
+Resource availability to applications running in non-exclusive environments is understood in Nuvolos Compute Units (NCUs). For a detailed description of NCUs, you may refer to its [documentation](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/nuvolos-compute-units#definition). You may scale the NCU allocation of an application to a higher or lower level depending on the expected workload of the application. Applications can be started with 1, 2, 4, 8, 12 or 16 NCUs. If you distribute an application, the setting at the time of distribution is also enforced at the target application.&#x20;
 
 {% hint style="warning" %}
 Increasing the NCU utilization of an application may result in higher-than-desired resource utilization of your organization.

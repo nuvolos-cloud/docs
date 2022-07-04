@@ -10,14 +10,14 @@ Nuvolos Compute Unit (NCU) is the computational unit for regular (non-[HPC](../.
 
 In terms of computational resource, an NCU consists of 1 virtual CPU (vCPU) and 4 GBs of RAM and adequate temporary storage to run a particular application.
 
-## NCU hold of applications
+## NCU consumption of applications
 
-Every time a user starts an application, a corresponding number of NCUs are checked out from the service. As a general rule of thumb:
+Every time a user starts an application, a corresponding number of NCUs are checked out from the service. The following default values apply:
 
-* Applications in teaching spaces consist of a single NCU,
-* applications in research spaces consist of 5 NCUs.
+* Applications in teaching spaces consume a single NCU,
+* Applications in research and dataset spaces consume 4 NCUs.
 
-It is possible to calibrate applications with different NCU requirements, please reach out to our support in order to configure a different setup for your application.
+It is possible for space administrators to change the NCU consumption of applications. In research spaces, even instance editors can change the NCU settings of applications, to allow for seamless collaboration.
 
 ## NCU limits of a resource pool
 
