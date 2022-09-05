@@ -72,6 +72,10 @@ The time window of the report by default is the current month, however, it is po
 The time range is shown on the plan or credit utilization tabs only, as the overview is time range independent. &#x20;
 {% endhint %}
 
+#### Enabling services
+
+Resource pool managers can enable [additional services](resource-pools.md#enabling-services-resource-pool-level) on the overview page.
+
 ## Structure
 
 ### Main page
