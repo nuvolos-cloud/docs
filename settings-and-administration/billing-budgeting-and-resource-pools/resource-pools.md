@@ -84,3 +84,19 @@ In order to change the space mapping, navigate to **Project Configuration** from
 {% hint style="warning" %}
 Please note that previous resource usage will not be re-mapped by changing the resource pool of a space. In order to reconcile previous usage, please reach out to our support.
 {% endhint %}
+
+### Enabling Services
+
+Nuvolos supports video library, high-performance computing, and database tables services that can be changed in a self-service manner at three different levels: resource pool level, organization level, and space level. Resource pool managers can change resource pool services.
+
+{% hint style="info" %}
+Resource pool level services can only be enabled if the term of the contract allows adding additional services. If your contract does not allow for a specific service, however you wish to use it please reach out to support.
+{% endhint %}
+
+To review or change the service settings of your resource pool, go to the reporting dashboard as shown in the video below and change the settings by clicking on the button of the service you wish to enable.
+
+![](../../.gitbook/assets/rp\_service.gif)
+
+{% hint style="warning" %}
+Resource pool level services cannot be disabled in a self-service manner. If you wish to disable a service, please reach out to us.&#x20;
+{% endhint %}

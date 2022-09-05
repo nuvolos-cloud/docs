@@ -93,7 +93,7 @@ would extract the contents of `example.gz` to the same folder.&#x20;
 Windows does not have a native gzip extraction tool, however most standard tools are able to unzip gzip files such as:
 
 * [WinRar](https://www.win-rar.com/start.html?\&L=0)
-* [7zip](https://www.7-zip.org)
+* [7zip](https://www.7-zip.org/)
 * [WinZip](https://www.winzip.com/win/en/gz-file.html)
 
 ## Connection guide

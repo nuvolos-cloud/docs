@@ -1,5 +1,5 @@
 ---
-description: Monitor your resource usage with the Usage metrics view
+description: Monitor your resource usage with the Monitoring Dashboard view
 ---
 
 # Monitoring resource usage
@@ -8,226 +8,159 @@ description: Monitor your resource usage with the Usage metrics view
 We strongly suggest reading the [billing overview](./) before reading this page as there are some critical concepts to get familiar with.
 {% endhint %}
 
-Resource monitoring is possible to a different extent for all users. The view provided by the monitoring interface depends on your roles related to the resource pool you are viewing.
+Resource monitoring is possible to a varying extent for all users. The view provided by the monitoring interface depends on your roles related to the resource pool you are viewing.
 
-* All users are capable of seeing a minimal overview of the resource pools they are members of. The globally available information consists of the current balance and size of the resource pool.
-* [Resource pool](resource-pools.md) managers can review activity in the resource pool they are managers in, and they can drill to review usage on the space level.
+* All users are capable of seeing a minimal overview and the credit usage of a resource pools if any of the following applies to them:
+  * they are the managers of the [resource pool](resource-pools.md)
+  * they have instance editor/space administrator role in a space belonging to the resource pool&#x20;
+* [Resource pool](resource-pools.md) managers can review activity in the resource pool they are managers in, and they can drill down to review usage all the way until the space level.
 * Space administrators can review activity in the space they are administrating.
 
-## The resource and usage metrics dashboard
+## The monitoring dashboard
 
-The resource and usage dashboard is available in the user menu for all users:
+The usage monitoring dashboard is available in the user menu for all users in the top right corner of the screen:
 
 ![](../../.gitbook/assets/screenshot-2021-09-02-100344.png)
+
+## General usage
+
+#### Drilling down
+
+Drilling down to sub-levels is possible in the plan and credit utilization tab. The first and default level is the resource pool level. The next level is the organization level and lastly, the space level. &#x20;
+
+* The resource pool level selector contains all the resource pools the user has sufficient roles to view.
+* The organization level contains all the organizations linked directly to the resource pool, or organizations that contain a space that is linked to the resource pool. Resource pool managers will see all the organizations that match the description, however, other users will see a filtered result here, where only those organizations will be available which have spaces, where the user is a space administrator or editor in an instance within the space.
+* The space level contains all the spaces in the selected organization that are linked to the selected resource pool. Resource pool managers will see all these spaces, while other users will only be able to select spaces where they are space administrators or instance editors in in instance within the space.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 12.59.46.png" alt=""><figcaption><p>Drilling down to sublevels</p></figcaption></figure>
+
+#### Redaction
+
+Due to privacy reasons, certain objects names are redacted on the monitoring dashboard. The following section clarify how redaction is applied in different places.
+
+**Drill-down menu**&#x20;
+
+* Resource pool and organization names will not be redacted for any users
+* Space names
+* Please note, that for privacy purposes we only show the user the name of the space if they are either space administrators or have an editor instance role in one of the instances of the space. Every other space shows up with a numerical identifier. Usage may still be viewed, but the content of the space will not be visible to the user.
+
+**Plan and credit utilization tabs**
+
+The donut charts on the plan and credit utilization tabs show the distribution of resources within the sub-level of the current level. At different levels, users might encounter some redacted names:
+
+* Resource pool level:
+  * No redaction
+* Organization level:
+  * Any space will be redacted where the user does not have a space administrator or instance editor role&#x20;
+* Space level:
+  * NCU and credit utilization charts drill down to user level (the charts show email addresses):
+    * Resource pool managers will not have any redaction
+    * Space administrators will not have any redaction
+    * Instance editors will have every email redacted that is not their own
+  * Filesystem utilization drill down to instance level
+    * Resource pool managers will have every instance name redacted unless they are also a space administrator in the space  or have an editor role in the given instance
+    * Space administrators will not have any redaction
+    * Instance editors will have every instance redacted where they are not instance editors
+
+#### Time range
+
+The time window of the report by default is the current month, however, it is possible to choose different time windows (the length of the window is always a maximum of 1 year).&#x20;
+
+![Time range selection](../../.gitbook/assets/time\_window.png)
+
+{% hint style="info" %}
+The time range is shown on the plan or credit utilization tabs only, as the overview is time range independent. &#x20;
+{% endhint %}
 
 ## Structure
 
 ### Main page
 
-The main page provides an overview of the resource pool. The exact view provided to the user is [based on their role](resource-pools.md#resource-pool-roles).
+The main page provides an overview of the resource pool. The exact view provided to the user is based [on their role](https://docs.nuvolos.cloud/settings-and-administration/billing-budgeting-and-resource-pools/resource-pools#resource-pool-roles). &#x20;
 
-### Usage views
+All users are able to see the:
 
-Usage views are only available for users that are at least a space administrator in one of the spaces associated with the resource pool.
+* terms of the contract
+* NCU capacity of the contract. For more information about NCUs please refer to this [section](nuvolos-compute-units.md).
+* current balance
+* the status of the additional services in the resource pool
 
-Currently, the usage metrics dashboard provides metrics on the following resource groups:
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 11.21.25.png" alt=""><figcaption><p>Overview tab for non resource pool managers</p></figcaption></figure>
 
-* Applications - metrics on standard Nuvolos application runs
-* HPC usage - metrics on HPC jobs and interactive HPC applications run in the Nuvolos infrastructure
-* User reports - metrics on user participation and activity
+On top of these, resource pool managers are shown the [NCU utilization status](monitoring-resource-usage.md#ncu-utilization-status) and are able to enable additional services as described [here](resource-pools.md#enabling-services).
+
+<figure><img src="../../.gitbook/assets/overview_non.png" alt=""><figcaption><p>Overview for resource pool managers</p></figcaption></figure>
+
+#### NCU utilization status
+
+The NCU utilization status gives information to the user about how the NCU utilization corresponds to the terms of the contract.
+
+The NCU utilization status could be
+
+* **in line**: Your resource utilization in line with your contract.
+
+<figure><img src="../../.gitbook/assets/inline.png" alt=""><figcaption><p>NCU utilization in line</p></figcaption></figure>
+
+* **overused**: You have already overused the resources in the current subscription period.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 10.55.50.png" alt=""><figcaption><p>NCU utilization overused</p></figcaption></figure>
+
+* **expired**: The contract related to this resource pool has expired. You won't be able to use resources anymore.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 10.55.41.png" alt=""><figcaption><p>NCU utilization for expired resource pool</p></figcaption></figure>
+
+* **projected overuse:** Your current utilization status is still in line with your contract, however, based on usage for some previous period, you will be overusing your resources by the end of the subscription period.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 10.56.21.png" alt=""><figcaption><p>NCU utilization projected overuse</p></figcaption></figure>
+
+### Plan utilization view
+
+The plan utilization view is only available for users that are resource pool managers at the resource pool.
+
+Currently, the monitoring dashboard provides metrics on the following resource groups:
+
+* NCU overview - metrics on standard Nuvolos application runs
+* Filesystem utilization - metrics on filesystem usage on Nuvolos
+* User activity overview - metrics on user activity on Nuvolos
+
+#### NCU overview
+
+The NCU overview shows a line and a donut chart for the NCU usage for the selected time range on the current drill-down level.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 12.03.44.png" alt=""><figcaption><p>NCU utilization</p></figcaption></figure>
+
+The NCU timeline shows a daily, weekly, or monthly grouped sum of the NCU hours used in the current drill-down level for the time range selected, and the donut chart shows the sum of the NCU hours for the sub-levels. The sub-levels are the following: Organizations for resource pool level, spaces for organization level, and users (email addresses) for space level.
+
+#### Filesystem utilization
+
+The filesystem utilization report consists of two charts, a timeline, and a donut chart. The timeline shows the filesystem utilization in GiBs grouped daily, weekly on monthly for the given time range. If the grouping is weekly or monthly the chart shows the filesystem utilization for the date shown when hovering over a bar. The donut chart shows the filesystem utilization by sub-level for the last date selected in the time range. The sub-levels are the following: Organizations for resource pool level, spaces for organization level, and instances for space level
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 12.13.52.png" alt=""><figcaption><p>Filesystem utilization</p></figcaption></figure>
 
 {% hint style="info" %}
-Please note that for privacy purposes we only show to the user the name of the space where they have a space administrator role. Every other space shows up with a numerical identifier. Usage may still be viewed, but the contents of the space will not be visible to the user.
+Please note, that the filesystem utilization reports are only available from 25/07/2022.
 {% endhint %}
 
-### Management view
+#### User activity overview
 
-The management view provides two menus:
+The user reports section provides a timeline for application runs. The timeline could be daily, weekly, or monthly depending on the time range selected.&#x20;
 
-* The contents menu shows for each (redacted) space the mapped [resource types](resource-pools.md#resource-types) of the space to the resource pool.
-* The user's menu shows for each (redacted) space the space administrator for reach out purposes.
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 11.25.49.png" alt=""><figcaption></figcaption></figure>
 
-## The resource usage metrics dashboard
+### Credit utilization view
 
-All reports consist of three zones:
+The credit utilization view is available for everyone who is able to have access to a resource pool, however, what items are redacted or not is based on the user's role as described [here](monitoring-resource-usage.md#redaction).&#x20;
 
-### Selectors and tabs
+Currently, the monitoring dashboard provides three different charts for credit utilization.
 
-You can switch between report types using the tabs. Selector fields clarify the aggregation level and time range for the report. &#x20;
+* **Credit utilization by resources:**  This chart details the total credit utilization grouped by resource groups for the chosen time range. You can deselect resource groups by clicking on the resource icon on the left, or under the chart. Deselecting a resource will also remove it from the credit utilization by sub-levels chart.
+* **Credit utilization by sub-levels:** This chart details the total credit utilization grouped by sublevels for the chosen time range. This is the following for the different levels: organizations for resource pool level, spaces for organization level, and users for space level. At each level, there may be credit usage that cannot be mapped to sub-levels, these will show up as orgless, spaceless, and userless transactions. You can deselect items from the sub-level, or a resource group by clicking on the resource icon on the left.
 
-### Summary
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 16.43.20.png" alt=""><figcaption><p>Credit utilization by resources (left) and credit utilizations by sub-levels (right) charts</p></figcaption></figure>
 
-The summary information is presented as a doughnut chart with a total in the middle for each relevant category for the report. By hovering over the edge of the doughnut chart, you are able to display drill-down information of the statistic you are viewing.
 
-![Doughnut overview charts](../../.gitbook/assets/screenshot-2021-06-14-122820.png)
 
-{% hint style="info" %}
-Special aggregation rules might apply to the summary and the drill-down information displayed - please confirm the interpretation section of the corresponding report type if you are not sure about how data might be related.
-{% endhint %}
+* **Credit utilization timeline:** This chart details the credit utilization for the selected time range grouped daily, weekly, or monthly depending on the chosen time range. The colors in the bars correspond to the resource group.&#x20;
 
-### Details
-
-The detail section is presented below the summary section and contains time series and tabular representations of the selected time period. You can switch between chart and table representation on the top left corner and you can select the relevant time series on the top right corner for this view. The tabular section data can always be exported to an `xlsx` file.
-
-![The time series overview of the details section](../../.gitbook/assets/screenshot-2021-06-14-122324.png)
-
-{% hint style="info" %}
-Special aggregation rules might apply to how the information displayed in the summary section is related to how the information is displayed in the details section. Please make sure to consult the interpretation section of the relevant report category.
-{% endhint %}
-
-## General usage
-
-All reports are context-sensitive and contain drill-down functionality while respecting user roles.
-
-### Aggregation levels
-
-There are currently two faceting options available on the dashboard interface: organization context and time window.
-
-#### Organization context
-
-Organization managers can select either 'All spaces' or just a particular space when filtering the data. By default 'All spaces' is selected. This selection corresponds to organization-level aggregation.
-
-* Application and HPC metrics get aggregated to the organization level.
-* User reports show organization-level roles - see the [user report section](monitoring-resource-usage.md#user-reports).
-* Invitation reports show instance-level invitations aggregated to the organization level with drill-down to the space level as part of the doughnut chart.
-
-Space administrators automatically select the context space - organization managers can get this view either by navigating to the space overview or by explicitly selecting the space in the organization manager dashboard.
-
-* Application and HPC metrics get aggregated to the space level.
-* User reports show space-level roles - see the [user report section](monitoring-resource-usage.md#user-reports).
-* Invitation reports show instance-level invitations aggregated to the space level with drill-down to the instance level as part of the doughnut chart.
-
-#### Time window
-
-The time window of the report by default is the last 30 days, however, it is possible to choose different time windows (the length of the window is always a maximum of 30 days).&#x20;
-
-{% hint style="danger" %}
-Changing resource mappings are not immediately reflected in usage reports. The changes will appear in the next report release (our current schedule is at least one report a day).
-{% endhint %}
-
-{% hint style="success" %}
-Please refer to the appropriate report section for the available time window for a particular type of report.&#x20;
-
-Application and HPC reports concern 'flow' type of resource usage while invitation and user reports concern 'stock' type of system status, so interpretation of values is different in the two report classes.
-{% endhint %}
-
-## Application reports
-
-Application reports give information on applications run on Nuvolos. The reporting unit is always Nuvolos Compute Units (NCUs). One Nuvolos Compute Unit corresponds to one vCPU and 4 GBs of RAM.
-
-### Report content
-
-We report the following information on the dashboard:
-
-* **Maximum concurrent** - Maximum number of concurrent NCUs used a given day and for a given time period: the count of the widest activity of NCU use between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the methodology section applies.
-* **Runtime** - Total amount of time applications were running on a given day or for a given time period. The value is always given in hours. Rule \[1] in the methodology section applies.
-
-### Interpretation
-
-Some general guidance to interpreting values:
-
-* When a time period is selected, all application metrics are aggregated over the selected time period. Runtime is summed, while for the Maximum concurrent metric, the maximum is taken over the selected time period.
-* When viewing daily information (as time series), values presented are daily sums for Runtime, and daily maxima are presented for Maximum concurrent.
-* The summary values correspond to the sum of the time series for Runtime. The summary values correspond to the maxima of the time series for Maximum concurrent.
-
-### Methodology
-
-Application reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
-
-1. Application reports on a given date report about applications that are currently running or have concluded (killed, stopped, timed out) until the reporting timestamp.&#x20;
-2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
-   1. For example, for the report on 2020-12-24, we guarantee that the report will contain data going back to 2020-10-25 and until 2020-12-24 02:00.
-
-## HPC reports
-
-HPC reports give information on HPC batch jobs and HPC interactive, scaled applications run on Nuvolos.&#x20;
-
-### HPC Batch Report content
-
-We report the following information on the dashboard:
-
-* **Submitted** - Number of submitted jobs on a given day and for a given time period: the count of the job activity between 0:00 - 23:59 for a given date or taken over a time window. Rule \[1] in the corresponding methodology section applies.
-* **CPU hour** - Total amount of computational resources used on a given day and for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
-* **Balance used** - Based on the resource requirement and runtime of jobs the total amount of balance used by HPC jobs in the viewed context.
-
-### Interpretation
-
-Some general guidance to interpreting values:
-
-* When a time period is selected, all HPC metrics are summed over the selected time period.
-* When viewing daily information (as time series), values presented are daily sums. The summary values correspond to the sum total of the time series.
-
-### Methodology
-
-HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
-
-1. HPC reports on a given date report about HPC that are running or have concluded (killed, canceled, completed, failed) until the reporting time.&#x20;
-2. HPC jobs are accounted for in totality on the day of conclusion (job state is killed, canceled, completed, failed, _not_ running, or pending).
-3. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
-
-### HPC Interactive Report content
-
-We report the following information on the dashboard:
-
-* **Runtime** - Total amount of runtime used for a given time period: the sum total of CPU hours used between 0:00 - 23:59 or taken over a time window. Rule \[1] and Rule \[2] in the corresponding methodology section apply.
-* **Balance used** - Based on the resource requirement and runtime of apps the total amount of balance used by interactive HPC apps in the viewed context.
-
-### Interpretation
-
-Some general guidance to interpreting values:
-
-* When a time period is selected, all HPC metrics are summed over the selected time period.
-* When viewing daily information (as time series), values presented are daily sums. The summary values correspond to the sum total of the time series.
-
-### Methodology
-
-HPC reports are prepared on a daily basis, the latest report runtime is shown in the report. Previous reports are stored for 30 days, then removed.
-
-1. HPC interactive applications are accounted for the _starting date_ of the application run.
-2. The time window reported on is the reporting day minus at least 60 calendar days to the reporting date.&#x20;
-
-## User reports
-
-User reports give information on user activity and density on Nuvolos. This information is most valuable during onboarding periods and project archival actions.
-
-### Report content
-
-We report the following information on the dashboard. Compared to application and HPC reports, the values reflect point-in-time information as of the report being made, and a comparison is possible between reports previously made. For a detailed guide on the role system please refer [here](../role-system.md).
-
-#### Organization-level
-
-In general, when viewed as a time series, the time series reflects information as of a date 02:00 AM CEST.
-
-Some general remarks to interpret the data precisely:
-
-* **Manager** - number of organization managers as of a given date.
-  *
-* **Faculty** - number of faculty members of the organization as of a given date.
-  * When a time period is selected, the number of faculty members corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
-* **Member** - number of regular members of the organization as of a given date.
-  * When a time period is selected, the number of regular members corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
-
-#### Space-level
-
-* **Space administrator** - number of space administrators in the given space as of a given date.&#x20;
-  * When a time period is selected, the number of space administrators corresponds to the state of the system _as of the last report run date_ of the period.
-  * When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
-* **End-user** - number of distinct non-space administrator users who have accepted their invitations into the given space as of a given date.
-  * If a user is invited as an instance editor into two instances in a space, we count them as one. If they are also space administrators as well as having two explicit invitations, then they are not counted in this category.
-
-#### Instance-level
-
-* **Editor** - Number of instance editors in a given instance as of a given date.
-* **Viewer** - Number of instance viewers in a given instance as of a given date.
-
-### Interpretation
-
-Some general guidance to interpreting values:
-
-* When a time period is selected, the number of users (any category) corresponds to the state of the system _as of the last report run date_ of the period.
-* When viewing daily information (as time series), values presented are states of the system at report run dates that fall in the period.
-
-
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 16.47.44.png" alt=""><figcaption><p>Credit utilization timechart</p></figcaption></figure>
 
