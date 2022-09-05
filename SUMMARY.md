@@ -99,6 +99,7 @@
       * [Clone a Github repository](settings-and-administration/organization-management/create-a-space/clone-a-github-repository.md)
       * [Clone an existing space](settings-and-administration/organization-management/create-a-space/clone-an-existing-space.md)
     * [Delete a space](settings-and-administration/organization-management/delete-a-space.md)
+    * [Enabling Services (Organization level)](settings-and-administration/organization-management/enabling-services-organization-level.md)
   * [Space management](settings-and-administration/space-management/README.md)
     * [Invite students](settings-and-administration/space-management/create-an-instance.md)
     * [Create shared instance](settings-and-administration/space-management/create-shared-instance.md)
