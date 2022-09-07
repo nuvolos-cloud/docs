@@ -34,9 +34,9 @@ Drilling down to sub-levels is possible in the plan and credit utilization tab. 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-02 at 12.59.46.png" alt=""><figcaption><p>Drilling down to sublevels</p></figcaption></figure>
 
-#### Redaction
+#### Privacy considerations and redaction
 
-Due to privacy reasons, certain objects names are redacted on the monitoring dashboard. The following section clarify how redaction is applied in different places.
+Nuvolos implements a strict privacy policy when it comes to monitoring usage. Users have the ability to monitor resource consumption, but only the absolutely necessary identifying information is displayed. Due to this, certain objects names are redacted on the monitoring dashboard. The following section clarify how redaction is applied in different places.
 
 **Drill-down menu**&#x20;
 
