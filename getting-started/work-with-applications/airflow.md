@@ -4,7 +4,7 @@ description: Nuvolos supports Airflow 2 as a self-service application
 
 # Airflow
 
-For researchers who require scheduled workflows, Nuvolos supports Airflow (2.2.1) as a self-service application. Airflow runs inside a JupyterLab application, making it easy to edit Airflow DAG files, install packages and use the Nuvolos filesystem for data processing.
+For researchers who require scheduled workflows, Nuvolos supports Airflow as a self-service application. Airflow runs inside a JupyterLab application, making it easy to edit Airflow DAG files, install packages and use the Nuvolos filesystem for data processing.
 
 The JupyterLab application is collaborative, so DAGs can be worked on simultaneously by multiple users in a "Google Docs"-like fashion.
 
@@ -37,19 +37,16 @@ Task execution, scheduler and DAG bag update logs are in `/files/airflow/logs`.
 
 The following example illustrates how to create a DAG that downloads CSV data from an API, saves the data as a compressed Parquet file and uploads the data as a Nuvolos table.
 
+{% hint style="info" %}
+Airflow will use the database credentials of the user starting the application.
+{% endhint %}
+
 #### Prerequisites
 
 1. Create a new Airflow application in your working instance and start the application.
 2. Once Airflow starts, open a new terminal tab and run the following commands to install package dependencies:
    1. `mamba install -y --freeze-installed -c conda-forge pandas-datareader`
    2. `mamba install -y --freeze-installed -c conda-forge pyarrow`
-3. To be able to create Nuvolos tables and load data from the shared Airflow application, the following variables need to be set in Airflow, using values from the [Connection Guide](../../data/the-table-view/):&#x20;
-   1. NUVOLOS\_DATABASE
-   2. NUVOLOS\_SCHEMA
-   3. NUVOLOS\_USERNAME
-   4. NUVOLOS\_PASSWORD
-
-![Add Airflow variables](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.38.46.png>)
 
 Once the setup is complete, the following script should be saved as the file `/files/airflow/dags/csv_to_nuvolos`:
 
@@ -77,10 +74,7 @@ def upload_data():
     import pandas as pd
     
     df = pd.read_parquet("/files/fred_data.parquet")
-    with get_connection(dbname=Variable.get("NUVOLOS_DATABASE", default_var=""), 
-                        schemaname=Variable.get("NUVOLOS_SCHEMA", default_var="master/development"),
-                        username=Variable.get("NUVOLOS_USERNAME", default_var="<YOUR_USER>"),
-                        password=Variable.get("NUVOLOS_PASSWORD", default_var="dummy")) as conn:
+    with get_connection() as conn:
         to_sql(df=df, name="fred_data", con=conn, if_exists='replace', index=False)
 
 
@@ -138,3 +132,19 @@ Click on the blue "play" icon to trigger the execution of the DAG. Click on the 
 When all steps run to success, they show up dark green in Airflow. You can now check the resulting table in the Tables view:
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-09 at 15.51.06.png>)
+
+### Airflow with VSCode
+
+Airlfow is now also available bundled with VSCode, which makes developing DAGs easier. To use Airflow with VSCode, please select the latest version of the "Airflow + Code-server + Python" app from the Airflow application type:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-03 at 13.31.14.png" alt=""><figcaption></figcaption></figure>
+
+Next, when the application launches, open the Command Palette with `Ctrl + Shift + P` or `Command + Shift + P` on a Mac and type "Airflow" to select the `Airflow: Show Airflow` command:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-03 at 14.06.26.png" alt=""><figcaption></figcaption></figure>
+
+This command will open Airflow in a new VSCode tab:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-03 at 14.33.51.png" alt=""><figcaption></figcaption></figure>
+
+To install additional Python dependencies, open a Terminal in VSCode and install the package with `mamba install -y -c conda-forge --freeze-installed <package_name>`
