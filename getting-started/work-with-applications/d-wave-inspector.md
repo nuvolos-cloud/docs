@@ -1,5 +1,5 @@
 ---
-description: Run quantum computiations on D-Wave Cloud from Nuvolos
+description: Submit quantum computing jobs to D-Wave Cloud from Nuvolos
 ---
 
 # D-Wave Inspector
