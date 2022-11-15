@@ -40,6 +40,6 @@ response = sampler.sample_ising(h, J)
 dwave.inspector.show(response, block=dwave.inspector.Block.FOREVER)
 ```
 
-The last line of the script will open D-Wave Inspector in a new editor tab and block until CTRL+Z or CTRL+C is pressed. The D-Wave Inspector application only runs until the script is terminated.
+The last line of the script will open D-Wave Inspector in a new editor tab and block until CTRL+D or CTRL+C is pressed. The D-Wave Inspector application only runs until the script is terminated.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-11-15 at 12.42.25.png" alt=""><figcaption></figcaption></figure>
