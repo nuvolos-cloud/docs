@@ -14,6 +14,10 @@ For a good user experience, we recommend that instructors pre-launch the require
 
 In both automatic and manual mode the progress and outcome of a pre-launch is visible in the task view.
 
+{% hint style="info" %}
+For optimal resource allocation, only the very first prestart triggers the start of a given application for all users in the space. Subsequent prestart events first check which users actually used the applications around the **last prestart time**, and the app will be started only for them automatically.&#x20;
+{% endhint %}
+
 #### Automatic
 
 Using automatic application prestart instructors can create scheduled prestarts ahead of time. This can be performed from the 'Application' view in the sidebar, by clicking on the three dots beside the application name and selecting the 'Schedule for start' option, and setting the time and date by when all apps in the space should be up and running.&#x20;
