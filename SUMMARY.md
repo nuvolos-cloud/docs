@@ -147,3 +147,5 @@
     * [I can't revoke a user role](troubleshooting/authorization-issues/i-cant-remove-a-user.md)
   * [Accidental content change](troubleshooting/accidental-content-change/README.md)
     * [Restored a snapshot by mistake](troubleshooting/accidental-content-change/restored-a-snapshot-by-mistake.md)
+  * [Trials](troubleshooting/trials/README.md)
+    * [Trial limitations](troubleshooting/trials/trial-limitations.md)
