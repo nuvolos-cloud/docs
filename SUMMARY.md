@@ -67,6 +67,7 @@
     * [Superset](getting-started/work-with-applications/superset.md)
     * [D-Wave Inspector](getting-started/work-with-applications/d-wave-inspector.md)
     * [MLFlow](getting-started/work-with-applications/mlflow.md)
+    * [Databricks Connect](getting-started/work-with-applications/databricks-connect.md)
   * [Video Library](getting-started/video-library.md)
   * [Advanced workflows](getting-started/advanced-workflows/README.md)
     * [Invite a reviewer to your research project](getting-started/advanced-workflows/invite-a-reviwer-to-your-research-project.md)

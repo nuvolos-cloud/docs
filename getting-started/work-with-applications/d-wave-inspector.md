@@ -16,7 +16,7 @@ Start the app, it will create a demo script in your Files are, under the path `/
 
 Once the app is started, open a Terminal and configure your D-Wave Cloud connection with the command `dwave config create`
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-15 at 12.38.31.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-15 at 12.38.31 (1).png" alt=""><figcaption></figcaption></figure>
 
 Copy your D-Wave API key from the [LEAP dashboard](https://cloud.dwavesys.com/leap/) and paste it into the terminal prompt.
 
