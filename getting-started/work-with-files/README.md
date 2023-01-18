@@ -20,11 +20,21 @@ After navigating to the files view of the instance you are working in:
 
 ## Upload files
 
-You can upload files and folders with the upload button.
+You can upload files and folders to Nuvolos with the upload button.
 
 ![Uploading an entire folder with contents using drag and drop](../../.gitbook/assets/upload\_folder\_ed.gif)
 
-In case you cannot upload a file due to it being extremely large, you can do the following:
+You can choose to upload files from your local device, or from a publicly accessible web address. The latter is recommended for uploading large amounts of data to Nuvolos, as it is handled by a background process and once started, you may even close your browser without interrupting the upload process.
+
+{% hint style="info" %}
+Upload from Web Address currently only support publicly available URLs, without any form of authentication.
+{% endhint %}
+
+{% hint style="info" %}
+Certain servers respond with a "Not found" page, but no error code when trying to access a non-existent asset on them. In such cases, the "Not found" page will be uploaded to Nuvolos.
+{% endhint %}
+
+In case you cannot upload a file from your local device due to it being extremely large, you can either upload it via a Web Address (if possible) or try uploading it via JupyterLab:
 
 1. [Create a JupyterLab application](../work-with-applications/create-an-application.md).\
 
