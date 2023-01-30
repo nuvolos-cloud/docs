@@ -51,6 +51,10 @@ You can upload small (< 1M rows) CSV files as Datasets (Nuvolos tables) with Sup
 
 ![](<../../.gitbook/assets/Screenshot 2022-04-12 at 16.34.26.png>)
 
+You can see the upload process in the following short video:
+
+{% embed url="https://player.vimeo.com/video/794175676?byline=0&h=573c53b1b2&portrait=0&title=0" %}
+
 ### Creating charts and dashboards
 
 You can use the pre-created Datasets (Nuvolos tables) to create charts and you can also use saved SQL Lab queries as Datasets to create charts by clicking on the "Charts" menu and adding a new chart with the "+ CHART" button on the top-right:
