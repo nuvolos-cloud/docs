@@ -29,3 +29,9 @@ Next, on the _Environment_ tab, add the following environment variables that spe
 ## Configuring your Nuvolos application
 
 Currently, SSHFS connection is a preview feature, please reach out to Nuvolos Support to enable SSHFS mounting for your specific Nuvolos application. Once the feature will reach GA state, this will be configurable in the Nuvolos application configuration.
+
+## Accessing remote files
+
+Once the prerequisite configuration has been done and the applications have been also configured to use SSHFS, you can start your Nuvolos application.&#x20;
+
+The files from the remote server will be accessible under the path `/sshfs`. If you wish to use a different path, please reach out to Nuvolos support.
