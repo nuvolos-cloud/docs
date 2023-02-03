@@ -10,7 +10,7 @@ In Nuvolos applications, you can access files stored on your server via a secure
 
 ### Create an SSH key
 
-To be able to authenticate with your server using SSH, you will need to create an SSH key in Nuvolos and add the generated public key to the `authorized_keys` file on your server to accept the newly generated SSH key.
+To be able to authenticate with your server using SSH, you will need to create an SSH key in Nuvolos and add the generated public key to the `authorized_keys` file on your server to accept the newly generated SSH key. Under Linux systems, the file is usually located under `~/.ssh/authorized_keys` .
 
 To do this, [go to your account settings](https://app.nuvolos.cloud/user/settings/profile) and click on the _SSH Keys_ tab. Click on the _Generate SSH Key_ button to create an SSH key:
 
