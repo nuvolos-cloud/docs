@@ -331,7 +331,7 @@ For more detailed Excel add-in installation and management, please refer to this
 
 4\. You can find the installed "Excelerator" add-in on the Home tab of the Ribbon.
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (6).png>)
 
 5\. Click the "connect" button to open the connection window: &#x20;
 

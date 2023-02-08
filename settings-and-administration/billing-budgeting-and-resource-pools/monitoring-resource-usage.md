@@ -38,6 +38,16 @@ Drilling down to sub-levels is possible in the plan and credit utilization tab. 
 
 Nuvolos implements a strict privacy policy when it comes to monitoring usage. Users have the ability to monitor resource consumption, but only the absolutely necessary identifying information is displayed. Due to this, certain objects names are redacted on the monitoring dashboard. The following section clarify how redaction is applied in different places.
 
+#### Contact information
+
+As a resource pool manager or regular user, you will need from time to time to contact other users in the platform. The monitoring dashboard provides you with the functionality to access the names and email addresses for the following key personnel:
+
+* You can find your resource pool manager's email address next to the resource pool selector
+* Organisations managers at the organization level
+* and Space Administrators as the space level
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 **Drill-down menu**&#x20;
 
 * Resource pool and organization names will not be redacted for any users
