@@ -52,6 +52,7 @@
   * [Work with files](getting-started/work-with-files/README.md)
     * [Dropbox synchronization](getting-started/work-with-files/dropbox-synchronization.md)
     * [Accessing remote files with SSHFS](getting-started/work-with-files/accessing-remote-files-with-sshfs.md)
+    * [Accessing files on SharePoint Online](getting-started/work-with-files/accessing-files-on-sharepoint-online.md)
   * [Work with applications](getting-started/work-with-applications/README.md)
     * [Create an application](getting-started/work-with-applications/create-an-application.md)
     * [Find an application](getting-started/work-with-applications/find-an-application.md)
